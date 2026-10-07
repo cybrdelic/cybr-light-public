@@ -1,0 +1,147 @@
+{
+  "sourceSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+  "modules": [
+    {
+      "name": "current-original",
+      "bytes": 24033,
+      "sha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+      "entryPoint": "main"
+    },
+    {
+      "name": "medium-inline",
+      "bytes": 29977,
+      "sha256": "dab73e56454402364dd80bb895c21a585fba8363bf0442ac37981c669a057985",
+      "entryPoint": "probeMedium",
+      "targetsExpanded": 4,
+      "commitsExpanded": 4,
+      "mediumSlots": 16,
+      "workgroup": 8
+    },
+    {
+      "name": "current-inline",
+      "bytes": 26176,
+      "sha256": "b304a0c331ccb14f4919c31d04944597419490b1e0b815859fba551a58e2c038",
+      "entryPoint": "main",
+      "targetsExpanded": 2,
+      "commitsExpanded": 2,
+      "mediumSlots": 16,
+      "workgroup": 8
+    },
+    {
+      "name": "signals",
+      "bytes": 28141,
+      "sha256": "236393f91f5bef403b4bf03dabcb7db310faa5f51515d011b05990eb64cadf6d",
+      "entryPoint": "main",
+      "query": "backend=signals&mediumStack=inline"
+    },
+    {
+      "name": "instanced",
+      "bytes": 28712,
+      "sha256": "fc32e1a287ceb90413dd85f5d5acf9b7f16f7050f739722ac771e587a73ee48b",
+      "entryPoint": "main",
+      "query": "mediumStack=inline"
+    },
+    {
+      "name": "packed",
+      "bytes": 26637,
+      "sha256": "1567f1fd28836b726993b948828b219687a0a0843252ec7ea5d2a2ced7f4f13b",
+      "entryPoint": "main",
+      "query": "mediumStack=inline"
+    },
+    {
+      "name": "corrected",
+      "bytes": 27697,
+      "sha256": "9e58f1182411c60ce399568522efc5e05755748edfd955f2769fe36c841a7281",
+      "entryPoint": "main",
+      "query": "transport=corrected&mediumStack=inline"
+    },
+    {
+      "name": "corrected-instanced",
+      "bytes": 30219,
+      "sha256": "161b39b3bad94a9f1fdb5245f3014ea6345d0b26c2999f208ebff1784cf09c75",
+      "entryPoint": "main",
+      "query": "transport=corrected&mediumStack=inline"
+    },
+    {
+      "name": "outside-corrected",
+      "bytes": 27508,
+      "sha256": "746672060280e98660759a91b704c62d52a449a4efb2e3861c1588f265da2136",
+      "entryPoint": "main",
+      "query": "transport=corrected&mediumStack=inline"
+    },
+    {
+      "name": "camera-corrected",
+      "bytes": 12484,
+      "sha256": "84560f009706cb7aadf13d30c78ef114c9595dacf6398624462fcf42b6b08300",
+      "entryPoint": "main",
+      "query": "transport=corrected&mediumStack=inline"
+    },
+    {
+      "name": "reconstruct",
+      "bytes": 9587,
+      "sha256": "2dcabf844e643f6efd3a0eda56dd5eda619bf0ab222c59159f0ff8ad1a7a3441",
+      "entryPoint": "main"
+    },
+    {
+      "name": "filter",
+      "bytes": 2215,
+      "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741",
+      "entryPoint": "main"
+    },
+    {
+      "name": "display",
+      "bytes": 858,
+      "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1",
+      "entryPoints": [
+        "vertex",
+        "fragment"
+      ]
+    }
+  ],
+  "gpuUsed": false,
+  "validator": {
+    "library": "naga",
+    "version": "30.0.1",
+    "validationFlags": "all",
+    "optionalCapabilities": "none",
+    "parseAndTypeValidation": "passed"
+  },
+  "physicalBeforeCandidate": {
+    "build": "mobile-compile-probes-8",
+    "adapter": "Qualcomm / Adreno-8xx",
+    "browser": "Chrome 154",
+    "controls": [
+      "empty 8x8: 69 ms",
+      "binding ABI: 18 ms",
+      "64-entry traversal: 47 ms"
+    ],
+    "medium": "device loss about 766 ms after compute pipeline request, after empty shader validation report",
+    "sceneFrameGPUBytes": 0,
+    "dispatch": false
+  },
+  "physicalCandidateResult": "not yet run",
+  "cpuEquivalence": {
+    "source": "actual original WGSL operation bodies and actual expanded snippets",
+    "adversarialOperations": 8192,
+    "cases": [
+      "nested glass/water absorption and IOR",
+      "non-top removal",
+      "last duplicate match",
+      "unmatched and empty/camera-inside exit",
+      "all sixteen slots",
+      "two-word instance keys",
+      "default renderer source and alternate modes"
+    ]
+  },
+  "reproduce": [
+    "node tools/export_medium_candidate.mjs",
+    "node browser/medium-stack-inline.test.mjs",
+    "cargo build --release --locked --jobs 2 --manifest-path tools/wgsl-validator/Cargo.toml",
+    "tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-medium-candidate"
+  ],
+  "limits": [
+    "CPU fixtures do not establish physical Adreno compilation or rendered output parity.",
+    "A passing full-trace compilation must be followed by actual rendering on the phone.",
+    "The candidate is explicitly selected with mediumStack=inline; remove that parameter to roll back."
+  ]
+}

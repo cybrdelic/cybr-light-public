@@ -10,11 +10,12 @@ import {buildRendererShader} from './renderer-shaders.mjs';
 import {gpuDeviceOptions} from './gpu-session.mjs';
 import {traceCompileVariant} from './trace-compatibility.mjs';
 import {traceCompileProbe,traceProbeCases} from './trace-compile-probes.mjs';
+import {mediumStackCandidate,mediumCandidateCases} from './medium-stack-candidate.mjs';
 import {diagnosticShader} from './diagnostics.mjs';
 import {createCompileDeadline} from './compile-deadline.mjs';
 const controller=(await readFile(new URL('gpu-compile-check.mjs',import.meta.url),'utf8')).replace(/^import[^\r\n]+\r?\n/gm,'');
 
-async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedReport,olderLocalReport,execute=true,autoRun=false,deviceLoss=false,sequence=false,probeSequence=false,stopDuringDevice=false,timeoutAdapter=false}={}){
+async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedReport,olderLocalReport,execute=true,autoRun=false,deviceLoss=false,sequence=false,probeSequence=false,candidateSequence=false,stopDuringDevice=false,timeoutAdapter=false}={}){
  const calls=new Map(),modules=[],pipelines=[],checkpoints=[],devices=[],fetches=[];let destroys=0,requests=0,clicks=0,automaticRun,releaseLateDevice,copied;
  const limits={maxBufferSize:536870912,maxStorageBufferBindingSize:536870912,maxStorageBuffersPerShaderStage:8,maxComputeInvocationsPerWorkgroup:256,maxComputeWorkgroupSizeX:256,maxComputeWorkgroupSizeY:256,maxComputeWorkgroupStorageSize:32768};
  const adapter={limits,features:new Set(),info:{vendor:'cpu-fixture',architecture:'no-hardware'},requestDevice(){
@@ -27,20 +28,20 @@ async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedR
   if(stopDuringDevice){queueMicrotask(()=>elements['#stop'].onclick());return new Promise(resolve=>{releaseLateDevice=()=>resolve(device);});}
   return Promise.resolve(device);
  }};
- const caseNames=['tiny','full-control','current','default-limits','workgroup-4','compact-media','compat','host-prefix',...traceProbeCases];
- const elements=Object.fromEntries(['case','status','stages','report','copy','run','sequence','probes','stop','clear','build'].map(id=>['#'+id,{value:name,options:caseNames.map(value=>({value})),disabled:false,textContent:''}]));
- for(const selector of ['#run','#sequence','#probes'])elements[selector].click=()=>{clicks++;automaticRun=elements[selector].onclick();};
+ const caseNames=['tiny','full-control','current','default-limits','workgroup-4','compact-media','compat','host-prefix',...traceProbeCases,...mediumCandidateCases];
+ const elements=Object.fromEntries(['case','status','stages','report','copy','run','sequence','probes','candidate','stop','clear','build'].map(id=>['#'+id,{value:name,options:caseNames.map(value=>({value})),disabled:false,textContent:''}]));
+ for(const selector of ['#run','#sequence','#probes','#candidate'])elements[selector].click=()=>{clicks++;automaticRun=elements[selector].onclick();};
  const events={},window={addEventListener(name,listener){events[name]=listener;}};window.top=window;
  const stored=new Map(cachedReport?[['cybrLightCompileReport',JSON.stringify(cachedReport)]]:[]);
  const storage={getItem(key){if(storageUnavailable)throw Error('Storage unavailable');return stored.get(key)||null;},setItem(key,value){if(storageUnavailable)throw Error('Storage unavailable');stored.set(key,value);checkpoints.push(JSON.parse(value));},removeItem(key){stored.delete(key);}};
  window.sessionStorage=storage;
  window.localStorage=olderLocalReport?{...storage,getItem(){return JSON.stringify(olderLocalReport);}}:storage;
  const document={visibilityState:'visible',querySelector:selector=>elements[selector],addEventListener(){},createElement(tag){assert.equal(tag,'canvas');return {width:300,height:150,getContext(){return {configure(){}};}};}};
- const sandbox={window,document,location:{search:'?case='+name+(autoRun?'&run=1':'')+(sequence?'&sequence=1':'')+(probeSequence?'&probeSequence=1':'')},navigator:{userAgent:'CPU fixture, no GPU',clipboard:{async writeText(value){copied=value;}},gpu:{async requestAdapter(){requests++;return timeoutAdapter?new Promise(()=>{}):adapter;},getPreferredCanvasFormat:()=> 'bgra8unorm'}},
+ const sandbox={window,document,location:{search:'?case='+name+(autoRun?'&run=1':'')+(sequence?'&sequence=1':'')+(probeSequence?'&probeSequence=1':'')+(candidateSequence?'&candidateSequence=1':'')},navigator:{userAgent:'CPU fixture, no GPU',clipboard:{async writeText(value){copied=value;}},gpu:{async requestAdapter(){requests++;return timeoutAdapter?new Promise(()=>{}):adapter;},getPreferredCanvasFormat:()=> 'bgra8unorm'}},
   fetch:async path=>{fetches.push(path);return {ok:true,text:()=>readFile(new URL(path,import.meta.url),'utf8')};},crypto:webcrypto,TextEncoder,URLSearchParams,performance,setTimeout,clearTimeout,GPUBufferUsage:{UNIFORM:64,COPY_DST:8},
-  rendererOptions,buildRendererShader,gpuDeviceOptions,traceCompileVariant,traceCompileProbe,traceProbeCases,diagnosticShader,createCompileDeadline:()=>createCompileDeadline({milliseconds:timeoutAdapter?5:40000})};
+  rendererOptions,buildRendererShader,gpuDeviceOptions,traceCompileVariant,traceCompileProbe,traceProbeCases,mediumStackCandidate,mediumCandidateCases,diagnosticShader,createCompileDeadline:()=>createCompileDeadline({milliseconds:timeoutAdapter?5:40000})};
  new vm.Script(controller,{filename:'gpu-compile-check.mjs'}).runInNewContext(sandbox);
- if(automaticRun)await automaticRun;else if(execute)await elements[probeSequence?'#probes':sequence?'#sequence':'#run'].onclick();
+ if(automaticRun)await automaticRun;else if(execute)await elements[candidateSequence?'#candidate':probeSequence?'#probes':sequence?'#sequence':'#run'].onclick();
  if(releaseLateDevice){releaseLateDevice();for(let i=0;i<5;i++)await Promise.resolve();}
  return {report:window.cybrCompileCheck.snapshot(),sequence:window.cybrCompileCheck.sequenceSnapshot(),calls,modules,pipelines,destroys,requests,clicks,elements,checkpoints,devices,fetches,events,stored,async copy(){await elements['#copy'].onclick();return copied;}};
 }
@@ -99,7 +100,7 @@ test('one comparison sequence preserves all results and closes each fresh device
  const result=await runCase('tiny',{sequence:true});assert.equal(result.sequence.completed,true);assert.equal(result.sequence.stop,undefined);
  assert.equal(result.sequence.results.length,8);assert.equal(result.requests,8);assert.equal(result.destroys,8);
  assert.ok(result.sequence.results.every(run=>run.passed&&run.closedByCheck));assert.equal(result.calls.get('trace'),1);
- assert.ok(result.sequence.results.every(run=>run.build==='mobile-compile-probes-8'&&run.browser==='CPU fixture, no GPU'));
+ assert.ok(result.sequence.results.every(run=>run.build==='mobile-medium-inline-9'&&run.browser==='CPU fixture, no GPU'));
  assert.equal(JSON.parse(await result.copy()).results.length,8);assert.ok(result.fetches.every(path=>path.endsWith('.wgsl')&&!path.includes('://')));
 });
 
@@ -158,4 +159,18 @@ test('probe loss stops before medium and preserves earlier control/binding resul
  assert.equal(result.sequence.results[1].case,'binding-abi');assert.equal(result.sequence.results[1].passed,true);
  assert.equal(result.report.case,'traversal');assert.equal(result.report.probe.originalSourceSha256,'563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f');
  assert.equal(result.sequence.results.some(run=>run.case==='medium'),false);assert.equal(result.sequence.results.some(run=>run.case==='current'),false);
+});
+
+test('candidate sequence tries equivalent medium operations before full trace without original failing pipelines or allocations',async()=>{
+ const result=await runCase('current',{candidateSequence:true,autoRun:true});
+ assert.equal(result.sequence.family,'medium-inline-candidate');assert.deepEqual(Array.from(result.sequence.cases),mediumCandidateCases);
+ assert.equal(result.requests,2);assert.equal(result.destroys,2);assert.equal(result.pipelines[0].compute.entryPoint,'probeMedium');assert.equal(result.pipelines[1].compute.entryPoint,'main');
+ assert.deepEqual(result.pipelines.map(p=>p.label),mediumCandidateCases);
+ for(const run of result.sequence.results){assert.equal(run.candidate.mediumSlots,16);assert.equal(run.shader.workgroup,8);assert.equal(run.probe.dispatchAllowed,false);assert.equal(run.gpuBytesAllocatedByCheck,0);assert.equal(run.candidate.renderingValidated,false);}
+ assert.ok(result.pipelines.every(p=>!p.compute.module.code.includes('fn commitMedium(')));
+});
+test('loss in candidate medium stops before requesting the full trace and keeps the copyable evidence',async()=>{
+ const result=await runCase('current',{candidateSequence:true,deviceLoss:'medium-inline'});
+ assert.equal(result.requests,1);assert.equal(result.destroys,1);assert.equal(result.sequence.stop.case,'medium-inline');assert.equal(result.sequence.stop.reason,'device-lost');
+ assert.equal(result.pipelines.length,1);assert.equal(result.report.compilationInfoCompleted,true);assert.equal(JSON.parse(await result.copy()).results[0].candidate.mediumSlots,16);
 });

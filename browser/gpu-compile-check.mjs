@@ -3,16 +3,17 @@ import {buildRendererShader} from './renderer-shaders.mjs';
 import {gpuDeviceOptions} from './gpu-session.mjs?revision=mobile-lifecycle-2';
 import {traceCompileVariant} from './trace-compatibility.mjs';
 import {traceCompileProbe,traceProbeCases} from './trace-compile-probes.mjs';
+import {mediumStackCandidate,mediumCandidateCases} from './medium-stack-candidate.mjs';
 import {diagnosticShader} from './diagnostics.mjs';
 import {createCompileDeadline} from './compile-deadline.mjs';
 
-const build='mobile-compile-probes-8',saveKey='cybrLightCompileReport';
+const build='mobile-medium-inline-9',saveKey='cybrLightCompileReport';
 const $=selector=>document.querySelector(selector),utc=()=>new Date().toISOString();
 const parameters=new URLSearchParams('scene=proof-optics&glass=split&motion=bilinear');
 const load=async name=>{const response=await fetch(name,{cache:'no-store'});if(!response.ok)throw Error('Shader unavailable: '+name);return response.text();};
 const options=rendererOptions(parameters),query=new URLSearchParams(location.search);
 const cases=[...$('#case').options].map(option=>option.value);
-const comparisonCases=cases.filter(name=>!traceProbeCases.includes(name));
+const comparisonCases=cases.filter(name=>!traceProbeCases.includes(name)&&!mediumCandidateCases.includes(name));
 const sha256=async code=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(code))),v=>v.toString(16).padStart(2,'0')).join('');
 if(cases.includes(query.get('case')))$('#case').value=query.get('case');
 $('#build').textContent=build;
@@ -58,7 +59,7 @@ for(const saved of savedReports.sort((a,b)=>String(b.checkpointUtc||'').localeCo
  }catch{/* Storage can be unavailable or contain an older invalid report. */}
 }
 const selectLimits=limits=>Object.fromEntries(['maxBufferSize','maxStorageBufferBindingSize','maxStorageBuffersPerShaderStage','maxComputeInvocationsPerWorkgroup','maxComputeWorkgroupSizeX','maxComputeWorkgroupSizeY','maxComputeWorkgroupStorageSize'].map(name=>[name,limits[name]]));
-const setBusy=value=>{active=value;for(const selector of ['#run','#sequence','#probes','#case','#clear'])$(selector).disabled=value;$('#stop').disabled=!value;};
+const setBusy=value=>{active=value;for(const selector of ['#run','#sequence','#probes','#candidate','#case','#clear'])$(selector).disabled=value;$('#stop').disabled=!value;};
 window.cybrCompileCheck={snapshot:()=>report,sequenceSnapshot:()=>sequenceReport};
 $('#copy').onclick=async()=>{try{await navigator.clipboard.writeText($('#report').textContent);$('#status').textContent='Report copied.';}catch{$('#status').textContent='Select and copy the report below.';}};
 $('#clear').onclick=()=>{
@@ -99,11 +100,12 @@ async function runCase(name){
   begin('Building exact current trace source');
   const source=await wait(buildRendererShader('trace',{load,parameters,options}));
   const sourceSha256=await wait(sha256(source));
-  const variant=traceProbeCases.includes(name)?traceCompileProbe(source,name,{sourceSha256}):traceCompileVariant(source,name);
+  const variant=mediumCandidateCases.includes(name)?mediumStackCandidate(source,name,{sourceSha256}):traceProbeCases.includes(name)?traceCompileProbe(source,name,{sourceSha256}):traceCompileVariant(source,name);
   current.shader={bytes:new TextEncoder().encode(variant.code).length,entryPoint:variant.entryPoint,workgroup:variant.workgroup,
    privateArrays:[...variant.code.matchAll(/(?:var \w+:array<[^;]+|struct MediumStack[^\n]+)/g)].map(match=>match[0])};
   current.shader.sha256=await wait(sha256(variant.code));
   if(variant.compileOnly)current.probe={compileOnly:true,dispatchAllowed:false,purpose:variant.purpose,originalSourceSha256:sourceSha256,originalSourceBytes:new TextEncoder().encode(source).length,originalSourcePrefixUnchanged:variant.code.startsWith(source)};
+  if(variant.mediumInline)current.candidate={mode:'mediumStack=inline',mediumSlots:variant.mediumSlots,workgroup:variant.workgroup,targetsExpanded:variant.targets,commitsExpanded:variant.commits,defaultRendererChanged:false,renderingValidated:false};
   if(name==='host-prefix'){
    const canvas=document.createElement('canvas'),context=canvas.getContext('webgpu');
    if(!context)throw Error('WebGPU canvas unavailable for startup prefix');
@@ -160,11 +162,14 @@ async function runSequence(selected,family){
  }finally{setBusy(false);}
 }
 $('#sequence').onclick=()=>{
- const family=traceProbeCases.includes($('#case').value)?traceProbeCases:comparisonCases;
- return runSequence(family.slice(Math.max(0,family.indexOf($('#case').value))),family===traceProbeCases?'trace-probes':'original-comparisons');
+ const family=mediumCandidateCases.includes($('#case').value)?mediumCandidateCases:traceProbeCases.includes($('#case').value)?traceProbeCases:comparisonCases;
+ return runSequence(family.slice(Math.max(0,family.indexOf($('#case').value))),family===mediumCandidateCases?'medium-inline-candidate':family===traceProbeCases?'trace-probes':'original-comparisons');
 };
 // The next physical bisection never requests the already-failing main pipeline.
 $('#probes').onclick=()=>runSequence(traceProbeCases,'trace-probes');
+// Try the equivalent medium form first, then the same form in full trace main.
+// Known failing original medium/current cases are available only by selection.
+$('#candidate').onclick=()=>runSequence(mediumCandidateCases,'medium-inline-candidate');
 document.addEventListener('visibilitychange',()=>{if(report){report.lifecycle??=[];report.lifecycle.push({event:'visibilitychange',state:document.visibilityState,operation:report.activeOperation});saveReport();}});
 window.addEventListener('pagehide',event=>{
  if(report){report.lifecycle??=[];report.lifecycle.push({event:'pagehide',persisted:event.persisted,operation:report.activeOperation});if(active){report.pageLeft=true;cancelCurrent?.(new Error('Page left during check'));}saveReport();}
@@ -172,4 +177,4 @@ window.addEventListener('pagehide',event=>{
 });
 // Keep a restored unfinished checkpoint visible instead of automatically
 // replacing the evidence after a browser/GPU process failure.
-if(query.get('run')==='1'&&!restoredPending)$(query.get('probeSequence')==='1'?'#probes':query.get('sequence')==='1'?'#sequence':'#run').click();
+if(query.get('run')==='1'&&!restoredPending)$(query.get('candidateSequence')==='1'?'#candidate':query.get('probeSequence')==='1'?'#probes':query.get('sequence')==='1'?'#sequence':'#run').click();

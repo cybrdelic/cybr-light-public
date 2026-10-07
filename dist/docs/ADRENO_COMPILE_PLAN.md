@@ -1,33 +1,28 @@
-# Physical Adreno compile isolation
+# Physical Adreno medium candidate
 
-The current-trace check already reproduced device loss on physical Adreno after successful frontend validation and with zero GPU buffer allocations. The full renderer's explicit compact mode also failed. The browser/driver root cause remains unknown.
+Physical Chrome 154 on Qualcomm / Adreno-8xx passed the tiny and unused full-source controls, then failed current trace pipeline creation. Version 8 further passed an empty 8x8 entrypoint, all original bindings and the original 64-entry BVH traversal. Its original sixteen-slot medium probe lost the device about 766 ms after pipeline creation was requested. Frontend validation completed without messages; every case allocated zero GPU buffer bytes and nothing was dispatched. The phone was visible, unembedded and reported no lifecycle events.
 
-The physical version-7 sequence passed **Small compute control** and the **full-source unused entrypoint**, then failed at **Current trace** and stopped. Those controls no longer need to precede the new probes. A later explicitly selected **Current trace, default device limits** comparison remains available to change only the device request. The next automatic probe sequence instead runs an empty 8x8 control, binding ABI, traversal and medium helpers, without requesting current main. This keeps the trace bytes identical and changes only the device request. No later device is requested automatically after a failure.
+This narrows the failure to reachable medium work. It does not establish pointer passing, aggregate copies, dynamic indices, loops or the browser/driver as the precise cause.
 
-| Evidence | Next compile-only distinction |
-| --- | --- |
-| Tiny fails | Basic device/pipeline startup is affected; full-trace complexity is not required. |
-| Tiny passes, full-source control fails | Full module handling affects an otherwise empty entrypoint; active transport compilation is not yet isolated. |
-| Both controls pass, current fails | Active trace compilation or its automatic layout remains implicated; compare identical source with default device limits. |
-| Default-limit current also fails | Compare workgroup and medium-capacity shapes individually; compact already failed in the actual renderer. |
-| Isolated current passes, original prefix fails | Investigate canvas/diagnostic/module preparation ordering separately from the trace source. |
+## Next physical comparison
 
-The source-analysis tool confirms the FUSE C220 and proof-optics scene URLs generate identical current and compact trace bytes. Scene geometry is not loaded before this compilation. Adapter capacities and private-array ABI sizes are not measured memory allocations or register usage.
+Run `candidateSequence=1&run=1` once. It tries the equivalent inline medium probe, then the full current trace with the same transformation. Each case gets a fresh device and retains all stop, cancellation, 40-second deadline and browser-local Copy/Clear/checkpoint behavior. It stops at the first failure. The already failing original medium and current cases remain selectable but are not part of this next automatic sequence.
 
-If controls narrow the problem to active trace compilation, the smallest further bisection is diagnostic entrypoints appended to the unchanged generated module. Each probe should write a value dependent on its uniform/storage inputs so the compiler cannot remove all work. Start with traversal/private BVH-stack and medium-stack helper probes, then deterministic guide transport, then nested branch/bounce transport. Compile only: create no scene buffers, bind groups, dispatches or rendered outputs. Keep the original functions and source hash in the report, give the appended probe its own hash, and stop on loss. The empty 8x8 control, binding ABI, traversal and medium probes are now implemented as compile-only diagnostics and CPU type-validated. Guide and branch/bounce probes remain a later plan. None is a renderer mode or evidence of a fix.
+The transformation expands the original lookup and enter/exit operations at their call sites. It retains two sixteen-slot local stacks, exact boundary identities, last-match lookup, non-top compaction, absorption, IOR, reflection/refraction branches, random streams and other transport operations. Ordinary, separate-signal, instanced, packed, corrected and outside paths keep their original capacities. Changed helper contracts fail explicitly. The default renderer stays unchanged; `mediumStack=inline` opts in and removing it rolls back.
 
-Equivalent full-renderer specializations or pipeline splitting should follow physical probe evidence, with matching transport outputs and all supported glass/water paths preserved. Do not omit geometry, reflection/refraction branches or material features to obtain a compile pass. Compile-only probes cannot establish full-renderer equivalence.
+If both candidate pipelines pass, open the actual candidate renderer from the page and copy `window.cybrLight.snapshot().gpuSession` through the available diagnostics. Full trace compilation is not rendered-output validation. A medium pass followed by a full-trace failure would isolate additional reachable transport work; a medium failure means this equivalent form did not avoid the failing backend path.
 
-The report stays in this browser and is copyable. Diagnostic build, browser, adapter, exact shader hash and per-stage completion distinguish runs. Reduced Android user-agent strings cannot establish the actual Android version. CPU fixtures and desktop/mobile-layout tests are not physical Adreno validation.
+## Reproduce CPU checks
 
-## Reproduce CPU validation
-
-Node 22+ exports the exact baseline and appended probe modules. The standalone validator wrapper is MIT licensed and needs Rust 1.87+ and the platform linker. Its pinned Naga dependency is used under its MIT license option; no compiler binary or dependency cache is published. Existing renderer licenses are unchanged.
+Node 22+ exports the exact candidate and renderer-mode modules. The standalone MIT wrapper needs Rust 1.87+ and a platform linker; its pinned Naga dependency uses the MIT license option. No compiler binary, dependency cache or generated WGSL is published.
 
 ```sh
-node tools/export_trace_probes.mjs
+node tools/export_medium_candidate.mjs
+node browser/medium-stack-inline.test.mjs
 cargo build --release --locked --jobs 2 --manifest-path tools/wgsl-validator/Cargo.toml
-tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-probes
+tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-medium-candidate
 ```
 
-On Windows the validator executable ends in `.exe`. The directory argument reads only its immediate WGSL files. Exported files and Cargo build outputs are ignored by source publication. The validator parses and type-checks the whole module, including the retained original main, without initializing a GPU or generating GPU machine code. The browser selects only the appended entrypoint in the probe sequence.
+On Windows the executable ends in `.exe`. [The receipt](MEDIUM_STACK_VALIDATION.json) pins thirteen all-flags parse/type-validated modules with no optional capabilities. CPU fixtures execute the actual original helper bodies and expanded snippets, compare every count/slot/output, and cover nested glass/water, all sixteen slots, duplicate/unmatched/non-top exits, two-word instance identities and 8,192 adversarial operations. CPU validation does not establish Adreno machine-code compilation or rendered parity.
+
+The original probe exporter and `TRACE_PROBE_VALIDATION.json` remain reproducible evidence for the original four-probe sequence. No local GPU or browser is needed for either CPU workflow. Physical candidate results remain pending.
