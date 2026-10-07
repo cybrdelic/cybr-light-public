@@ -2,15 +2,20 @@
 // Concatenation restores the original compressed stream; geometry is unchanged.
 const nativeFetch = globalThis.fetch.bind(globalThis);
 const base = new URL('./', import.meta.url);
-const response = await nativeFetch(new URL('asset-parts.json', base));
-if (!response.ok) throw Error('Large-asset delivery manifest is unavailable');
-const assets = await response.json();
+let manifest;
+const readManifest = () => manifest ||= nativeFetch(new URL('asset-parts.json', base)).then(response => {
+  if (!response.ok) throw Error('Large-asset delivery manifest is unavailable');
+  return response.json();
+});
 globalThis.fetch = async (input, init) => {
   const url = new URL(input instanceof Request ? input.url : input, base);
   const method = init?.method || (input instanceof Request ? input.method : 'GET');
-  const record = url.origin === base.origin && url.pathname.startsWith(base.pathname)
-    ? assets[url.pathname.slice(base.pathname.length)] : null;
-  if (!record || method !== 'GET') return nativeFetch(input, init);
+  if (method !== 'GET' || url.origin !== base.origin || !url.pathname.startsWith(base.pathname + 'assets/')) {
+    return nativeFetch(input, init);
+  }
+  const assets = await readManifest();
+  const record = assets[url.pathname.slice(base.pathname.length)];
+  if (!record) return nativeFetch(input, init);
   let part = 0, reader;
   const stream = new ReadableStream({
     async pull(controller) {
