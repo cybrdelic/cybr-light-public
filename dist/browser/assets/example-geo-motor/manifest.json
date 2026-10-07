@@ -1,0 +1,3564 @@
+{
+  "source": "cybr-geo\\src\\mechanism_lab\\models\\motor.py",
+  "sourceSha256": "7a503d327b03f3d528ea2f2c25bade5a5894eb6839d1ec13bd5f323b7b39134c",
+  "notes": "Original m8325s source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced.",
+  "modules": [
+    {
+      "name": "example-geo-motor",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 101733,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 406932,
+        "count": 101733,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 813864,
+        "count": 102600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 34,
+      "positions": {
+        "offset": 1224264,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1251192,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1278120,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1305000,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1305864,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1306728,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1307448,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1308312,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1309176,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1309896,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1310760,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1311624,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1312344,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1313208,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1314072,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1314792,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1315656,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1316520,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1317240,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1318104,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1318968,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1319688,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1320552,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1321416,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1322136,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1323000,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1323864,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1324584,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1325448,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1326312,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1327032,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1327896,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1328760,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1329480,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1330344,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1331208,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1331928,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1332792,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1333656,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1334376,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1335240,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1336104,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1336824,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1337688,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1338552,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1339272,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1340136,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1341000,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1341720,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1342584,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1343448,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1344168,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1345032,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1345896,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1346616,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1347480,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1348344,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1349064,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1349928,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1350792,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1351512,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1352376,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1353240,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1353960,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1354824,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1355688,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1356408,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1357272,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1358136,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1358856,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1359720,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1360584,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1361304,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1362168,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1363032,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1363752,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1364616,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1365480,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1366200,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1367064,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1367928,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1368648,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1369512,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1370376,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1371096,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1371960,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1372824,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1373544,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1374408,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1375272,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1375992,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1376856,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1377720,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1378440,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1379304,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1380168,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1380888,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1381752,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1382616,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1383336,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1384200,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1385064,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1385784,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1386648,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1387512,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1388232,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1389096,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1389960,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1390680,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1391544,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1392408,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1393128,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1393992,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1394856,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1395576,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1396440,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1397304,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 1398024,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1398888,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1399752,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 42,
+      "positions": {
+        "offset": 1400472,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1401336,
+        "count": 216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1402200,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 1402920,
+        "count": 30468,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1524792,
+        "count": 30468,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1646664,
+        "count": 30288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 33,
+      "positions": {
+        "offset": 1767816,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1794744,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1821672,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 1848552,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1862016,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1875480,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 33,
+      "positions": {
+        "offset": 1888872,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1915800,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1942728,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 1969608,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1983072,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1996536,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 36,
+      "positions": {
+        "offset": 2009928,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2023392,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2036856,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 34,
+      "positions": {
+        "offset": 2050248,
+        "count": 8118,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2082720,
+        "count": 8118,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2115192,
+        "count": 6816,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2142456,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2169384,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2196312,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2223192,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2250120,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2277048,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2303928,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2330856,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2357784,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2384664,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2411592,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2438520,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2465400,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2492328,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2519256,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2546136,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2573064,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2599992,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2626872,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2653800,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2680728,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2707608,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2734536,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2761464,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2788344,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2815272,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2842200,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2869080,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2896008,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2922936,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 2949816,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2976744,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3003672,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3030552,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3057480,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3084408,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3111288,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3138216,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3165144,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3192024,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3218952,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3245880,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3272760,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3299688,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3326616,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3353496,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3380424,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3407352,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3434232,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3461160,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3488088,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3514968,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3541896,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3568824,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3595704,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3622632,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3649560,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 3676440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3677976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3679512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 3680760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3810192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3939624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 4068840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4070376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4071912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 4073160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4202592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4332024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 4461240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4462776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4464312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 4465560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4594992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4724424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 4853640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4855176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4856712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 4857960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4987392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5116824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 5246040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5247576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5249112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 5250360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5379792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5509224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 5638440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5639976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5641512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 5642760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5772192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5901624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 6030840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6032376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6033912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 6035160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6164592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6294024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 6423240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6424776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6426312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 6427560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6556992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6686424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 6815640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6817176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6818712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 6819960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6949392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7078824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 7208040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7209576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7211112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 7212360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7341792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7471224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 7600440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7601976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7603512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 7604760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7734192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7863624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 7992840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7994376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7995912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 7997160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8126592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8256024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 8385240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8386776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8388312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 8389560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8518992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8648424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 8777640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8779176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8780712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 8781960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8911392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9040824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 9170040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9171576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9173112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 9174360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9303792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9433224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 9562440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9563976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9565512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 9566760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9696192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9825624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 9954840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9956376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9957912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 9959160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10088592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10218024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 10347240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10348776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10350312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 10351560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10480992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10610424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 10739640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10741176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10742712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 10743960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10873392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11002824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 11132040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11133576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11135112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 11136360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11265792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11395224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 11524440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11525976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11527512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 11528760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11658192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11787624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 11916840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11918376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11919912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 11921160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12050592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12180024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 12309240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12310776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12312312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 12313560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12442992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12572424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 12701640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12703176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12704712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 12705960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12835392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12964824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 13094040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13095576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13097112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 13098360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13227792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13357224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 13486440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13487976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13489512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 13490760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13620192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13749624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 13878840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13880376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13881912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 13883160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14012592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14142024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 14271240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14272776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14274312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 14275560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14404992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14534424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 14663640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14665176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14666712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 14667960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14797392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14926824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 15056040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15057576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15059112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 15060360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15189792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15319224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 15448440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15449976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15451512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 15452760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15582192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15711624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 15840840,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15842376,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15843912,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 15845160,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15974592,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16104024,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 16233240,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16234776,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16236312,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 16237560,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16366992,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16496424,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 16625640,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16627176,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16628712,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 16629960,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16759392,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16888824,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 17018040,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17019576,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17021112,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 17022360,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17151792,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17281224,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 37,
+      "positions": {
+        "offset": 17410440,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17411976,
+        "count": 384,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17413512,
+        "count": 312,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 35,
+      "positions": {
+        "offset": 17414760,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17544192,
+        "count": 32358,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17673624,
+        "count": 32304,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 17802840,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17829768,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17856696,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 17883576,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17910504,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17937432,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 17964312,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 18204708,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 18445104,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 18922464,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 19162860,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 19403256,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 19880616,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 20121012,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 20361408,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 20838768,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21079164,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21319560,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 21796920,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22037316,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22277712,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 22755072,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22995468,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 23235864,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 23713224,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 23953620,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24194016,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 24671376,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24911772,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 25152168,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 25629528,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 25869924,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26110320,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 26587680,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26828076,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27068472,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 27545832,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27572760,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27599688,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 27626568,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27653496,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27680424,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 27707304,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27734232,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27761160,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 27788040,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27814968,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27841896,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 27868776,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28109172,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 28349568,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 28826928,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 29067324,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29307720,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 29785080,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30025476,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30265872,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 30743232,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30983628,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31224024,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 31701384,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31941780,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32182176,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 32659536,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32899932,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 33140328,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 33617688,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 33858084,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 34098480,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 34575840,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 34816236,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 35056632,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 35533992,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 35774388,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 36014784,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 36492144,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 36732540,
+        "count": 60099,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 36972936,
+        "count": 119340,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 37450296,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37477224,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37504152,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 32,
+      "positions": {
+        "offset": 37531032,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37557960,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37584888,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 37611768,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37638696,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37665624,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 37692504,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37719432,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37746360,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 37773240,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37800168,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37827096,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 37853976,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37880904,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37907832,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 39,
+      "positions": {
+        "offset": 37934712,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37952304,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37969896,
+        "count": 8640,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 39,
+      "positions": {
+        "offset": 38004456,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38022048,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38039640,
+        "count": 8640,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 39,
+      "positions": {
+        "offset": 38074200,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38091792,
+        "count": 4398,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38109384,
+        "count": 8640,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 40,
+      "positions": {
+        "offset": 38143944,
+        "count": 13554,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38198160,
+        "count": 13554,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38252376,
+        "count": 13512,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 40,
+      "positions": {
+        "offset": 38306424,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38306712,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38307000,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 38307144,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38320608,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38334072,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 38347464,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38360928,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38374392,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 38,
+      "positions": {
+        "offset": 38387784,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38401248,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38414712,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-motor",
+      "material": 41,
+      "positions": {
+        "offset": 38428104,
+        "count": 1416,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38433768,
+        "count": 1416,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38439432,
+        "count": 1374,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.034,
+        0.041,
+        0.052
+      ],
+      "metalness": 0.72,
+      "roughness": 0.32,
+      "ior": 1.5
+    },
+    "33": {
+      "color": [
+        0.56,
+        0.59,
+        0.63
+      ],
+      "metalness": 0.94,
+      "roughness": 0.24,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.11,
+        0.13,
+        0.15
+      ],
+      "metalness": 0.78,
+      "roughness": 0.42,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.68,
+        0.265,
+        0.075
+      ],
+      "metalness": 0.85,
+      "roughness": 0.25,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.34,
+        0.36,
+        0.39
+      ],
+      "metalness": 0.92,
+      "roughness": 0.26,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.047,
+        0.084,
+        0.073
+      ],
+      "metalness": 0.05,
+      "roughness": 0.55,
+      "ior": 1.5
+    },
+    "38": {
+      "color": [
+        0.57,
+        0.61,
+        0.65
+      ],
+      "metalness": 1,
+      "roughness": 0.2,
+      "ior": 1.5
+    },
+    "39": {
+      "color": [
+        0.015,
+        0.017,
+        0.021
+      ],
+      "metalness": 0.05,
+      "roughness": 0.58,
+      "ior": 1.5
+    },
+    "40": {
+      "color": [
+        0.8,
+        0.23,
+        0.026
+      ],
+      "metalness": 0.0,
+      "roughness": 0.35,
+      "ior": 1.5
+    },
+    "41": {
+      "color": [
+        0.6,
+        0.61,
+        0.57
+      ],
+      "metalness": 0.35,
+      "roughness": 0.5,
+      "ior": 1.5
+    },
+    "42": {
+      "color": [
+        0.21,
+        0.23,
+        0.25
+      ],
+      "metalness": 0.92,
+      "roughness": 0.31,
+      "ior": 1.5
+    }
+  }
+}

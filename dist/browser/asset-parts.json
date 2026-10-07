@@ -1,0 +1,364 @@
+{
+  "assets/example-geo-aeris/instrument.bin.gz": {
+    "bytes": 19154694,
+    "sha256": "424636d4a9a2f16a04b97f80feee1d343fd602deefbacede32e0ec5c6bcad94a",
+    "parts": [
+      {
+        "path": "assets/example-geo-aeris/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "cad520ccce9a16c839fb0a733dd60a46e9706b954630ebdd263d3119e1455df5"
+      },
+      {
+        "path": "assets/example-geo-aeris/instrument.bin.gz.part-001",
+        "bytes": 2377478,
+        "sha256": "a64ec130150d447c351f688f6537704d4e44febe7c4028dd4b694a3c19b6df21"
+      }
+    ]
+  },
+  "assets/example-geo-aeris-engineered/instrument.bin.gz": {
+    "bytes": 19152557,
+    "sha256": "a37f7ec340c7907632d16d715371f3cd1dc2bf2c7285a09ac65a93953734c548",
+    "parts": [
+      {
+        "path": "assets/example-geo-aeris-engineered/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "d3e84c82310294e68cf341415866e4d9db9b24896ca7148b4a8936156d33883d"
+      },
+      {
+        "path": "assets/example-geo-aeris-engineered/instrument.bin.gz.part-001",
+        "bytes": 2375341,
+        "sha256": "b1a12f69dcdfa07bea7fa58863fba51167381c0a56af3c8681c517f843c25488"
+      }
+    ]
+  },
+  "assets/example-geo-differential-reference/instrument.bin.gz": {
+    "bytes": 29831726,
+    "sha256": "6041dcb130e879cc1ae2c7dcb7100cf33c85dc0ebd36b08f3fc1b944ef09c338",
+    "parts": [
+      {
+        "path": "assets/example-geo-differential-reference/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "09f1215f26748e8828b3a15eb8f0adae4e6dd5e67f14d2e5fc8020e149f0c590"
+      },
+      {
+        "path": "assets/example-geo-differential-reference/instrument.bin.gz.part-001",
+        "bytes": 13054510,
+        "sha256": "aee440bf9e6a1aeaa3129474964ddc7a080c252cdff142f4edf1639db9508e68"
+      }
+    ]
+  },
+  "assets/example-geo-differential-working/instrument.bin.gz": {
+    "bytes": 35449826,
+    "sha256": "bef4e0f2272bfc227d8b1e8d850761a8324370c7d8e175de0b487f4f3f5f158a",
+    "parts": [
+      {
+        "path": "assets/example-geo-differential-working/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "09f1215f26748e8828b3a15eb8f0adae4e6dd5e67f14d2e5fc8020e149f0c590"
+      },
+      {
+        "path": "assets/example-geo-differential-working/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "d49bf83ee61c39b21e61c6fff06567365b8178339e950eda0d50cf9cae3b04cc"
+      },
+      {
+        "path": "assets/example-geo-differential-working/instrument.bin.gz.part-002",
+        "bytes": 1895394,
+        "sha256": "9d92506bcdbedc8ed12204ebab4c2c9dc4e722963519e5bc93fb255626c90b53"
+      }
+    ]
+  },
+  "assets/example-geo-motor/instrument.bin.gz": {
+    "bytes": 19386574,
+    "sha256": "3b51726654c3a08b1fed0c989da99e126d875b875c3b27137f539b767c2fd67a",
+    "parts": [
+      {
+        "path": "assets/example-geo-motor/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "59f9be539605aaab40623176a126cd6481beb71b433b887616c3baedd4d45904"
+      },
+      {
+        "path": "assets/example-geo-motor/instrument.bin.gz.part-001",
+        "bytes": 2609358,
+        "sha256": "3a319fc01adf5f7f1b48ae998bf39283e9feac8c91173084a75ce881010be0a0"
+      }
+    ]
+  },
+  "assets/example-geo-reach-elbow-module/instrument.bin.gz": {
+    "bytes": 39341164,
+    "sha256": "52a97ee8fbeb35ae278ab68994ebe6f47682d40a59bbfd0809cc44293728f9ab",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach-elbow-module/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module/instrument.bin.gz.part-002",
+        "bytes": 5786732,
+        "sha256": "59c3307528f4dfda67ea0bf4d899c4305d46f95b54c561a0fc0406bb1c695c27"
+      }
+    ]
+  },
+  "assets/example-geo-reach-elbow-module-v2/instrument.bin.gz": {
+    "bytes": 39529176,
+    "sha256": "7a14bdd1139808e287f3c1c32726ad18d1958a311958ad7553830d48f7e6222f",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach-elbow-module-v2/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module-v2/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module-v2/instrument.bin.gz.part-002",
+        "bytes": 5974744,
+        "sha256": "5ac9f5e2ed489fdd4642b3819bac160cd947089364101431022edcb0be631af9"
+      }
+    ]
+  },
+  "assets/example-geo-reach-elbow-module-v3/instrument.bin.gz": {
+    "bytes": 40256459,
+    "sha256": "8452dad97f57f64c17e28fbc7353d6a41e91653be7654efb810f4bd31b4ef1ec",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach-elbow-module-v3/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module-v3/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach-elbow-module-v3/instrument.bin.gz.part-002",
+        "bytes": 6702027,
+        "sha256": "136e5ef497e9dba43dac53bfc0929bb28cf28a6adbd2d8236a3f13423721df36"
+      }
+    ]
+  },
+  "assets/example-geo-reach2-engineered-elbow/instrument.bin.gz": {
+    "bytes": 40689781,
+    "sha256": "75992e31e97e0f2259671d039ffb8637818a233da3ff1938600499ced6c863e8",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow/instrument.bin.gz.part-002",
+        "bytes": 7135349,
+        "sha256": "cccd22a9ed526db90916d75e49de877175f28060087349b72c7f5b33409dfc9e"
+      }
+    ]
+  },
+  "assets/example-geo-reach2-engineered-elbow-v2/instrument.bin.gz": {
+    "bytes": 40689781,
+    "sha256": "75992e31e97e0f2259671d039ffb8637818a233da3ff1938600499ced6c863e8",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v2/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v2/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v2/instrument.bin.gz.part-002",
+        "bytes": 7135349,
+        "sha256": "cccd22a9ed526db90916d75e49de877175f28060087349b72c7f5b33409dfc9e"
+      }
+    ]
+  },
+  "assets/example-geo-reach2-engineered-elbow-v3/instrument.bin.gz": {
+    "bytes": 41323701,
+    "sha256": "8d15fe9bb01cfa1f8b0b83c1c8df666fe3b81c3b309fc27c813f48438a43e988",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v3/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v3/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach2-engineered-elbow-v3/instrument.bin.gz.part-002",
+        "bytes": 7769269,
+        "sha256": "6d81549c0fcb64acdc30b83238d9391e8f074d8ef860f7688e2c909953e0fdf6"
+      }
+    ]
+  },
+  "assets/example-geo-reach2-orbit-integrated-v5/instrument.bin.gz": {
+    "bytes": 39050421,
+    "sha256": "3fa0f604b0bd233c9b9e6ef8a701629071c3e51d81b27bf6f4947a904d2183dd",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5/instrument.bin.gz.part-002",
+        "bytes": 5495989,
+        "sha256": "0071fb5e19ea175c00185372d8a47dc14dad00dbfdb1f3056bc8e8493c35f7be"
+      }
+    ]
+  },
+  "assets/example-geo-reach2-orbit-integrated-v5b/instrument.bin.gz": {
+    "bytes": 39050333,
+    "sha256": "fc577f9ebd91ae3f0207e52a72937b2b5d7ee3d4099e106883bdd649e1896ab2",
+    "parts": [
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5b/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c86af88aa7c0e177deec3719f269656477d7e7edf9fa8f1cd792415cdb140bbf"
+      },
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5b/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "2a1e176f776c2696410caca30f3aff5361ccf84c935a8ab972ac9de96365bda4"
+      },
+      {
+        "path": "assets/example-geo-reach2-orbit-integrated-v5b/instrument.bin.gz.part-002",
+        "bytes": 5495901,
+        "sha256": "1915a1dd23aabe9063c0d4cd8212560770b690c93420febaa2ea014a4a3b19f7"
+      }
+    ]
+  },
+  "assets/example-geo-wrist/instrument.bin.gz": {
+    "bytes": 37309398,
+    "sha256": "dc4c8838f69a61ba20577151133d581c61e5d6fd896414109144ea118f6ce60a",
+    "parts": [
+      {
+        "path": "assets/example-geo-wrist/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "70cc9e14413cdd1d4b9d614635907d9f5973b95402042aa60d6e801692e2d162"
+      },
+      {
+        "path": "assets/example-geo-wrist/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "1b8492c2fb996a106b0522b049d8d7b7b26c4b8b5fee09a0a5aba68bde1d6e77"
+      },
+      {
+        "path": "assets/example-geo-wrist/instrument.bin.gz.part-002",
+        "bytes": 3754966,
+        "sha256": "eae0a12ca6700350dc1564241ad2480e808d69d3286b81606385d9187bfe183a"
+      }
+    ]
+  },
+  "assets/forest/instances.bin.gz": {
+    "bytes": 31097826,
+    "sha256": "9650d2f4ad4247ec1007777e731b567fc941973f02d70c10c59c7b71c53e06b8",
+    "parts": [
+      {
+        "path": "assets/forest/instances.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "c749b946121bf4eb93fc491a0304b3cb8d2c285f7f9435e8d9d691ec81057bb0"
+      },
+      {
+        "path": "assets/forest/instances.bin.gz.part-001",
+        "bytes": 14320610,
+        "sha256": "de2d7b24a5d32e4630a76bf44c7975f00c2108ecb2594f1384b7ecfc1480bcc5"
+      }
+    ]
+  },
+  "assets/forest/instrument.bin.gz": {
+    "bytes": 154471124,
+    "sha256": "aca5ecc725dd06bceb6e6accfc297105eb91b949246694c9ccc43e4b65d68ee0",
+    "parts": [
+      {
+        "path": "assets/forest/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "a3928dc803d9abe7a613d1a42515c17c002b2644faa330306c3d69d41326f646"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-001",
+        "bytes": 16777216,
+        "sha256": "cfeac9983b5a1491c44e6b364d7224ba444eea5ebbbacf78c9efd154f3aa4ed0"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-002",
+        "bytes": 16777216,
+        "sha256": "4e0b6058c1d89328a74d67986eb686fdea6778d5b0ac9ba0348d638c54129cf9"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-003",
+        "bytes": 16777216,
+        "sha256": "519f91ca3bd744c00d006da16d40e19e91d55bf5e4fb20ffdc554fc20299d9ca"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-004",
+        "bytes": 16777216,
+        "sha256": "cfda1b61b5cbf4d082ffafee6688a1561a5b66a0953465c0d54c23431d963799"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-005",
+        "bytes": 16777216,
+        "sha256": "77d7dbd55a66025582ddbf39a971910d968cd1656255324daca09e61fbc37c29"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-006",
+        "bytes": 16777216,
+        "sha256": "6e830cff58dd2b6cf1e0d8cee8aef89772aa390f335be59931f7937866c56a94"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-007",
+        "bytes": 16777216,
+        "sha256": "f981f54da3496cf2bdadb65875e287bcb390f6cbc4117ae1186f19ffe59eb6a9"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-008",
+        "bytes": 16777216,
+        "sha256": "185ec02d183d99fec63a6509a62b58a6d4fea1c16c8bf7b91fe0352e6c099f74"
+      },
+      {
+        "path": "assets/forest/instrument.bin.gz.part-009",
+        "bytes": 3476180,
+        "sha256": "1c613e2b8e01338f506e91a63a0e5c7f61e60128308a4042c941240a8790eb7f"
+      }
+    ]
+  },
+  "assets/instrument-cartridges-c/instrument.bin.gz": {
+    "bytes": 27665262,
+    "sha256": "e2f4d467e30ef8bc6ae48d69a1daede21ffd1efe51fa3448fc28d8cf44530b56",
+    "parts": [
+      {
+        "path": "assets/instrument-cartridges-c/instrument.bin.gz.part-000",
+        "bytes": 16777216,
+        "sha256": "1ff4c41d22cc126239c8fee5ecf362f295bdb2c45d84a027b1b7e3abf215d579"
+      },
+      {
+        "path": "assets/instrument-cartridges-c/instrument.bin.gz.part-001",
+        "bytes": 10888046,
+        "sha256": "8bb1a710c19686256c66a0e4ccce076d40d9c1abf3cd227583e4d0aff4f89c67"
+      }
+    ]
+  }
+}

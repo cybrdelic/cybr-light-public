@@ -1,0 +1,4 @@
+numpy>=1.24
+Pillow>=9
+# Optional tensor/JIT/reverse-AD example: torch>=2.1
+# Optional lossless EXR export: opencv-python-headless>=4.8

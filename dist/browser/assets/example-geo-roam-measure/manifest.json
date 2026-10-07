@@ -1,0 +1,2754 @@
+{
+  "source": "cybr-geo\\examples\\roam\\workshop\\measure.py",
+  "sourceSha256": "d820bfd72a571dc7baf7f470532c2bad4f5ba213a0989128173a568617258f5f",
+  "notes": "Original ROAM / screw-fed height gauge source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced. Source transparent materials currently displayed opaque: Transparent PETG.",
+  "modules": [
+    {
+      "name": "example-geo-roam-measure",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-roam-measure",
+      "material": 33,
+      "positions": {
+        "offset": 0,
+        "count": 24840,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 99360,
+        "count": 24840,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 198720,
+        "count": 24852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 298128,
+        "count": 21036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 382272,
+        "count": 21036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 466416,
+        "count": 21000,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 550416,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 566064,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 581712,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 597120,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 612336,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 627552,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 642720,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 657936,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 673152,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 688320,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 696360,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 704400,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 712272,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 727920,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 743568,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 758976,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 774192,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 789408,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 804576,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 819792,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 835008,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 850176,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 858216,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 866256,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 874128,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 920232,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 966336,
+        "count": 11496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1012320,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1027536,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1042752,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 1057920,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1073568,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1089216,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1104624,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1119840,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1135056,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1150224,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1165440,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1180656,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1195824,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1203864,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1211904,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 1219776,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1235424,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1251072,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1266480,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1281696,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1296912,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1312080,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1327296,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1342512,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1357680,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1365720,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1373760,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 1381632,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1397280,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1412928,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1428336,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1443552,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1458768,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1473936,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1489152,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1504368,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1519536,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1527576,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1535616,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 1543488,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1559136,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1574784,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1590192,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1605408,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1620624,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1635792,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1651008,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1666224,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 1681392,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1689432,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1697472,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 1705344,
+        "count": 21036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1789488,
+        "count": 21036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1873632,
+        "count": 21000,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 1957632,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1973280,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1988928,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2004336,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2019552,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2034768,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2049936,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2065152,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2080368,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2095536,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2103576,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2111616,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 2119488,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2135136,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2150784,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2166192,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2181408,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2196624,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2211792,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2227008,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2242224,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2257392,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2265432,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2273472,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 2281344,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2327448,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2373552,
+        "count": 11496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2419536,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2434752,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2449968,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 2465136,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2480784,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2496432,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2511840,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2527056,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2542272,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2557440,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2572656,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2587872,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2603040,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2611080,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2619120,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 2626992,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2642640,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2658288,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2673696,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2688912,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2704128,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2719296,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2734512,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2749728,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2764896,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2772936,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2780976,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 2788848,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2804496,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2820144,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2835552,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2850768,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2865984,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2881152,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2896368,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2911584,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2926752,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2934792,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2942832,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 2950704,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2966352,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2982000,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 2997408,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3012624,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3027840,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3043008,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3058224,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3073440,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3088608,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3096648,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3104688,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3112560,
+        "count": 1902,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3120168,
+        "count": 1902,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3127776,
+        "count": 1884,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3135312,
+        "count": 1902,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3142920,
+        "count": 1902,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3150528,
+        "count": 1884,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3158064,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3173280,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3188496,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3203664,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3218880,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3234096,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 3249264,
+        "count": 25098,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3349656,
+        "count": 25098,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3450048,
+        "count": 24960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 3549888,
+        "count": 25242,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3650856,
+        "count": 25242,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3751824,
+        "count": 25056,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 3852048,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3867696,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3883344,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3898752,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3913968,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3929184,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3944352,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3959568,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3974784,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 3989952,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3997992,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4006032,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 4013904,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4029552,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4045200,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4060608,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4075824,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4091040,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4106208,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4121424,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4136640,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4151808,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4159848,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4167888,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 4175760,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4191408,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4207056,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4222464,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4237680,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4252896,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4268064,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4283280,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4298496,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4313664,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4321704,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4329744,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 4337616,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4353264,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4368912,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4384320,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4399536,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4414752,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4429920,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4445136,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4460352,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4475520,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4483560,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4491600,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4499472,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4507512,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4515552,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4523424,
+        "count": 2142,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4531992,
+        "count": 2142,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4540560,
+        "count": 2100,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4548960,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4564176,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4579392,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4594560,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4618944,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4643328,
+        "count": 6090,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 4667688,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4683336,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4698984,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 4714392,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4729608,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4744824,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 4759992,
+        "count": 28452,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4873800,
+        "count": 28452,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4987608,
+        "count": 28086,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 5099952,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5115600,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5131248,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 33,
+      "positions": {
+        "offset": 5146656,
+        "count": 24840,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5246016,
+        "count": 24840,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5345376,
+        "count": 24804,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 33,
+      "positions": {
+        "offset": 5444592,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5460240,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5475888,
+        "count": 3876,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 5491392,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5507040,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5522688,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5538096,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5553312,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5568528,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5583696,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5598912,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5614128,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5629296,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5637336,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5645376,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 5653248,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5668896,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5684544,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5699952,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5715168,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5730384,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5745552,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5760768,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5775984,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5791152,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5799192,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5807232,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 33,
+      "positions": {
+        "offset": 5815104,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5830752,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5846400,
+        "count": 3876,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 5861904,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5877552,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5893200,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5908608,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5923824,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5939040,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5954208,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5969424,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5984640,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 5999808,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6007848,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6015888,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 6023760,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6039408,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6055056,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6070464,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6085680,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6100896,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6116064,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6131280,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6146496,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6161664,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6169704,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6177744,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 6185616,
+        "count": 15996,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6249600,
+        "count": 15996,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6313584,
+        "count": 15954,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 6377400,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6393048,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6408696,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6424104,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6439320,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6454536,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6469704,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6484920,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6500136,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6515304,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6523344,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6531384,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 6539256,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6554904,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6570552,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6585960,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6601176,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6616392,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6631560,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6646776,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6661992,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6677160,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6685200,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6693240,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 6701112,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6716760,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6732408,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6747816,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6763032,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6778248,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6793416,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6808632,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6823848,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6839016,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6847056,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6855096,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 6862968,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6878616,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6894264,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6909672,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6924888,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6940104,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 6955272,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6970488,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6985704,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7000872,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7008912,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7016952,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7024824,
+        "count": 5811,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7048068,
+        "count": 5811,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7071312,
+        "count": 9288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 7108464,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7124112,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7139760,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 37,
+      "positions": {
+        "offset": 7155168,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7170672,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7186176,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 7201584,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7217232,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7232880,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7248288,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7263504,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7278720,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7293888,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7309104,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7324320,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7339488,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7347528,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7355568,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 7363440,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7379088,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7394736,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7410144,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7425360,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7440576,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7455744,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7470960,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7486176,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7501344,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7509384,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7517424,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 32,
+      "positions": {
+        "offset": 7525296,
+        "count": 8580,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7559616,
+        "count": 8580,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7593936,
+        "count": 7596,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 7624320,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7639968,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7655616,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7671024,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7686240,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7701456,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7716624,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7731840,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7747056,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7762224,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7770264,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7778304,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 35,
+      "positions": {
+        "offset": 7786176,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7801824,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7817472,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7832880,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7848096,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7863312,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7878480,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7893696,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7908912,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-measure",
+      "material": 34,
+      "positions": {
+        "offset": 7924080,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7932120,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7940160,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.82,
+        0.89,
+        0.86
+      ],
+      "metalness": 0,
+      "roughness": 0.2,
+      "ior": 1.57
+    },
+    "33": {
+      "color": [
+        0.54,
+        0.57,
+        0.59
+      ],
+      "metalness": 0.9,
+      "roughness": 0.27,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.52,
+        0.55,
+        0.57
+      ],
+      "metalness": 0.95,
+      "roughness": 0.19,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.08,
+        0.1,
+        0.11
+      ],
+      "metalness": 0.8,
+      "roughness": 0.3,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.61,
+        0.43,
+        0.18
+      ],
+      "metalness": 0.8,
+      "roughness": 0.28,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.36,
+        0.39,
+        0.4
+      ],
+      "metalness": 0.8,
+      "roughness": 0.38,
+      "ior": 1.5
+    }
+  }
+}

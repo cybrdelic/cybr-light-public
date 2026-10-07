@@ -1,0 +1,280 @@
+{
+  "source": "cybr-light/examples/gallery.py::mesh_knot",
+  "sourceSha256": "ad6fc3cf3738cf4a55219c26dd9efc4a90250f33daaa3f5f8db14c4afa46abdc",
+  "notes": "Source geometry, floor, emitter shapes and environment intensity retained. RGB approximations of spectral materials and blackbody emission; not spectral parity.",
+  "modules": [
+    {
+      "name": "example-knot-source",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-knot-source",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 72,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 144,
+        "count": 6,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 168,
+        "count": 2,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-knot-source",
+      "material": 41,
+      "positions": {
+        "offset": 176,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 248,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 320,
+        "count": 6,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 344,
+        "count": 2,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-knot-source",
+      "material": 42,
+      "positions": {
+        "offset": 352,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 424,
+        "count": 18,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 496,
+        "count": 6,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 520,
+        "count": 2,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-knot-source",
+      "material": 36,
+      "positions": {
+        "offset": 528,
+        "count": 211680,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 847248,
+        "count": 211680,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1693968,
+        "count": 70560,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 1976208,
+        "count": 23520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-knot-source",
+      "material": 33,
+      "positions": {
+        "offset": 2070288,
+        "count": 4608,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2088720,
+        "count": 4608,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2107152,
+        "count": 1536,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 2113296,
+        "count": 512,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-knot-source",
+      "material": 34,
+      "positions": {
+        "offset": 2115344,
+        "count": 31104,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2239760,
+        "count": 31104,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2364176,
+        "count": 10368,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 2405648,
+        "count": 3456,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "role": "graphite floor",
+      "color": [
+        0.095,
+        0.105,
+        0.12
+      ],
+      "roughness": 0.43,
+      "metalness": 0,
+      "nativeType": "plastic"
+    },
+    "41": {
+      "role": "large daylight softbox",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.2,
+      "metalness": 0,
+      "nativeType": "emitter",
+      "emission": [
+        9.0,
+        8.928714067622932,
+        8.607038136050873
+      ],
+      "kelvin": 6500
+    },
+    "42": {
+      "role": "warm rim softbox",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.2,
+      "metalness": 0,
+      "nativeType": "emitter",
+      "emission": [
+        5.0,
+        3.163080965349787,
+        2.0262664591941144
+      ],
+      "kelvin": 4100
+    },
+    "36": {
+      "role": "illustrative copper conductor",
+      "color": [
+        0.9289084211206617,
+        0.6124426313105559,
+        0.4639175257731959
+      ],
+      "roughness": 0.25,
+      "metalness": 1,
+      "nativeType": "metal",
+      "conductorEta": [
+        0.22,
+        0.95,
+        1.3
+      ],
+      "conductorK": [
+        3.3,
+        2.45,
+        2.1
+      ]
+    },
+    "33": {
+      "role": "charcoal ceramic",
+      "color": [
+        0.075,
+        0.075,
+        0.075
+      ],
+      "roughness": 0.27,
+      "metalness": 0,
+      "nativeType": "plastic"
+    },
+    "34": {
+      "role": "illustrative golden conductor",
+      "color": [
+        0.9569862545781174,
+        0.8135975669577162,
+        0.38461538461538464
+      ],
+      "roughness": 0.19,
+      "metalness": 1,
+      "nativeType": "metal",
+      "conductorEta": [
+        0.17,
+        0.38,
+        1.45
+      ],
+      "conductorK": [
+        3.8,
+        2.5,
+        1.85
+      ]
+    }
+  },
+  "framing": {
+    "center": [
+      0.0,
+      -0.0,
+      1.25
+    ],
+    "extent": 2.96
+  },
+  "lighting": {
+    "environment": [
+      0.08639999999999999,
+      0.096,
+      0.12
+    ],
+    "disableStudio": true
+  },
+  "camera": {
+    "yaw": 0.5912920653671214,
+    "pitch": 0.26077988631583865,
+    "distance": 11.7926215928495,
+    "fov": 35
+  },
+  "exposure": 1.25
+}

@@ -1,0 +1,1634 @@
+{
+  "source": "cybr-geo\\src\\mechanism_lab\\models\\differential.py",
+  "sourceSha256": "543a68aa6421c7ce9a9012267976ac8c3878472fe0889ca84ba66239aaf35fa7",
+  "notes": "Original differential_reference source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced. Differential meshes regenerated from retained source, not byte-identical historical archives.",
+  "modules": [
+    {
+      "name": "example-geo-differential-reference",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-differential-reference",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 2769246,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11076984,
+        "count": 2769246,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22153968,
+        "count": 5516640,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 33,
+      "positions": {
+        "offset": 44220528,
+        "count": 121008,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 44704560,
+        "count": 121008,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 45188592,
+        "count": 143280,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 33,
+      "positions": {
+        "offset": 45761712,
+        "count": 126528,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 46267824,
+        "count": 126528,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 46773936,
+        "count": 154320,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 47391216,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 47440368,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 47489520,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 47538672,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 47587824,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 47636976,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 33,
+      "positions": {
+        "offset": 47686128,
+        "count": 21297,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 47771316,
+        "count": 21297,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 47856504,
+        "count": 21984,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 33,
+      "positions": {
+        "offset": 47944440,
+        "count": 11640,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 47991000,
+        "count": 11640,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48037560,
+        "count": 9336,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 48074904,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48124056,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48173208,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 48222360,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48271512,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48320664,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 48369816,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48418968,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48468120,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 48517272,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48566424,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48615576,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 48664728,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48713880,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48763032,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 33,
+      "positions": {
+        "offset": 48812184,
+        "count": 14427,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 48869892,
+        "count": 14427,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48927600,
+        "count": 15114,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 48988056,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 49037208,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 49086360,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 34,
+      "positions": {
+        "offset": 49135512,
+        "count": 119808,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 49614744,
+        "count": 119808,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 50093976,
+        "count": 185760,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 34,
+      "positions": {
+        "offset": 50837016,
+        "count": 128232,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 51349944,
+        "count": 128232,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 51862872,
+        "count": 201240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 52667832,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 52716984,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 52766136,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 52815288,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 52864440,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 52913592,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 52962744,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53011896,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53061048,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 53110200,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53159352,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53208504,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 53257656,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53306808,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53355960,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 53405112,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53454264,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53503416,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 53552568,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53601720,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53650872,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 53700024,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53749176,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53798328,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 53847480,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53896632,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 53945784,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 53994936,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 54044088,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 54093240,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 54142392,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 54191544,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 54240696,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 36,
+      "positions": {
+        "offset": 54289848,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 54339000,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 54388152,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 54437304,
+        "count": 26496,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 54543288,
+        "count": 26496,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 54649272,
+        "count": 52860,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 54860712,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 54909864,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 54959016,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55008168,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55057320,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55106472,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55155624,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55204776,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55253928,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55303080,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55305024,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55306968,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55310808,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55312752,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55314696,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55318536,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55320480,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55322424,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55326264,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55328208,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55330152,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55333992,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55335936,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55337880,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55341720,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55343664,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55345608,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55349448,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55351392,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55353336,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55357176,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55359120,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55361064,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55364904,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55366848,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55368792,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55372632,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55374576,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55376520,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55380360,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55382304,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55384248,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55388088,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55390032,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55391976,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55395816,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55397760,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55399704,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55403544,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55405488,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55407432,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55411272,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55413216,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55415160,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55419000,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55420944,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55422888,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55426728,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55428672,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55430616,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55434456,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55436400,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55438344,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55442184,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55444128,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55446072,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55449912,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55451856,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55453800,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 55457640,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55506792,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55555944,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55605096,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55654248,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55703400,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55752552,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55801704,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55850856,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55900008,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55901952,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55903896,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55907736,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55909680,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55911624,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55915464,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55917408,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55919352,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55923192,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55925136,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55927080,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55930920,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55932864,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55934808,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55938648,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55940592,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55942536,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55946376,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55948320,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55950264,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55954104,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55956048,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55957992,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55961832,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55963776,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55965720,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55969560,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55971504,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55973448,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55977288,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55979232,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55981176,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55985016,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55986960,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55988904,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 55992744,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55994688,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55996632,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56000472,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56002416,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56004360,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56008200,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56010144,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56012088,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56015928,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56017872,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56019816,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56023656,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56025600,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56027544,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56031384,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56033328,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56035272,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56039112,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56041056,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56043000,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 35,
+      "positions": {
+        "offset": 56046840,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56048784,
+        "count": 486,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56050728,
+        "count": 960,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 37,
+      "positions": {
+        "offset": 56054568,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56103720,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56152872,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 39,
+      "positions": {
+        "offset": 56202024,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56251176,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56300328,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 39,
+      "positions": {
+        "offset": 56349480,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56398632,
+        "count": 12288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56447784,
+        "count": 12288,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 38,
+      "positions": {
+        "offset": 56496936,
+        "count": 12285,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56546076,
+        "count": 12285,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56595216,
+        "count": 12078,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 38,
+      "positions": {
+        "offset": 56643528,
+        "count": 13695,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56698308,
+        "count": 13695,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56753088,
+        "count": 13686,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-differential-reference",
+      "material": 38,
+      "positions": {
+        "offset": 56807832,
+        "count": 13797,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 56863020,
+        "count": 13797,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 56918208,
+        "count": 13758,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.53,
+        0.55,
+        0.56
+      ],
+      "metalness": 1.0,
+      "roughness": 0.27,
+      "ior": 1.5
+    },
+    "33": {
+      "color": [
+        0.64,
+        0.66,
+        0.67
+      ],
+      "metalness": 1.0,
+      "roughness": 0.22,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.32,
+        0.33,
+        0.34
+      ],
+      "metalness": 1.0,
+      "roughness": 0.25,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.69,
+        0.71,
+        0.73
+      ],
+      "metalness": 1.0,
+      "roughness": 0.16,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.095,
+        0.11,
+        0.125
+      ],
+      "metalness": 0.88,
+      "roughness": 0.26,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.29,
+        0.215,
+        0.105
+      ],
+      "metalness": 0.93,
+      "roughness": 0.29,
+      "ior": 1.5
+    },
+    "38": {
+      "color": [
+        0.022,
+        0.026,
+        0.029
+      ],
+      "metalness": 0.55,
+      "roughness": 0.39,
+      "ior": 1.5
+    },
+    "39": {
+      "color": [
+        0.014,
+        0.017,
+        0.019
+      ],
+      "metalness": 0.0,
+      "roughness": 0.48,
+      "ior": 1.5
+    }
+  }
+}

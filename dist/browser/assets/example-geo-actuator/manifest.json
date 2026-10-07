@@ -1,0 +1,4418 @@
+{
+  "source": "cybr-geo\\src\\mechanism_lab\\models\\nitinol_actuator.py",
+  "sourceSha256": "93327a517693a07f5321c68adcb0f1ad40802bbbac7bf0add7b717a53b41a72a",
+  "notes": "Original nitinol_fiber_actuator source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced.",
+  "modules": [
+    {
+      "name": "example-geo-actuator",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-actuator",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 80784,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 161568,
+        "count": 20208,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 32,
+      "positions": {
+        "offset": 242400,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 323184,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 403968,
+        "count": 20208,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 484800,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 485184,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 485568,
+        "count": 96,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 485952,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 486336,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 486720,
+        "count": 96,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 487104,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 487488,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 487872,
+        "count": 96,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 488256,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 488640,
+        "count": 96,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 489024,
+        "count": 96,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 38,
+      "positions": {
+        "offset": 489408,
+        "count": 47124,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 677904,
+        "count": 47124,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 866400,
+        "count": 47184,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 38,
+      "positions": {
+        "offset": 1055136,
+        "count": 47124,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1243632,
+        "count": 47124,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1432128,
+        "count": 47184,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 1620864,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1701648,
+        "count": 20196,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1782432,
+        "count": 20208,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 40,
+      "positions": {
+        "offset": 1863264,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1890192,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1917120,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 40,
+      "positions": {
+        "offset": 1944000,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1970928,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1997856,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 40,
+      "positions": {
+        "offset": 2024736,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2051664,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2078592,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 40,
+      "positions": {
+        "offset": 2105472,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2132400,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2159328,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 2186208,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2199672,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2213136,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 2226528,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2253456,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2280384,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 2307264,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2334192,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2361120,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 2388000,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2414928,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2441856,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 34,
+      "positions": {
+        "offset": 2468736,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2482200,
+        "count": 3366,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2495664,
+        "count": 3348,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2509056,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2511408,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2513760,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2518464,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2520816,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2523168,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2527872,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2530224,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2532576,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2537280,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2539632,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2541984,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2546688,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2549040,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2551392,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2556096,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2558448,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2560800,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2565504,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2567856,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2570208,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2574912,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2577264,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2579616,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2584320,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2586672,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2589024,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2593728,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2596080,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2598432,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2603136,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2605488,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2607840,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2612544,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2614896,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2617248,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2621952,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2624304,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2626656,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2631360,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2633712,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2636064,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2640768,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2643120,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2645472,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 37,
+      "positions": {
+        "offset": 2650176,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2652528,
+        "count": 588,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2654880,
+        "count": 1176,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2659584,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2659776,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2659968,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2660160,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2660352,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2660544,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2660736,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2660928,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2661120,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2661312,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2661504,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2661696,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2661888,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2662080,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2662272,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2662464,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2662656,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2662848,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2663040,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2663232,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2663424,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2663616,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2663808,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2664000,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2664192,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2664384,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2664576,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2664768,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2664960,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2665152,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2665344,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2665536,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2665728,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2665920,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2666112,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2666304,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2666496,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2666784,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2667072,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2667360,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2667648,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2667936,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2668224,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2668416,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2668608,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2668800,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2668992,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2669184,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2669376,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2669568,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2669760,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2669952,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2670144,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2670336,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2670528,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2670720,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2670912,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2671104,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2671296,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2671488,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2671680,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2671872,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2672064,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2672256,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2672448,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2672640,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2672832,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2673024,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2673216,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2673408,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2673600,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2673792,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2673984,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2674176,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2674368,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2674560,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2674752,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2674944,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2675136,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2675424,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2675712,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2676000,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2676288,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2676576,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2676864,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2677056,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2677248,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2677440,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2677632,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2677824,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2678016,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2678208,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2678400,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2678592,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2678784,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2678976,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2679168,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2679360,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2679552,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2679744,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2679936,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2680128,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2680320,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2680512,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2680704,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2680896,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2681088,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2681280,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2681472,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2681664,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2681856,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2682048,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2682240,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2682432,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2682624,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2682816,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2683008,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2683200,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2683392,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2683584,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2683776,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2684064,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2684352,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2684640,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2684928,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2685216,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2685504,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2685696,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2685888,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2686080,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2686272,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2686464,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2686656,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2686848,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2687040,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2687232,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2687424,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2687616,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2687808,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2688000,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2688192,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2688384,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2688576,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2688768,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2688960,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2689152,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2689344,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2689536,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2689728,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2689920,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2690112,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2690304,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2690496,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2690688,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2690880,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2691072,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2691264,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2691456,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2691648,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2691840,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2692032,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2692224,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2692416,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2692704,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2692992,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2693280,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2693568,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2693856,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2694144,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2694336,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2694528,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2694720,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2694912,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2695104,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2695296,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2695488,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2695680,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2695872,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2696064,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2696256,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2696448,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2696640,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2696832,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2697024,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2697216,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2697408,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2697600,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2697792,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2697984,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2698176,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2698368,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2698560,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2698752,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2698944,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2699136,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2699328,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2699520,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2699712,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2699904,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2700096,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2700288,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2700480,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2700672,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2700864,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2701056,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2701344,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2701632,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2701920,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2702208,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2702496,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2702784,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2702976,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2703168,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2703360,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2703552,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2703744,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2703936,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2704128,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2704320,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2704512,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2704704,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2704896,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2705088,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2705280,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2705472,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2705664,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2705856,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2706048,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2706240,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2706432,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2706624,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2706816,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2707008,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2707200,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2707392,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2707584,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2707776,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2707968,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2708160,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2708352,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2708544,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2708736,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2708928,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2709120,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2709312,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2709504,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2709696,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2709984,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2710272,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2710560,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2710848,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2711136,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2711424,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2711616,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2711808,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2712000,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2712192,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2712384,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2712576,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2712768,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2712960,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2713152,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2713344,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2713536,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2713728,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2713920,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2714112,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2714304,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2714496,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2714688,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2714880,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2715072,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2715264,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2715456,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2715648,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2715840,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2716032,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2716224,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2716416,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2716608,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2716800,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2716992,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2717184,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2717376,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2717568,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2717760,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2717952,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2718144,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2718336,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2718624,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2718912,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2719200,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2719488,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2719776,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2720064,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2720256,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2720448,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2720640,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2720832,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2721024,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2721216,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2721408,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2721600,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2721792,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2721984,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2722176,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2722368,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2722560,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2722752,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2722944,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2723136,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2723328,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2723520,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2723712,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2723904,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2724096,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2724288,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2724480,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2724672,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2724864,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2725056,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2725248,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2725440,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2725632,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2725824,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2726016,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2726208,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2726400,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2726592,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2726784,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2726976,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2727264,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2727552,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2727840,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2728128,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2728416,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2728704,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2728896,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2729088,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2729280,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2729472,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2729664,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2729856,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2730048,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2730240,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2730432,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2730624,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2730816,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2731008,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2731200,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2731392,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2731584,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2731776,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2731968,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2732160,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2732352,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2732544,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2732736,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2732928,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2733120,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2733312,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2733504,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2733696,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2733888,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2734080,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2734272,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2734464,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2734656,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2734848,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2735040,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2735232,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2735424,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2735616,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2735904,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2736192,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2736480,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2736768,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2737056,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2737344,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2737536,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2737728,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2737920,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2738112,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2738304,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2738496,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2738688,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2738880,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2739072,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2739264,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2739456,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2739648,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2739840,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2740032,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2740224,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2740416,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2740608,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2740800,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2740992,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2741184,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2741376,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2741568,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2741760,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2741952,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2742144,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2742336,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2742528,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2742720,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2742912,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2743104,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2743296,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2743488,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2743680,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2743872,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2744064,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2744256,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2744544,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2744832,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2745120,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2745408,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2745696,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2745984,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2746176,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2746368,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2746560,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2746752,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2746944,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2747136,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2747328,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2747520,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2747712,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2747904,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2748096,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2748288,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2748480,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2748672,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2748864,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2749056,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2749248,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2749440,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2749632,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2749824,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2750016,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2750208,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2750400,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2750592,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2750784,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2750976,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2751168,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2751360,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2751552,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2751744,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2751936,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2752128,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2752320,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2752512,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2752704,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2752896,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2753184,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2753472,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2753760,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2754048,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2754336,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2754624,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2754816,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2755008,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2755200,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2755392,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2755584,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2755776,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2755968,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2756160,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2756352,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2756544,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2756736,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2756928,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2757120,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2757312,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2757504,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2757696,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2757888,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2758080,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2758272,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2758464,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2758656,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2758848,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2759040,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2759232,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2759424,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2759616,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2759808,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2760000,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2760192,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2760384,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2760576,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2760768,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 35,
+      "positions": {
+        "offset": 2760960,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2761152,
+        "count": 48,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2761344,
+        "count": 48,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2761536,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2761824,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2762112,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 39,
+      "positions": {
+        "offset": 2762400,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2762688,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2762976,
+        "count": 72,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2763264,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2764104,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2764944,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2765664,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2766504,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2767344,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2768064,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2768904,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2769744,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2770464,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2771304,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2772144,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2772864,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2773704,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2774544,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2775264,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2776104,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2776944,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2777664,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2778504,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2779344,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2780064,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2780904,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2781744,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2782464,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2783304,
+        "count": 210,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2784144,
+        "count": 180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2784864,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2811792,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2838720,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2865600,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2892528,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2919456,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2946336,
+        "count": 186,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2947080,
+        "count": 186,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2947824,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2948784,
+        "count": 234,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2949720,
+        "count": 234,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2950656,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2951616,
+        "count": 336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2952960,
+        "count": 336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2954304,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2955264,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2956224,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2957184,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2958144,
+        "count": 225,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2959044,
+        "count": 225,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2959944,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 36,
+      "positions": {
+        "offset": 2960904,
+        "count": 306,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2962128,
+        "count": 306,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2963352,
+        "count": 240,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 2964312,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2991240,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3018168,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3045048,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3071976,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3098904,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3125784,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3152712,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3179640,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3206520,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3233448,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3260376,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3287256,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3314184,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3341112,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3367992,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3394920,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3421848,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3448728,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3475656,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3502584,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-actuator",
+      "material": 33,
+      "positions": {
+        "offset": 3529464,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3556392,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3583320,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.035,
+        0.04,
+        0.05
+      ],
+      "metalness": 0.78,
+      "roughness": 0.31,
+      "ior": 1.5
+    },
+    "33": {
+      "color": [
+        0.56,
+        0.59,
+        0.63
+      ],
+      "metalness": 0.94,
+      "roughness": 0.23,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.56,
+        0.59,
+        0.61
+      ],
+      "metalness": 0.96,
+      "roughness": 0.2,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.47,
+        0.5,
+        0.53
+      ],
+      "metalness": 0.96,
+      "roughness": 0.21,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.72,
+        0.31,
+        0.1
+      ],
+      "metalness": 0.93,
+      "roughness": 0.24,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.34,
+        0.36,
+        0.39
+      ],
+      "metalness": 0.96,
+      "roughness": 0.27,
+      "ior": 1.5
+    },
+    "38": {
+      "color": [
+        0.74,
+        0.69,
+        0.51
+      ],
+      "metalness": 0.03,
+      "roughness": 0.52,
+      "ior": 1.5
+    },
+    "39": {
+      "color": [
+        0.62,
+        0.65,
+        0.68
+      ],
+      "metalness": 0.94,
+      "roughness": 0.18,
+      "ior": 1.5
+    },
+    "40": {
+      "color": [
+        0.07,
+        0.075,
+        0.085
+      ],
+      "metalness": 0.02,
+      "roughness": 0.48,
+      "ior": 1.5
+    }
+  }
+}

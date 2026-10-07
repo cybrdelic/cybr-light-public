@@ -1,0 +1,262 @@
+{
+  "source": "cybr-light/examples/gallery.py::material_gallery",
+  "sourceSha256": "ad6fc3cf3738cf4a55219c26dd9efc4a90250f33daaa3f5f8db14c4afa46abdc",
+  "notes": "Actual source geometry. Tessellated analytic surfaces, approximate RGB materials; relit in browser studio. Not native spectral/lighting parity.",
+  "modules": [
+    {
+      "name": "example-materials",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-materials",
+      "material": 33,
+      "positions": {
+        "offset": 0,
+        "count": 13824,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 55296,
+        "count": 13824,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 110592,
+        "count": 4608,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 129024,
+        "count": 1536,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-materials",
+      "material": 34,
+      "positions": {
+        "offset": 135168,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 460032,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 784896,
+        "count": 27072,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 893184,
+        "count": 9024,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-materials",
+      "material": 35,
+      "positions": {
+        "offset": 929280,
+        "count": 468288,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2802432,
+        "count": 468288,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4675584,
+        "count": 156096,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 5299968,
+        "count": 52032,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-materials",
+      "material": 37,
+      "positions": {
+        "offset": 5508096,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5832960,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6157824,
+        "count": 27072,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 6266112,
+        "count": 9024,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-materials",
+      "material": 39,
+      "positions": {
+        "offset": 6302208,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6627072,
+        "count": 81216,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6951936,
+        "count": 27072,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 7060224,
+        "count": 9024,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-materials",
+      "material": 36,
+      "positions": {
+        "offset": 7096320,
+        "count": 324864,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8395776,
+        "count": 324864,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9695232,
+        "count": 108288,
+        "dtype": "uint32"
+      },
+      "boundaries": {
+        "offset": 10128384,
+        "count": 36096,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "33": {
+      "role": "charcoal ceramic",
+      "color": [
+        0.075,
+        0.075,
+        0.075
+      ],
+      "roughness": 0.27,
+      "metalness": 0,
+      "nativeType": "plastic"
+    },
+    "34": {
+      "role": "illustrative golden conductor",
+      "color": [
+        0.9569862545781174,
+        0.8135975669577162,
+        0.38461538461538464
+      ],
+      "roughness": 0.19,
+      "metalness": 1,
+      "nativeType": "metal",
+      "conductorEta": [
+        0.17,
+        0.38,
+        1.45
+      ],
+      "conductorK": [
+        3.8,
+        2.5,
+        1.85
+      ]
+    },
+    "35": {
+      "role": "neutral conductor",
+      "color": [
+        0.9496221662468515,
+        0.9496221662468515,
+        0.9496221662468515
+      ],
+      "roughness": 0.23,
+      "metalness": 1,
+      "nativeType": "metal",
+      "conductorEta": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "conductorK": [
+        3.8,
+        3.8,
+        3.8
+      ]
+    },
+    "37": {
+      "role": "teal polymer",
+      "color": [
+        0.035,
+        0.37,
+        0.39
+      ],
+      "roughness": 0.24,
+      "metalness": 0,
+      "nativeType": "plastic"
+    },
+    "39": {
+      "role": "dispersive dielectric",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.2,
+      "metalness": 0,
+      "nativeType": "glass",
+      "ior": 1.5198347107438017,
+      "attenuationColor": [
+        0.9417645335842487,
+        0.9880717128619305,
+        0.9960079893439915
+      ],
+      "attenuationDistance": 1
+    },
+    "36": {
+      "role": "illustrative copper conductor",
+      "color": [
+        0.9289084211206617,
+        0.6124426313105559,
+        0.4639175257731959
+      ],
+      "roughness": 0.25,
+      "metalness": 1,
+      "nativeType": "metal",
+      "conductorEta": [
+        0.22,
+        0.95,
+        1.3
+      ],
+      "conductorK": [
+        3.3,
+        2.45,
+        2.1
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CYBR LIGHT / Browser transport lab</title>
+    <link rel="stylesheet" href="style.css?revision=play-controls-1" />
+  </head>
+  <body>
+    <header>
+      <strong>CYBR LIGHT <span>/ BROWSER TRANSPORT LAB</span></strong
+      ><a href="../README.md">Engine notes ↗</a>
+    </header>
+    <main>
+      <canvas
+        id="viewport"
+        aria-label="Path traced scene. Drag to orbit, right drag or shift drag to pan, scroll to zoom."
+      ></canvas>
+      <div id="status" role="status">Requesting WebGPU…</div>
+      <div id="caption">RGB / FP32 · mesh BVH · progressive transport</div>
+    </main>
+    <aside>
+      <h1>Light, in motion.</h1>
+      <p>Actual CYBR meshes. No baked beauty images.</p>
+      <label
+        >Scene<select id="scene">
+          <option value="combat">Combat / articulated frame</option>
+          <option value="scenes">Springs / optical vessel</option>
+        </select></label
+      ><label
+        >Transport<select id="mode">
+          <option value="interactive">
+            Interactive · temporal reconstruction
+          </option>
+          <option value="reference">
+            Reference · raw accumulation, no denoising
+          </option>
+        </select></label
+      ><label
+        >Internal resolution<select id="resolution">
+          <option value="1080">1920 × 1080</option>
+          <option value="720">1280 × 720</option>
+          <option value="540" selected>960 × 540</option>
+          <option value="360">640 × 360</option>
+        </select></label
+      ><label
+        >Path depth<select id="bounces">
+          <option value="1">Direct only / 1 bounce</option>
+          <option value="4">4 bounces</option>
+          <option value="6" selected>6 bounces</option>
+          <option value="10">10 bounces</option>
+        </select></label
+      ><label class="check"
+        ><input id="denoise" type="checkbox" checked /> Edge-aware spatial
+        filter</label
+      ><button id="reset">Reset accumulation</button
+      ><button id="pause">Pause</button>
+      <dl id="metrics"></dl>
+      <p class="note">
+        Experimental RGB backend. Not spectral parity: no dispersion,
+        participating media, caustic solver, or animated topology yet. Opaque
+        reflections use validated short history; transmission still rejects
+        moving history. Glass noise and thin-edge aliasing remain.
+      </p>
+    </aside>
+    <footer>DRAG / ORBIT &nbsp; RIGHT OR SHIFT DRAG / PAN &nbsp; WHEEL / ZOOM &nbsp; DOUBLE CLICK / FOCUS SURFACE <span id="adapter"></span></footer>
+    <!-- Match the no-store shader policy: this local lab must not mix cached JS
+     bindings/options with fresh shader sources during renderer development. -->
+    <script type="module" src="./public-workflows.mjs"></script>
+    <script type="module">
+      const experiment =
+        new URLSearchParams(location.search).get("signals") === "separate";
+      try {
+        await import(
+          (experiment ? "./signals-app.js" : "./app.js") +
+            "?session=" + Date.now()
+        );
+      } catch (error) {
+        const status = document.querySelector("#status");
+        status.textContent = "Renderer could not start: " + error.message +
+          ". Reload the page to retry.";
+        status.setAttribute("role", "alert");
+        console.error(error);
+      }
+    </script>
+  </body>
+</html>

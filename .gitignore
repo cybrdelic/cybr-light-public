@@ -1,0 +1,50 @@
+# Build and language caches
+build*/
+__pycache__/
+*.pyc
+*.nbc
+*.nbi
+*.egg-info/
+.pytest_cache/
+.venv/
+node_modules/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.so
+*.dylib
+*.dll
+
+# Local outputs, generated scenes, validation recordings and diagnostics
+outputs/
+output/
+rendered/
+reproduced/
+evidence/
+*.log
+*.mp4
+*.webm
+*.chk
+*.gpu-checkpoint
+examples/assets/
+examples/executed/
+examples/generated/
+examples/delivered/
+examples/knot.obj
+examples/*.cys
+examples/*.scene.json
+
+# Large generated/recovery inputs are retained locally and in private checkpoints.
+browser/assets/**/*.bin.gz
+browser/assets/instrument-fluid/*.gz
+browser/source-cache/
+browser/experiments/
+
+# Account/environment data never belongs in source publication.
+.env
+.env.*
+!.env.example
+.codex/
+.claude/
+.playwright*/

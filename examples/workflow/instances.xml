@@ -1,0 +1,12 @@
+<scene version="3.0.0">
+ <integrator type="path"><integer name="max_depth" value="10"/></integrator>
+ <sensor type="perspective"><transform name="to_world"><lookat origin="5,3.2,7" target="0,0.6,0" up="0,1,0"/></transform><float name="fov" value="43"/><film type="hdrfilm"><integer name="width" value="480"/><integer name="height" value="320"/><rfilter type="tent"/></film><sampler type="halton"><integer name="sample_count" value="64"/></sampler></sensor>
+ <bsdf type="roughconductor" id="copper"><rgb name="eta" value="0.22,0.66,1.1"/><rgb name="k" value="3.3,2.3,2.1"/><float name="alpha_u" value="0.08"/><float name="alpha_v" value="0.2"/></bsdf>
+ <shape type="shapegroup" id="gem"><shape type="ply"><string name="filename" value="gem.ply"/><ref id="copper"/></shape></shape>
+ <shape type="instance"><ref id="gem"/><transform name="to_world"><scale value="0.8"/><translate x="-1.8" y="0.8"/></transform></shape>
+ <shape type="instance"><ref id="gem"/><transform name="to_world"><rotate y="1" angle="35"/><translate y="1"/></transform></shape>
+ <shape type="instance"><ref id="gem"/><transform name="to_world"><scale value="0.65"/><rotate y="1" angle="75"/><translate x="1.8" y="0.65"/></transform></shape>
+ <shape type="rectangle"><transform name="to_world"><scale value="8"/><rotate x="1" angle="-90"/></transform><bsdf type="diffuse"><rgb name="reflectance" value="0.24,0.28,0.34"/></bsdf></shape>
+ <emitter type="point"><point name="position" x="-2" y="5" z="3"/><rgb name="intensity" value="80,80,80"/></emitter>
+ <emitter type="constant"><rgb name="radiance" value="0.3,0.35,0.45"/></emitter>
+</scene>

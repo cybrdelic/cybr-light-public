@@ -1,0 +1,11 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": {
+      "channel": "chrome",
+      "headless": true,
+      "args": ["--force-high-performance-gpu"]
+    },
+    "contextOptions": { "viewport": { "width": 1440, "height": 900 } }
+  }
+}

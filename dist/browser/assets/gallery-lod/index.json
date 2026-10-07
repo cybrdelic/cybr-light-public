@@ -1,0 +1,1136 @@
+{
+  "entries": [
+    {
+      "id": "example-geo-actuator",
+      "label": "GEO / Nitinol actuator",
+      "sourceTriangles": 102276,
+      "counts": {
+        "low": 13796,
+        "near": 102276
+      },
+      "galleryScale": 0.3292307692307692,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -6.0,
+          -24.0,
+          -24.0
+        ],
+        [
+          208.0,
+          24.0,
+          24.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        0.5831775700934579,
+        0.5831775700934579
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-actuator-v2",
+      "label": "GEO / Nitinol actuator v2",
+      "sourceTriangles": 109046,
+      "counts": {
+        "low": 12074,
+        "near": 109046
+      },
+      "galleryScale": 0.3309230767763578,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -5.099999904632568,
+          -23.99774169921875,
+          -23.999435424804688
+        ],
+        [
+          210.0,
+          24.0,
+          23.999435424804688
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        0.580167961289158,
+        0.5801816097829605
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-aeris",
+      "label": "GEO / AERIS",
+      "sourceTriangles": 1657850,
+      "counts": {
+        "low": 30202,
+        "near": 365385
+      },
+      "galleryScale": 0.5633257587139423,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -234.0,
+          -120.19999694824219,
+          -154.5
+        ],
+        [
+          132.1617431640625,
+          120.19999694824219,
+          147.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.7070051576928502,
+        2.1408571884823195
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-aeris-engineered",
+      "label": "GEO / AERIS engineered",
+      "sourceTriangles": 1657850,
+      "counts": {
+        "low": 30406,
+        "near": 365325
+      },
+      "galleryScale": 0.5633257587139423,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -234.0,
+          -120.19999694824219,
+          -154.5
+        ],
+        [
+          132.1617431640625,
+          120.19999694824219,
+          147.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.7070051576928502,
+        2.1408571884823195
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-differential-core",
+      "label": "GEO / Differential core",
+      "sourceTriangles": 723648,
+      "counts": {
+        "low": 28764,
+        "near": 151568
+      },
+      "galleryScale": 0.14384615384615385,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -44.79999923706055,
+          -40.02326583862305,
+          -39.86784744262695
+        ],
+        [
+          48.70000076293945,
+          39.599998474121094,
+          39.5955696105957
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.2141228578944894,
+        2.2096779073623414
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-differential-reference",
+      "label": "GEO / Differential reference",
+      "sourceTriangles": 2244936,
+      "counts": {
+        "low": 36494,
+        "near": 220358
+      },
+      "galleryScale": 0.23,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -74.0,
+          -58.32500076293945,
+          -58.32500076293945
+        ],
+        [
+          75.5,
+          58.32500076293945,
+          58.32500076293945
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.0286956787109376,
+        2.0286956787109376
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-differential-working",
+      "label": "GEO / Differential working",
+      "sourceTriangles": 2823200,
+      "counts": {
+        "low": 39106,
+        "near": 284306
+      },
+      "galleryScale": 0.23,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -74.0,
+          -58.32500076293945,
+          -58.32500076293945
+        ],
+        [
+          75.5,
+          58.32500076293945,
+          58.32500076293945
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.0286956787109376,
+        2.0286956787109376
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-flange",
+      "label": "GEO FLANGE",
+      "sourceTriangles": 11224,
+      "counts": {
+        "low": 11224,
+        "near": 11224
+      },
+      "galleryScale": 0.12923076923076923,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          0.0,
+          -42.0,
+          -42.0
+        ],
+        [
+          27.0,
+          42.0,
+          42.0
+        ]
+      ],
+      "normalizedSize": [
+        0.8357142857142857,
+        2.6,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-motor",
+      "label": "GEO / M8325s motor",
+      "sourceTriangles": 1332430,
+      "counts": {
+        "low": 27981,
+        "near": 218242
+      },
+      "galleryScale": 0.2123076923076923,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -13.5,
+          -92.0,
+          -46.0
+        ],
+        [
+          52.5,
+          46.0,
+          46.0
+        ]
+      ],
+      "normalizedSize": [
+        1.2434782608695654,
+        2.6,
+        1.7333333333333334
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-printer",
+      "label": "GEO PRINTER",
+      "sourceTriangles": 595416,
+      "counts": {
+        "low": 65620,
+        "near": 234738
+      },
+      "galleryScale": 1.006097130408654,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -198.0,
+          -262.0,
+          -0.273048460483551
+        ],
+        [
+          397.58111572265625,
+          391.963134765625,
+          645.8732299804688
+        ]
+      ],
+      "normalizedSize": [
+        2.3678871461674666,
+        2.6,
+        2.568922060948538
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach-elbow-module",
+      "label": "GEO / reach elbow module",
+      "sourceTriangles": 3388428,
+      "counts": {
+        "low": 27476,
+        "near": 448366
+      },
+      "galleryScale": 0.38153846153846155,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -66.0,
+          -70.0,
+          -134.0
+        ],
+        [
+          137.5,
+          120.0,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.133467741935484,
+        1.991935483870968,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach-elbow-module-v2",
+      "label": "GEO / reach elbow module v2",
+      "sourceTriangles": 3416668,
+      "counts": {
+        "low": 30052,
+        "near": 461258
+      },
+      "galleryScale": 0.38153846153846155,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -66.0,
+          -70.0,
+          -134.0
+        ],
+        [
+          137.5,
+          120.0,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.133467741935484,
+        1.991935483870968,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach-elbow-module-v3",
+      "label": "GEO / reach elbow module v3",
+      "sourceTriangles": 3499888,
+      "counts": {
+        "low": 32506,
+        "near": 482428
+      },
+      "galleryScale": 0.38153846153846155,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -66.0,
+          -70.0,
+          -134.0
+        ],
+        [
+          137.5,
+          120.0,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.133467741935484,
+        1.991935483870968,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach2-engineered-elbow",
+      "label": "GEO / reach2 engineered elbow",
+      "sourceTriangles": 3558860,
+      "counts": {
+        "low": 29038,
+        "near": 430667
+      },
+      "galleryScale": 0.42,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -75.73443603515625,
+          -63.0,
+          -159.0
+        ],
+        [
+          137.5,
+          133.75,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.030804152715774,
+        1.873809523809524,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach2-engineered-elbow-v2",
+      "label": "GEO / reach2 engineered elbow v2",
+      "sourceTriangles": 3558860,
+      "counts": {
+        "low": 29038,
+        "near": 430667
+      },
+      "galleryScale": 0.42,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -75.73443603515625,
+          -63.0,
+          -159.0
+        ],
+        [
+          137.5,
+          133.75,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.030804152715774,
+        1.873809523809524,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach2-engineered-elbow-v3",
+      "label": "GEO / reach2 engineered elbow v3",
+      "sourceTriangles": 3627204,
+      "counts": {
+        "low": 28144,
+        "near": 437806
+      },
+      "galleryScale": 0.42,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -86.0,
+          -63.0,
+          -159.0
+        ],
+        [
+          137.5,
+          141.0,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.1285714285714286,
+        1.942857142857143,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach2-orbit-integrated-v5",
+      "label": "GEO / reach2 orbit integrated v5",
+      "sourceTriangles": 3383056,
+      "counts": {
+        "low": 27922,
+        "near": 414801
+      },
+      "galleryScale": 0.42,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -104.0,
+          -63.0,
+          -159.0
+        ],
+        [
+          137.5,
+          93.5,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.3000000000000003,
+        1.4904761904761905,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-reach2-orbit-integrated-v5b",
+      "label": "GEO / reach2 orbit integrated v5b",
+      "sourceTriangles": 3383056,
+      "counts": {
+        "low": 27922,
+        "near": 414801
+      },
+      "galleryScale": 0.42,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -104.0,
+          -63.0,
+          -159.0
+        ],
+        [
+          137.5,
+          93.5,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.3000000000000003,
+        1.4904761904761905,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-bend",
+      "label": "GEO / ROAM bend",
+      "sourceTriangles": 80328,
+      "counts": {
+        "low": 16734,
+        "near": 80328
+      },
+      "galleryScale": 0.2923076923076923,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -75.0,
+          -95.0,
+          0.0
+        ],
+        [
+          115.0,
+          65.0,
+          96.19999694824219
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.1894736842105265,
+        1.3164210108706826
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-drill",
+      "label": "GEO / ROAM drill",
+      "sourceTriangles": 258796,
+      "counts": {
+        "low": 23750,
+        "near": 220478
+      },
+      "galleryScale": 0.4046153846153846,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -175.0,
+          -100.0,
+          -10.0
+        ],
+        [
+          65.0,
+          100.0,
+          253.0
+        ]
+      ],
+      "normalizedSize": [
+        2.372623574144487,
+        1.9771863117870725,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-electronics",
+      "label": "GEO / ROAM electronics",
+      "sourceTriangles": 149340,
+      "counts": {
+        "low": 20512,
+        "near": 144230
+      },
+      "galleryScale": 0.27692307692307694,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -90.0,
+          -55.0,
+          -12.800000190734863
+        ],
+        [
+          90.0,
+          55.0,
+          80.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.588888888888889,
+        1.3404444471995036
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-measure",
+      "label": "GEO / ROAM measure",
+      "sourceTriangles": 220246,
+      "counts": {
+        "low": 21950,
+        "near": 191324
+      },
+      "galleryScale": 0.4046153846153846,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -175.0,
+          -100.0,
+          -10.0
+        ],
+        [
+          65.0,
+          100.0,
+          253.0
+        ]
+      ],
+      "normalizedSize": [
+        2.372623574144487,
+        1.9771863117870725,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-press",
+      "label": "GEO / ROAM press",
+      "sourceTriangles": 223162,
+      "counts": {
+        "low": 22788,
+        "near": 194190
+      },
+      "galleryScale": 0.4046153846153846,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -175.0,
+          -100.0,
+          -10.0
+        ],
+        [
+          65.0,
+          100.0,
+          253.0
+        ]
+      ],
+      "normalizedSize": [
+        2.372623574144487,
+        1.9771863117870725,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-spine",
+      "label": "GEO / ROAM shared spine",
+      "sourceTriangles": 883884,
+      "counts": {
+        "low": 36616,
+        "near": 355572
+      },
+      "galleryScale": 2.3138461543350806,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -747.6409912109375,
+          -300.0,
+          -3.1780234621692216e-07
+        ],
+        [
+          747.6409912109375,
+          1085.4039306640625,
+          1504.0
+        ]
+      ],
+      "normalizedSize": [
+        2.584928958427778,
+        2.3949801987802073,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-table",
+      "label": "GEO / ROAM table",
+      "sourceTriangles": 339288,
+      "counts": {
+        "low": 31612,
+        "near": 275872
+      },
+      "galleryScale": 0.35846153846153844,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -110.0,
+          -110.0,
+          -12.800000190734863
+        ],
+        [
+          123.0,
+          123.0,
+          144.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.6,
+        1.7496995729438225
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-roam-vise",
+      "label": "GEO / ROAM vise",
+      "sourceTriangles": 161148,
+      "counts": {
+        "low": 21110,
+        "near": 153696
+      },
+      "galleryScale": 0.35846153846153844,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -110.0,
+          -70.0,
+          -12.800000190734863
+        ],
+        [
+          123.0,
+          70.0,
+          78.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.5622317596566524,
+        1.0132188862485434
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-wrist",
+      "label": "GEO WRIST",
+      "sourceTriangles": 3189292,
+      "counts": {
+        "low": 28788,
+        "near": 371418
+      },
+      "galleryScale": 0.31107691838191104,
+      "scaleNote": "Machinery \u00b7 shared millimetre scale",
+      "sourceBounds": [
+        [
+          -64.69999694824219,
+          -60.0,
+          -2.0
+        ],
+        [
+          137.5,
+          77.0,
+          114.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.761622182868666,
+        1.4915925052026662
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-geo-yard",
+      "label": "GEO / YARD skatepark",
+      "sourceTriangles": 156180,
+      "counts": {
+        "low": 50315,
+        "near": 146224
+      },
+      "galleryScale": 0.34473076923076923,
+      "scaleNote": "Environment miniature \u00b7 1:100 relative to machinery",
+      "sourceBounds": [
+        [
+          -11140.0,
+          -8140.0,
+          -265.0
+        ],
+        [
+          11267.5,
+          8267.5,
+          2265.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.9038045297333481,
+        0.2935624232957715
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-knot",
+      "label": "KNOT",
+      "sourceTriangles": 27488,
+      "counts": {
+        "low": 23998,
+        "near": 27488
+      },
+      "galleryScale": 0.6115702558154902,
+      "scaleNote": "Optical studies \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -1.4800000190734863,
+          -1.4800000190734863,
+          0.0
+        ],
+        [
+          1.4800000190734863,
+          1.4800000190734863,
+          2.718618631362915
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.6,
+        2.3879757940707877
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-knot-source",
+      "label": "KNOT SOURCE",
+      "sourceTriangles": 27488,
+      "counts": {
+        "low": 23998,
+        "near": 27488
+      },
+      "galleryScale": 0.6115702558154902,
+      "scaleNote": "Optical studies \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -1.4800000190734863,
+          -1.4800000190734863,
+          0.0
+        ],
+        [
+          1.4800000190734863,
+          1.4800000190734863,
+          2.718618631362915
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.6,
+        2.3879757940707877
+      ],
+      "removedStagingTriangles": 6
+    },
+    {
+      "id": "example-materials",
+      "label": "MATERIALS",
+      "sourceTriangles": 116736,
+      "counts": {
+        "low": 18162,
+        "near": 116736
+      },
+      "galleryScale": 1.0000000315264237,
+      "scaleNote": "Optical studies \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -2.4200000762939453,
+          -1.565000057220459,
+          0.004999999888241291
+        ],
+        [
+          2.4200000762939453,
+          0.7699999809265137,
+          1.524999976158142
+        ]
+      ],
+      "normalizedSize": [
+        2.6000000000000005,
+        1.254338823922565,
+        0.8165288871300252
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "example-materials-source",
+      "label": "MATERIALS SOURCE",
+      "sourceTriangles": 116736,
+      "counts": {
+        "low": 18162,
+        "near": 116736
+      },
+      "galleryScale": 1.0000000315264237,
+      "scaleNote": "Optical studies \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -2.4200000762939453,
+          -1.565000057220459,
+          0.004999999888241291
+        ],
+        [
+          2.4200000762939453,
+          0.7699999809265137,
+          1.524999976158142
+        ]
+      ],
+      "normalizedSize": [
+        2.6000000000000005,
+        1.254338823922565,
+        0.8165288871300252
+      ],
+      "removedStagingTriangles": 6
+    },
+    {
+      "id": "geo",
+      "label": "GEO",
+      "sourceTriangles": 529707,
+      "counts": {
+        "low": 24552,
+        "near": 201863
+      },
+      "galleryScale": 0.1723076923076923,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -51.0,
+          -47.0,
+          -47.0
+        ],
+        [
+          61.0,
+          47.0,
+          47.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.1821428571428574,
+        2.1821428571428574
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "light",
+      "label": "LIGHT",
+      "sourceTriangles": 88193,
+      "counts": {
+        "low": 19698,
+        "near": 88193
+      },
+      "galleryScale": 0.1452307657095102,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -31.0,
+          -44.599998474121094,
+          -44.599998474121094
+        ],
+        [
+          31.0,
+          44.599998474121094,
+          49.79999923706055
+        ]
+      ],
+      "normalizedSize": [
+        1.707627160047123,
+        2.4567796365312713,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "elements",
+      "label": "ELEMENTS",
+      "sourceTriangles": 440008,
+      "counts": {
+        "low": 26238,
+        "near": 147832
+      },
+      "galleryScale": 0.12153846153846154,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -41.0,
+          -33.0,
+          -33.0
+        ],
+        [
+          38.0,
+          33.0,
+          33.0
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        2.1721518987341772,
+        2.1721518987341772
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "song",
+      "label": "SONG",
+      "sourceTriangles": 469200,
+      "counts": {
+        "low": 24102,
+        "near": 214950
+      },
+      "galleryScale": 0.12307692307692308,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -35.0,
+          -40.0,
+          -40.0
+        ],
+        [
+          36.0,
+          40.0,
+          40.0
+        ]
+      ],
+      "normalizedSize": [
+        2.3075,
+        2.6,
+        2.6
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "combat",
+      "label": "COMBAT",
+      "sourceTriangles": 290350,
+      "counts": {
+        "low": 21087,
+        "near": 140592
+      },
+      "galleryScale": 0.1778769273024339,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -57.810001373291016,
+          -12.307499885559082,
+          -18.600000381469727
+        ],
+        [
+          57.810001373291016,
+          12.060172080993652,
+          34.125
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        0.5479670092371628,
+        1.1856512518191737
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "scenes",
+      "label": "SCENES",
+      "sourceTriangles": 299116,
+      "counts": {
+        "low": 14337,
+        "near": 173824
+      },
+      "galleryScale": 0.19956923264723558,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -64.86000061035156,
+          -27.128000259399414,
+          -22.213422775268555
+        ],
+        [
+          64.86000061035156,
+          27.128000259399414,
+          6.359757423400879
+        ]
+      ],
+      "normalizedSize": [
+        2.6,
+        1.0874622264986773,
+        0.5726971000419935
+      ],
+      "removedStagingTriangles": 0
+    },
+    {
+      "id": "flip",
+      "label": "FLIP",
+      "sourceTriangles": 43892,
+      "counts": {
+        "low": 23999,
+        "near": 43881
+      },
+      "galleryScale": 0.08415264423076924,
+      "scaleNote": "Instrument parts \u00b7 shared authored scale",
+      "sourceBounds": [
+        [
+          -26.349609375,
+          -27.349609375,
+          -29.349609375
+        ],
+        [
+          26.349609375,
+          27.349609375,
+          13.80859375
+        ]
+      ],
+      "normalizedSize": [
+        2.5049346568592448,
+        2.6,
+        2.051424694708277
+      ],
+      "removedStagingTriangles": 0
+    }
+  ],
+  "columns": 7
+}

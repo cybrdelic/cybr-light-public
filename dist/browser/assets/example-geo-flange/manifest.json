@@ -1,0 +1,63 @@
+{
+  "source": "cybr-geo\\examples\\custom_flange.py",
+  "sourceSha256": "126142f3bc96b979414cb5d26b283881b45c10280b7e863f2a9bcaa5e3f02940",
+  "notes": "Original CYBR GEO custom flange CAD recipe. RGB studio relighting; anisotropic finish and coatings are not reproduced.",
+  "modules": [
+    {
+      "name": "example-geo-flange",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-flange",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 26928,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 107712,
+        "count": 26928,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 215424,
+        "count": 26952,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-flange",
+      "material": 32,
+      "positions": {
+        "offset": 323232,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 350160,
+        "count": 6732,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 377088,
+        "count": 6720,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.5,
+        0.53,
+        0.57
+      ],
+      "metalness": 0.95,
+      "roughness": 0.28,
+      "ior": 1.5
+    }
+  }
+}

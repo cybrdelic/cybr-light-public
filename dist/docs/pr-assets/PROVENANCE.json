@@ -1,0 +1,42 @@
+{
+  "capture": "Actual consolidated source on NVIDIA RTX4060/Lovelace,2026-10-07; no image generation, synthetic camera frames or rendering-source changes",
+  "source_sha256": "cdd2a33f92e42554faed5c6bc8918bebe7bb39420882ba6c54012e8d6f62564c",
+  "source_manifest_definition": "SHA256 of sorted relative path NUL file SHA256 newline records for237current source files; current64native/WGSL implementation digests are checked by tools/check_repository.py",
+  "main": {
+    "mode": "WebGPU RGB path tracer",
+    "scene": "proof-optics",
+    "internal_resolution": [
+      960,
+      540
+    ],
+    "bounces": 6,
+    "optical_samples": 1,
+    "filter": "single coverage, temporal/spatial reconstruction",
+    "stationary_steps": 64
+  },
+  "forest": {
+    "mode": "indexed raster prototype with cached sun shadows and approximate sky lighting",
+    "view": "trail",
+    "internal_resolution": [
+      960,
+      540
+    ],
+    "lod_error_pixels": 0.75,
+    "instances": 1220375
+  },
+  "preview_gif": "Downscaled6FPS presentation of staged-only captured browser video; playback FPS does not measure renderer speed; existing glass noise and forest limitations retained",
+  "assets": {
+    "browser-preview.gif": {
+      "bytes": 5991197,
+      "sha256": "5385a5a627da46bd91a11a93d333fa621ebd5e1348605421900e156f6f085d76"
+    },
+    "forest-trail.png": {
+      "bytes": 1121960,
+      "sha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1"
+    },
+    "main-stationary.png": {
+      "bytes": 177736,
+      "sha256": "38288498ffbcbc0e393dfdf6321f4ba13550154e6db43c9a427eb6cf3c9077c2"
+    }
+  }
+}

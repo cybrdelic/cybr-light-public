@@ -1,0 +1,19 @@
+# Public source and live browser scope
+
+This publication retains the complete curated current native C++17/Python renderer, optional CUDA/OptiX path, browser RGB WebGPU path tracer, forest raster prototype and hybrid lab. The original renderer source and its 64 implementation digests remain unchanged from the reviewed cleanup. The private repository's existing history remains private; this repository starts with a fresh publication snapshot.
+
+`dist/` is the packaged public browser runtime. Serve it with `python -m http.server 4181 --bind 127.0.0.1 --directory dist`. Its default page opens the actual procedural optics scene. The scene selector includes the three procedural proofs, four native-authored material/knot studies, the preserved GEO exports and the cleared six-module instrument with cached FLIP frames. Its model gallery has 39 cleared models. The forest page retains all original geometry and 1,220,375 instance placements; its main mode is rasterization with cached sun shadows and approximate sky lighting.
+
+All restored runtime assets match the preserved current source capture. The composite instrument's four original files also match the cleared public portfolio package byte-for-byte. Current MakeHuman/Quaternius geometry provenance and motion credits are retained under `dist/LICENSES/`; this does not assign those licenses to unrelated assets. GPLv2 code, original native MIT terms and meshoptimizer MIT notices retain their separate scope.
+
+Large compressed payloads are split into static parts. `dist/browser/segmented-fetch.mjs` concatenates the exact original compressed bytes before the existing decoders read them. Only the two worker entry points import this delivery adapter. `public-workflows.mjs` filters unavailable selections and adds source/scope links. Geometry, instance counts, materials, fluid frames and numerical/rendering math are preserved. The original source entry points remain under `browser/` for inspection.
+
+The asset receipt is [LIVE_ASSET_SCOPE.json](../dist/docs/LIVE_ASSET_SCOPE.json). Run `python tools/check_repository.py`, `python tools/validate_live_assets.py` and `node tools/validate_live_transport.mjs` to check implementation digests, part hashes, complete compressed stream hashes, hosting file size limits and excluded scene families. These are CPU checks and do not launch a browser or GPU workload.
+
+Not published: the Observatory interior/full scene and Drowned Geode scene exports, their LOD/gallery derivatives, and the old pile/million-model bakes that use those inputs. Attribution for imported room/scanned inputs remains unresolved in the inspected records. Five geode texture conversions have recognizable source names but no verified license/source records here. Differential and geode authoring caches, credentials and old private Git history are excluded. These exclusions preserve the original inputs locally; no replacement geometry is presented as the original.
+
+Forest authoring state and its exporter are outside standalone LIGHT. Exact cached runtime restoration is verified; procedural regeneration from the original authoring source is a separate workflow. Cached FLIP is recorded geometry, not live fluid simulation.
+
+Existing rendering noise, forest lighting/LOD approximation and branch/camera intersections are described in [known issues](KNOWN_ISSUES.md). The recorded 74/158/61 FPS observations are historical measurements, not new benchmarks or performance promises. Prior matched hardware validation remains documented in [validation](VALIDATION.md); this publication adds CPU source/asset checks and makes no new GPU benchmark claim.
+
+The downloadable ZIP is the original curated code snapshot; this repository also includes the complete live client, exact cleared runtime assets and delivery helpers. Native offline build/run commands are in the root README. No paid hosting feature, domain purchase or private-history publication is required.

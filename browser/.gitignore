@@ -1,0 +1,20 @@
+# Reproducible local scene exports and machine-specific import reports.
+/assets/*
+!/assets/example-materials/
+!/assets/example-materials-source/
+!/assets/example-knot/
+!/assets/example-knot-source/
+/assets/example-materials/*
+/assets/example-materials-source/*
+/assets/example-knot/*
+/assets/example-knot-source/*
+!/assets/example-materials/manifest.json
+!/assets/example-materials-source/manifest.json
+!/assets/example-knot/manifest.json
+!/assets/example-knot-source/manifest.json
+/source-cache/
+/import-logs/
+/catalog.json
+/environment-catalog.json
+/benchmark-*.json
+__pycache__/

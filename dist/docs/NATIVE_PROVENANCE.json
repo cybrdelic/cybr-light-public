@@ -1,0 +1,142 @@
+{
+  "source_archive": "CYBR_LIGHT_engine_source.zip",
+  "source_archive_sha256": "8d5b27be53a0dec9c71fbe9b820b48ac33ab5ed79a8ea3543e04520e266583e0",
+  "native_implementation_files": [
+    {
+      "path": "src/main.cpp",
+      "sha256": "5d3be6a9b077099cfc6fead4bb6da5ff3e7fd734dc1d6d4d66e5b4697c1112ec",
+      "original_sha256": "ed936f174650b7c8ddceca62f7fb4434406f0d9498d2e68f130d86ab29df498d",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "src/photons.cpp",
+      "sha256": "859dec9879ff9a4ddda55ee1cd1c965cccef070fed7cac0b793893ee489b850a",
+      "original_sha256": "2e0139091c0c3945357679ccacb4f010cd827e090b395583d40470986986ac43",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "include/cybr/exr.hpp",
+      "sha256": "d03b4c0e4ba2cadf938777f45e92d5c7f82ec588067b76da55dc93969e5f9d87"
+    },
+    {
+      "path": "include/cybr/film.hpp",
+      "sha256": "da923714ae67ba844ee8c32483b06f3cb2bc00769ec925ed2a21fe7f55f92ee9"
+    },
+    {
+      "path": "include/cybr/geometry.hpp",
+      "sha256": "c29d88c9683c9669db43ff5e4b0eb5bedb81b75b1ed293ed07a4f985d3c3dc14"
+    },
+    {
+      "path": "include/cybr/integrator.hpp",
+      "sha256": "d82454b680fe6691f257a48d000d03a932b5e84d0db679556ef6e1d21a33f4c4"
+    },
+    {
+      "path": "include/cybr/io.hpp",
+      "sha256": "6f0187910660b9a65cc5a8a49f004140a9e3c02e6e5be0d256119de05767cd18"
+    },
+    {
+      "path": "include/cybr/material.hpp",
+      "sha256": "03545852d1d55a930e185575ebae0adf919ff708440c6e31e305caae4f8e292c"
+    },
+    {
+      "path": "include/cybr/math.hpp",
+      "sha256": "3450a96f04bad60fb9e5e815decb3b92a302601cd96dc563776846200c2c004e"
+    },
+    {
+      "path": "include/cybr/photonmap.hpp",
+      "sha256": "8118284285764cca09cde8c582c5b4378fb714d5281539870411e344c5139ab0"
+    },
+    {
+      "path": "include/cybr/polarization.hpp",
+      "sha256": "df30eff462e6a9ba826451e2f7dc6a405f683cf93f58e786504753dea39f09b9"
+    },
+    {
+      "path": "include/cybr/scene.hpp",
+      "sha256": "46a7db790803adbab6c4d18a21845404b5fd94ca610dfc482bed8d37fc5ddf65"
+    },
+    {
+      "path": "include/cybr/shader.hpp",
+      "sha256": "cdb762f0dcf9a80fe822c37a1a2dd3db64f7e5b02484d24cff4b02654ee25525"
+    },
+    {
+      "path": "include/cybr/spectrum.hpp",
+      "sha256": "c928cb1b574d05cb58a4e084584f7c5d274ec4f667f000f76c0ed4a924f30fc0"
+    },
+    {
+      "path": "include/cybr/texture.hpp",
+      "sha256": "691efe1270a039e258ed272a3faba1cea3ed48c1397a83ee270f508e1a184b94"
+    },
+    {
+      "path": "include/cybr/volume.hpp",
+      "sha256": "7992f6def6428a7cdfbf29de276b174f9c0295556fe9e5ddf26da499ff4f12d6"
+    },
+    {
+      "path": "python/cybrlight/__init__.py",
+      "sha256": "846b8c844bc6175fa42f7291dded78fc1e3a1afa69182fa76d54562a80f0ae19",
+      "original_sha256": "d20815acbefcac8e5541560f4b75d7c1d8a87dad458d906632f6e522d1d39ce0",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/__main__.py",
+      "sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4"
+    },
+    {
+      "path": "python/cybrlight/cli.py",
+      "sha256": "f43f07891771a4cd482280aeb8f4b5cab9e95847bcda0e23d4f363899b0b91b8",
+      "original_sha256": "05770c4bf065544611745e12eaefdd43ba142aa4d6b9111a48f5bb11fe2dc780",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/inverse.py",
+      "sha256": "96692b1240ec253688e373bdc180d1b4368319238359510224737145a88c6e66"
+    },
+    {
+      "path": "python/cybrlight/jit.py",
+      "sha256": "6f135f7ba75af51965df33142914d6dea0a14f73cef75406ae05bea516afaca9",
+      "original_sha256": "d3d030da910c5b13b7716f993fee95ae4fce23f3f72dbccfcfcdba8ae41d8d9b",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/mesh_io.py",
+      "sha256": "1b58f6359d08aabcb105ab8c0c2cb5dd5798792dcea8f5fd59c2c78aee72bdfc"
+    },
+    {
+      "path": "python/cybrlight/portable.py",
+      "sha256": "26330c633148a6b92555826a458571e45c19dff9dd09707311a71288dcbcb536",
+      "original_sha256": "13d1ac9ec9062c4a9e43b6c2a0eaf27dba903460f68e53c88614d7ab40a4834c",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/portable_kernel.py",
+      "sha256": "345a2c65cc3126fb10b614377d886e5f0e7ea64f12b6a91244ed241ff57858eb"
+    },
+    {
+      "path": "python/cybrlight/tensor_backend.py",
+      "sha256": "07d0927d8285ad92fa36acf9e10de641ecf1663970fec0a0e73d4bac4e2d22e7",
+      "original_sha256": "c533953a2c13920c376b242ba80801f8a667ff4c2ee988536ae71905b3d179b2",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/volume_io.py",
+      "sha256": "88ee60b854e46f91c028b25f7107fdce3e648f91617ed8571ca6f62eeab6ebdd",
+      "original_sha256": "822809e065fce709fc42eb1f3b87235dcbbf053d0e1f00f93ae9f9f89c1aa9e2",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    },
+    {
+      "path": "python/cybrlight/workflow.py",
+      "sha256": "34ee8a783898f1b479ace88335aae06c67da25feeaa4d1cee977f7424ca66963",
+      "original_sha256": "48c4372b7d0483ad148bfc2c4b9ed8bb5889040abd675f7ffb64c04cc6b3e675",
+      "change": "Documentation or report metadata only; rendering algorithms unchanged."
+    }
+  ],
+  "native_implementation_modified": true,
+  "excluded_browser_backend": true,
+  "omitted_generated_artifacts": [
+    "flattened delivery scene dumps",
+    "precompiled shared libraries",
+    "raw image films",
+    "repeated historical build logs"
+  ],
+  "regenerate_with": "python tools/examples.py all --preset preview",
+  "modification_scope": "Project documentation, docstrings, and removal of obsolete comparison metadata."
+}

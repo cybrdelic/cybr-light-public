@@ -1,0 +1,7 @@
+# Exact package versions present during the recorded Python 3.13 verification.
+# This file is evidence of the tested environment, not a lock for every OS/Python.
+numpy==2.3.5
+Pillow==12.3.0
+numba==0.65.1
+llvmlite==0.47.0
+opencv-python-headless==4.13.0.92

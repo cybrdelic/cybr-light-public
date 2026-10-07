@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {evaluateRelease,requiredCases,releaseTarget} from './release-gates.mjs';
+const fixture=()=>({adapter:'test adapter',isolatedGPU:true,cases:Object.fromEntries(requiredCases.map(n=>[n,{width:1920,height:1080,gpuP95Ms:10,gpuErrors:0,nonfinitePixels:0,sequenceComplete:true,sequencePath:'sequence.mp4',referencePath:'reference.exr',visualApproval:true,relativeRMSE:.01,temporalResidual:.01}]))});
+test('no evidence never passes',()=>assert.equal(evaluateRelease({}).accepted,false));
+test('complete synthetic fixture passes the evaluator, not the renderer',()=>assert.equal(evaluateRelease(fixture()).accepted,true));
+test('FPS overlay cannot substitute for GPU timing',()=>{const r=fixture();delete r.cases['glass-motion'];r.cases['nested-glass-motion'].gpuP95Ms=NaN;r.cases['nested-glass-motion'].fps=120;assert.equal(evaluateRelease(r).accepted,false);});
+test('numerical success cannot override failed visual review',()=>{const r=fixture();r.cases['metal-motion'].visualApproval=false;assert.equal(evaluateRelease(r).accepted,false);});
+test('quality cannot silently lower resolution or ignore dynamic cases',()=>{const r=fixture();r.cases['diffuse-motion'].width=960;delete r.cases['moving-light'];assert.equal(evaluateRelease(r).accepted,false);});
+test('negative or nonfinite metrics cannot pass',()=>{for(const k of ['gpuP95Ms','relativeRMSE','temporalResidual']){const r=fixture();r.cases['diffuse-motion'][k]=-1;assert.equal(evaluateRelease(r).accepted,false);}});
+test('contended GPU measurements fail',()=>{const r=fixture();r.isolatedGPU=false;assert.equal(evaluateRelease(r).accepted,false);});

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CYBR LIGHT · hybrid architecture laboratory</title>
+<style>
+body{margin:0;background:#141619;color:#e4e7ea;font:14px system-ui}header,footer{padding:16px 24px}h1{font-size:19px;margin:0 0 8px}p{max-width:1050px;color:#adb5be;margin:8px 0}button,select,a{margin:6px 12px 6px 0;color:inherit;background:#272c32;padding:8px;border:1px solid #515962}canvas{display:block;width:min(100%,1152px);height:auto;margin:auto;touch-action:none}#status{white-space:pre-wrap;font:12px monospace}strong{color:#ffc879}
+</style>
+<header><h1>CYBR LIGHT / hybrid architecture laboratory</h1>
+<p><strong>Experimental architecture lab — not the finished beauty renderer.</strong> Persistent-lighting mode measures unit-Lambertian irradiance, not the original primary materials. Beauty-reference mode traces the original material response. Neither mode uses a temporal denoiser or exposure clamp.</p>
+<select id="scene"><option value="example-geo-printer">FUSE C220 printer</option><option value="example-pile">2,016-instance pile</option><option value="proof-optics">Nested glass and water</option><option value="proof-metals">Metal / roughness test</option><option value="proof-indirect">Indirect-light test</option></select>
+<select id="mode"><option value="cache">Persistent surface lighting (diffuse diagnostic)</option><option value="beauty">Original-material beauty reference (uncached)</option><option value="reference">Uncached diffuse reference</option><option value="visibility">4× MSAA visibility</option><option value="coverage">Cache sample count / misses</option></select>
+<p>Beauty reference preserves the original materials, metal reflections, glass and ground. It accumulates while stationary and resets on camera motion; it is the quality target, not yet the accelerated beauty renderer.</p>
+<button id="pause">Pause</button><button id="reset">Invalidate lighting cache</button><a href="./">Original renderer (unchanged)</a>
+<script>for(const [value,label] of [['raster','Raster primary / separated beauty'],['reconstructed','Diffuse reconstruction / optical motion unfiltered'],['optical','Optical motion reconstruction (experimental)'],['rasterReference','Matched-sample traced-primary reference']]){const o=document.createElement('option');o.value=value;o.textContent=label;document.getElementById('mode').append(o);}</script>
+<select id="signal" aria-label="Lighting signal"><option value="0">Combined beauty</option><option value="1">Diffuse lighting</option><option value="2">Reflections</option><option value="3">Transmission</option><option value="4">Directly visible emission / sky</option></select>
+<p>Raster modes use separate lighting buffers. Diffuse reconstruction follows the primary surface. Optical reconstruction separately matches reflected and refracted endpoints; changed or ambiguous paths reset. It remains experimental: nested glass and rough reflections still show motion noise.</p>
+<p>Drag to orbit · right-drag to pan · wheel to dolly. Coverage mode marks cache misses magenta; lighting mode traces those samples instead of inventing lighting. Scene changes rebuild the cache; camera movement does not.</p></header>
+<canvas id="viewport" width="960" height="540"></canvas><footer id="status">Starting…</footer>
+<script type="module" src="./hybrid-lab.mjs"></script></html>

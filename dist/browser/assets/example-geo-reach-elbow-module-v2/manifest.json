@@ -1,0 +1,3914 @@
+{
+  "source": "cybr-geo\\examples\\reach_elbow_module_v2.py",
+  "sourceSha256": "57ccb863a837b4000854dd9f9d22123e185402963b8d7afe745d40947abd5097",
+  "notes": "Original CYBR REACH-1 v2 + ORBIT source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced.",
+  "modules": [
+    {
+      "name": "example-geo-reach-elbow-module-v2",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 0,
+        "count": 102417,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 409668,
+        "count": 102417,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 819336,
+        "count": 142638,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 1389888,
+        "count": 75036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1690032,
+        "count": 75036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1990176,
+        "count": 99180,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 2386896,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2468688,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2550480,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 2696880,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2778672,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2860464,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 3006864,
+        "count": 73614,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3301320,
+        "count": 73614,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3595776,
+        "count": 73140,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 3888336,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3970128,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4051920,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 4198320,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4280112,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4361904,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 4508304,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4590096,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4671888,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 4818288,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4900080,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4981872,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 5128272,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5210064,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5291856,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 5438256,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5520048,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5601840,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 5748240,
+        "count": 20706,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5831064,
+        "count": 20706,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5913888,
+        "count": 20610,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 5996328,
+        "count": 26844,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6103704,
+        "count": 26844,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6211080,
+        "count": 26700,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 6317880,
+        "count": 75888,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6621432,
+        "count": 75888,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6924984,
+        "count": 141522,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 7491072,
+        "count": 73128,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7783584,
+        "count": 73128,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8076096,
+        "count": 137400,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 8625696,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8660076,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8694456,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 8761872,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8796252,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8830632,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 8898048,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8932428,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8966808,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9034224,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9068604,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9102984,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9170400,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9204780,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9239160,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9306576,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9340956,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9375336,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9442752,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9477132,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9511512,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9578928,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9613308,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9647688,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9715104,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9749484,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9783864,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9851280,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9885660,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9920040,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 9987456,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10021836,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10056216,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 10123632,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10158012,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10192392,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 10259808,
+        "count": 71073,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10544100,
+        "count": 71073,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10828392,
+        "count": 121326,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 11313696,
+        "count": 75888,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11617248,
+        "count": 75888,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11920800,
+        "count": 141522,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 12486888,
+        "count": 73128,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12779400,
+        "count": 73128,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13071912,
+        "count": 137400,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 13621512,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13655892,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13690272,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 13757688,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13792068,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13826448,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 13893864,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13928244,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13962624,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14030040,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14064420,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14098800,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14166216,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14200596,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14234976,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14302392,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14336772,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14371152,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14438568,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14472948,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14507328,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14574744,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14609124,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14643504,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14710920,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14745300,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14779680,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14847096,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14881476,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14915856,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 14983272,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15017652,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15052032,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 15119448,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15153828,
+        "count": 8595,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15188208,
+        "count": 16854,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 15255624,
+        "count": 71073,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 15539916,
+        "count": 71073,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15824208,
+        "count": 121326,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 16309512,
+        "count": 22224,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16398408,
+        "count": 22224,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16487304,
+        "count": 22188,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 16576056,
+        "count": 47400,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16765656,
+        "count": 47400,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16955256,
+        "count": 86100,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17299656,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17321688,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17343720,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17365704,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17387736,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17409768,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17431752,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17453784,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17475816,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17497800,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17519832,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17541864,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17563848,
+        "count": 9114,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17600304,
+        "count": 9114,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17636760,
+        "count": 9090,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17673120,
+        "count": 13332,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17726448,
+        "count": 13332,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17779776,
+        "count": 13272,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 17832864,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 18181008,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 18529152,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 19188912,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 19537056,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 19885200,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 20544960,
+        "count": 59874,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 20784456,
+        "count": 59874,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21023952,
+        "count": 44616,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 21202416,
+        "count": 22896,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21294000,
+        "count": 22896,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21385584,
+        "count": 18672,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 21460272,
+        "count": 3996,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21476256,
+        "count": 3996,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21492240,
+        "count": 3930,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 21507960,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21529992,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21552024,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 21574008,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21596040,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 21618072,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 37,
+      "positions": {
+        "offset": 21640056,
+        "count": 73518,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 21934128,
+        "count": 73518,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22228200,
+        "count": 74022,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22524288,
+        "count": 8910,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22559928,
+        "count": 8910,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22595568,
+        "count": 8892,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22631136,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22636632,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22642128,
+        "count": 1320,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22647408,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22652904,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22658400,
+        "count": 1320,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22663680,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22669176,
+        "count": 1374,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22674672,
+        "count": 1320,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22679952,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22761744,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 22843536,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 22989936,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 23071728,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 23153520,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 23299920,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 23381712,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 23463504,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 23609904,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 23691696,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 23773488,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 37,
+      "positions": {
+        "offset": 23919888,
+        "count": 832377,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27249396,
+        "count": 832377,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30578904,
+        "count": 1591710,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 36945744,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37027536,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37109328,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 37255728,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37337520,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37419312,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 37565712,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37577160,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37588608,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 37599840,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37611288,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 37622736,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 37633968,
+        "count": 67398,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 37903560,
+        "count": 67398,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38173152,
+        "count": 106140,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 38597712,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38619744,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38641776,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 38663760,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38745552,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38827344,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 38973744,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 39055536,
+        "count": 20448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 39137328,
+        "count": 36600,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 39283728,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 39295176,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 39306624,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 39317856,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 39329304,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 39340752,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 39351984,
+        "count": 67398,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 39621576,
+        "count": 67398,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 39891168,
+        "count": 106140,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 40315728,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 40337760,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 40359792,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 40381776,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 40392792,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 40403808,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 40414752,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 40425768,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 40436784,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 40447728,
+        "count": 139206,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 41004552,
+        "count": 139206,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 41561376,
+        "count": 138972,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 37,
+      "positions": {
+        "offset": 42117264,
+        "count": 75738,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 42420216,
+        "count": 75738,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 42723168,
+        "count": 76914,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 43030824,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43042272,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43053720,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 43064952,
+        "count": 8844,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43100328,
+        "count": 8844,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43135704,
+        "count": 8838,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 43171056,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43182504,
+        "count": 2862,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43193952,
+        "count": 2808,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 43205184,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43227216,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43249248,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 43271232,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43293264,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43315296,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 43337280,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43359312,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43381344,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 43403328,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43425360,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43447392,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 43469376,
+        "count": 27186,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43578120,
+        "count": 27186,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43686864,
+        "count": 27102,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 43795272,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 44143416,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 44491560,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 45151320,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 45499464,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 45847608,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 46507368,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 46729656,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 46951944,
+        "count": 94224,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 47328840,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 47676984,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 48025128,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 48684888,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 49033032,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 49381176,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 50040936,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 50263224,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 50485512,
+        "count": 94224,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 50862408,
+        "count": 573420,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 53156088,
+        "count": 573420,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 55449768,
+        "count": 1109922,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 59889456,
+        "count": 58128,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 60121968,
+        "count": 58128,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 60354480,
+        "count": 96570,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 60740760,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 60762792,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 60784824,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 60806808,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 60828840,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 60850872,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 60872856,
+        "count": 26940,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 60980616,
+        "count": 26940,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 61088376,
+        "count": 26856,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 61195800,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 61543944,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 61892088,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 62551848,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 62899992,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 63248136,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 63907896,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 64130184,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 64352472,
+        "count": 94224,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 64729368,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 65077512,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 65425656,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 66085416,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 66433560,
+        "count": 87036,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 66781704,
+        "count": 164940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 67441464,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 67663752,
+        "count": 55572,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 67886040,
+        "count": 94224,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 68262936,
+        "count": 573471,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 70556820,
+        "count": 573471,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 72850704,
+        "count": 1110030,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 77290824,
+        "count": 58134,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 77523360,
+        "count": 58134,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 77755896,
+        "count": 96576,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 78142200,
+        "count": 199095,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 78938580,
+        "count": 199095,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 79734960,
+        "count": 394794,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 39,
+      "positions": {
+        "offset": 81314136,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81325152,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81336168,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 39,
+      "positions": {
+        "offset": 81347112,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81358128,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81369144,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 39,
+      "positions": {
+        "offset": 81380088,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81391104,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81402120,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 39,
+      "positions": {
+        "offset": 81413064,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81424080,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81435096,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 39,
+      "positions": {
+        "offset": 81446040,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81457056,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81468072,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 81479016,
+        "count": 8262,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81512064,
+        "count": 8262,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81545112,
+        "count": 8244,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 81578088,
+        "count": 19278,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81655200,
+        "count": 19278,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81732312,
+        "count": 19296,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 81809496,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81831528,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 81853560,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 38,
+      "positions": {
+        "offset": 81875544,
+        "count": 30639,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 81998100,
+        "count": 30639,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82120656,
+        "count": 30726,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 38,
+      "positions": {
+        "offset": 82243560,
+        "count": 25470,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82345440,
+        "count": 25470,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82447320,
+        "count": 24972,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82547208,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82547496,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82547784,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82547928,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82548216,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82548504,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82548648,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82548936,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82549224,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82549368,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82549656,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82549944,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82550088,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82550376,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82550664,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82550808,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82551096,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82551384,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82551528,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82551816,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82552104,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82552248,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82552536,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82552824,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82552968,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82553256,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82553544,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82553688,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82553976,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82554264,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82554408,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82554696,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82554984,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82555128,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82555416,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82555704,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82555848,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82556136,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82556424,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82556568,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82556856,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82557144,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82557288,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82557576,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82557864,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82558008,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82558296,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82558584,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82558728,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82559016,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82559304,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82559448,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82559736,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82560024,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82560168,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82560456,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82560744,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82560888,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82561176,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82561464,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82561608,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82561896,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82562184,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82562328,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82562616,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 82562904,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 82563048,
+        "count": 58416,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 82796712,
+        "count": 58416,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83030376,
+        "count": 97140,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83418936,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83440968,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83463000,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83484984,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83495544,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83506104,
+        "count": 2568,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83516376,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83538408,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83560440,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83582424,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83592984,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83603544,
+        "count": 2568,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83613816,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83635848,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83657880,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83679864,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83690424,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83700984,
+        "count": 2568,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83711256,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83733288,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83755320,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 83777304,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83787864,
+        "count": 2640,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83798424,
+        "count": 2568,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 83808696,
+        "count": 9468,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83846568,
+        "count": 9468,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83884440,
+        "count": 9324,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 83921736,
+        "count": 9468,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 83959608,
+        "count": 9468,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 83997480,
+        "count": 9324,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 84034776,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84056808,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84078840,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 84100824,
+        "count": 5706,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84123648,
+        "count": 5706,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84146472,
+        "count": 5622,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 84168960,
+        "count": 5706,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84191784,
+        "count": 5706,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84214608,
+        "count": 5622,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 84237096,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84247224,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84257352,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 84267432,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84277560,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84287688,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 84297768,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84307896,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84318024,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 84328104,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84338232,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 84348360,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 84358440,
+        "count": 80448,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 84680232,
+        "count": 80448,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 85002024,
+        "count": 119124,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 85478520,
+        "count": 47400,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 85668120,
+        "count": 47400,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 85857720,
+        "count": 86100,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 86202120,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 86224152,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 86246184,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 86268168,
+        "count": 38034,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 86420304,
+        "count": 38034,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 86572440,
+        "count": 26268,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 86677512,
+        "count": 11574,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 86723808,
+        "count": 11574,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 86770104,
+        "count": 8628,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 86804616,
+        "count": 32994,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 86936592,
+        "count": 32994,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 87068568,
+        "count": 22908,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 87160200,
+        "count": 10314,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 87201456,
+        "count": 10314,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 87242712,
+        "count": 7788,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 87273864,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 87284880,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 87295896,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 87306840,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 87317856,
+        "count": 2754,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 87328872,
+        "count": 2736,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 37,
+      "positions": {
+        "offset": 87339816,
+        "count": 57144,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 87568392,
+        "count": 57144,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 87796968,
+        "count": 58416,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 88030632,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 88046280,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 88061928,
+        "count": 3840,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 88077288,
+        "count": 50808,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 88280520,
+        "count": 50808,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 88483752,
+        "count": 89448,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 88841544,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 88863576,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 88885608,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 88907592,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 88929624,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 88951656,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 88973640,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 88995672,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89017704,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 33,
+      "positions": {
+        "offset": 89039688,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89061720,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89083752,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89105736,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89115864,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89125992,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89136024,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89146152,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89156280,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89166312,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89176440,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89186568,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89196600,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89206728,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89216856,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89226888,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89237016,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89247144,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89257176,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89267304,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89277432,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89287464,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89297592,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89307720,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89317752,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89327880,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89338008,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 89348040,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89370072,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89392104,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89414088,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89436120,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89458152,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 89480136,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89502168,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89524200,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89546184,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89568216,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89590248,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 89612232,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89622360,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89632488,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 35,
+      "positions": {
+        "offset": 89642568,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89652696,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89662824,
+        "count": 2520,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89672904,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89683032,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89693160,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89703192,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89713320,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89723448,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89733480,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89743608,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89753736,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 34,
+      "positions": {
+        "offset": 89763768,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89773896,
+        "count": 2532,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89784024,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 89794056,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89794344,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89794632,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 89794776,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89795064,
+        "count": 72,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89795352,
+        "count": 36,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 36,
+      "positions": {
+        "offset": 89795496,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89817528,
+        "count": 5508,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89839560,
+        "count": 5496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 89861544,
+        "count": 54,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89861760,
+        "count": 54,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89861976,
+        "count": 24,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-reach-elbow-module-v2",
+      "material": 32,
+      "positions": {
+        "offset": 89862072,
+        "count": 54,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 89862288,
+        "count": 54,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 89862504,
+        "count": 24,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.065,
+        0.08,
+        0.095
+      ],
+      "metalness": 1.0,
+      "roughness": 0.34,
+      "ior": 1.5
+    },
+    "33": {
+      "color": [
+        0.62,
+        0.65,
+        0.68
+      ],
+      "metalness": 1.0,
+      "roughness": 0.29,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.48,
+        0.52,
+        0.56
+      ],
+      "metalness": 1.0,
+      "roughness": 0.22,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.58,
+        0.35,
+        0.135
+      ],
+      "metalness": 1.0,
+      "roughness": 0.3,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.012,
+        0.014,
+        0.017
+      ],
+      "metalness": 0.0,
+      "roughness": 0.68,
+      "ior": 1.46
+    },
+    "37": {
+      "color": [
+        0.012,
+        0.195,
+        0.16
+      ],
+      "metalness": 1.0,
+      "roughness": 0.31,
+      "ior": 1.5
+    },
+    "38": {
+      "color": [
+        0.78,
+        0.83,
+        0.86
+      ],
+      "metalness": 0.1,
+      "roughness": 0.42,
+      "ior": 1.5
+    },
+    "39": {
+      "color": [
+        0.58,
+        0.245,
+        0.1
+      ],
+      "metalness": 0.95,
+      "roughness": 0.22,
+      "ior": 1.5
+    }
+  }
+}

@@ -1,0 +1,4210 @@
+{
+  "source": "cybr-geo\\examples\\aeris\\recipe.py",
+  "sourceSha256": "bef4fe8f3e1d4880bb9052593e49193161a0d164cd2dca078931253cd74be617",
+  "notes": "Original aeris source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced.",
+  "modules": [
+    {
+      "name": "example-geo-aeris",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 0,
+        "count": 21264,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 85056,
+        "count": 21264,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 170112,
+        "count": 31908,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 297744,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 359088,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 420432,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 524448,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 532428,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 540408,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 550440,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 556224,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 562008,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 567720,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 575700,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 583680,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 593712,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 599496,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 605280,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 610992,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 618972,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 626952,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 636984,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 642768,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 648552,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 654264,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 662244,
+        "count": 1995,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 670224,
+        "count": 2508,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 680256,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 686040,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 691824,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 697536,
+        "count": 4584,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 715872,
+        "count": 4584,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 734208,
+        "count": 4476,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 752112,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 813456,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 874800,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 978816,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 990384,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1001952,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 1013424,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1024992,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1036560,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 1048032,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1059600,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1071168,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 1082688,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1094256,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1105824,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 1117344,
+        "count": 7830,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1148664,
+        "count": 7830,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1179984,
+        "count": 7680,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 1210704,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1216488,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1222272,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 1227984,
+        "count": 4584,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1246320,
+        "count": 4584,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1264656,
+        "count": 4476,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 1282560,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1343904,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1405248,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 1509264,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1520832,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1532400,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 1543872,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1555440,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1567008,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 1578480,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1590048,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1601616,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 1613136,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1624704,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1636272,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 1647792,
+        "count": 7830,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1679112,
+        "count": 7830,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1710432,
+        "count": 7680,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 1741152,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1746936,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1752720,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 1758432,
+        "count": 38256,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1911456,
+        "count": 38256,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2064480,
+        "count": 74352,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 2361888,
+        "count": 37830,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2513208,
+        "count": 37830,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2664528,
+        "count": 73500,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 2958528,
+        "count": 44712,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3137376,
+        "count": 44712,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3316224,
+        "count": 56676,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 3542928,
+        "count": 25467,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3644796,
+        "count": 25467,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3746664,
+        "count": 25986,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 3850608,
+        "count": 25467,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3952476,
+        "count": 25467,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4054344,
+        "count": 25986,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4158288,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4170288,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4182288,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4194048,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4206048,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4218048,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4229808,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4241808,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4253808,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4265568,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4277568,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4289568,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4301328,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4313328,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4325328,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4337088,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4349088,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4361088,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4372848,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4384848,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4396848,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4408608,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4420608,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4432608,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4444368,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4456368,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4468368,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 4480128,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4492128,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4504128,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 4515888,
+        "count": 27933,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4627620,
+        "count": 27933,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4739352,
+        "count": 50400,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 41,
+      "positions": {
+        "offset": 4940952,
+        "count": 43923,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5116644,
+        "count": 43923,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5292336,
+        "count": 86400,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5637936,
+        "count": 18798,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5713128,
+        "count": 18798,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5788320,
+        "count": 18852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 5863728,
+        "count": 5625,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5886228,
+        "count": 5625,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5908728,
+        "count": 6840,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5936088,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5937936,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5939784,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5941704,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5943552,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5945400,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5947320,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5949168,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5951016,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5952936,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5954784,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5956632,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5958552,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5960400,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5962248,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5964168,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5966016,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5967864,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5969784,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5971632,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5973480,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5975400,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5977248,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5979096,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5981016,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5982864,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5984712,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5986632,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5988480,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5990328,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5992248,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5994096,
+        "count": 462,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5995944,
+        "count": 480,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 5997864,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6009432,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6021000,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6032520,
+        "count": 1608,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6038952,
+        "count": 1608,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6045384,
+        "count": 1560,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6051624,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6063192,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6074760,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6086280,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6097848,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6109416,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6120936,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6146100,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6171264,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6217920,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6243084,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6268248,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6314904,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6340068,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6365232,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6411888,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6437052,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6462216,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6508872,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6534036,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6559200,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6605856,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6631020,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6656184,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6702840,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6728004,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6753168,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6799824,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6824988,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6850152,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6896808,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 6921972,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 6947136,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 6993792,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7018956,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7044120,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 7090776,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7102344,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7113912,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 7125432,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7137000,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7148568,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7160088,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7171656,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7183224,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7194744,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7206312,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7217880,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7229400,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7254564,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7279728,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7326384,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7351548,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7376712,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7423368,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7448532,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7473696,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7520352,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7545516,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7570680,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7617336,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7642500,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7667664,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7714320,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7739484,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7764648,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7811304,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7836468,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7861632,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 7908288,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 7933452,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 7958616,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 8005272,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8030436,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8055600,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 8102256,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8127420,
+        "count": 6291,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8152584,
+        "count": 11664,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 8199240,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8210808,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8222376,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 8233896,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8245464,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 8257032,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 8268552,
+        "count": 98616,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 8663016,
+        "count": 98616,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9057480,
+        "count": 137904,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 9609096,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9655368,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9701640,
+        "count": 11592,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 9748008,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9759576,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9771144,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 9782664,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9828936,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9875208,
+        "count": 11592,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 9921576,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9933144,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 9944712,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 36,
+      "positions": {
+        "offset": 9956232,
+        "count": 9894,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 9995808,
+        "count": 9894,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10035384,
+        "count": 8856,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 10070808,
+        "count": 57840,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10302168,
+        "count": 57840,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10533528,
+        "count": 57120,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 10762008,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10773576,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10785144,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 10796664,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10808232,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10819800,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 10831320,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10842888,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10854456,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 10865976,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10877544,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10889112,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 10900632,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10912200,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10923768,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 10935288,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10946856,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10958424,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 10969944,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 10981512,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 10993080,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11004600,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11016600,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11028600,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11040360,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11052360,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11064360,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11076120,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11088120,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11100120,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11111880,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11123880,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11135880,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11147640,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11159640,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11171640,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 11183400,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11195400,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11207400,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 11219160,
+        "count": 37746,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 11370144,
+        "count": 37746,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 11521128,
+        "count": 71454,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 11806944,
+        "count": 81495,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 12132924,
+        "count": 81495,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 12458904,
+        "count": 158802,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 13094112,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13140384,
+        "count": 11568,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13186656,
+        "count": 11592,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13233024,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13245024,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13257024,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13268784,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13280784,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13292784,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13304544,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13316544,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13328544,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13340304,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13352304,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13364304,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13376064,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13388064,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13400064,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 13411824,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13423824,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 13435824,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 13447584,
+        "count": 74157,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 13744212,
+        "count": 74157,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 14040840,
+        "count": 146514,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 14626896,
+        "count": 67473,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 14896788,
+        "count": 67473,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 15166680,
+        "count": 133188,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 15699432,
+        "count": 84429,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 16037148,
+        "count": 84429,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 16374864,
+        "count": 166668,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 17041536,
+        "count": 82041,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 17369700,
+        "count": 82041,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 17697864,
+        "count": 162198,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 18346656,
+        "count": 15408,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 18408288,
+        "count": 15408,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 18469920,
+        "count": 26064,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 18574176,
+        "count": 18480,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 18648096,
+        "count": 18480,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 18722016,
+        "count": 29064,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 18838272,
+        "count": 258138,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 19870824,
+        "count": 258138,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 20903376,
+        "count": 418464,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 22577232,
+        "count": 88077,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 22929540,
+        "count": 88077,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 23281848,
+        "count": 163296,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 23935032,
+        "count": 26088,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24039384,
+        "count": 26088,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24143736,
+        "count": 36504,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 24289752,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24301320,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24312888,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 24324360,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24335928,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24347496,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 24358968,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24370536,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24382104,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 24393576,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24405144,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24416712,
+        "count": 2868,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 24428184,
+        "count": 8676,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24462888,
+        "count": 8676,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24497592,
+        "count": 8688,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 24532344,
+        "count": 5796,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24555528,
+        "count": 5796,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24578712,
+        "count": 5760,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 24601752,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24663096,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24724440,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 24828456,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 24889800,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 24951144,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 25055160,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 25116504,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 25177848,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 25281864,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 25343208,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 25404552,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 25508568,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 25569912,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 25631256,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 25735272,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 25796616,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 25857960,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 25961976,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26023320,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26084664,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 26188680,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26250024,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26311368,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 26415384,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26476728,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26538072,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 26642088,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26703432,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26764776,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 26868792,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 26930136,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 26991480,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 27095496,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27156840,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27218184,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 27322200,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27383544,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27444888,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 27548904,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27610248,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27671592,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 27775608,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 27836952,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 27898296,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 28002312,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28063656,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 28125000,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 28229016,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28290360,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 28351704,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 28455720,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28517064,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 28578408,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 28682424,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28743768,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 28805112,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 28909128,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 28970472,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29031816,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 29135832,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 29197176,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29258520,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 29362536,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 29423880,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29485224,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 29589240,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 29650584,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29711928,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 29815944,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 29877288,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 29938632,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 30042648,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30054648,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30066648,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 30078408,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30090408,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30102408,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 30114168,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30126168,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30138168,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 30149928,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30161928,
+        "count": 3000,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30173928,
+        "count": 2940,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30185688,
+        "count": 8676,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30220392,
+        "count": 8676,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30255096,
+        "count": 8688,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30289848,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30301416,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30312984,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30324504,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30325464,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30326424,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30327240,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30328200,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30329160,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30329976,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30330936,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30331896,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30332712,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30333672,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30334632,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30335448,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30336408,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30337368,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30338184,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30339144,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30340104,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30340920,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30341880,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30342840,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30343656,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30344616,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30345576,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30346392,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30347352,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30348312,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30349128,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30350088,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30351048,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30351864,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30352824,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30353784,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30354600,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30355560,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30356520,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 30357336,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30358296,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30359256,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 30360072,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30361032,
+        "count": 240,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30361992,
+        "count": 204,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 30362808,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30363480,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30364152,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 30364680,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30432672,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30500664,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 30568440,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30569112,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30569784,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 30570312,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30638304,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30706296,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 30774072,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30774744,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30775416,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 30775944,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30843936,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30911928,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 30979704,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 30980376,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 30981048,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 30981576,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31049568,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31117560,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 31185336,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31186008,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31186680,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 31187208,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31255200,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31323192,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 31390968,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31391640,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31392312,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 31392840,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31460832,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31528824,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 31596600,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31597272,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31597944,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 31598472,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31666464,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31734456,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 31802232,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31802904,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31803576,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 31804104,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 31872096,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 31940088,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 32007864,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32008536,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32009208,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 32009736,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32077728,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32145720,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 32213496,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32214168,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32214840,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 32215368,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32283360,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32351352,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 32419128,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32419800,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32420472,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 32421000,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32488992,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32556984,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 32624760,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32625432,
+        "count": 168,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32626104,
+        "count": 132,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 35,
+      "positions": {
+        "offset": 32626632,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32694624,
+        "count": 16998,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32762616,
+        "count": 16944,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 42,
+      "positions": {
+        "offset": 32830392,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32841960,
+        "count": 2892,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32853528,
+        "count": 2880,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 32865048,
+        "count": 3072,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32877336,
+        "count": 3072,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 32889624,
+        "count": 2964,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 34,
+      "positions": {
+        "offset": 32901480,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 32962824,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 33024168,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 33128184,
+        "count": 4338,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 33145536,
+        "count": 4338,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 33162888,
+        "count": 4308,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 33180120,
+        "count": 4338,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 33197472,
+        "count": 4338,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 33214824,
+        "count": 4308,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 33232056,
+        "count": 59112,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 33468504,
+        "count": 59112,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 33704952,
+        "count": 115872,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 34168440,
+        "count": 226806,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 35075664,
+        "count": 226806,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 35982888,
+        "count": 446082,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 37,
+      "positions": {
+        "offset": 37767216,
+        "count": 93075,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 38139516,
+        "count": 93075,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 38511816,
+        "count": 183744,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 39246792,
+        "count": 123318,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 39740064,
+        "count": 123318,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 40233336,
+        "count": 244146,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 41209920,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 41271264,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 41332608,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 33,
+      "positions": {
+        "offset": 41436624,
+        "count": 115269,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 41897700,
+        "count": 115269,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 42358776,
+        "count": 228036,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 32,
+      "positions": {
+        "offset": 43270920,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43332264,
+        "count": 15336,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43393608,
+        "count": 26004,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 38,
+      "positions": {
+        "offset": 43497624,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43503408,
+        "count": 1446,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43509192,
+        "count": 1428,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 43514904,
+        "count": 24894,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43614480,
+        "count": 24894,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43714056,
+        "count": 24360,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 40,
+      "positions": {
+        "offset": 43811496,
+        "count": 15192,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 43872264,
+        "count": 15192,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 43933032,
+        "count": 25860,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 40,
+      "positions": {
+        "offset": 44036472,
+        "count": 8091,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 44068836,
+        "count": 8091,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 44101200,
+        "count": 7662,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-aeris",
+      "material": 39,
+      "positions": {
+        "offset": 44131848,
+        "count": 20958,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 44215680,
+        "count": 20958,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 44299512,
+        "count": 20448,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.022,
+        0.115,
+        0.125
+      ],
+      "metalness": 0.8,
+      "roughness": 0.32,
+      "ior": 1.5
+    },
+    "33": {
+      "color": [
+        0.62,
+        0.67,
+        0.7
+      ],
+      "metalness": 0.96,
+      "roughness": 0.27,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.055,
+        0.065,
+        0.071
+      ],
+      "metalness": 0.82,
+      "roughness": 0.34,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.72,
+        0.29,
+        0.105
+      ],
+      "metalness": 0.98,
+      "roughness": 0.25,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.57,
+        0.51,
+        0.4
+      ],
+      "metalness": 0.0,
+      "roughness": 0.83,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.016,
+        0.021,
+        0.023
+      ],
+      "metalness": 0.0,
+      "roughness": 0.73,
+      "ior": 1.5
+    },
+    "38": {
+      "color": [
+        0.52,
+        0.57,
+        0.6
+      ],
+      "metalness": 0.99,
+      "roughness": 0.22,
+      "ior": 1.5
+    },
+    "39": {
+      "color": [
+        0.5,
+        0.34,
+        0.15
+      ],
+      "metalness": 0.93,
+      "roughness": 0.31,
+      "ior": 1.5
+    },
+    "40": {
+      "color": [
+        0.83,
+        0.87,
+        0.85
+      ],
+      "metalness": 0.15,
+      "roughness": 0.43,
+      "ior": 1.5
+    },
+    "41": {
+      "color": [
+        0.64,
+        0.135,
+        0.035
+      ],
+      "metalness": 0.0,
+      "roughness": 0.57,
+      "ior": 1.5
+    },
+    "42": {
+      "color": [
+        0.13,
+        0.15,
+        0.155
+      ],
+      "metalness": 0.3,
+      "roughness": 0.65,
+      "ior": 1.5
+    }
+  }
+}

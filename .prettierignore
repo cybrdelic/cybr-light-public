@@ -1,0 +1,10 @@
+# Playwright CLI function-expression inputs cannot have trailing semicolons.
+browser/verify-*.js
+browser/assets/
+browser/source-cache/
+browser/vendor/
+build*/
+outputs/
+output/
+rendered/
+node_modules/

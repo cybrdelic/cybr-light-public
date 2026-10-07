@@ -1,0 +1,377 @@
+[
+  {
+    "query": "",
+    "name": "trace",
+    "hash": "5c8e21d0daf2ba02f4e3f395b373218cfce2ff805898cfe0a2af9f0a91a728fb"
+  },
+  {
+    "query": "",
+    "name": "trace-pile",
+    "hash": "42254776648d67554cf1d1ff7af73d74111ae592a23fec32eefd4f10a64ce5de"
+  },
+  {
+    "query": "",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "backend=signals",
+    "name": "trace",
+    "hash": "debdda9e95d19ac350f1d9a3e152cefb27ccc8ff80dfce3c345245f6c73ae699"
+  },
+  {
+    "query": "backend=signals",
+    "name": "trace-pile",
+    "hash": "d1c9267074058d544570a29035a8464717041f76671c94b1e2b8c0a8da4ef58b"
+  },
+  {
+    "query": "backend=signals",
+    "name": "reconstruct",
+    "hash": "7d1c28213ae5f1a581d78114ee6a485548ed1eb8d214f9a62bd4f765d4c74e7d"
+  },
+  {
+    "query": "backend=signals",
+    "name": "filter",
+    "hash": "4c1fd963df3ac4780773806471c971691b1621e95fc6ad32834564745d0b96ee"
+  },
+  {
+    "query": "backend=signals",
+    "name": "display",
+    "hash": "068b5123f03d76cc7a2972a49225da02b0a68025f87916486202a57192eb0339"
+  },
+  {
+    "query": "optics=guides",
+    "name": "trace",
+    "hash": "1d9d63955afd6a44dc5d079ca7afc940fd41704dba6b05f033e66b62f63f419e"
+  },
+  {
+    "query": "optics=guides",
+    "name": "trace-pile",
+    "hash": "68809800be103e6be24eecf7f104b50463b70cdd594c73311e925038979696b2"
+  },
+  {
+    "query": "optics=guides",
+    "name": "reconstruct",
+    "hash": "b6bc4a53148fa90fcf69d92c6a02fd937f449d387063edd9a3a9dbeb8c680d5f"
+  },
+  {
+    "query": "optics=guides",
+    "name": "filter",
+    "hash": "66f55a7e18424f27e062a48976ba8adbc4094c1a81a7e3e52f15015a9e62adac"
+  },
+  {
+    "query": "optics=guides",
+    "name": "display",
+    "hash": "068b5123f03d76cc7a2972a49225da02b0a68025f87916486202a57192eb0339"
+  },
+  {
+    "query": "reconstruction=coverage",
+    "name": "trace",
+    "hash": "a0ef4dc996a4358acef957784036dff194d8fa93646aa8eb8198061b28293e04"
+  },
+  {
+    "query": "reconstruction=coverage",
+    "name": "trace-pile",
+    "hash": "7804762ddbbdec99fd792f61022fb8be487b9b7812753258b7e9f04390cf93bd"
+  },
+  {
+    "query": "reconstruction=coverage",
+    "name": "reconstruct",
+    "hash": "a8d67c52ddd45aa43611ab4c76084f7d2b5794e1882773b2439af8e401c01911"
+  },
+  {
+    "query": "reconstruction=coverage",
+    "name": "filter",
+    "hash": "4c1fd963df3ac4780773806471c971691b1621e95fc6ad32834564745d0b96ee"
+  },
+  {
+    "query": "reconstruction=coverage",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "reconstruction=contributors",
+    "name": "trace",
+    "hash": "7996a41dc42de08317ea23f1c75a8c1215f7b4f2e1d2064e5fee2b6a98576152"
+  },
+  {
+    "query": "reconstruction=contributors",
+    "name": "trace-pile",
+    "hash": "d07b3406d02e0980aadc9b540a2251ea728f3fc18f10e6e8bd11d21deee0065c"
+  },
+  {
+    "query": "reconstruction=contributors",
+    "name": "reconstruct",
+    "hash": "769e7f51c56d7f9053d0842874c6c5c089711a374768fd377dfad74f605ec122"
+  },
+  {
+    "query": "reconstruction=contributors",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "reconstruction=contributors",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "cache=endpoint",
+    "name": "trace",
+    "hash": "4a2dd3be38598ef8fa2f5dd517dee6f9b7f3dc762ad1e1ecf502699e2e007e37"
+  },
+  {
+    "query": "cache=endpoint",
+    "name": "trace-pile",
+    "hash": "11a6a3f8aba0c50ed1b8567f84effc3a56c8233ca292c98e78aed6d4fd627f97"
+  },
+  {
+    "query": "cache=endpoint",
+    "name": "reconstruct",
+    "hash": "7d1c28213ae5f1a581d78114ee6a485548ed1eb8d214f9a62bd4f765d4c74e7d"
+  },
+  {
+    "query": "cache=endpoint",
+    "name": "filter",
+    "hash": "4c1fd963df3ac4780773806471c971691b1621e95fc6ad32834564745d0b96ee"
+  },
+  {
+    "query": "cache=endpoint",
+    "name": "display",
+    "hash": "068b5123f03d76cc7a2972a49225da02b0a68025f87916486202a57192eb0339"
+  },
+  {
+    "query": "aa=adaptive",
+    "name": "trace",
+    "hash": "9b1f30b64372be6af2557d7738a2a29ead4e37ad3672fbe12423eaf4aa7c4cf3"
+  },
+  {
+    "query": "aa=adaptive",
+    "name": "trace-pile",
+    "hash": "e90b9e898d9b6c6b3622fe1f23267ff51ec581e681677f439ce16cf6b11776f8"
+  },
+  {
+    "query": "aa=adaptive",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "aa=adaptive",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "aa=adaptive",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "cache=screen",
+    "name": "trace",
+    "hash": "159c723e33050833dc5cb38083fe32487ae3d28e0c1e94b0dae48bf44b9c9355"
+  },
+  {
+    "query": "cache=screen",
+    "name": "trace-pile",
+    "hash": "808a70918f68a98be3e64466ce82d2bd55cdfd312501168ecdf69bc502700ee2"
+  },
+  {
+    "query": "cache=screen",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "cache=screen",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "cache=screen",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "profileTraversal=1",
+    "name": "trace",
+    "hash": "0cc3eb4e51e0d18e240bb375e178af925380a9e7480828b57761c4fb336344e1"
+  },
+  {
+    "query": "profileTraversal=1",
+    "name": "trace-pile",
+    "hash": "a6a0c615b563bf35de0d671ae38d916520cb99550f3854c4a354df70d4da2841"
+  },
+  {
+    "query": "profileTraversal=1",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "profileTraversal=1",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "profileTraversal=1",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "profileVisibility=1",
+    "name": "trace",
+    "hash": "a1f59c3beaa9498fb9e4b15c616b2d85eaae0b07df020aa5da32374e9eed3770"
+  },
+  {
+    "query": "profileVisibility=1",
+    "name": "trace-pile",
+    "hash": "30182c7898cc506993c16f9969033067024711b4b0c41af40d74db5c2a42e4b7"
+  },
+  {
+    "query": "profileVisibility=1",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "profileVisibility=1",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "profileVisibility=1",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "profileRejection=1",
+    "name": "trace",
+    "hash": "5c8e21d0daf2ba02f4e3f395b373218cfce2ff805898cfe0a2af9f0a91a728fb"
+  },
+  {
+    "query": "profileRejection=1",
+    "name": "trace-pile",
+    "hash": "42254776648d67554cf1d1ff7af73d74111ae592a23fec32eefd4f10a64ce5de"
+  },
+  {
+    "query": "profileRejection=1",
+    "name": "reconstruct",
+    "hash": "a15622b92787ce5f8fb9b9f7c11de215bd1f1333b4e988d0df261f25a64300f7"
+  },
+  {
+    "query": "profileRejection=1",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "profileRejection=1",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "nodes=compact",
+    "name": "trace",
+    "hash": "5b38b894f3040ea14f71a7291af38adb093db64649ca147399eba08b002ee863"
+  },
+  {
+    "query": "nodes=compact",
+    "name": "trace-pile",
+    "hash": "42254776648d67554cf1d1ff7af73d74111ae592a23fec32eefd4f10a64ce5de"
+  },
+  {
+    "query": "nodes=compact",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "nodes=compact",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "nodes=compact",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "motion=confidence",
+    "name": "trace",
+    "hash": "5c8e21d0daf2ba02f4e3f395b373218cfce2ff805898cfe0a2af9f0a91a728fb"
+  },
+  {
+    "query": "motion=confidence",
+    "name": "trace-pile",
+    "hash": "42254776648d67554cf1d1ff7af73d74111ae592a23fec32eefd4f10a64ce5de"
+  },
+  {
+    "query": "motion=confidence",
+    "name": "reconstruct",
+    "hash": "25b19b1d5940f163084d702c54300e99a73e40243bf26906e72a3875c436524a"
+  },
+  {
+    "query": "motion=confidence",
+    "name": "filter",
+    "hash": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+  },
+  {
+    "query": "motion=confidence",
+    "name": "display",
+    "hash": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+  },
+  {
+    "query": "backend=signals&transmissionSupport=guided",
+    "name": "trace",
+    "hash": "75bab3ea35fc58644fa82e3eaf9c2b078d4b8aaee82b3f327a2f109c127cb3ec"
+  },
+  {
+    "query": "backend=signals&transmissionSupport=guided",
+    "name": "trace-pile",
+    "hash": "8403c07926e4c4f2b1f709aef4136f2090a0f20795de885d2bdf5be1de652dc5"
+  },
+  {
+    "query": "backend=signals&transmissionSupport=guided",
+    "name": "reconstruct",
+    "hash": "7d1c28213ae5f1a581d78114ee6a485548ed1eb8d214f9a62bd4f765d4c74e7d"
+  },
+  {
+    "query": "backend=signals&transmissionSupport=guided",
+    "name": "filter",
+    "hash": "028553d1d02db4de5fbb979c9ca0aa709afccbf6ba0b561cb3729fe6c0488d36"
+  },
+  {
+    "query": "backend=signals&transmissionSupport=guided",
+    "name": "display",
+    "hash": "068b5123f03d76cc7a2972a49225da02b0a68025f87916486202a57192eb0339"
+  },
+  {
+    "query": "backend=signals&signalDiffuseHistory=legacy",
+    "name": "trace",
+    "hash": "8e86e6c4e3b2cb6fddc4736f27b961fbf98b99c24216093135a070985d10d43c"
+  },
+  {
+    "query": "backend=signals&signalDiffuseHistory=legacy",
+    "name": "trace-pile",
+    "hash": "cb8c27ee0208ec46c4325a75da01adc78ae706faecad2c9ac99b2b55b38056d5"
+  },
+  {
+    "query": "backend=signals&signalDiffuseHistory=legacy",
+    "name": "reconstruct",
+    "hash": "e8f5d4f432a0f7725288fe071ee3dab02da97947cdd349fc3add6654e2a6bb99"
+  },
+  {
+    "query": "backend=signals&signalDiffuseHistory=legacy",
+    "name": "filter",
+    "hash": "4c1fd963df3ac4780773806471c971691b1621e95fc6ad32834564745d0b96ee"
+  },
+  {
+    "query": "backend=signals&signalDiffuseHistory=legacy",
+    "name": "display",
+    "hash": "068b5123f03d76cc7a2972a49225da02b0a68025f87916486202a57192eb0339"
+  }
+]

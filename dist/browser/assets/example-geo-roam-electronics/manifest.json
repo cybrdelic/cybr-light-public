@@ -1,0 +1,1975 @@
+{
+  "source": "cybr-geo\\examples\\roam\\workshop\\electronics.py",
+  "sourceSha256": "d7f30618d6fa7db7b81fd8e220c1cf7a39b4d8205b1b5edec96283c2231ecc22",
+  "notes": "Original ROAM / PCB turnover fixture source assembly. Static RGB studio study; native microfinish, anisotropy, coatings and original lighting are not reproduced. Source transparent materials currently displayed opaque: Transparent PETG.",
+  "modules": [
+    {
+      "name": "example-geo-roam-electronics",
+      "explodedX": 0
+    }
+  ],
+  "meshes": [
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 33,
+      "positions": {
+        "offset": 0,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 68928,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 137856,
+        "count": 17220,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 206736,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 275664,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 344592,
+        "count": 17208,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 413424,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 429072,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 444720,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 460128,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 475344,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 490560,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 505728,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 520944,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 536160,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 551328,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 559368,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 567408,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 575280,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 590928,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 606576,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 621984,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 637200,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 652416,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 667584,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 682800,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 698016,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 713184,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 721224,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 729264,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 737136,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 752352,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 767568,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 782736,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 828840,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 874944,
+        "count": 11496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 920928,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 936576,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 952224,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 967632,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 982848,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 998064,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1013232,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1028448,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1043664,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1058832,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1066872,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1074912,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 1082784,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1098432,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1114080,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1129488,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1144704,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1159920,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1175088,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1190304,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1205520,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1220688,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1228728,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1236768,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 1244640,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1260288,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1275936,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1291344,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1306560,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1321776,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1336944,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1352160,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1367376,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1382544,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1390584,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1398624,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 1406496,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1422144,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1437792,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1453200,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1468416,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1483632,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1498800,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1514016,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1529232,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1544400,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1552440,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1560480,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1568352,
+        "count": 1734,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1575288,
+        "count": 1734,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1582224,
+        "count": 1704,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1589040,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1604256,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1619472,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1634640,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1659024,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1683408,
+        "count": 6090,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 1707768,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1715808,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1723848,
+        "count": 1956,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1731672,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1746888,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1762104,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 1777272,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1801656,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1826040,
+        "count": 6090,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 1850400,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1866048,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1881696,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 1897104,
+        "count": 9810,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 1936344,
+        "count": 9810,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 1975584,
+        "count": 9774,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 2014680,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2022720,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2030760,
+        "count": 1956,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2038584,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2054088,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2069592,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2085000,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2100504,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2116008,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 2131416,
+        "count": 5820,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2154696,
+        "count": 5820,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2177976,
+        "count": 5772,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2201064,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2216280,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2231496,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 2246664,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2262312,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2277960,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2293368,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2308584,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2323800,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2338968,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2354184,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2369400,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2384568,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2392608,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2400648,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2408520,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2423736,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2438952,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 2454120,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2469768,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2485416,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2500824,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2516040,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2531256,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2546424,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2561640,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2576856,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2592024,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2600064,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2608104,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 2615976,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2684904,
+        "count": 17232,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2753832,
+        "count": 17208,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 2822664,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2838312,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2853960,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2869368,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2884584,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2899800,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2914968,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2930184,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2945400,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 2960568,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 2968608,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 2976648,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 2984520,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3000168,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3015816,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3031224,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3046440,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3061656,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3076824,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3092040,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3107256,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3122424,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3130464,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3138504,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3146376,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3161592,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3176808,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 3191976,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3238080,
+        "count": 11526,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3284184,
+        "count": 11496,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 3330168,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3345816,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3361464,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3376872,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3392088,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3407304,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3422472,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3437688,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3452904,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3468072,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3476112,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3484152,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 3492024,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3507672,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3523320,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3538728,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3553944,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3569160,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3584328,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3599544,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3614760,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3629928,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3637968,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3646008,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 3653880,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3669528,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3685176,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3700584,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3715800,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3731016,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3746184,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3761400,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3776616,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3791784,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3799824,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3807864,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 3815736,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3831384,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3847032,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3862440,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3877656,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3892872,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3908040,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3923256,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3938472,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3953640,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3961680,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3969720,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3977592,
+        "count": 1734,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 3984528,
+        "count": 1734,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 3991464,
+        "count": 1704,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 3998280,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4013496,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4028712,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4043880,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4068264,
+        "count": 6096,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4092648,
+        "count": 6090,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 4117008,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4125048,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4133088,
+        "count": 1956,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4140912,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4156128,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4171344,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 4186512,
+        "count": 28080,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4298832,
+        "count": 28080,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4411152,
+        "count": 27714,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 4522008,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4537656,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4553304,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 4568712,
+        "count": 9810,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4607952,
+        "count": 9810,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4647192,
+        "count": 9774,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 4686288,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4694328,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4702368,
+        "count": 1956,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4710192,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4725696,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4741200,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4756608,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4772112,
+        "count": 3876,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4787616,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 32,
+      "positions": {
+        "offset": 4803024,
+        "count": 5820,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4826304,
+        "count": 5820,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4849584,
+        "count": 5772,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4872672,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4887888,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4903104,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 4918272,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4933920,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4949568,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 4964976,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 4980192,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 4995408,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5010576,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5025792,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5041008,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5056176,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5064216,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5072256,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5080128,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5095344,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5110560,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 35,
+      "positions": {
+        "offset": 5125728,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5141376,
+        "count": 3912,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5157024,
+        "count": 3852,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5172432,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5187648,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5202864,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5218032,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5233248,
+        "count": 3804,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5248464,
+        "count": 3792,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 34,
+      "positions": {
+        "offset": 5263632,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5271672,
+        "count": 2010,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5279712,
+        "count": 1968,
+        "dtype": "uint32"
+      }
+    },
+    {
+      "module": "example-geo-roam-electronics",
+      "material": 37,
+      "positions": {
+        "offset": 5287584,
+        "count": 9624,
+        "dtype": "float32"
+      },
+      "normals": {
+        "offset": 5326080,
+        "count": 9624,
+        "dtype": "float32"
+      },
+      "indices": {
+        "offset": 5364576,
+        "count": 9588,
+        "dtype": "uint32"
+      }
+    }
+  ],
+  "customMaterials": {
+    "32": {
+      "color": [
+        0.82,
+        0.89,
+        0.86
+      ],
+      "metalness": 0,
+      "roughness": 0.2,
+      "ior": 1.57
+    },
+    "33": {
+      "color": [
+        0.54,
+        0.57,
+        0.59
+      ],
+      "metalness": 0.9,
+      "roughness": 0.27,
+      "ior": 1.5
+    },
+    "34": {
+      "color": [
+        0.52,
+        0.55,
+        0.57
+      ],
+      "metalness": 0.95,
+      "roughness": 0.19,
+      "ior": 1.5
+    },
+    "35": {
+      "color": [
+        0.08,
+        0.1,
+        0.11
+      ],
+      "metalness": 0.8,
+      "roughness": 0.3,
+      "ior": 1.5
+    },
+    "36": {
+      "color": [
+        0.61,
+        0.43,
+        0.18
+      ],
+      "metalness": 0.8,
+      "roughness": 0.28,
+      "ior": 1.5
+    },
+    "37": {
+      "color": [
+        0.36,
+        0.39,
+        0.4
+      ],
+      "metalness": 0.8,
+      "roughness": 0.38,
+      "ior": 1.5
+    }
+  }
+}
