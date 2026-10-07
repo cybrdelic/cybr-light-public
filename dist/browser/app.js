@@ -19,7 +19,7 @@ import {
   createDiagnostics,
   decodeStages,
 } from './diagnostics.mjs';
-import { probeGpuSession } from './gpu-session.mjs';
+import { probeGpuSession, gpuDeviceOptions, createGpuRuntime, validateGpuBuffer } from './gpu-session.mjs?revision=mobile-lifecycle-2';
 import { adaptiveAaResolve } from './adaptive-aa.mjs';
 import { selectPileDetail } from './pile-lod.mjs';
 import { signalSchedule } from './signal-schedule.mjs';
@@ -333,6 +333,7 @@ const state = {
   loading: null,
   interactionEpoch: 0,
 };
+let gpuSession, gpuRuntime, sessionClosed = false;
 let device,
   context,
   format,
@@ -448,9 +449,32 @@ function camera() {
       : Math.tan(Math.PI / 7),
   };
 }
+const retryGpu = document.createElement('button');
+retryGpu.id = 'retry-gpu';
+retryGpu.textContent = 'Retry renderer';
+retryGpu.style.cssText = 'position:absolute;bottom:54px;left:24px;padding:10px;z-index:2';
+retryGpu.hidden = true;
+retryGpu.onclick = () => {
+  retryGpu.disabled = true;
+  const url = new URL(location.href);
+  for (const id of ['scene', 'resolution', 'bounces', 'mode']) url.searchParams.set(id, $('#' + id).value);
+  url.searchParams.set('opticalSamples', opticalChoice.value);
+  url.searchParams.set('gpuRecovery', '1');
+  url.searchParams.set('gpuTimings', '0');
+  location.replace(url.href);
+};
+status.after(retryGpu);
 function fail(error) {
-  const message = error.message || String(error);
-  state.errors.push(message);
+  if (sessionClosed) return;
+  if (gpuRuntime) gpuRuntime.report(error);
+  else presentFailure(error.message || String(error));
+}
+function presentFailure(message) {
+  if (sessionClosed) return;
+  if (!state.errors.includes(message)) state.errors.push(message);
+  if (gpuRuntime?.snapshot().lost) { state.ready = false; sceneLoader.cancel(); }
+  retryGpu.hidden = false;
+  status.setAttribute('role', 'alert');
   state.loading = null;
   status.textContent = message;
   state.paused = true;
@@ -463,15 +487,17 @@ function fail(error) {
   for (const button of galleryLabels.children) button.disabled = false;
 }
 function buffer(data, usage = GPUBufferUsage.STORAGE) {
+  gpuRuntime.assertActive();
   const size = typeof data === 'number' ? data : data.byteLength;
   const b = device.createBuffer({
-    size: Math.max(16, Math.ceil(size / 4) * 4),
+    size: validateGpuBuffer(size, usage, device.limits, GPUBufferUsage.STORAGE),
     usage: usage | GPUBufferUsage.COPY_DST | GPUBufferUsage.COPY_SRC,
   });
   if (typeof data !== 'number') device.queue.writeBuffer(b, 0, data);
   return b;
 }
 function group(p, resources) {
+  gpuRuntime.assertActive();
   return device.createBindGroup({
     layout: p.getBindGroupLayout(0),
     entries: resources.map((b, binding) => ({
@@ -524,8 +550,10 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     stackCapacity,
     filterOptions,
   });
+  gpuRuntime.assertActive();
   const module = device.createShaderModule({ label: name, code: text });
   const info = await module.getCompilationInfo();
+  gpuRuntime.assertActive();
   const errors = info.messages.filter((m) => m.type === 'error');
   if (errors.length)
     throw Error(
@@ -540,31 +568,20 @@ async function boot() {
     metalEnergyTable=await response.json();
     packMetalEnergy([],metalEnergyTable); // Validate before allocating renderer resources.
   }
-  const session = await probeGpuSession(canvas);
-  const { adapter } = session;
-  const features = adapter.features.has('timestamp-query')
-    ? ['timestamp-query']
-    : [];
-  const storageLimit = Math.min(
-      adapter.limits.maxStorageBufferBindingSize,
-      512 * 1024 * 1024,
-    ),
-    bufferLimit = Math.min(adapter.limits.maxBufferSize, 512 * 1024 * 1024);
-  device = await adapter.requestDevice({
-    requiredFeatures: features,
-    requiredLimits: {
-      maxComputeWorkgroupStorageSize: Math.min(
-        adapter.limits.maxComputeWorkgroupStorageSize,
-        32768,
-      ),
-      maxStorageBufferBindingSize: storageLimit,
-      maxBufferSize: bufferLimit,
-    },
+  gpuSession = await probeGpuSession(canvas);
+  if (sessionClosed) return;
+  const { adapter } = gpuSession;
+  const mobile = navigator.userAgentData?.mobile === true || /Android|iPhone|iPad/i.test(navigator.userAgent) ||
+    /qualcomm|adreno/i.test([adapter.info?.vendor, adapter.info?.architecture].join(' '));
+  const recovery = parameters.get('gpuRecovery') === '1';
+  const deviceOptions = gpuDeviceOptions(adapter, {
+    mobile, recovery,
+    timings: parameters.has('gpuTimings') ? parameters.get('gpuTimings') === '1' : null,
   });
-  device.addEventListener('uncapturederror', (e) => fail(e.error));
-  device.lost.then((info) =>
-    fail('GPU device lost: ' + info.message + '. Reload to recover.'),
-  );
+  const features = deviceOptions.requiredFeatures;
+  device = await adapter.requestDevice(deviceOptions);
+  if (sessionClosed) { device.destroy(); return; }
+  gpuRuntime = createGpuRuntime(device, { serial: mobile || recovery, onFailure: presentFailure });
   $('#adapter').textContent =
     [adapter.info?.vendor, adapter.info?.architecture, adapter.info?.device]
       .filter(Boolean)
@@ -572,13 +589,14 @@ async function boot() {
   if (adapter.info?.vendor === 'intel')
     $('#gpu-warning').textContent =
       'Intel adapter selected. On dual-GPU systems, check the browser’s graphics preference: this page cannot force the dedicated GPU.';
-  context = session.context;
-  format = session.format;
+  context = gpuSession.context;
+  format = gpuSession.format;
   context.configure({ device, format, alphaMode: 'opaque' });
   const debugModule = device.createShaderModule({
+    label: 'diagnostic display',
     code: diagnosticShader(pixelBytes, separateSignals, opticalGuides),
   });
-  diagnosticPipeline = await device.createRenderPipelineAsync({
+  diagnosticPipeline = await gpuRuntime.compile('createRenderPipelineAsync', {
     layout: 'auto',
     vertex: { module: debugModule, entryPoint: 'vertex' },
     fragment: {
@@ -596,7 +614,7 @@ async function boot() {
     const module = device.createShaderModule({
       code: diagnosticShader(16, false, false),
     });
-    traversalDisplayPipeline = await device.createRenderPipelineAsync({
+    traversalDisplayPipeline = await gpuRuntime.compile('createRenderPipelineAsync', {
       layout: 'auto',
       vertex: { module, entryPoint: 'vertex' },
       fragment: { module, entryPoint: 'fragment', targets: [{ format }] },
@@ -622,14 +640,14 @@ async function boot() {
   if (!features.length) {
     $('#debug-profile').disabled = true;
     $('#profile-stages').textContent =
-      'GPU timestamp queries unavailable on this adapter.';
+      'GPU timing is disabled or unavailable. Mobile viewing omits optional timing queries; rendering quality is unchanged.';
   }
   const mods = await Promise.all(
     ['trace', 'reconstruct', 'filter', 'display'].map((name) => shader(name)),
   );
   pipelines = await Promise.all(
     mods.slice(0, 3).map((module) =>
-      device.createComputePipelineAsync({
+      gpuRuntime.compile('createComputePipelineAsync', {
         layout: 'auto',
         compute: { module, entryPoint: 'main' },
       }),
@@ -639,7 +657,7 @@ async function boot() {
     Array.from({ length: signalCount }, (_, CHANNEL) =>
       CHANNEL === 0
         ? pipelines[1]
-        : device.createComputePipelineAsync({
+        : gpuRuntime.compile('createComputePipelineAsync', {
             layout: 'auto',
             compute: {
               module: mods[1],
@@ -650,7 +668,7 @@ async function boot() {
     ),
   );
   if (adaptiveAA)
-    aaResolvePipeline = await device.createComputePipelineAsync({
+    aaResolvePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: {
         module: device.createShaderModule({ code: adaptiveAaResolve }),
@@ -658,12 +676,12 @@ async function boot() {
       },
     });
   if (coverageReconstruction)
-    coveragePipeline = await device.createComputePipelineAsync({
+    coveragePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: { module: await shader('coverage-resolve'), entryPoint: 'main' },
     });
   if (screenCacheEnabled)
-    screenCachePipeline = await device.createComputePipelineAsync({
+    screenCachePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: {
         module: await shader('screen-cache-publish'),
@@ -683,7 +701,7 @@ async function boot() {
       if (opticalGuides) abi = opticalGuideShader('abi', abi);
     }
     if (endpointCache)
-      endpointPipeline = await device.createComputePipelineAsync({
+      endpointPipeline = await gpuRuntime.compile('createComputePipelineAsync', {
         layout: 'auto',
         compute: {
           module: device.createShaderModule({
@@ -693,7 +711,7 @@ async function boot() {
         },
       });
     if (contributorCoverage)
-      contributorPipeline = await device.createComputePipelineAsync({
+      contributorPipeline = await gpuRuntime.compile('createComputePipelineAsync', {
         layout: 'auto',
         compute: {
           module: device.createShaderModule({
@@ -707,7 +725,7 @@ async function boot() {
     Array.from({ length: signalCount }, (_, CHANNEL) =>
       CHANNEL === 0
         ? pipelines[2]
-        : device.createComputePipelineAsync({
+        : gpuRuntime.compile('createComputePipelineAsync', {
             layout: 'auto',
             compute: {
               module: mods[2],
@@ -720,7 +738,7 @@ async function boot() {
   filterPipelines = [sharedFilters, sharedFilters, sharedFilters];
   if(!separateSignals && !adaptiveAA && !contributorCoverage && parameters.get('tiled')!=='0'){
     for(const [index,step] of [1,2,4].entries())if(device.limits.maxComputeWorkgroupStorageSize>=baselineTileBytes(step)){
-      const tiled=await device.createComputePipelineAsync({layout:'auto',compute:{module:await shader('filter',64,{step}),entryPoint:'main'}});
+      const tiled=await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('filter',64,{step}),entryPoint:'main'}});
       filterPipelines[index]=[tiled];
       filterTileSteps.push(step);
     }
@@ -734,7 +752,7 @@ async function boot() {
       [1, 2, 4].map((step) =>
         Promise.all(
           Array.from({ length: signalCount }, async (_, CHANNEL) =>
-            device.createComputePipelineAsync({
+            gpuRuntime.compile('createComputePipelineAsync', {
               layout: 'auto',
               compute: {
                 module: await shader('filter', 64, { step, channel: CHANNEL }),
@@ -748,21 +766,21 @@ async function boot() {
     );
   }
   if (fusedCoverageFilter) {
-    const p = await device.createComputePipelineAsync({
+    const p = await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: { module: await shader('coverage-filter'), entryPoint: 'main' },
     });
     filterPipelines = [[p], [p], [p]];
     if(opticalGuides && parameters.get('fusedTiled')!=='0'){
       for(const step of [1])if(device.limits.maxComputeWorkgroupStorageSize>=fusedTileBytes(step)){
-        const tiled=await device.createComputePipelineAsync({layout:'auto',compute:{module:await shader('coverage-filter',64,{step}),entryPoint:'main'}});
+        const tiled=await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('coverage-filter',64,{step}),entryPoint:'main'}});
         filterPipelines[step-1]=[tiled];
         filterTileSteps.push(step);
       }
     }
   }
   pipelines.push(
-    await device.createRenderPipelineAsync({
+    await gpuRuntime.compile('createRenderPipelineAsync', {
       layout: 'auto',
       vertex: { module: mods[3], entryPoint: 'vertex' },
       fragment: {
@@ -785,13 +803,17 @@ async function boot() {
     });
   }
   await loadScene();
+  gpuRuntime.assertActive();
+  gpuRuntime.setPhase('Rendering');
   requestAnimationFrame(loop);
 }
 async function loadScene(options = {}) {
+  gpuRuntime?.assertActive();
   const generation = ++state.generation;
   const background = !!options.keepCamera && state.ready;
   const progress = (phase) => {
     if (generation !== state.generation) return;
+    gpuRuntime.setPhase(phase);
     state.loading = { scene: $('#scene').value, phase, background };
     status.textContent = background
       ? 'Updating detail; current scene remains visible. ' + phase
@@ -869,6 +891,7 @@ async function loadScene(options = {}) {
   progress('Preparing GPU traversal pipelines…');
   state.ready = false;
   await device.queue.onSubmittedWorkDone();
+  gpuRuntime.assertActive();
   if (generation !== state.generation) return;
   ordinaryTracePipeline ||= pipelines[0];
   if (result.instanceRecordStart !== undefined) {
@@ -882,7 +905,7 @@ async function loadScene(options = {}) {
     if (!pileTracePipelines.has(capacity))
       pileTracePipelines.set(
         capacity,
-        await device.createComputePipelineAsync({
+        await gpuRuntime.compile('createComputePipelineAsync', {
           layout: 'auto',
           compute: {
             module: await shader('trace-pile', capacity),
@@ -893,12 +916,12 @@ async function loadScene(options = {}) {
     pileTracePipeline = pileTracePipelines.get(capacity);
   }
   if (result.instanceRecordStart !== undefined)
-    instanceLodPipeline ||= await device.createComputePipelineAsync({
+    instanceLodPipeline ||= await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: { module: await shader('instance-lod'), entryPoint: 'main' },
     });
   if (result.meshletInfo?.enabled && !meshletTracePipeline)
-    meshletTracePipeline = await device.createComputePipelineAsync({
+    meshletTracePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
       layout: 'auto',
       compute: { module: await shader('trace-meshlets'), entryPoint: 'main' },
     });
@@ -913,7 +936,7 @@ async function loadScene(options = {}) {
     const kind=result.instanceRecordStart!==undefined?'trace-pile':result.meshletInfo?.enabled?'trace-meshlets':'trace';
     const capacity=kind==='trace-pile'?(parameters.get('traversal')==='legacy'?64:Math.max(8,result.maxDepth+2)):64;
     const key=kind+':'+capacity;
-    if(!opticalSamplePipelines.has(key))opticalSamplePipelines.set(key,await device.createComputePipelineAsync({layout:'auto',compute:{module:await shader('optical-'+kind,capacity),entryPoint:'main'}}));
+    if(!opticalSamplePipelines.has(key))opticalSamplePipelines.set(key,await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('optical-'+kind,capacity),entryPoint:'main'}}));
     opticalSamplePipeline=opticalSamplePipelines.get(key);
   }
   if (transportIntegrityEnabled) {
@@ -933,7 +956,7 @@ async function loadScene(options = {}) {
     if (!cameraMediumPipelines.has(key))
       cameraMediumPipelines.set(
         key,
-        await device.createComputePipelineAsync({
+        await gpuRuntime.compile('createComputePipelineAsync', {
           layout: 'auto',
           compute: {
             module: await shader('camera-' + kind, capacity),
@@ -942,7 +965,7 @@ async function loadScene(options = {}) {
         }),
       );
     cameraMediumPipeline = cameraMediumPipelines.get(key);
-    if(!outsideTracePipelines.has(key))outsideTracePipelines.set(key,await device.createComputePipelineAsync({layout:'auto',compute:{module:await shader('outside-'+kind,capacity),entryPoint:'main'}}));
+    if(!outsideTracePipelines.has(key))outsideTracePipelines.set(key,await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('outside-'+kind,capacity),entryPoint:'main'}}));
     outsideTracePipeline=outsideTracePipelines.get(key);
   }
   progress('Uploading scene buffers…');
@@ -1016,9 +1039,12 @@ async function loadScene(options = {}) {
   if (options.keepCamera) scheduleGalleryDetail();
 }
 async function resize() {
+  gpuRuntime.assertActive();
+  gpuRuntime.setPhase('Allocating frame buffers');
   state.interactionEpoch++;
   state.ready = false;
   await device.queue.onSubmittedWorkDone();
+  gpuRuntime.assertActive();
   frameBuffers.forEach((b) => b.destroy());
   frameBuffers = [];
   const h = Number($('#resolution').value),
@@ -1479,6 +1505,7 @@ function render() {
     );
     queryBusy = true;
   }
+  gpuRuntime.setPhase('Rendering');
   device.queue.submit([encoder.finish()]);
   flight++;
   device.queue
@@ -1556,6 +1583,7 @@ function snapshot() {
   const times = [...state.timings].sort((a, b) => a - b);
   return {
     adapter: $('#adapter').textContent,
+    gpuSession: gpuRuntime?.snapshot() || null,
     backend: separateSignals ? 'separate-signals' : 'baseline',
     opticalSamples:extraOpticalSample&&$('#mode').value!=='reference'?2:1,
     activeSignals: [...activeSignals],
@@ -2321,11 +2349,20 @@ const playControls=mountPlayControls(canvas,{
   resume:()=>window.cybrLight.resume(),
 });
 window.addEventListener('pagehide', () => {
+  sessionClosed = true;
+  state.paused = true;
+  state.ready = false;
+  state.generation++;
   playControls.dispose();
   cancelAnimationFrame(frameId);
   sceneLoader.cancel();
-  device?.destroy();
+  if (gpuRuntime) gpuRuntime.dispose();
+  else device?.destroy();
+  context?.unconfigure();
 });
+// A cached document owns a destroyed device. Reload the same settings to create
+// a fresh adapter/device/context instead of resuming stale GPU objects.
+window.addEventListener('pageshow', event => { if (event.persisted && sessionClosed) location.reload(); });
 window.cybrLight.verifyRecomposition = async (steps = 16) => {
   if (!separateSignals || !state.ready)
     throw Error('Ready four-signal backend required');
