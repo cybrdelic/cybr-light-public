@@ -17,7 +17,7 @@ globalThis.fetch = async (input, init) => {
       try {
         while (part < record.parts.length) {
           if (!reader) {
-            const next = await nativeFetch(new URL(record.parts[part].path, base), init);
+            const next = await nativeFetch(new URL(record.parts[part].url || record.parts[part].path, base), init);
             if (!next.ok || !next.body) throw Error('Missing large-asset part: ' + record.parts[part].path);
             reader = next.body.getReader();
           }

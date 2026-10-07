@@ -17,3 +17,5 @@ Existing moving optical noise, forest lighting/LOD approximation and clearing-ca
 The downloadable source ZIP contains the complete curated native C++/Python, optional CUDA/OptiX and browser source from cleanup commit 33d2a2cc6df362dfcf902082f68e58051145579f, without private Git history or companion caches. Native offline build/run commands are in its root README. The live client modules, delivery adapter and asset parts are served directly by this site.
 
 The [full public repository](https://github.com/cybrdelic/cybr-light-public) also retains the exact cleared runtime files and publication helpers. The Site source package restores those files from its pinned public input manifest before deployment.
+
+Large static parts are fetched from the immutable public GitHub asset commit; smaller assets are included directly. Original compressed-stream hashes and forest geometry/placement hashes remain unchanged. Clone the full repository to serve all parts locally without this external delivery dependency.
