@@ -1,9 +1,8 @@
 // Build indexed draw batches directly from the source, without a million-item TLAS.
 import {loadForest} from './forest-loader.mjs';
 import {forestDetailLevels} from './forest-detail.mjs';
-self.onmessage=async()=>{
- try{
-  const forest=await loadForest(new URL('./assets/forest/',import.meta.url).href,'forest');
+import {buildForestClusterPlan} from './meshlet-hierarchy.mjs';
+export async function buildForestRasterData(forest,{meshlets=false,limits}={}){
   const {raw,manifest,pile}=forest,models=pile.models;
   const read=s=>new ({float32:Float32Array,uint32:Uint32Array,int16:Int16Array}[s.dtype])(raw,s.offset,s.count);
   const batches=[];
@@ -36,7 +35,16 @@ self.onmessage=async()=>{
   }
   const draw=new Uint32Array(models.length*4*8),errors=new Float32Array(models.length*4);
   batches.forEach((b,i)=>{b.levels.forEach((lod,k)=>{draw.set([lod.indices.byteLength/4,0,0,0,0,starts[i]*4+k*counts[i],counts[i],0],(i*4+k)*8);errors[i*4+k]=lod.error;});});
-  const transfer=[instances.buffer,draw.buffer,errors.buffer,...batches.flatMap(b=>b.levels.flatMap(l=>[l.vertices,l.indices]))];
-  postMessage({batches,instances:instances.buffer,draw:draw.buffer,lodErrors:errors.buffer,count,views:pile.views},transfer);
+  const clusterPlan=meshlets?buildForestClusterPlan(batches,Array.from(counts),limits):null;
+  return {batches,instances:instances.buffer,draw:draw.buffer,lodErrors:errors.buffer,count,starts,views:pile.views,meshlets:clusterPlan,
+   provenance:{algorithm:clusterPlan?.metrics.build??null,sourceGeometrySha256:manifest.sha256,sourceInstancesSha256:manifest.instanceSha256,stateSha256:manifest.stateSha256}};
+}
+if(typeof self!=='undefined')self.onmessage=async({data:options})=>{
+ try{
+  const forest=await loadForest(new URL('./assets/forest/',import.meta.url).href,'forest');
+  const data=await buildForestRasterData(forest,options);
+  const transfer=[data.instances,data.draw,data.lodErrors,...data.batches.flatMap(b=>b.levels.flatMap(l=>[l.vertices,l.indices]))];
+  if(data.meshlets)transfer.push(data.meshlets.draw,data.meshlets.nodes,data.meshlets.models);
+  postMessage(data,transfer);
  }catch(e){postMessage({error:e.stack||String(e)});}
 };

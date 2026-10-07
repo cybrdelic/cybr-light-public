@@ -1,0 +1,361 @@
+{
+  "base_public_commit": "8f82e06ccadbc77f017eb3d6baba269d3eef93db",
+  "branch": "feat/raster-meshlet-hierarchy",
+  "scope": "Resident forest raster clusters; opt-in; CPU validated; GPU acceptance pending",
+  "source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
+  "original_source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
+  "original_digests_retained": true,
+  "preserved_implementation": [
+    {
+      "path": "browser/app.js",
+      "sha256": "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3"
+    },
+    {
+      "path": "browser/compact-bvh.mjs",
+      "sha256": "4cec7181e18baad70f425a54ca42819de951de3c448daea1c049a634d72aca55"
+    },
+    {
+      "path": "browser/coverage-filter.wgsl",
+      "sha256": "a1fc116f00e86a866aaaabd01081d836a3bb1f55420972be282d1f2f94f26854"
+    },
+    {
+      "path": "browser/coverage-resolve.wgsl",
+      "sha256": "ceabe61325fcc8b665e7f1b5e89c94cd6fa7c76fdaa913cbf11e70eb34b2f924"
+    },
+    {
+      "path": "browser/display.wgsl",
+      "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+    },
+    {
+      "path": "browser/experimental-signals/display.wgsl",
+      "sha256": "befe8e6325819f6b242ed539c2706052163184d8149a9a130848f5ef2cf14d7e"
+    },
+    {
+      "path": "browser/experimental-signals/filter.wgsl",
+      "sha256": "1c4950ab6c3a1ec889d2e8d82f1e7bd00b5d61b2bdff1c05366528ddd65c7713"
+    },
+    {
+      "path": "browser/experimental-signals/reconstruct.wgsl",
+      "sha256": "24280eab98c6fbc2916adb648cec3bb22967fd4ddb587c6fbee52ca48b4744ce"
+    },
+    {
+      "path": "browser/experimental-signals/signals.wgsl",
+      "sha256": "7fd4c4ef0a3dcb4e6b16c2e978e70a41944b2dc5ddd924a392184430f3c8fc5c"
+    },
+    {
+      "path": "browser/experimental-signals/trace.wgsl",
+      "sha256": "b336615a2176f5d35f540794945d24364f8ab3d7d930c81ba5302b40e2d4a411"
+    },
+    {
+      "path": "browser/filter.wgsl",
+      "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+    },
+    {
+      "path": "browser/forest-detail.mjs",
+      "sha256": "7315d0c47707910b2ea00fc1574d4335c02206af453e4d7cf5b369726ab96555"
+    },
+    {
+      "path": "browser/forest-game-render.wgsl",
+      "sha256": "cc309d3e5fd7aced5da0866c7746348eec0142a273d096f5088b1ac04e99c068"
+    },
+    {
+      "path": "browser/forest-game.wgsl",
+      "sha256": "26ee17657875be0501201869c9cf9f9f4c02e7f381ddcf9a1cf1222d4960eebe"
+    },
+    {
+      "path": "browser/forest-loader.mjs",
+      "sha256": "4e0212de4c97bdfdda6d29651c54da7a0bec9a67f085b02924fc6e5c770d7b26"
+    },
+    {
+      "path": "browser/hybrid-beauty-cache.wgsl",
+      "sha256": "61c19a84e8353de4dd21881db8cc61da8b479e150caf5ea55d54376b251c8e9f"
+    },
+    {
+      "path": "browser/hybrid-beauty.wgsl",
+      "sha256": "ccc8786cab7e75d3e6663a4b64e6071cd52fd820e98095e83be885de16c03446"
+    },
+    {
+      "path": "browser/hybrid-connection-queue.wgsl",
+      "sha256": "629cabd00837cc20b7b4f2df62cfab6d8ae2c86504b211e15a3d1a4261b69021"
+    },
+    {
+      "path": "browser/hybrid-lighting.wgsl",
+      "sha256": "4f7dfd814a99bb1d60e5696a546c27550e1504251da4e2329c91ab430717d7e3"
+    },
+    {
+      "path": "browser/hybrid-optical.wgsl",
+      "sha256": "75ad1ba904050714f1be8f6fb5cde92ae8032c5159f939fc5a174e9dd8975a56"
+    },
+    {
+      "path": "browser/hybrid-path-cache.wgsl",
+      "sha256": "fb150ea896d0e6eae5b1b0ab4e154d31808c7ceb7af2eb32586ecbec92c01675"
+    },
+    {
+      "path": "browser/hybrid-primary.wgsl",
+      "sha256": "f52e4a3ea6f213be2ad6b2b9058d412c24ab551927a965bca0f1cd272076aa72"
+    },
+    {
+      "path": "browser/hybrid-queue.wgsl",
+      "sha256": "ca2beab10d5b7ef8f00882c2699f120a8b9e6f001906067a0570a8806a55fbb2"
+    },
+    {
+      "path": "browser/hybrid-reconstruct.wgsl",
+      "sha256": "6f46cd36ca2fa62f0c9e9ea442a4062884f050d86977fd2fbcc75697d0c87874"
+    },
+    {
+      "path": "browser/hybrid-refracted-nee-analytic.wgsl",
+      "sha256": "c1732563edc069ff1c29d2e8c30c5b41e41aae85079e37b5803c0278db2e9c35"
+    },
+    {
+      "path": "browser/hybrid-refracted-nee.wgsl",
+      "sha256": "34ed903cc2292e21b899c85f7117487d0373c18c12feffb291a77d3b19fdf9a4"
+    },
+    {
+      "path": "browser/hybrid-sampling.wgsl",
+      "sha256": "b638d5bbe0b963cd2ec3b2074ac5c3479d57e352c3e8963542de2793866f8a1d"
+    },
+    {
+      "path": "browser/hybrid-signals.wgsl",
+      "sha256": "30bf870eea3ab8a124ef574a07cc2fa0eee3b462d26d27f558243d2ae91f09ee"
+    },
+    {
+      "path": "browser/hybrid-visibility.wgsl",
+      "sha256": "93b82645955e816dba83b5abd4fce4765bb7e44a7f1e7a47f2c3facdbea3f5ad"
+    },
+    {
+      "path": "browser/instance-lod.wgsl",
+      "sha256": "135da46d8a1c2e44dbc91fad78de9dc885098b61f362dcaba0c1090bc7760e8c"
+    },
+    {
+      "path": "browser/instanced-bvh.mjs",
+      "sha256": "3f3618bddbc8015a28e35848561624909a6491a4b64cf2e05fc49bb0ed705a80"
+    },
+    {
+      "path": "browser/meshlet-attributes.mjs",
+      "sha256": "ca198b5d124881118a40443a2f4e9a5a3927c3da36c1662391ec14ea6acf401e"
+    },
+    {
+      "path": "browser/pile-lod.mjs",
+      "sha256": "ba11cb962f848381ede5a5c3f8316490b7a3eb176ec05464aeca963269f1090c"
+    },
+    {
+      "path": "browser/reconstruct.wgsl",
+      "sha256": "fa7b669a4e58c041a2698835df92e91645459ddfcf9d5cdb0b64a2ea4c07a800"
+    },
+    {
+      "path": "browser/renderer-shaders.mjs",
+      "sha256": "27ecd55ca053370deb2cc1c0fdadccbf169ba465efb2be451f2bb06883a06ac6"
+    },
+    {
+      "path": "browser/screen-cache-publish.wgsl",
+      "sha256": "b1c885b4c730f6c9106759c6ac92b583a59cf45db310daf0392f5c7b3db23184"
+    },
+    {
+      "path": "browser/trace-instances.wgsl",
+      "sha256": "37e2d0b0382437166cc4d58a1c8da50800fbb25e405e11553dedc778369a76e0"
+    },
+    {
+      "path": "browser/trace.wgsl",
+      "sha256": "95d144fecac0c70c5c4b7e7bc555040ce431a8392ee5a6afddf592e5d5d00a05"
+    },
+    {
+      "path": "include/cybr/exr.hpp",
+      "sha256": "1c6166c5ade77b44f8ae774ffa68bd20996257bb44859580fae687a3ea45f4ea"
+    },
+    {
+      "path": "include/cybr/film.hpp",
+      "sha256": "4b97221aa918f07bdcf099eb7508e305b51a913f46b6bc9c32e7e15c7f9d6443"
+    },
+    {
+      "path": "include/cybr/geometry.hpp",
+      "sha256": "ec3a7444955e714d7d3868ac7bcd7c8eb0c91d547cec4c079b708dff1e70a97e"
+    },
+    {
+      "path": "include/cybr/integrator.hpp",
+      "sha256": "96c217c98c9892c4cbc851a3f2bb073dfc679c232eb11b4babfd7efeb0313326"
+    },
+    {
+      "path": "include/cybr/io.hpp",
+      "sha256": "b12f9b2ae2b19479cc705c45655118a186d91a5521d57d2825394eaea88a4d36"
+    },
+    {
+      "path": "include/cybr/material.hpp",
+      "sha256": "997bce7de6ec6ab5a85aef15d231bdf10233ad2c290b0dc81391e32b87d3fad6"
+    },
+    {
+      "path": "include/cybr/math.hpp",
+      "sha256": "062ca77e91f8b1e5a99ff65f2f47288705daacc7c4f08514d19b48faf82fe2e1"
+    },
+    {
+      "path": "include/cybr/photonmap.hpp",
+      "sha256": "43af9b4d447afeec7e7e41e94575303e4f648c2cd0c06313299656c99cdf4520"
+    },
+    {
+      "path": "include/cybr/polarization.hpp",
+      "sha256": "0051fb7c18706cd1f348976390000f75f629ff36634f1a656be015cbb6757ed4"
+    },
+    {
+      "path": "include/cybr/scene.hpp",
+      "sha256": "d1f833c2a35d070bc2ebc50f2a55f7d165dad3734a6fab992d7ef166734a1728"
+    },
+    {
+      "path": "include/cybr/shader.hpp",
+      "sha256": "58dd28dac9bf61f4c278533b7ab724a20aba907694ee4c549439275f6701a872"
+    },
+    {
+      "path": "include/cybr/spectrum.hpp",
+      "sha256": "b4471fcf40fae9022b55ede365da6669616a22c022660519b72f91ba494cb4cc"
+    },
+    {
+      "path": "include/cybr/texture.hpp",
+      "sha256": "be482496ac57bcced89f9c6d64c4e7ac82d92f2e424f7dd4ba774c805ee5f756"
+    },
+    {
+      "path": "include/cybr/thin_film.hpp",
+      "sha256": "2468e054bee40a3e7e95edd2897c3a5e82ca60a968351139d561de257772c3c2"
+    },
+    {
+      "path": "include/cybr/volume.hpp",
+      "sha256": "b62ceec00b6a9a026d512fca5bce92c3ae77c7235babfb3091692963f6659e86"
+    },
+    {
+      "path": "python/cybrlight/__main__.py",
+      "sha256": "8134dc71036ab6fef7cb605ec59b400b2864890fc00526f9763c447e2937e295"
+    },
+    {
+      "path": "python/cybrlight/cli.py",
+      "sha256": "2d390264e536e7b9fd1d2670a7d2fd721ba4eb08854684ecbdf7bd3b1fb721a2"
+    },
+    {
+      "path": "python/cybrlight/inverse.py",
+      "sha256": "8cd62d7967498fca45e59506532e06a8b8ce842c456064f7862c39a73574cdae"
+    },
+    {
+      "path": "python/cybrlight/jit.py",
+      "sha256": "393f64b9a4a7e4ce9587cc65e7979bc493fc9f68f1ce4608dc7befb05663a832"
+    },
+    {
+      "path": "python/cybrlight/mesh_io.py",
+      "sha256": "686e1faab862daf60b1a638182176db54b2be8e4d996d65860ee822e06a50b85"
+    },
+    {
+      "path": "python/cybrlight/optix.py",
+      "sha256": "82a6b2ec4de708e7b1ac768bf45837b651bb11c5241f0646a38802ff2d53666e"
+    },
+    {
+      "path": "python/cybrlight/portable.py",
+      "sha256": "cde1677771752a6d710160e40c69de20ab3e8572d85660c1d0d48a86cd45c669"
+    },
+    {
+      "path": "python/cybrlight/portable_kernel.py",
+      "sha256": "f6bda37aba5ee9a81fe864f0dfebd3ce2d6778f9f21936c105a2324f541a41f4"
+    },
+    {
+      "path": "python/cybrlight/tensor_backend.py",
+      "sha256": "345dc7ee9fa40a973171451937cc0de809e24b69a47a4db8151fbde0391d1fd9"
+    },
+    {
+      "path": "python/cybrlight/volume_io.py",
+      "sha256": "6f20a27943579a386818a38ed9f58bd237fb0f7eafd857f56608a43c41f8b525"
+    },
+    {
+      "path": "python/cybrlight/workflow.py",
+      "sha256": "bd040ef2a44faa7c94818dbcbac6dd9c72b89e8df93ff463b2072c5bdf733de3"
+    },
+    {
+      "path": "src/main.cpp",
+      "sha256": "d723070649a82aefbede98b532bc935948f56f807f47a425ba062f4eb1a53441"
+    },
+    {
+      "path": "src/optix/CMakeLists.txt",
+      "sha256": "7c1832227e932aa04fcca351b56ebfda40b45c84d8796f07806837cf35700025"
+    },
+    {
+      "path": "src/optix/device.cu",
+      "sha256": "33a0244c77e0886e80bdb17c1fb3ebd1d46eafeba5f37ebe8c9af20610c0491a"
+    },
+    {
+      "path": "src/optix/main.cpp",
+      "sha256": "3cf82543a6d2a3bda42ef224d3f5e5fb5868c0cc031badc1cff5d592a96a6172"
+    },
+    {
+      "path": "src/optix/mixed_math.h",
+      "sha256": "b073d762f3e4c99c2332b639aa8bae7bd92e7171f644b9db1936c8774e7610f0"
+    },
+    {
+      "path": "src/optix/refractive_nee.h",
+      "sha256": "7281f0d129f5246d586d71ad0658585652baf0bf9c0a78a1d747f8668f99f4c6"
+    },
+    {
+      "path": "src/optix/shared.h",
+      "sha256": "f09ad1483540e8c1f0e6f37b73c2cb57384ebf09b9ddcf5517ab7543e9a1076f"
+    },
+    {
+      "path": "src/photons.cpp",
+      "sha256": "86f4b34e4773d4b248432c557c77a63684024d1a503efa6fe592639814deba31"
+    }
+  ],
+  "raster_diff": [
+    {
+      "path": "browser/forest-game.mjs",
+      "original_sha256": "2fdbffd50c5953a460a46727f3248683a7b79bf317e9709d6d61ade0fb3b292b",
+      "current_sha256": "24c1cca7b29ff9294dff8a2b758e3dfa949fab3af9378e2c2ffc2938af51295c"
+    },
+    {
+      "path": "browser/forest-raster-worker.mjs",
+      "original_sha256": "d33c6173a2ebd6440b8c82c8f41a6f7a482a7aad40fcca15e8893cd61556712d",
+      "current_sha256": "06b9403b251fbf2be95e7db889d8b380c724870d0b476d7abfc122d84937bf71"
+    },
+    {
+      "path": "browser/meshlet-hierarchy.mjs",
+      "original_sha256": null,
+      "current_sha256": "f058b9dff365b98404ef1761cd2ec4dc90dce02ce6a1dfc88748f943cf178b2e"
+    },
+    {
+      "path": "browser/forest-meshlet-cull.wgsl",
+      "original_sha256": null,
+      "current_sha256": "4e76a335e3c35acf45b7af5bba1e97d56394604672c16c3f5ab4b04240ce8e89"
+    },
+    {
+      "path": "browser/meshlet-hierarchy.test.mjs",
+      "original_sha256": null,
+      "current_sha256": "fa40e2ce318938d9bd37ff95917d979df478a766f907c75330b120305810f0a6"
+    },
+    {
+      "path": "tools/measure_forest_meshlets.mjs",
+      "original_sha256": null,
+      "current_sha256": "97b2045bb49fe0131800a947115ef7fc2e9f549cd74bbb0ccef721ad542c0e39"
+    },
+    {
+      "path": "browser/meshlet-gpu-proof.html",
+      "original_sha256": null,
+      "current_sha256": "fde80721c297730aec0b0e2d53de9b2e1b89ec3f34242f7a06243514ad1cac59"
+    },
+    {
+      "path": "browser/meshlet-gpu-proof.mjs",
+      "original_sha256": null,
+      "current_sha256": "e455c08cb6c157ad79b6f5c5b5ad24795746165d0d8869cc071bfd4d30bad3df"
+    },
+    {
+      "path": "tools/record_meshlet_provenance.py",
+      "original_sha256": null,
+      "current_sha256": "53b0ff3f89b72f33e707c95ca3eca69a86b1032f80a113aeece8064388223b5a"
+    },
+    {
+      "path": "docs/MESHLET_RASTER_STAGE1.md",
+      "original_sha256": null,
+      "current_sha256": "784b637044e5ed6466b2d8e9d4ee85c04018a7e3a0f6b28156748230243d7735"
+    }
+  ],
+  "validation": {
+    "browser_cpu_tests": 328,
+    "naga_optional_capabilities": "none",
+    "gpu_used": false,
+    "browser_used": false,
+    "visual_holes_popping_acceptance": "pending serialized slot",
+    "gpu_performance_acceptance": "pending serialized slot"
+  },
+  "publication_owner": "parent",
+  "worker_deployed": false,
+  "worker_pr_mutated": false
+}
