@@ -50,12 +50,20 @@ $('#run').onclick=async()=>{
    report.prefixModules={};
    prefixModules=await wait(Promise.all(['trace','reconstruct','filter','display'].map(async name=>{
     const code=await wait(buildRendererShader(name,{load,parameters,options})),module=ownedDevice.createShaderModule({label:name,code});
-    const info=await wait(module.getCompilationInfo());current.prefixModules[name]={compilationInfoCompleted:true,messages:info.messages.map(m=>({type:m.type,line:m.lineNum,message:m.message}))};update(current.phase,current);return module;
+    current.prefixModules[name]={moduleCreated:true,compilationInfoRequests:1,compilationInfoCompleted:false,messages:[]};update(current.phase,current);
+    const info=await wait(module.getCompilationInfo());current.prefixModules[name].compilationInfoCompleted=true;current.prefixModules[name].messages=info.messages.map(m=>({type:m.type,line:m.lineNum,message:m.message}));update(current.phase,current);return {module,info};
    })));
   }
-  begin('Creating trace shader module');
-  const module=prefixModules?.[0]||device.createShaderModule({label:report.case,code:variant.code});
-  const info=await wait(module.getCompilationInfo());report.compilationMessages=info.messages.map(m=>({type:m.type,line:m.lineNum,message:m.message}));
+  let module,info;
+  if(prefixModules){
+   begin('Reusing validated trace module from startup prefix');
+   ({module,info}=prefixModules[0]);report.traceValidationSource='completed-startup-prefix';report.traceCompilationInfoRequests=report.prefixModules.trace.compilationInfoRequests;
+  }else{
+   begin('Creating trace shader module');module=device.createShaderModule({label:report.case,code:variant.code});
+   report.traceValidationSource='fresh-module';report.traceCompilationInfoRequests=1;
+   begin('Requesting trace shader compilation info');info=await wait(module.getCompilationInfo());
+  }
+  report.traceShaderModuleCreated=true;report.compilationMessages=info.messages.map(m=>({type:m.type,line:m.lineNum,message:m.message}));
   if(info.messages.some(m=>m.type==='error'))throw Error('WGSL validation failed');
   report.compilationInfoCompleted=true;begin('Compiling selected compute entrypoint');
   const start=performance.now();
