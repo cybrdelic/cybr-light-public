@@ -14,4 +14,12 @@ for(const name of ['tiny','full-control','current','default-limits','workgroup-4
  const variant=traceCompileVariant(source,name);report.comparisons[name]={...stats(variant.code),entryPoint:variant.entryPoint,mediumSlots:variant.mediumSlots||16};
 }
 report.mediumStackLogicalBytes={current:336,compact:208};
+report.sceneComparison={};
+for(const scene of ['example-geo-printer','proof-optics']){
+ const sceneParameters=new URLSearchParams('glass=split&motion=bilinear');sceneParameters.set('scene',scene);
+ const code=await buildRendererShader('trace',{load,parameters:sceneParameters,options:rendererOptions(sceneParameters)});
+ report.sceneComparison[scene]={current:stats(code),compact:stats(traceCompileVariant(code,'compat').code)};
+}
+report.sceneComparison.identicalCurrent=report.sceneComparison['example-geo-printer'].current.sha256===report.sceneComparison['proof-optics'].current.sha256;
+report.sceneComparison.identicalCompact=report.sceneComparison['example-geo-printer'].compact.sha256===report.sceneComparison['proof-optics'].compact.sha256;
 console.log(JSON.stringify(report,null,2));
