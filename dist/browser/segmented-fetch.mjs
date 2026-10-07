@@ -31,6 +31,6 @@ globalThis.fetch = async (input, init) => {
     async cancel(reason) { await reader?.cancel(reason); },
   });
   return new Response(stream, {headers: {
-    'content-type': 'application/octet-stream', 'content-length': String(record.bytes),
+    'content-type': record.contentType || 'application/octet-stream', 'content-length': String(record.bytes),
   }});
 };

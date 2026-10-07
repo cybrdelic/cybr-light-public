@@ -1,5 +1,7 @@
 # Consolidation validation, 2026-10-07
 
+The tables below record the original cleanup acceptance checks. Later public runtime restoration and live delivery are described in [asset closure](ASSETS.md) and [public release scope](PUBLIC_RELEASE.md); the historical source-only omission counts do not describe the current packaged demo.
+
 This publication contains the current local native spectral renderer, optional CUDA/OptiX backend, browser RGB path tracer and forest raster prototype. The baseline is the preserved current local implementation, not the older remote `master` implementation. Native transport and production WGSL were preserved during cleanup; `SOURCE_BASELINE.json` records 64 implementation digests.
 
 The isolated publication branch starts at remote `master` commit `38f29ee2f6559311513c1f570be7a36224194ce8`. All current remote files are accounted for; three superseded baseline/restoration documents were removed. Unrelated open scene PRs were not merged. The private source captures and recovery data were retained separately.

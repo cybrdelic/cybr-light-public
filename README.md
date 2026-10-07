@@ -6,6 +6,8 @@ This public snapshot includes the complete current renderer source and a separat
 
 To run the packaged demo, serve `dist/` with `python -m http.server 4181 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4181/`. The native build commands below still apply at the repository root.
 
+A source ZIP or source-only hosting checkout can first run `python tools/restore_live_assets.py` to retrieve the exact cleared runtime files from the pinned public asset commit. Full GitHub clones already include those files.
+
 | Backend | What it renders | Entry point |
 | --- | --- | --- |
 | Native C++17 + Python | Offline wavelength-dependent light transport, materials, media and diagnostic films | `python tools/examples.py anisotropy --preset smoke` |

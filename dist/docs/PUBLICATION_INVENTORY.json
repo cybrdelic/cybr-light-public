@@ -4910,5 +4910,6 @@
     "tools/check_proof_scenes.mjs",
     "tools/check_publication.py",
     "tools/prepare_browser_examples.py"
-  ]
+  ],
+  "scope": "Historical 311-file cleanup branch before public runtime restoration. Current delivery inputs are documented in LIVE_ASSET_INPUTS.json and PUBLIC_RELEASE.md."
 }

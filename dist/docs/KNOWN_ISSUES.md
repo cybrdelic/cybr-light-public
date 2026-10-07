@@ -23,15 +23,15 @@ These are pre-existing limits of the captured current implementation. Consolidat
 
 ## Forest raster prototype
 
-The fast forest entrypoint renders source geometry using rasterization, cached sunlight depth shadows, approximate hemispherical sky lighting, adaptive detail and 4Ã— MSAA. It is not a completed path-traced hybrid.
+The fast forest entrypoint renders source geometry using rasterization, cached sunlight depth shadows, approximate hemispherical sky lighting, adaptive detail and 4x MSAA. It is not a completed path-traced hybrid.
 
 - No traced indirect occlusion/multiple scattering or dynamic sunlight/shadow invalidation.
 - Finite shadow-map resolution and bias, LOD transitions and perceptual motion AA remain limitations.
 - Source forest export lacks native leaf transmission, textures and volumetric fog. A clearing camera preset intersects branches.
 - Default simplification error is 0.75 internal pixels. The 1.5-pixel setting is explicitly lossy; zero disables LOD.
 
-Historical Oct 6 measurements on the same NVIDIA/Lovelace GPU at 960Ã—540 reported approximately **74 FPS trail, 158 FPS canopy, 61 FPS clearing**, and 70 FPS moving trail after warm-up. Cold trail timing was substantially slower. These are preserved measurements, not fresh consolidation benchmarks or a guarantee of 120 FPS everywhere.
+Historical Oct 6 measurements on the same NVIDIA/Lovelace GPU at 960x540 reported approximately **74 FPS trail, 158 FPS canopy, 61 FPS clearing**, and 70 FPS moving trail after warm-up. Cold trail timing was substantially slower. These are preserved measurements, not fresh consolidation benchmarks or a guarantee of 120 FPS everywhere.
 
 ## Cleanup validation
 
-Matched current-source baselines and new consolidation evidence are stored outside the working repository. Keep original scene/settings/cameras/seeds for comparisons; inspect actual pixels and user-visible behavior. Document an unavailable runtime check as unverified. Optional GPU backends require their own coordinated checks, and no live deployment is part of this work.
+Matched current-source baselines and consolidation evidence are stored outside the working repository. Keep original scene/settings/cameras/seeds for comparisons; inspect actual pixels and user-visible behavior. Document an unavailable runtime check as unverified. Optional GPU backends require their own coordinated checks. The public live package retains the captured runtime; its publication adds CPU source/asset/delivery checks without a new GPU benchmark. Large assets depend on the immutable public GitHub asset commit, as recorded in the release scope.

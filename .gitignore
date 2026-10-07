@@ -48,3 +48,7 @@ browser/experiments/
 .codex/
 .claude/
 .playwright*/
+
+# Generated live client outputs
+/out/
+/dist/client/
