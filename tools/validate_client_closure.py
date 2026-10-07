@@ -34,6 +34,8 @@ for path in (client / 'browser').rglob('*'):
     if path.is_file() and path.suffix in ('.js', '.mjs', '.wgsl', '.html'):
         relative = path.relative_to(client)
         assert path.read_bytes() == (root / 'dist' / relative).read_bytes(), str(relative)
+for name in ('KNOWN_ISSUES.md', 'MOBILE_GPU_RECOVERY.md'):
+    assert (client / 'docs' / name).read_bytes() == (root / 'docs' / name).read_bytes(), name
 print(json.dumps({'bundled_assets': bundled_count, 'external_assets': external_count,
                   'total_assets': bundled_count + external_count, 'expanded_bytes': expanded,
                   'source_zip_implementation_digests': len(baseline['preserved_implementation'])}))
