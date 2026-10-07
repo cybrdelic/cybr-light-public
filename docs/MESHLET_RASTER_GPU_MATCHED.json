@@ -1,0 +1,781 @@
+{
+  "evaluatedCommit": "6eebab0cc88c25e907645b979684b4549643abdf",
+  "basePublicCommit": "8f82e06ccadbc77f017eb3d6baba269d3eef93db",
+  "basePublicBranch": "fix/mobile-gpu-session-recovery",
+  "defaultDecision": "retain baseline; both meshlet modes experimental opt-in; no demonstrated speedup",
+  "source": {
+    "algorithm": null,
+    "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+    "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+    "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+  },
+  "settings": {
+    "renderWidth": 960,
+    "renderHeight": 540,
+    "msaaSamples": 4,
+    "viewportWidth": 1280,
+    "viewportHeight": 900,
+    "deviceScaleFactor": 1,
+    "lodPixels": 0.75,
+    "liveDiagnosticCounters": false,
+    "measurementOrder": [
+      "baseline",
+      "fine",
+      "grouped"
+    ],
+    "settleAndSampleMsPerView": 4000,
+    "gpuWindowMaxSamples": 60,
+    "frameCpuSamplesPerView": 120,
+    "gpuTiming": "compute-start through render-end; no split timestamps",
+    "frameCpuTiming": "submitted requestAnimationFrame callback wall time excluding asynchronous GPU completion"
+  },
+  "matchedPolicy": {
+    "hysteresis": "disabled in validation-only meshlet shader and CPU oracle; baseline has none",
+    "errorPolicy": "cumulative maximum in all three validation-only selectors",
+    "meshletShaderSha256": "136cb6a672ccbd805133d746f7901b4c8d3979c0ac82475623654adc36d5f886",
+    "baselineShaderSha256": "193a09084e8091eb33fbd47662993ffcac7ada0e34a78139c9ba42313a25cd49",
+    "oracleSha256": "ba310552da1aa2a17354e7f1abf950945815da28bba40d9592725b60d40cde83",
+    "productionFilesModified": false
+  },
+  "startups": {
+    "baseline": {
+      "startupMs": 19497,
+      "workerMs": 15451.900000035763,
+      "adapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace",
+        "device": "",
+        "description": ""
+      },
+      "errorClamps": 0,
+      "minScale": 0.22843794524669647,
+      "browserVersion": "145.0.7632.160"
+    },
+    "fine": {
+      "startupMs": 26123,
+      "workerMs": 21262.899999976158,
+      "adapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace",
+        "device": "",
+        "description": ""
+      },
+      "errorClamps": 0,
+      "minScale": 0.22843794524669647,
+      "browserVersion": "145.0.7632.160"
+    },
+    "grouped": {
+      "startupMs": 28401,
+      "workerMs": 22543.400000035763,
+      "adapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace",
+        "device": "",
+        "description": ""
+      },
+      "errorClamps": 0,
+      "minScale": 0.22843794524669647,
+      "browserVersion": "145.0.7632.160"
+    }
+  },
+  "measurements": [
+    {
+      "mode": "baseline",
+      "view": "trail",
+      "gpuMeanMs": 12.977220266666661,
+      "gpuP95Ms": 13.238272,
+      "frameMeanMs": 13.065833333333314,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.20333332916100819,
+        "medianMs": 0.10000002384185791,
+        "p95Ms": 0.30000001192092896
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.07416666646798452,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          0,
+          12,
+          -26
+        ],
+        "distance": 19.1049731745428,
+        "yaw": -0.21866894587394195,
+        "pitch": -0.2647955622052938
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 1856,
+      "activeCommands": 1064,
+      "submittedTriangles": 37653609,
+      "metrics": null
+    },
+    {
+      "mode": "baseline",
+      "view": "sky",
+      "gpuMeanMs": 1.6995669333333325,
+      "gpuP95Ms": 1.703936,
+      "frameMeanMs": 7.739999999999994,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.1475000003973643,
+        "medianMs": 0.10000002384185791,
+        "p95Ms": 0.20000004768371582
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.025000000496705373,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          30,
+          24,
+          -25.2
+        ],
+        "distance": 17.651133108103853,
+        "yaw": 0,
+        "pitch": -1.5594653669903542
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 1856,
+      "activeCommands": 308,
+      "submittedTriangles": 5756230,
+      "metrics": null
+    },
+    {
+      "mode": "fine",
+      "view": "trail",
+      "gpuMeanMs": 13.2644864,
+      "gpuP95Ms": 13.631488,
+      "frameMeanMs": 13.813333333333352,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.350000007947286,
+        "medianMs": 0.20000004768371582,
+        "p95Ms": 0.40000003576278687
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.1500000014901161,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          0,
+          12,
+          -26
+        ],
+        "distance": 19.1049731745428,
+        "yaw": -0.21866894587394195,
+        "pitch": -0.2647955622052938
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 8189,
+      "activeCommands": 3469,
+      "submittedTriangles": 37096268,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 1,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      }
+    },
+    {
+      "mode": "fine",
+      "view": "sky",
+      "gpuMeanMs": 1.8808831999999984,
+      "gpuP95Ms": 1.900544,
+      "frameMeanMs": 7.990000000000024,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.19749999145666758,
+        "medianMs": 0.19999998807907104,
+        "p95Ms": 0.3999999761581421
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.014166667064030965,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          30,
+          24,
+          -25.2
+        ],
+        "distance": 17.651133108103853,
+        "yaw": 0,
+        "pitch": -1.5594653669903542
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 8189,
+      "activeCommands": 1017,
+      "submittedTriangles": 5173419,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 1,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      }
+    },
+    {
+      "mode": "grouped",
+      "view": "trail",
+      "gpuMeanMs": 13.154167466666667,
+      "gpuP95Ms": 13.43488,
+      "frameMeanMs": 13.234166666666654,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.2924999917546908,
+        "medianMs": 0.19999998807907104,
+        "p95Ms": 0.30000001192092896
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.15500000019868215,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          0,
+          12,
+          -26
+        ],
+        "distance": 19.1049731745428,
+        "yaw": -0.21866894587394195,
+        "pitch": -0.2647955622052938
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 2630,
+      "activeCommands": 1445,
+      "submittedTriangles": 37310714,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 8,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 2630,
+        "nodes": 2776,
+        "visibleBytes": 21439392,
+        "nodeBytes": 88832,
+        "modelBytes": 14848,
+        "indirectBytes": 84160,
+        "drawParameterBytes": 42080,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      }
+    },
+    {
+      "mode": "grouped",
+      "view": "sky",
+      "gpuMeanMs": 1.709397333333332,
+      "gpuP95Ms": 1.769472,
+      "frameMeanMs": 7.879166666666666,
+      "frameCpu": {
+        "samples": 120,
+        "meanMs": 0.14500000129143398,
+        "medianMs": 0.10000002384185791,
+        "p95Ms": 0.2999999523162842
+      },
+      "submitCpu": {
+        "samples": 120,
+        "meanMs": 0.009999999900658925,
+        "medianMs": 0,
+        "p95Ms": 0.10000002384185791
+      },
+      "camera": {
+        "target": [
+          30,
+          24,
+          -25.2
+        ],
+        "distance": 17.651133108103853,
+        "yaw": 0,
+        "pitch": -1.5594653669903542
+      },
+      "lodPixels": 0.75,
+      "errors": [],
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 2630,
+      "activeCommands": 507,
+      "submittedTriangles": 5278775,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 8,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 2630,
+        "nodes": 2776,
+        "visibleBytes": 21439392,
+        "nodeBytes": 88832,
+        "modelBytes": 14848,
+        "indirectBytes": 84160,
+        "drawParameterBytes": 42080,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      }
+    }
+  ],
+  "groupedEquivalence": {
+    "passed": true,
+    "adapter": {
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": ""
+    },
+    "drawGroupSize": 8,
+    "optionalFeaturesRequested": [],
+    "cases": [
+      {
+        "case": 0,
+        "triangles": 21393,
+        "tested": 384,
+        "rejected": 47,
+        "overflow": 0,
+        "commands": 8
+      },
+      {
+        "case": 1,
+        "triangles": 22824,
+        "tested": 384,
+        "rejected": 8,
+        "overflow": 0,
+        "commands": 8
+      },
+      {
+        "case": 2,
+        "triangles": 20142,
+        "tested": 369,
+        "rejected": 46,
+        "overflow": 0,
+        "commands": 8
+      },
+      {
+        "case": 3,
+        "triangles": 23040,
+        "tested": 384,
+        "rejected": 0,
+        "overflow": 0,
+        "commands": 8
+      }
+    ],
+    "errors": []
+  },
+  "currentCullCounters": {
+    "fine-trail": {
+      "enabled": true,
+      "countersEnabled": true,
+      "sampling": "dedicated-current-cull",
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 1,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 245686,
+      "nodesTested": 298304,
+      "nodesRejected": 4460,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    },
+    "fine-sky": {
+      "enabled": true,
+      "countersEnabled": true,
+      "sampling": "dedicated-current-cull",
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 1,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 509,
+      "nodesTested": 4292,
+      "nodesRejected": 2478,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    },
+    "grouped-trail": {
+      "enabled": true,
+      "countersEnabled": true,
+      "sampling": "dedicated-current-cull",
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 8,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 2630,
+        "nodes": 2776,
+        "visibleBytes": 21439392,
+        "nodeBytes": 88832,
+        "modelBytes": 14848,
+        "indirectBytes": 84160,
+        "drawParameterBytes": 42080,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 245686,
+      "nodesTested": 252373,
+      "nodesRejected": 655,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    },
+    "grouped-sky": {
+      "enabled": true,
+      "countersEnabled": true,
+      "sampling": "dedicated-current-cull",
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "drawGroupSize": 8,
+        "admission": "fine meshlet budgets retained to keep the model set fixed across grouping comparisons",
+        "fineMeshlets": 6377,
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 2630,
+        "nodes": 2776,
+        "visibleBytes": 21439392,
+        "nodeBytes": 88832,
+        "modelBytes": 14848,
+        "indirectBytes": 84160,
+        "drawParameterBytes": 42080,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 509,
+      "nodesTested": 1791,
+      "nodesRejected": 795,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    }
+  },
+  "staticVisualComparisons": [
+    {
+      "view": "trail",
+      "mode": "fine",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 0,
+      "totalPixels": 1008640,
+      "maximumChannelDifference": 0,
+      "rmseChannels255": 0.0,
+      "baselineSha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1",
+      "candidateSha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1"
+    },
+    {
+      "view": "trail",
+      "mode": "grouped",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 0,
+      "totalPixels": 1008640,
+      "maximumChannelDifference": 0,
+      "rmseChannels255": 0.0,
+      "baselineSha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1",
+      "candidateSha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1"
+    },
+    {
+      "view": "sky",
+      "mode": "fine",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 0,
+      "totalPixels": 1008640,
+      "maximumChannelDifference": 0,
+      "rmseChannels255": 0.0,
+      "baselineSha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4",
+      "candidateSha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4"
+    },
+    {
+      "view": "sky",
+      "mode": "grouped",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 0,
+      "totalPixels": 1008640,
+      "maximumChannelDifference": 0,
+      "rmseChannels255": 0.0,
+      "baselineSha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4",
+      "candidateSha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4"
+    }
+  ],
+  "proofImages": [
+    {
+      "path": "docs/pr-assets/meshlet-trail-lod.png",
+      "sha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1"
+    },
+    {
+      "path": "docs/pr-assets/meshlet-under-crowns-lod.png",
+      "sha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4"
+    }
+  ],
+  "safety": {
+    "preSpawnAllowlistPassed": true,
+    "chromiumSandbox": true,
+    "unsafeFlagsUsed": false,
+    "maximumSlotMs": 180000
+  },
+  "cleanup": {
+    "releasedUtc": "2026-10-07T20:24:45.7950160Z",
+    "elapsedMs": 106203,
+    "browserClosed": true,
+    "daemonClosed": true,
+    "gpuReleaseConfirmed": true,
+    "workerDeployed": false,
+    "unsafeFlagsUsed": false,
+    "maximumSlotMs": 180000,
+    "serverClosed": true
+  },
+  "limitations": [
+    "Single desktop, sequential short samples; no confidence intervals or mobile speed result",
+    "Validation disables hysteresis; production retains the documented 90% demotion policy",
+    "No separate compute/render timestamps",
+    "Small frame CPU times have coarse timer precision and instrumentation overhead",
+    "Static views do not certify continuous LOD transitions, frustum-edge motion or the three other views",
+    "Geometry remains fully resident; streaming not implemented",
+    "Source change only; dist/Site packaging and publication deferred to parent review"
+  ],
+  "originalHarnessSha256": "039cfc8ef5fe01e0d7f84d967420a3a7e71f7cfbc4eadda09058b0705a5897f7",
+  "reproductionHarnessSha256": "caa3e992f08dcf5962309a500a1468d91d1c4d207b94dace28e4b29029c20822"
+}

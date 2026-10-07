@@ -1,7 +1,9 @@
 {
   "base_public_commit": "8f82e06ccadbc77f017eb3d6baba269d3eef93db",
   "branch": "feat/raster-meshlet-hierarchy",
-  "scope": "Resident forest raster clusters; opt-in; fine mode GPU evaluated and slower; coarse group/counter changes CPU validated only",
+  "base_public_branch": "fix/mobile-gpu-session-recovery",
+  "base_pull_request": 1,
+  "scope": "Experimental resident forest raster clusters; baseline default; matched fine/grouped GPU benchmark demonstrates no speedup",
   "source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
   "original_source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
   "original_digests_retained": true,
@@ -349,12 +351,37 @@
     {
       "path": "tools/record_meshlet_provenance.py",
       "original_sha256": null,
-      "current_sha256": "da97572aa46579d1f1732f9d029769b73b4290605f3e6bd9604c3fea5a2a61c0"
+      "current_sha256": "6a9a6dbeccfcb2bbf8a68e54dc2237378a53cfcd31a73bcd9f8829a4ecb2d81d"
     },
     {
       "path": "docs/MESHLET_RASTER_STAGE1.md",
       "original_sha256": null,
-      "current_sha256": "0b05e1a109d2b2c4aa406de687f7f4e4e4c41afcacad124f37273b1d2e4ee5a3"
+      "current_sha256": "d566db53b9d23448e5cb2bd82113912d68f76319af2fde9d51b9724b9ec51359"
+    },
+    {
+      "path": "tools/meshlet_validation_server.py",
+      "original_sha256": null,
+      "current_sha256": "29f0e19df2108bd9ebced814b1ddd0c6fe084fddf286111fdac638b26532d0a2"
+    },
+    {
+      "path": "tools/meshlet-benchmark.browser.js",
+      "original_sha256": null,
+      "current_sha256": "caa3e992f08dcf5962309a500a1468d91d1c4d207b94dace28e4b29029c20822"
+    },
+    {
+      "path": "docs/MESHLET_RASTER_GPU_MATCHED.json",
+      "original_sha256": null,
+      "current_sha256": "7ffdca1ff661c3c1efa655c8afffe104d7c72a30051e5052638d9b6577b1f70e"
+    },
+    {
+      "path": "docs/pr-assets/meshlet-trail-lod.png",
+      "original_sha256": null,
+      "current_sha256": "d01eed8896c69b19843d35113a6090c06df3f5d7b8d6716b5a78be5b3a51e2d1"
+    },
+    {
+      "path": "docs/pr-assets/meshlet-under-crowns-lod.png",
+      "original_sha256": null,
+      "current_sha256": "d5cebb9f30ecd4b8f0edcbf3c6c6440705cb4d7d1c91fd2b8159db20b914f8c4"
     }
   ],
   "validation": {
@@ -364,10 +391,11 @@
     "browser_used_for_current_cpu_followup": false,
     "fine_mode_gpu_checkpoint": "4eb8197e7dcc88196c82b8c10e6f21728a62ce0d",
     "fine_mode_gpu_performance": "slower; default rejected",
-    "coarse_group_and_counter_gpu_acceptance": "pending serialized slot",
-    "visual_holes_popping_acceptance": "full-detail saved pairs reviewed; continuous transitions not certified"
+    "matched_gpu_checkpoint": "6eebab0cc88c25e907645b979684b4549643abdf",
+    "coarse_group_and_counter_gpu_acceptance": "four equivalence cases pass; current-cull counters nonzero; zero overflow; no performance promotion",
+    "visual_holes_popping_acceptance": "two matched static views pixel-identical; earlier full-detail pairs reviewed; continuous transitions and three other views not certified"
   },
   "publication_owner": "parent",
   "worker_deployed": false,
-  "worker_pr_mutated": false
+  "scope_excludes_dist_packaging": true
 }

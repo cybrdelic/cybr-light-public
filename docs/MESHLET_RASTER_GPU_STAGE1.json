@@ -388,7 +388,7 @@
       "dispatches": 1,
       "workgroups": 9535
     },
-    "bug": "Requested enabled flag was reported without ensuring a current cull with that flag; Trail returned zero, Sky returned valid counters. Current correction is CPU tested only."
+    "bug": "Historical requested flag could label older disabled counters as enabled. Corrected and GPU-validated in 6eebab0; see MESHLET_RASTER_GPU_MATCHED.json."
   },
   "cleanup": {
     "gpuReleaseConfirmed": true,
@@ -407,6 +407,8 @@
     "Continuous LOD popping and all-view visual coverage are not certified",
     "Full frame CPU cost and separate compute/render timing were not measured",
     "Pixel settings match but baseline and experiment have different LOD hysteresis",
-    "New coarse grouping and diagnostic fix have not run on GPU"
-  ]
+    "At this historical checkpoint coarse groups and the diagnostic fix were untested; their later matched results are recorded separately."
+  ],
+  "historicalCheckpoint": true,
+  "supersededBy": "MESHLET_RASTER_GPU_MATCHED.json"
 }

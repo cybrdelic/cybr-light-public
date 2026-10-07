@@ -21,11 +21,17 @@ changed = ('browser/forest-game.mjs', 'browser/forest-raster-worker.mjs',
            'browser/meshlet-hierarchy.test.mjs', 'tools/measure_forest_meshlets.mjs',
            'browser/meshlet-gpu-proof.html', 'browser/meshlet-gpu-proof.mjs',
            'browser/forest-diagnostics.mjs', 'browser/forest-diagnostics.test.mjs',
-           'tools/record_meshlet_provenance.py', 'docs/MESHLET_RASTER_STAGE1.md')
+           'tools/record_meshlet_provenance.py', 'docs/MESHLET_RASTER_STAGE1.md',
+           'tools/meshlet_validation_server.py', 'tools/meshlet-benchmark.browser.js',
+           'docs/MESHLET_RASTER_GPU_MATCHED.json',
+           'docs/pr-assets/meshlet-trail-lod.png',
+           'docs/pr-assets/meshlet-under-crowns-lod.png')
 record = {
     'base_public_commit': '8f82e06ccadbc77f017eb3d6baba269d3eef93db',
     'branch': 'feat/raster-meshlet-hierarchy',
-    'scope': 'Resident forest raster clusters; opt-in; fine mode GPU evaluated and slower; coarse group/counter changes CPU validated only',
+    'base_public_branch': 'fix/mobile-gpu-session-recovery',
+    'base_pull_request': 1,
+    'scope': 'Experimental resident forest raster clusters; baseline default; matched fine/grouped GPU benchmark demonstrates no speedup',
     'source_baseline_sha256': digest(root / 'docs/SOURCE_BASELINE.json'),
     'original_source_baseline_sha256': digest(original / 'docs/SOURCE_BASELINE.json'),
     'original_digests_retained': True,
@@ -38,9 +44,11 @@ record = {
                    'browser_used_for_current_cpu_followup': False,
                    'fine_mode_gpu_checkpoint': '4eb8197e7dcc88196c82b8c10e6f21728a62ce0d',
                    'fine_mode_gpu_performance': 'slower; default rejected',
-                   'coarse_group_and_counter_gpu_acceptance': 'pending serialized slot',
-                   'visual_holes_popping_acceptance': 'full-detail saved pairs reviewed; continuous transitions not certified'},
-    'publication_owner': 'parent', 'worker_deployed': False, 'worker_pr_mutated': False,
+                   'matched_gpu_checkpoint': '6eebab0cc88c25e907645b979684b4549643abdf',
+                   'coarse_group_and_counter_gpu_acceptance': 'four equivalence cases pass; current-cull counters nonzero; zero overflow; no performance promotion',
+                   'visual_holes_popping_acceptance': 'two matched static views pixel-identical; earlier full-detail pairs reviewed; continuous transitions and three other views not certified'},
+    'publication_owner': 'parent', 'worker_deployed': False,
+    'scope_excludes_dist_packaging': True,
 }
 output = root / 'docs/MESHLET_RASTER_PROVENANCE.json'
 output.write_text(json.dumps(record, indent=2) + '\n')
