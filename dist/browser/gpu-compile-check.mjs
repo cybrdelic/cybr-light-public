@@ -2,15 +2,18 @@ import {rendererOptions} from './renderer-options.mjs';
 import {buildRendererShader} from './renderer-shaders.mjs';
 import {gpuDeviceOptions} from './gpu-session.mjs?revision=mobile-lifecycle-2';
 import {traceCompileVariant} from './trace-compatibility.mjs';
+import {traceCompileProbe,traceProbeCases} from './trace-compile-probes.mjs';
 import {diagnosticShader} from './diagnostics.mjs';
 import {createCompileDeadline} from './compile-deadline.mjs';
 
-const build='mobile-compile-sequence-7',saveKey='cybrLightCompileReport';
+const build='mobile-compile-probes-8',saveKey='cybrLightCompileReport';
 const $=selector=>document.querySelector(selector),utc=()=>new Date().toISOString();
 const parameters=new URLSearchParams('scene=proof-optics&glass=split&motion=bilinear');
 const load=async name=>{const response=await fetch(name,{cache:'no-store'});if(!response.ok)throw Error('Shader unavailable: '+name);return response.text();};
 const options=rendererOptions(parameters),query=new URLSearchParams(location.search);
 const cases=[...$('#case').options].map(option=>option.value);
+const comparisonCases=cases.filter(name=>!traceProbeCases.includes(name));
+const sha256=async code=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(code))),v=>v.toString(16).padStart(2,'0')).join('');
 if(cases.includes(query.get('case')))$('#case').value=query.get('case');
 $('#build').textContent=build;
 let active=false,device,report,sequenceReport,cancelCurrent,restoredPending=false;
@@ -55,7 +58,7 @@ for(const saved of savedReports.sort((a,b)=>String(b.checkpointUtc||'').localeCo
  }catch{/* Storage can be unavailable or contain an older invalid report. */}
 }
 const selectLimits=limits=>Object.fromEntries(['maxBufferSize','maxStorageBufferBindingSize','maxStorageBuffersPerShaderStage','maxComputeInvocationsPerWorkgroup','maxComputeWorkgroupSizeX','maxComputeWorkgroupSizeY','maxComputeWorkgroupStorageSize'].map(name=>[name,limits[name]]));
-const setBusy=value=>{active=value;for(const selector of ['#run','#sequence','#case','#clear'])$(selector).disabled=value;$('#stop').disabled=!value;};
+const setBusy=value=>{active=value;for(const selector of ['#run','#sequence','#probes','#case','#clear'])$(selector).disabled=value;$('#stop').disabled=!value;};
 window.cybrCompileCheck={snapshot:()=>report,sequenceSnapshot:()=>sequenceReport};
 $('#copy').onclick=async()=>{try{await navigator.clipboard.writeText($('#report').textContent);$('#status').textContent='Report copied.';}catch{$('#status').textContent='Select and copy the report below.';}};
 $('#clear').onclick=()=>{
@@ -95,10 +98,12 @@ async function runCase(name){
   device.addEventListener('uncapturederror',event=>{current.validationError=event.error.message;update(current.phase,current);});
   begin('Building exact current trace source');
   const source=await wait(buildRendererShader('trace',{load,parameters,options}));
-  const variant=traceCompileVariant(source,name);
+  const sourceSha256=await wait(sha256(source));
+  const variant=traceProbeCases.includes(name)?traceCompileProbe(source,name,{sourceSha256}):traceCompileVariant(source,name);
   current.shader={bytes:new TextEncoder().encode(variant.code).length,entryPoint:variant.entryPoint,workgroup:variant.workgroup,
    privateArrays:[...variant.code.matchAll(/(?:var \w+:array<[^;]+|struct MediumStack[^\n]+)/g)].map(match=>match[0])};
-  current.shader.sha256=Array.from(new Uint8Array(await wait(crypto.subtle.digest('SHA-256',new TextEncoder().encode(variant.code)))),v=>v.toString(16).padStart(2,'0')).join('');
+  current.shader.sha256=await wait(sha256(variant.code));
+  if(variant.compileOnly)current.probe={compileOnly:true,dispatchAllowed:false,purpose:variant.purpose,originalSourceSha256:sourceSha256,originalSourceBytes:new TextEncoder().encode(source).length,originalSourcePrefixUnchanged:variant.code.startsWith(source)};
   if(name==='host-prefix'){
    const canvas=document.createElement('canvas'),context=canvas.getContext('webgpu');
    if(!context)throw Error('WebGPU canvas unavailable for startup prefix');
@@ -142,10 +147,9 @@ $('#run').onclick=async()=>{
  if(active)return;sequenceReport=undefined;setBusy(true);
  try{await runCase($('#case').value);}finally{setBusy(false);}
 };
-$('#sequence').onclick=async()=>{
+async function runSequence(selected,family){
  if(active)return;setBusy(true);
- const selected=cases.slice(Math.max(0,cases.indexOf($('#case').value)));
- sequenceReport={schemaVersion:3,kind:'sequence',build,browser:navigator.userAgent,startedUtc:utc(),cases:selected,results:[],completed:false,phase:'Starting comparison sequence'};
+ sequenceReport={schemaVersion:3,kind:'sequence',family,build,browser:navigator.userAgent,startedUtc:utc(),cases:selected,results:[],completed:false,phase:'Starting comparison sequence'};
  try{
   for(const name of selected){
    const result=await runCase(name);sequenceReport.results.push(result);delete sequenceReport.activeReport;
@@ -154,7 +158,13 @@ $('#sequence').onclick=async()=>{
   sequenceReport.completed=true;sequenceReport.finishedUtc=utc();sequenceReport.phase=sequenceReport.stop?'Sequence stopped at '+sequenceReport.stop.case+'; no later cases started':'All selected compilation checks passed; actual rendering still needs validation';
   $('#status').textContent=sequenceReport.phase;saveReport();
  }finally{setBusy(false);}
+}
+$('#sequence').onclick=()=>{
+ const family=traceProbeCases.includes($('#case').value)?traceProbeCases:comparisonCases;
+ return runSequence(family.slice(Math.max(0,family.indexOf($('#case').value))),family===traceProbeCases?'trace-probes':'original-comparisons');
 };
+// The next physical bisection never requests the already-failing main pipeline.
+$('#probes').onclick=()=>runSequence(traceProbeCases,'trace-probes');
 document.addEventListener('visibilitychange',()=>{if(report){report.lifecycle??=[];report.lifecycle.push({event:'visibilitychange',state:document.visibilityState,operation:report.activeOperation});saveReport();}});
 window.addEventListener('pagehide',event=>{
  if(report){report.lifecycle??=[];report.lifecycle.push({event:'pagehide',persisted:event.persisted,operation:report.activeOperation});if(active){report.pageLeft=true;cancelCurrent?.(new Error('Page left during check'));}saveReport();}
@@ -162,4 +172,4 @@ window.addEventListener('pagehide',event=>{
 });
 // Keep a restored unfinished checkpoint visible instead of automatically
 // replacing the evidence after a browser/GPU process failure.
-if(query.get('run')==='1'&&!restoredPending)$(query.get('sequence')==='1'?'#sequence':'#run').click();
+if(query.get('run')==='1'&&!restoredPending)$(query.get('probeSequence')==='1'?'#probes':query.get('sequence')==='1'?'#sequence':'#run').click();

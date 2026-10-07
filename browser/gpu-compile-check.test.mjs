@@ -9,11 +9,12 @@ import {rendererOptions} from './renderer-options.mjs';
 import {buildRendererShader} from './renderer-shaders.mjs';
 import {gpuDeviceOptions} from './gpu-session.mjs';
 import {traceCompileVariant} from './trace-compatibility.mjs';
+import {traceCompileProbe,traceProbeCases} from './trace-compile-probes.mjs';
 import {diagnosticShader} from './diagnostics.mjs';
 import {createCompileDeadline} from './compile-deadline.mjs';
 const controller=(await readFile(new URL('gpu-compile-check.mjs',import.meta.url),'utf8')).replace(/^import[^\r\n]+\r?\n/gm,'');
 
-async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedReport,olderLocalReport,execute=true,autoRun=false,deviceLoss=false,sequence=false,stopDuringDevice=false,timeoutAdapter=false}={}){
+async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedReport,olderLocalReport,execute=true,autoRun=false,deviceLoss=false,sequence=false,probeSequence=false,stopDuringDevice=false,timeoutAdapter=false}={}){
  const calls=new Map(),modules=[],pipelines=[],checkpoints=[],devices=[],fetches=[];let destroys=0,requests=0,clicks=0,automaticRun,releaseLateDevice,copied;
  const limits={maxBufferSize:536870912,maxStorageBufferBindingSize:536870912,maxStorageBuffersPerShaderStage:8,maxComputeInvocationsPerWorkgroup:256,maxComputeWorkgroupSizeX:256,maxComputeWorkgroupSizeY:256,maxComputeWorkgroupStorageSize:32768};
  const adapter={limits,features:new Set(),info:{vendor:'cpu-fixture',architecture:'no-hardware'},requestDevice(){
@@ -26,20 +27,20 @@ async function runCase(name,{invalidTrace=false,storageUnavailable=false,cachedR
   if(stopDuringDevice){queueMicrotask(()=>elements['#stop'].onclick());return new Promise(resolve=>{releaseLateDevice=()=>resolve(device);});}
   return Promise.resolve(device);
  }};
- const caseNames=['tiny','full-control','current','default-limits','workgroup-4','compact-media','compat','host-prefix'];
- const elements=Object.fromEntries(['case','status','stages','report','copy','run','sequence','stop','clear','build'].map(id=>['#'+id,{value:name,options:caseNames.map(value=>({value})),disabled:false,textContent:''}]));
- for(const selector of ['#run','#sequence'])elements[selector].click=()=>{clicks++;automaticRun=elements[selector].onclick();};
+ const caseNames=['tiny','full-control','current','default-limits','workgroup-4','compact-media','compat','host-prefix',...traceProbeCases];
+ const elements=Object.fromEntries(['case','status','stages','report','copy','run','sequence','probes','stop','clear','build'].map(id=>['#'+id,{value:name,options:caseNames.map(value=>({value})),disabled:false,textContent:''}]));
+ for(const selector of ['#run','#sequence','#probes'])elements[selector].click=()=>{clicks++;automaticRun=elements[selector].onclick();};
  const events={},window={addEventListener(name,listener){events[name]=listener;}};window.top=window;
  const stored=new Map(cachedReport?[['cybrLightCompileReport',JSON.stringify(cachedReport)]]:[]);
  const storage={getItem(key){if(storageUnavailable)throw Error('Storage unavailable');return stored.get(key)||null;},setItem(key,value){if(storageUnavailable)throw Error('Storage unavailable');stored.set(key,value);checkpoints.push(JSON.parse(value));},removeItem(key){stored.delete(key);}};
  window.sessionStorage=storage;
  window.localStorage=olderLocalReport?{...storage,getItem(){return JSON.stringify(olderLocalReport);}}:storage;
  const document={visibilityState:'visible',querySelector:selector=>elements[selector],addEventListener(){},createElement(tag){assert.equal(tag,'canvas');return {width:300,height:150,getContext(){return {configure(){}};}};}};
- const sandbox={window,document,location:{search:'?case='+name+(autoRun?'&run=1':'')+(sequence?'&sequence=1':'')},navigator:{userAgent:'CPU fixture, no GPU',clipboard:{async writeText(value){copied=value;}},gpu:{async requestAdapter(){requests++;return timeoutAdapter?new Promise(()=>{}):adapter;},getPreferredCanvasFormat:()=> 'bgra8unorm'}},
+ const sandbox={window,document,location:{search:'?case='+name+(autoRun?'&run=1':'')+(sequence?'&sequence=1':'')+(probeSequence?'&probeSequence=1':'')},navigator:{userAgent:'CPU fixture, no GPU',clipboard:{async writeText(value){copied=value;}},gpu:{async requestAdapter(){requests++;return timeoutAdapter?new Promise(()=>{}):adapter;},getPreferredCanvasFormat:()=> 'bgra8unorm'}},
   fetch:async path=>{fetches.push(path);return {ok:true,text:()=>readFile(new URL(path,import.meta.url),'utf8')};},crypto:webcrypto,TextEncoder,URLSearchParams,performance,setTimeout,clearTimeout,GPUBufferUsage:{UNIFORM:64,COPY_DST:8},
-  rendererOptions,buildRendererShader,gpuDeviceOptions,traceCompileVariant,diagnosticShader,createCompileDeadline:()=>createCompileDeadline({milliseconds:timeoutAdapter?5:40000})};
+  rendererOptions,buildRendererShader,gpuDeviceOptions,traceCompileVariant,traceCompileProbe,traceProbeCases,diagnosticShader,createCompileDeadline:()=>createCompileDeadline({milliseconds:timeoutAdapter?5:40000})};
  new vm.Script(controller,{filename:'gpu-compile-check.mjs'}).runInNewContext(sandbox);
- if(automaticRun)await automaticRun;else if(execute)await elements[sequence?'#sequence':'#run'].onclick();
+ if(automaticRun)await automaticRun;else if(execute)await elements[probeSequence?'#probes':sequence?'#sequence':'#run'].onclick();
  if(releaseLateDevice){releaseLateDevice();for(let i=0;i<5;i++)await Promise.resolve();}
  return {report:window.cybrCompileCheck.snapshot(),sequence:window.cybrCompileCheck.sequenceSnapshot(),calls,modules,pipelines,destroys,requests,clicks,elements,checkpoints,devices,fetches,events,stored,async copy(){await elements['#copy'].onclick();return copied;}};
 }
@@ -98,7 +99,7 @@ test('one comparison sequence preserves all results and closes each fresh device
  const result=await runCase('tiny',{sequence:true});assert.equal(result.sequence.completed,true);assert.equal(result.sequence.stop,undefined);
  assert.equal(result.sequence.results.length,8);assert.equal(result.requests,8);assert.equal(result.destroys,8);
  assert.ok(result.sequence.results.every(run=>run.passed&&run.closedByCheck));assert.equal(result.calls.get('trace'),1);
- assert.ok(result.sequence.results.every(run=>run.build==='mobile-compile-sequence-7'&&run.browser==='CPU fixture, no GPU'));
+ assert.ok(result.sequence.results.every(run=>run.build==='mobile-compile-probes-8'&&run.browser==='CPU fixture, no GPU'));
  assert.equal(JSON.parse(await result.copy()).results.length,8);assert.ok(result.fetches.every(path=>path.endsWith('.wgsl')&&!path.includes('://')));
 });
 
@@ -140,4 +141,21 @@ test('a newer session fallback checkpoint wins over stale local storage',async()
  const older={case:'tiny',phase:'Compilation passed',closedByCheck:true,checkpointUtc:'2026-10-07T08:00:00Z',stages:[]};
  const result=await runCase('current',{cachedReport:saved,olderLocalReport:older,execute:false,autoRun:true});
  assert.equal(result.report.case,'current');assert.equal(result.report.phase,saved.phase);assert.equal(result.requests,0);assert.equal(result.clicks,0);
+});
+
+test('automatic probe sequence compiles only appended entrypoints and never requests known-failing main',async()=>{
+ const result=await runCase('current',{probeSequence:true,autoRun:true});assert.equal(result.sequence.family,'trace-probes');
+ assert.deepEqual(Array.from(result.sequence.cases),traceProbeCases);assert.equal(result.requests,4);assert.equal(result.destroys,4);
+ assert.ok(result.sequence.results.every(run=>run.passed&&run.probe.compileOnly&&run.probe.originalSourcePrefixUnchanged&&run.gpuBytesAllocatedByCheck===0));
+ assert.ok(result.sequence.results.every(run=>run.probe.dispatchAllowed===false));assert.ok(result.pipelines.every(pipeline=>pipeline.compute.entryPoint!=='main'));
+ assert.equal(result.pipelines[0].compute.entryPoint,'probeControl8');assert.equal(result.sequence.completed,true);
+});
+
+test('probe loss stops before medium and preserves earlier control/binding results',async()=>{
+ const result=await runCase('current',{probeSequence:true,deviceLoss:'traversal'});
+ assert.equal(result.sequence.stop.case,'traversal');assert.equal(result.sequence.stop.reason,'device-lost');assert.equal(result.requests,3);assert.equal(result.destroys,3);
+ assert.equal(result.sequence.results[0].case,'probe-control-8');assert.equal(result.sequence.results[0].passed,true);
+ assert.equal(result.sequence.results[1].case,'binding-abi');assert.equal(result.sequence.results[1].passed,true);
+ assert.equal(result.report.case,'traversal');assert.equal(result.report.probe.originalSourceSha256,'563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f');
+ assert.equal(result.sequence.results.some(run=>run.case==='medium'),false);assert.equal(result.sequence.results.some(run=>run.case==='current'),false);
 });

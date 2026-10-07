@@ -1,0 +1,156 @@
+{
+  "validator": {
+    "library": "naga",
+    "version": "30.0.1",
+    "validationFlags": "all",
+    "optionalCapabilities": "none",
+    "parseAndTypeValidation": "passed"
+  },
+  "sourceSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+  "sourceBytes": 24033,
+  "gpuUsed": false,
+  "physicalProbeResult": "not yet run",
+  "probes": [
+    {
+      "name": "probe-control-8",
+      "entryPoint": "probeControl8",
+      "sha256": "5b600606a88d71c0a428de0ffab10dc284b04f1c787c1febe75d2c6f42abee2a",
+      "bytes": 24142,
+      "functions": [
+        "probeControl8"
+      ],
+      "bindings": [],
+      "bvhStackUsed": false,
+      "mediumStackUsed": false
+    },
+    {
+      "name": "binding-abi",
+      "entryPoint": "probeBindingABI",
+      "sha256": "ade61ca4ec69650589401f2f3696a0b82f33996d9852ce8be5a319e263d564cd",
+      "bytes": 24421,
+      "functions": [
+        "probeBindingABI"
+      ],
+      "bindings": [
+        {
+          "name": "u",
+          "binding": 0,
+          "group": 0
+        },
+        {
+          "name": "triangles",
+          "binding": 1,
+          "group": 0
+        },
+        {
+          "name": "nodes",
+          "binding": 2,
+          "group": 0
+        },
+        {
+          "name": "materials",
+          "binding": 3,
+          "group": 0
+        },
+        {
+          "name": "samples",
+          "binding": 4,
+          "group": 0
+        },
+        {
+          "name": "portals",
+          "binding": 5,
+          "group": 0
+        },
+        {
+          "name": "attributes",
+          "binding": 6,
+          "group": 0
+        },
+        {
+          "name": "lighting",
+          "binding": 7,
+          "group": 0
+        }
+      ],
+      "bvhStackUsed": false,
+      "mediumStackUsed": false
+    },
+    {
+      "name": "traversal",
+      "entryPoint": "probeTraversal",
+      "sha256": "61a44a5453b7946a6aa4d0adef87f86695ecc331d5cea6762499a3d02afb3358",
+      "bytes": 24414,
+      "functions": [
+        "boxDistance",
+        "camera",
+        "probeTraversal",
+        "trace"
+      ],
+      "bindings": [
+        {
+          "name": "u",
+          "binding": 0,
+          "group": 0
+        },
+        {
+          "name": "triangles",
+          "binding": 1,
+          "group": 0
+        },
+        {
+          "name": "nodes",
+          "binding": 2,
+          "group": 0
+        },
+        {
+          "name": "samples",
+          "binding": 4,
+          "group": 0
+        },
+        {
+          "name": "lighting",
+          "binding": 7,
+          "group": 0
+        }
+      ],
+      "bvhStackUsed": true,
+      "mediumStackUsed": false
+    },
+    {
+      "name": "medium",
+      "entryPoint": "probeMedium",
+      "sha256": "c6f4ca6173d0e178da29e096cdc1427a324ff218be7bae4eb3686048d80ca48d",
+      "bytes": 24870,
+      "functions": [
+        "commitMedium",
+        "mediumExitSlot",
+        "mediumTarget",
+        "probeMedium"
+      ],
+      "bindings": [
+        {
+          "name": "u",
+          "binding": 0,
+          "group": 0
+        },
+        {
+          "name": "samples",
+          "binding": 4,
+          "group": 0
+        }
+      ],
+      "bvhStackUsed": false,
+      "mediumStackUsed": true
+    }
+  ],
+  "reproduce": [
+    "node tools/export_trace_probes.mjs",
+    "cargo build --release --locked --jobs 2 --manifest-path tools/wgsl-validator/Cargo.toml",
+    "tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-probes"
+  ],
+  "limits": [
+    "CPU parser/type validation does not establish Adreno backend compilation or a renderer fix.",
+    "Every diagnostic appends an entrypoint to the unchanged baseline module and is never dispatched."
+  ]
+}
