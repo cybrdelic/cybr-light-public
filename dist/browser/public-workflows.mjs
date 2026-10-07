@@ -13,5 +13,5 @@ new MutationObserver(refresh).observe(select, {childList: true});
 refresh();
 const nav = document.createElement('nav');
 nav.style.cssText = 'display:flex;flex-wrap:wrap;gap:18px;font-size:14px';
-nav.innerHTML = '<a href="./forest-game.html">Forest raster</a><a href="../cybr-light-current-source.zip">Native and browser source</a><a href="../docs/LIVE.md">Demo scope</a><a href="../LICENSE">License</a>';
+nav.innerHTML = '<a href="./forest-game.html">Forest raster</a><a href="https://github.com/cybrdelic/cybr-light-public">Full source repository</a><a href="../cybr-light-current-source.zip">Source ZIP</a><a href="../docs/LIVE.md">Demo scope</a><a href="../LICENSE">License</a>';
 document.querySelector('header').append(nav);

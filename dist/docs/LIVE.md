@@ -15,3 +15,5 @@ Not shipped: Observatory interior/full scene and Drowned Geode exports, their ga
 Existing moving optical noise, forest lighting/LOD approximation and clearing-camera branch intersection remain. No new GPU run was made for this publication while another task owns the slot; prior matched hardware validation and current CPU asset/source checks are recorded in the source validation notes. No universal FPS guarantee is made.
 
 The downloadable source ZIP contains the complete curated native C++/Python, optional CUDA/OptiX and browser source from cleanup commit 33d2a2cc6df362dfcf902082f68e58051145579f, without private Git history or companion caches. Native offline build/run commands are in its root README. The live client modules, delivery adapter and asset parts are served directly by this site.
+
+The [full public repository](https://github.com/cybrdelic/cybr-light-public) also retains the exact cleared runtime files and publication helpers. The Site source package restores those files from its pinned public input manifest before deployment.
