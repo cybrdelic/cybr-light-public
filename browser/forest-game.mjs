@@ -1,9 +1,11 @@
 import {cameraBasis} from './hybrid-geometry.mjs';
 import {mountPlayControls} from './play-controls.mjs';
 import {readBuffer} from './readback.mjs';
+import {createForestDiagnostics} from './forest-diagnostics.mjs';
 const canvas=document.querySelector('canvas'),status=document.querySelector('#status');
 const state={ready:false,frames:0,errors:[],gpuMs:[],frameMs:[],instances:0,mode:'raster-cached-sun-approximate-sky'};
 const meshletsRequested=new URLSearchParams(location.search).get('meshlets')==='1';
+const meshletDrawGroup=new URLSearchParams(location.search).get('meshletGroup')==='8'?8:1;
 let meshletStatsEnabled=new URLSearchParams(location.search).get('meshletStats')==='1';
 const fail=e=>{state.errors.push(e.message||String(e));status.textContent=state.errors.at(-1);};
 const adapter=await navigator.gpu?.requestAdapter({powerPreference:'high-performance'});
@@ -12,7 +14,7 @@ const timing=adapter.features.has('timestamp-query');
 const device=await adapter.requestDevice({requiredFeatures:timing?['timestamp-query']:[],requiredLimits:{maxBufferSize:Math.min(adapter.limits.maxBufferSize,512*1024*1024),maxStorageBufferBindingSize:Math.min(adapter.limits.maxStorageBufferBindingSize,256*1024*1024)}});
 device.addEventListener('uncapturederror',e=>fail(e.error));device.lost.then(info=>fail(Error('GPU device lost: '+info.message)));
 const context=canvas.getContext('webgpu'),format=navigator.gpu.getPreferredCanvasFormat();context.configure({device,format,alphaMode:'opaque'});
-const data=await new Promise((resolve,reject)=>{const worker=new Worker(new URL('./forest-raster-worker.mjs',import.meta.url),{type:'module'});worker.onmessage=({data})=>{worker.terminate();data.error?reject(Error(data.error)):resolve(data);};worker.onerror=e=>{worker.terminate();reject(Error(e.message));};worker.postMessage({meshlets:meshletsRequested,limits:{maxVisibleBytes:Math.min(64*1024*1024,device.limits.maxStorageBufferBindingSize)}});});
+const data=await new Promise((resolve,reject)=>{const worker=new Worker(new URL('./forest-raster-worker.mjs',import.meta.url),{type:'module'});worker.onmessage=({data})=>{worker.terminate();data.error?reject(Error(data.error)):resolve(data);};worker.onerror=e=>{worker.terminate();reject(Error(e.message));};worker.postMessage({meshlets:meshletsRequested,limits:{maxVisibleBytes:Math.min(64*1024*1024,device.limits.maxStorageBufferBindingSize),drawGroupSize:meshletDrawGroup}});});
 state.instances=data.count;status.textContent='Uploading indexed forest geometry…';
 const buffer=(data,usage)=>{const b=device.createBuffer({size:Math.max(16,typeof data==='number'?data:data.byteLength),usage:usage|GPUBufferUsage.COPY_DST});if(typeof data!=='number')device.queue.writeBuffer(b,0,data);return b;};
 const uniform=buffer(128,GPUBufferUsage.UNIFORM),shadowUniform=buffer(128,GPUBufferUsage.UNIFORM);
@@ -41,6 +43,7 @@ const shadow=texture([4096,4096],'depth32float',1,GPUTextureUsage.TEXTURE_BINDIN
 const color=texture([960,540],format,4),depth=texture([960,540],'depth32float',4);
 const group=(pipeline,index,resources)=>device.createBindGroup({layout:pipeline.getBindGroupLayout(index),entries:resources.map(([binding,resource])=>({binding,resource:resource instanceof GPUBuffer?{buffer:resource}:resource}))});
 const computeGroup=group(compute,0,[[0,uniform],[1,instances],[2,indirect],[3,visible],...(clusterPlan?[[4,clusterNodes],[5,clusterModels],[6,clusterStats]]:[[4,lodErrors]])]);
+const diagnostics=createForestDiagnostics({device,uniform,indirect,drawWords,stats:clusterStats,uniforms,compute,computeGroup,workgroups:Math.ceil(data.count/128),readBuffer});
 const renderGroup=group(raster,0,[[0,uniform],[1,instances],[2,visible],[3,shadowView],[4,device.createSampler({compare:'less-equal',magFilter:'linear',minFilter:'linear'})]]);
 const shadowGroup=group(sunRaster,0,[[0,shadowUniform],[1,instances],[2,visible]]);
 for(const b of batches)b.group=group(raster,1,[[0,b.param]]);
@@ -76,7 +79,7 @@ const queries=timing?device.createQuerySet({type:'timestamp',count:2}):null;
 const queryBuffer=timing?buffer(16,GPUBufferUsage.QUERY_RESOLVE|GPUBufferUsage.COPY_SRC):null;
 const readback=timing?device.createBuffer({size:16,usage:GPUBufferUsage.COPY_DST|GPUBufferUsage.MAP_READ}):null;let reading=false;
 const average=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
-function frame(now){requestAnimationFrame(frame);if(paused||document.hidden||state.errors.length||flight>=2)return;controls.update(now);
+function frame(now){requestAnimationFrame(frame);if(paused||diagnostics.busy||document.hidden||state.errors.length||flight>=2)return;controls.update(now);
  if(previousTime){state.frameMs.push(now-previousTime);if(state.frameMs.length>120)state.frameMs.shift();}previousTime=now;
  device.queue.writeBuffer(uniform,0,uniforms());device.queue.writeBuffer(indirect,0,drawWords);
  if(clusterStats)device.queue.writeBuffer(clusterStats,0,new Uint32Array(4));
@@ -93,7 +96,7 @@ function frame(now){requestAnimationFrame(frame);if(paused||document.hidden||sta
 window.forestGame={snapshot:()=>({...state,gpuMs:average(state.gpuMs),frameMs:average(state.frameMs),gpuP95:[...state.gpuMs].sort((a,b)=>a-b)[Math.floor(state.gpuMs.length*.95)],lodPixels,camera:pose}),setView:view,pause:()=>paused=true,resume:()=>{paused=false;previousTime=0;},setCamera:p=>pose=p,
  setLodPixels:value=>{if(!Number.isFinite(value)||value<0||value>4)throw Error('LOD threshold must be 0–4 pixels');lodPixels=value;state.gpuMs=[];state.frameMs=[];},
  setMeshletStats:value=>{meshletStatsEnabled=Boolean(value);state.gpuMs=[];state.frameMs=[];},
- async inspectDraws(){const words=new Uint32Array(await readBuffer(device,indirect,{size:drawWords.byteLength}));return batches.map((b,i)=>({id:b.id,level:b.level,clustered:b.clustered,firstIndex:words[i*8+2],instances:words[i*8+1],triangles:words[i*8+1]*words[i*8]/3})).sort((a,b)=>b.triangles-a.triangles);},
- async inspectMeshlets(){if(!clusterStats)return {enabled:false};const counts=new Uint32Array(await readBuffer(device,clusterStats,{size:16}));return {enabled:true,countersEnabled:meshletStatsEnabled,metrics:state.meshlets,visibleInstances:counts[0],nodesTested:counts[1],nodesRejected:counts[2],overflow:counts[3],dispatches:state.dispatchesPerFrame,workgroups:state.workgroupsPerFrame};}};
+ async inspectDraws(){const sample=await diagnostics.capture();previousTime=0;const words=new Uint32Array(sample.bytes);return batches.map((b,i)=>({id:b.id,level:b.level,clustered:b.clustered,firstIndex:words[i*8+2],instances:words[i*8+1],triangles:words[i*8+1]*words[i*8]/3})).sort((a,b)=>b.triangles-a.triangles);},
+ async inspectMeshlets(){if(!clusterStats)return {enabled:false};const sample=await diagnostics.capture({counters:true});previousTime=0;const counts=new Uint32Array(sample.bytes);return {enabled:true,countersEnabled:sample.countersEnabled,sampling:sample.sampling,metrics:state.meshlets,visibleInstances:counts[0],nodesTested:counts[1],nodesRejected:counts[2],overflow:counts[3],dispatches:state.dispatchesPerFrame,workgroups:state.workgroupsPerFrame};}};
 window.addEventListener('pagehide',()=>{paused=true;controls.dispose();device.destroy();});
 state.ready=true;status.textContent='';requestAnimationFrame(frame);

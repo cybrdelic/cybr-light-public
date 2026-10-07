@@ -21,6 +21,14 @@ test('all clusters together equal full resolution; frustum removes offscreen clu
  const edge=cullHierarchyCpu(plan,v,camera);assert.ok(edge.triangles>0&&edge.triangles<180);assert.ok(edge.rejected>0);
  for(let i=0;i<edge.visible.length;i++)assert.ok(edge.visible[i].length<=new Uint32Array(plan.draw)[i*8+6]);
 });
+test('coarse groups preserve the admitted model set and full geometry while reducing draw/list work',()=>{
+ const fineBatches=batches(180),groupBatches=batches(180),fine=buildForestClusterPlan(fineBatches,[2]),coarse=buildForestClusterPlan(groupBatches,[2],{drawGroupSize:8});
+ assert.equal(coarse.metrics.clusteredModels,fine.metrics.clusteredModels);assert.ok(coarse.metrics.draws<fine.metrics.draws);assert.ok(coarse.visibleBytes<fine.visibleBytes);assert.equal(coarse.metrics.geometryBytes,fine.metrics.geometryBytes);
+ const repeat=buildForestClusterPlan(batches(180),[2],{drawGroupSize:8});assert.deepEqual(new Uint32Array(coarse.draw),new Uint32Array(repeat.draw));assert.deepEqual(new Uint32Array(coarse.nodes),new Uint32Array(repeat.nodes));
+ assert.deepEqual(new Uint32Array(groupBatches[0].levels[0].indices),new Uint32Array(fineBatches[0].levels[0].indices));
+ assert.equal(cullHierarchyCpu(coarse,instances(2),{...camera,tan:100}).triangles,360);
+ const a=cullHierarchyCpu(fine,instances(2),camera),b=cullHierarchyCpu(coarse,instances(2),camera);assert.ok(b.triangles>=a.triangles&&b.triangles<=360);assert.ok(b.tested<a.tested);
+});
 test('allocation limits choose whole-tree fallback without truncation, mixed LOD, or indirect firstInstance',()=>{
  const b=batches(),original=hash(b[0].levels[0].indices),plan=buildForestClusterPlan(b,[2],{maxDraws:4,maxVisibleBytes:32,maxNodesBytes:128});
  assert.equal(plan.metrics.clusteredModels,0);assert.equal(hash(b[0].levels[0].indices),original);assert.equal(plan.visibleBytes,32);assert.equal(plan.metrics.nodeBytes,128);

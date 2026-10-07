@@ -1,0 +1,412 @@
+{
+  "evaluatedCommit": "4eb8197e7dcc88196c82b8c10e6f21728a62ce0d",
+  "defaultDecision": "reject slower fine mode; retain opt-in experiment",
+  "equivalence": {
+    "passed": true,
+    "adapter": {},
+    "optionalFeaturesRequested": [],
+    "cases": [
+      {
+        "case": 0,
+        "triangles": 10368,
+        "tested": 1552,
+        "rejected": 707,
+        "overflow": 0,
+        "commands": 40
+      },
+      {
+        "case": 1,
+        "triangles": 19020,
+        "tested": 1648,
+        "rejected": 272,
+        "overflow": 0,
+        "commands": 40
+      },
+      {
+        "case": 2,
+        "triangles": 13242,
+        "tested": 1471,
+        "rejected": 456,
+        "overflow": 0,
+        "commands": 40
+      },
+      {
+        "case": 3,
+        "triangles": 21372,
+        "tested": 1664,
+        "rejected": 138,
+        "overflow": 0,
+        "commands": 40
+      }
+    ],
+    "errors": []
+  },
+  "baselineStartup": {
+    "startupMs": 18725,
+    "workerMs": 15410.299999952316,
+    "adapter": {
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": ""
+    },
+    "browserVersion": "145.0.7632.160"
+  },
+  "fineStartup": {
+    "startupMs": 25558,
+    "workerMs": 21044.399999976158,
+    "adapter": {
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": ""
+    },
+    "browserVersion": "145.0.7632.160"
+  },
+  "measurements": {
+    "baseline-trail-timing": {
+      "ready": true,
+      "frames": 462,
+      "errors": [],
+      "gpuMs": 12.664831999999995,
+      "frameMs": 13.076666666666673,
+      "instances": 1220375,
+      "mode": "raster-cached-sun-approximate-sky",
+      "meshlets": null,
+      "provenance": {
+        "algorithm": null,
+        "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+        "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+        "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+      },
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 1856,
+      "gpuP95": 12.976128,
+      "lodPixels": 0.75,
+      "camera": {
+        "target": [
+          0,
+          12,
+          -26
+        ],
+        "distance": 19.1049731745428,
+        "yaw": -0.21866894587394195,
+        "pitch": -0.2647955622052938
+      },
+      "submitCpuMedianMs": 0,
+      "submitCpuP95Ms": 0.10000002384185791
+    },
+    "meshlet-trail-timing": {
+      "ready": true,
+      "frames": 419,
+      "errors": [],
+      "gpuMs": 13.829188266666671,
+      "frameMs": 14.6375,
+      "instances": 1220375,
+      "mode": "raster-cached-sun-approximate-sky",
+      "meshlets": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "provenance": {
+        "algorithm": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+        "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+        "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+      },
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 8189,
+      "gpuP95": 14.221312,
+      "lodPixels": 0.75,
+      "camera": {
+        "target": [
+          0,
+          12,
+          -26
+        ],
+        "distance": 19.1049731745428,
+        "yaw": -0.21866894587394195,
+        "pitch": -0.2647955622052938
+      },
+      "submitCpuMedianMs": 0,
+      "submitCpuP95Ms": 0.10000002384185791
+    },
+    "baseline-sky-timing": {
+      "ready": true,
+      "frames": 1230,
+      "errors": [],
+      "gpuMs": 1.847022933333334,
+      "frameMs": 7.946666666666655,
+      "instances": 1220375,
+      "mode": "raster-cached-sun-approximate-sky",
+      "meshlets": null,
+      "provenance": {
+        "algorithm": null,
+        "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+        "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+        "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+      },
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 1856,
+      "gpuP95": 1.900544,
+      "lodPixels": 0.75,
+      "camera": {
+        "target": [
+          30,
+          24,
+          -25.2
+        ],
+        "distance": 17.651133108103853,
+        "yaw": 0,
+        "pitch": -1.5594653669903542
+      },
+      "submitCpuMedianMs": 0,
+      "submitCpuP95Ms": 0.09999996423721313
+    },
+    "meshlet-sky-timing": {
+      "ready": true,
+      "frames": 1249,
+      "errors": [],
+      "gpuMs": 2.0348927999999997,
+      "frameMs": 7.970000000000012,
+      "instances": 1220375,
+      "mode": "raster-cached-sun-approximate-sky",
+      "meshlets": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "provenance": {
+        "algorithm": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+        "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+        "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+      },
+      "dispatchesPerFrame": 1,
+      "workgroupsPerFrame": 9535,
+      "indirectDraws": 8189,
+      "gpuP95": 2.097152,
+      "lodPixels": 0.75,
+      "camera": {
+        "target": [
+          30,
+          24,
+          -25.2
+        ],
+        "distance": 17.651133108103853,
+        "yaw": 0,
+        "pitch": -1.5594653669903542
+      },
+      "submitCpuMedianMs": 0,
+      "submitCpuP95Ms": 0.10000002384185791
+    }
+  },
+  "visualComparison": [
+    {
+      "view": "trail",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 20,
+      "changedFraction": 1.9828680203045684e-05,
+      "maxChannelDifference": 6,
+      "meanAbsoluteChannelDifference": 2.015915820642978e-05,
+      "rmse": 0.006427266170232243
+    },
+    {
+      "view": "sky",
+      "shape": [
+        788,
+        1280,
+        3
+      ],
+      "changedPixels": 0,
+      "changedFraction": 0.0,
+      "maxChannelDifference": 0,
+      "meanAbsoluteChannelDifference": 0.0,
+      "rmse": 0.0
+    }
+  ],
+  "diagnosticEvidence": {
+    "trail": {
+      "enabled": true,
+      "countersEnabled": true,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 0,
+      "nodesTested": 0,
+      "nodesRejected": 0,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    },
+    "sky": {
+      "enabled": true,
+      "countersEnabled": true,
+      "metrics": {
+        "build": {
+          "version": 1,
+          "algorithm": "morton-greedy-64v-64t",
+          "maxVertices": 64,
+          "maxTriangles": 64,
+          "fanout": 8
+        },
+        "clusteredModels": 11,
+        "fallbackModels": 453,
+        "draws": 8189,
+        "nodes": 9150,
+        "visibleBytes": 35141712,
+        "nodeBytes": 292800,
+        "modelBytes": 14848,
+        "indirectBytes": 262048,
+        "drawParameterBytes": 131024,
+        "instanceBytes": 58578000,
+        "counterBytes": 16,
+        "geometryBytes": 465192680,
+        "trianglesByLevel": [
+          5584536,
+          3019989,
+          676516,
+          106989
+        ],
+        "limits": {
+          "maxVisibleBytes": 67108864,
+          "maxDraws": 8192,
+          "maxNodesBytes": 16777216
+        },
+        "streaming": "resident-only; page residency is a future stage"
+      },
+      "visibleInstances": 509,
+      "nodesTested": 4293,
+      "nodesRejected": 2477,
+      "overflow": 0,
+      "dispatches": 1,
+      "workgroups": 9535
+    },
+    "bug": "Requested enabled flag was reported without ensuring a current cull with that flag; Trail returned zero, Sky returned valid counters. Current correction is CPU tested only."
+  },
+  "cleanup": {
+    "gpuReleaseConfirmed": true,
+    "daemonClosed": true,
+    "maximumSlotMs": 360000,
+    "serverClosed": true,
+    "daemonPid": 28656,
+    "releasedUtc": "2026-10-07T20:06:43.2309347Z",
+    "workerDeployed": false,
+    "browserClosed": true,
+    "elapsedMs": 82230,
+    "serverPid": 28076,
+    "unsafeFlagsUsed": false
+  },
+  "limitations": [
+    "Continuous LOD popping and all-view visual coverage are not certified",
+    "Full frame CPU cost and separate compute/render timing were not measured",
+    "Pixel settings match but baseline and experiment have different LOD hysteresis",
+    "New coarse grouping and diagnostic fix have not run on GPU"
+  ]
+}

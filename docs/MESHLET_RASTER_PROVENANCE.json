@@ -1,7 +1,7 @@
 {
   "base_public_commit": "8f82e06ccadbc77f017eb3d6baba269d3eef93db",
   "branch": "feat/raster-meshlet-hierarchy",
-  "scope": "Resident forest raster clusters; opt-in; CPU validated; GPU acceptance pending",
+  "scope": "Resident forest raster clusters; opt-in; fine mode GPU evaluated and slower; coarse group/counter changes CPU validated only",
   "source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
   "original_source_baseline_sha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
   "original_digests_retained": true,
@@ -299,7 +299,7 @@
     {
       "path": "browser/forest-game.mjs",
       "original_sha256": "2fdbffd50c5953a460a46727f3248683a7b79bf317e9709d6d61ade0fb3b292b",
-      "current_sha256": "24c1cca7b29ff9294dff8a2b758e3dfa949fab3af9378e2c2ffc2938af51295c"
+      "current_sha256": "850510daebbf5b34ef943080408f6c4b69e0442a88845a50f1cf1110389942bb"
     },
     {
       "path": "browser/forest-raster-worker.mjs",
@@ -309,7 +309,7 @@
     {
       "path": "browser/meshlet-hierarchy.mjs",
       "original_sha256": null,
-      "current_sha256": "f058b9dff365b98404ef1761cd2ec4dc90dce02ce6a1dfc88748f943cf178b2e"
+      "current_sha256": "24d3eb2e8738758ab90d34151c65ecaa87747645213985fe9f9961f330f3f206"
     },
     {
       "path": "browser/forest-meshlet-cull.wgsl",
@@ -319,12 +319,12 @@
     {
       "path": "browser/meshlet-hierarchy.test.mjs",
       "original_sha256": null,
-      "current_sha256": "fa40e2ce318938d9bd37ff95917d979df478a766f907c75330b120305810f0a6"
+      "current_sha256": "deef7e3192e898c2b32f51b1c76226884887938617f49d3d0232c61d5d08e1ab"
     },
     {
       "path": "tools/measure_forest_meshlets.mjs",
       "original_sha256": null,
-      "current_sha256": "97b2045bb49fe0131800a947115ef7fc2e9f549cd74bbb0ccef721ad542c0e39"
+      "current_sha256": "6a1e9b0266dd2669d5c967b50358f1f73a1ce8304c64bc0694d62fc23ec801ea"
     },
     {
       "path": "browser/meshlet-gpu-proof.html",
@@ -334,26 +334,38 @@
     {
       "path": "browser/meshlet-gpu-proof.mjs",
       "original_sha256": null,
-      "current_sha256": "e455c08cb6c157ad79b6f5c5b5ad24795746165d0d8869cc071bfd4d30bad3df"
+      "current_sha256": "f47052ba289c5b859ac0cb643d3f71b765cfccdb52b0ff5bef573639fcfe0120"
+    },
+    {
+      "path": "browser/forest-diagnostics.mjs",
+      "original_sha256": null,
+      "current_sha256": "abeffad51556ecddbfcadd55ff6d047e2bb736d6c3c616fe9f4ee468cee05009"
+    },
+    {
+      "path": "browser/forest-diagnostics.test.mjs",
+      "original_sha256": null,
+      "current_sha256": "b138597039bd12ddde6a1de0b955ade1c627d6667b5fdd3f68f28b4cbdaa81fd"
     },
     {
       "path": "tools/record_meshlet_provenance.py",
       "original_sha256": null,
-      "current_sha256": "53b0ff3f89b72f33e707c95ca3eca69a86b1032f80a113aeece8064388223b5a"
+      "current_sha256": "da97572aa46579d1f1732f9d029769b73b4290605f3e6bd9604c3fea5a2a61c0"
     },
     {
       "path": "docs/MESHLET_RASTER_STAGE1.md",
       "original_sha256": null,
-      "current_sha256": "784b637044e5ed6466b2d8e9d4ee85c04018a7e3a0f6b28156748230243d7735"
+      "current_sha256": "0b05e1a109d2b2c4aa406de687f7f4e4e4c41afcacad124f37273b1d2e4ee5a3"
     }
   ],
   "validation": {
-    "browser_cpu_tests": 328,
+    "browser_cpu_tests": 331,
     "naga_optional_capabilities": "none",
-    "gpu_used": false,
-    "browser_used": false,
-    "visual_holes_popping_acceptance": "pending serialized slot",
-    "gpu_performance_acceptance": "pending serialized slot"
+    "gpu_used_for_current_cpu_followup": false,
+    "browser_used_for_current_cpu_followup": false,
+    "fine_mode_gpu_checkpoint": "4eb8197e7dcc88196c82b8c10e6f21728a62ce0d",
+    "fine_mode_gpu_performance": "slower; default rejected",
+    "coarse_group_and_counter_gpu_acceptance": "pending serialized slot",
+    "visual_holes_popping_acceptance": "full-detail saved pairs reviewed; continuous transitions not certified"
   },
   "publication_owner": "parent",
   "worker_deployed": false,

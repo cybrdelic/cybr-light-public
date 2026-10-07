@@ -11,7 +11,8 @@ window.meshletProof=(async()=>{
   const batches=[{id:'fixture',radius:40,levels:[0,.01,.03,.1].map(error=>({vertices:vertex.slice().buffer,indices:indices.slice().buffer,error}))}];
   const instanceData=new Float32Array(128*12),iw=new Uint32Array(instanceData.buffer);
   for(let i=0;i<128;i++){const angle=i*.071,scale=.4+i%5*.2;instanceData.set([(i%9-4)*3,0,Math.floor(i/9)*2,scale,0,Math.sin(angle/2),0,Math.cos(angle/2)],i*12);iw[i*12+9]=129;instanceData[i*12+10]=40*scale;}
-  const plan=buildForestClusterPlan(batches,[128]);
+  const drawGroupSize=new URLSearchParams(location.search).get('meshletGroup')==='8'?8:1;
+  const plan=buildForestClusterPlan(batches,[128],{drawGroupSize});
   const upload=(data,usage)=>{const buffer=device.createBuffer({size:Math.max(16,typeof data==='number'?data:data.byteLength),usage:usage|GPUBufferUsage.COPY_DST|GPUBufferUsage.COPY_SRC});if(typeof data!=='number')device.queue.writeBuffer(buffer,0,data);return buffer;};
   const uniform=upload(128,GPUBufferUsage.UNIFORM),instances=upload(instanceData,GPUBufferUsage.STORAGE),draws=upload(plan.draw,GPUBufferUsage.STORAGE|GPUBufferUsage.INDIRECT),visible=upload(plan.visibleBytes,GPUBufferUsage.STORAGE),nodes=upload(plan.nodes,GPUBufferUsage.STORAGE),models=upload(plan.models,GPUBufferUsage.STORAGE),stats=upload(16,GPUBufferUsage.STORAGE);
   const response=await fetch('./forest-meshlet-cull.wgsl');if(!response.ok)throw Error('Missing cluster shader');const module=device.createShaderModule({code:await response.text()});
@@ -32,6 +33,7 @@ window.meshletProof=(async()=>{
    if(actualStats[3]||errors.length)throw Error('Overflow or uncaptured GPU error: '+errors.join('\n'));
    results.push({case:index,triangles:expected.triangles,tested:actualStats[1],rejected:actualStats[2],overflow:actualStats[3],commands:plan.records.length});
   }
-  const report={passed:true,adapter:adapter.info,optionalFeaturesRequested:[],cases:results,errors};output.textContent=JSON.stringify(report,null,2);return report;
+  const adapterInfo={vendor:adapter.info.vendor,architecture:adapter.info.architecture,device:adapter.info.device,description:adapter.info.description};
+  const report={passed:true,adapter:adapterInfo,drawGroupSize,optionalFeaturesRequested:[],cases:results,errors};output.textContent=JSON.stringify(report,null,2);return report;
  }finally{device.destroy();}
 })().catch(error=>{output.textContent=error.stack||String(error);throw error;});

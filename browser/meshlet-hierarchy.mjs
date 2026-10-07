@@ -21,6 +21,19 @@ function morton(x,y,z){
  const spread=v=>{v&=1023;v=(v|(v<<16))&0x030000ff;v=(v|(v<<8))&0x0300f00f;v=(v|(v<<4))&0x030c30c3;return (v|(v<<2))&0x09249249;};
  return (spread(x)|(spread(y)<<1)|(spread(z)<<2))>>>0;
 }
+function clusterHierarchy(clusters,fanout=8){
+ let layer=clusters.map((c,draw)=>({...c,draw}));
+ while(layer.length>1){const parents=[];for(let i=0;i<layer.length;i+=fanout){const children=layer.slice(i,i+fanout);parents.push({sphere:mergeSpheres(children),children});}layer=parents;}
+ const nodes=[];
+ const visit=n=>{const at=nodes.length;nodes.push({sphere:n.sphere,draw:n.draw??INVALID,escape:0});if(n.children)for(const child of n.children)visit(child);nodes[at].escape=nodes.length;};
+ if(layer.length)visit(layer[0]);return nodes;
+}
+export function groupMeshletDraws(partition,size=8){
+ if(!Number.isInteger(size)||size<1||size>16)throw Error('Invalid meshlet draw group');
+ const clusters=[];
+ for(let i=0;i<partition.clusters.length;i+=size){const children=partition.clusters.slice(i,i+size);clusters.push({firstIndex:children[0].firstIndex,indexCount:children.reduce((n,c)=>n+c.indexCount,0),sphere:mergeSpheres(children),fineMeshlets:children.length});}
+ return {clusters,nodes:clusterHierarchy(clusters)};
+}
 export function partitionMeshlets(vertices,indices,{maxVertices=64,maxTriangles=64,fanout=8}={}){
  if(!(vertices instanceof Float32Array)||vertices.length%10||!(indices instanceof Uint32Array)||indices.length%3||!Number.isInteger(maxVertices)||maxVertices<3||maxVertices>256||!Number.isInteger(maxTriangles)||maxTriangles<1||maxTriangles>512||!Number.isInteger(fanout)||fanout<2||fanout>16)throw Error('Invalid meshlet layout or limits');
  const count=vertices.length/10,words=new Uint32Array(vertices.buffer,vertices.byteOffset,vertices.length);
@@ -38,19 +51,16 @@ export function partitionMeshlets(vertices,indices,{maxVertices=64,maxTriangles=
   if(cursor>begin&&((cursor-begin)/3>=maxTriangles||unique.size+extra>maxVertices||mask!==triangle.mask))flush();
   mask=triangle.mask;reordered.set(tri,cursor);cursor+=3;for(const index of tri)unique.add(index);
  }flush();
- let layer=clusters.map((c,draw)=>({...c,draw}));
- while(layer.length>1){const parents=[];for(let i=0;i<layer.length;i+=fanout){const children=layer.slice(i,i+fanout);parents.push({sphere:mergeSpheres(children),children});}layer=parents;}
- const nodes=[];
- const visit=n=>{const at=nodes.length;nodes.push({sphere:n.sphere,draw:n.draw??INVALID,escape:0});if(n.children)for(const child of n.children)visit(child);nodes[at].escape=nodes.length;};
- if(layer.length)visit(layer[0]);
+ const nodes=clusterHierarchy(clusters,fanout);
  return {indices:reordered,clusters,nodes,root:nodes.length?0:INVALID,bytes:{indices:reordered.byteLength,nodes:nodes.length*32},triangles:indices.length/3};
 }
 
 // Stable budget decisions depend only on geometry/counts/options, never elapsed time.
-export function buildForestClusterPlan(batches,counts,{maxVisibleBytes=64*1024*1024,maxDraws=8192,maxNodesBytes=16*1024*1024}={}){
+export function buildForestClusterPlan(batches,counts,{maxVisibleBytes=64*1024*1024,maxDraws=8192,maxNodesBytes=16*1024*1024,drawGroupSize=1}={}){
  if(batches.length!==counts.length)throw Error('Meshlet model/count mismatch');
  const prepared=batches.map(b=>b.levels.map(l=>partitionMeshlets(new Float32Array(l.vertices),new Uint32Array(l.indices))));
  if(counts.some(c=>!Number.isInteger(c)||c<0)||Object.values({maxVisibleBytes,maxDraws,maxNodesBytes}).some(c=>!Number.isSafeInteger(c)||c<0))throw Error('Invalid meshlet budget/count');
+ if(!Number.isInteger(drawGroupSize)||drawGroupSize<1||drawGroupSize>16)throw Error('Invalid meshlet draw group');
  let visibleWords=counts.reduce((n,c)=>n+c*4,0),drawCount=batches.length*4,nodeBytes=batches.length*4*32;
  const enabled=new Set(),candidates=prepared.map((levels,model)=>{
   const draws=levels.reduce((n,l)=>n+l.clusters.length,0),nodes=levels.reduce((n,l)=>n+l.nodes.length,0),extra=Math.max(0,draws-4);
@@ -70,17 +80,17 @@ export function buildForestClusterPlan(batches,counts,{maxVisibleBytes=64*1024*1
    cumulativeError=Math.max(cumulativeError,lod.error);modelFloats[model*8+4+level]=cumulativeError;
    const partition=prepared[model][level],base=nodes.length;
    modelWords[model*8+level]=base;
-   const clustered=enabled.has(model),leafDraws=[];
-   const pieces=clustered?partition.clusters:[{firstIndex:0,indexCount:lod.indices.byteLength/4,sphere:partition.nodes[0]?.sphere??[0,0,0,0]}];
+   const clustered=enabled.has(model),leafDraws=[],submission=clustered&&drawGroupSize>1?groupMeshletDraws(partition,drawGroupSize):partition;
+   const pieces=clustered?submission.clusters:[{firstIndex:0,indexCount:lod.indices.byteLength/4,sphere:partition.nodes[0]?.sphere??[0,0,0,0]}];
    if(clustered)lod.indices=partition.indices.buffer;
    for(const piece of pieces){const draw=draws.length/8;leafDraws.push(draw);draws.push(piece.indexCount,0,piece.firstIndex,0,0,start,counts[model],0);records.push({model,level,firstIndex:piece.firstIndex,indexCount:piece.indexCount,clustered});start+=counts[model];}
-   if(clustered)for(const n of partition.nodes)nodes.push({sphere:n.sphere,draw:n.draw===INVALID?INVALID:leafDraws[n.draw],escape:base+n.escape});
+   if(clustered)for(const n of submission.nodes)nodes.push({sphere:n.sphere,draw:n.draw===INVALID?INVALID:leafDraws[n.draw],escape:base+n.escape});
    else nodes.push({sphere:pieces[0].sphere,draw:leafDraws[0],escape:base+1});
   });
  });
  const nodeWords=new Uint32Array(nodes.length*8),nodeFloats=new Float32Array(nodeWords.buffer);
  nodes.forEach((n,i)=>{nodeFloats.set(n.sphere,i*8);nodeWords.set([n.draw,n.escape,0,0],i*8+4);});
- return {draw:new Uint32Array(draws).buffer,nodes:nodeWords.buffer,models:modelWords.buffer,records,visibleBytes:start*4,metrics:{build:MESHLET_BUILD,clusteredModels:enabled.size,fallbackModels:batches.length-enabled.size,draws:records.length,nodes:nodes.length,visibleBytes:start*4,nodeBytes:nodeWords.byteLength,modelBytes:modelWords.byteLength,indirectBytes:draws.length*4,drawParameterBytes:records.length*16,instanceBytes:counts.reduce((n,c)=>n+c*48,0),counterBytes:16,geometryBytes:batches.reduce((n,b)=>n+b.levels.reduce((n,l)=>n+l.vertices.byteLength+l.indices.byteLength,0),0),trianglesByLevel:[0,1,2,3].map(k=>batches.reduce((n,b)=>n+b.levels[k].indices.byteLength/12,0)),limits:{maxVisibleBytes,maxDraws,maxNodesBytes},streaming:'resident-only; page residency is a future stage'}};
+ return {draw:new Uint32Array(draws).buffer,nodes:nodeWords.buffer,models:modelWords.buffer,records,visibleBytes:start*4,metrics:{build:MESHLET_BUILD,drawGroupSize,admission:'fine meshlet budgets retained to keep the model set fixed across grouping comparisons',fineMeshlets:[...enabled].reduce((n,m)=>n+prepared[m].reduce((n,l)=>n+l.clusters.length,0),0),clusteredModels:enabled.size,fallbackModels:batches.length-enabled.size,draws:records.length,nodes:nodes.length,visibleBytes:start*4,nodeBytes:nodeWords.byteLength,modelBytes:modelWords.byteLength,indirectBytes:draws.length*4,drawParameterBytes:records.length*16,instanceBytes:counts.reduce((n,c)=>n+c*48,0),counterBytes:16,geometryBytes:batches.reduce((n,b)=>n+b.levels.reduce((n,l)=>n+l.vertices.byteLength+l.indices.byteLength,0),0),trianglesByLevel:[0,1,2,3].map(k=>batches.reduce((n,b)=>n+b.levels[k].indices.byteLength/12,0)),limits:{maxVisibleBytes,maxDraws,maxNodesBytes},streaming:'resident-only; page residency is a future stage'}};
 }
 export function rotate(q,v){const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],a=cross(q,v),b=cross(q,a);return v.map((x,k)=>x+2*(b[k]+q[3]*a[k]));}
 export function sphereVisible(sphere,camera){

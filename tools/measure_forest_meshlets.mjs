@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {buildForestRasterData} from '../browser/forest-raster-worker.mjs';
 import {buildForestClusterPlan,cullHierarchyCpu,sphereVisible,selectHierarchyLod} from '../browser/meshlet-hierarchy.mjs';
-const [assetDirectory,outputFile]=process.argv.slice(2);
+const [assetDirectory,outputFile,drawGroupArgument='1']=process.argv.slice(2);
 if(!assetDirectory||!outputFile)throw Error('Usage: node tools/measure_forest_meshlets.mjs <original forest asset directory> <report.json>');
 const sha=data=>createHash('sha256').update(new Uint8Array(data)).digest('hex');
 const base=resolve(assetDirectory),manifest=JSON.parse(await readFile(join(base,'manifest.json'),'utf8'));
@@ -18,7 +18,7 @@ const forest={raw,manifest,pile:{models:manifest.models,count:manifest.instanceC
 const start=performance.now(),data=await buildForestRasterData(forest),detailBuildMs=performance.now()-start;
 console.log(JSON.stringify({stage:'source LODs built',detailBuildMs,models:data.batches.length,instances:data.count}));
 const original=data.batches.map(b=>b.levels.map(l=>({indices:sha(l.indices),vertices:sha(l.vertices)}))),counts=data.batches.map((_,i)=>new Uint32Array(data.draw)[i*32+6]);
-const clusterStart=performance.now(),plan=buildForestClusterPlan(data.batches,counts),clusterBuildMs=performance.now()-clusterStart;
+const clusterStart=performance.now(),plan=buildForestClusterPlan(data.batches,counts,{drawGroupSize:Number(drawGroupArgument)}),clusterBuildMs=performance.now()-clusterStart;
 for(let m=0;m<data.batches.length;m++)for(let k=0;k<4;k++)assert.equal(sha(data.batches[m].levels[k].vertices),original[m][k].vertices);
 const generatedHash=()=>{const h=createHash('sha256');for(const buf of [plan.draw,plan.nodes,plan.models,...data.batches.flatMap(b=>b.levels.flatMap(l=>[l.indices,l.vertices]))])h.update(new Uint8Array(buf));return h.digest('hex');};
 const digest=generatedHash(),instanceData=new Float32Array(data.instances),iw=new Uint32Array(data.instances),errors=new Float32Array(data.lodErrors);
