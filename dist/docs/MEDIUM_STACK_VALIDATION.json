@@ -235,5 +235,8 @@
       "path": "browser/trace.wgsl",
       "sha256": "95d144fecac0c70c5c4b7e7bc555040ce431a8392ee5a6afddf592e5d5d00a05"
     }
-  ]
+  ],
+  "historicalInlineForm": true,
+  "supersededBy": "SCALAR_MEDIUM_VALIDATION.json",
+  "physicalVersion9Retest": "User reported the same error after deployment; phone runtime selection was not independently retrieved. Physical Adreno success is not established."
 }

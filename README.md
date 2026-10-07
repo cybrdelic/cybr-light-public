@@ -80,21 +80,21 @@ Native output includes linear PFM, PNG display previews and optional float32 EXR
 
 ## Browser quick start
 
-Serve this repository directly:
+Serve the packaged browser runtime:
 
 ```bash
-python -m http.server 4181 --bind 127.0.0.1
+python -m http.server 4181 --bind 127.0.0.1 --directory dist
 ```
 
 Open `http://127.0.0.1:4181/browser/?scene=proof-optics&resolution=540&bounces=6` in a browser with WebGPU support. On Windows, `./tools/Start-BrowserPreview.ps1` starts a dedicated Chrome/Edge profile; its footer must confirm the selected adapter.
 
-The URL above runs a built-in procedural scene without an asset pack. `proof-metals` and `proof-indirect` also run from source. Use an explicit `scene=proof-*` URL: the existing unparameterized page defaults to a companion scene whose assets are omitted.
+The URL above runs a built-in procedural scene without external assets. `proof-metals` and `proof-indirect` also run from source. The packaged runtime defaults to the optics proof. Original source entrypoints remain under `browser/` for inspection.
 
-The full imported gallery, instrument modules and both forest entrypoints require companion files that are **not in this source branch**. Their hashes and reproduction limits are recorded in [asset preparation](docs/ASSETS.md) and the [publication inventory](docs/PUBLICATION_INVENTORY.json). No verified public download is available for those files. Full current-scene distribution remains blocked by incomplete upstream inputs and redistribution provenance. Cached FLIP frames are recorded geometry, not a live fluid simulation.
+The public repository retains the cleared gallery, six-module instrument, cached FLIP and complete forest runtime under `dist/`. Source-only ZIPs and Site checkouts can run `python tools/restore_live_assets.py` to retrieve all 336 verified files from the pinned public commit. Availability, licenses and the remaining excluded Observatory/Geode scene families are documented in [asset preparation](docs/ASSETS.md) and [public release scope](docs/PUBLIC_RELEASE.md). The [publication inventory](docs/PUBLICATION_INVENTORY.json) records the earlier source-only capture separately. Cached FLIP frames are recorded geometry, not a live fluid simulation.
 
 For the four native-authored material/knot browser studies, run `python tools/prepare_browser_examples.py` after installing the package. This regenerates geometry with verified hashes and retains the included original material manifests.
 
-Qualcomm/Adreno adapters automatically use an equivalent medium-helper form with the original sixteen-slot glass/water stacks. Add mediumStack=legacy for rollback. Automated NVIDIA checks preserve exact six-/ten-bounce output and retry behavior; physical Adreno success remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
+Qualcomm/Adreno adapters automatically use separately named scalar medium slots, retaining all sixteen glass/water slots and the original transport. Add `mediumStack=legacy` for rollback. Actual NVIDIA pipeline, operation-state and six-/ten-bounce pixel comparisons pass; the earlier inline version 9 still failed the user's phone retest. Physical Adreno success for the scalar candidate remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
 
 See [browser modes and controls](browser/README.md), [diagnostics](browser/DIAGNOSTICS.md), and [gallery rebuilding](browser/GALLERY.md).
 

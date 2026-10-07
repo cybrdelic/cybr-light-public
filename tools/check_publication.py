@@ -15,8 +15,11 @@ for item in inventory['files']:
     path = root / item['path']
     if not path.is_file():
         raise RuntimeError('Missing published file: ' + item['path'])
-    if item['preserved_bytes'] and hashlib.sha256(path.read_bytes()).hexdigest() != item['sha256']:
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    if item['preserved_bytes'] and digest != item['sha256']:
         raise RuntimeError('Published bytes changed: ' + item['path'])
+    if item.get('published_sha256') and digest not in item['published_sha256']:
+        raise RuntimeError('Reviewed post-capture source changed: ' + item['path'])
 
 relative_import = re.compile(
     r'''(?:\bfrom\s*|\bimport\s*\(\s*|\bimport\s*)["'](\.{1,2}/[^"']+)["']'''
@@ -35,4 +38,4 @@ for path in sorted((root / 'browser').rglob('*')):
             raise RuntimeError(f'Missing browser source import: {path.relative_to(root)} -> {target}')
         checked += 1
 print(f'PASS: {checked} relative browser imports; included capture files and explicit omission inventory')
-print('Companion scenes remain unavailable without the inventoried assets; see docs/ASSETS.md.')
+print('Historical capture and reviewed source changes checked; current runtime assets have separate pinned checks in docs/ASSETS.md.')

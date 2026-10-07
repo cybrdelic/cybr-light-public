@@ -35,6 +35,7 @@ import { gameShader } from './game-shader.mjs';
 import { tiledFilter } from './tiled-filter.mjs?revision=baseline-tiles-1';
 import { motionHistoryShader } from './motion-history.mjs?revision=rollback-1';
 import { inlineMediumStack } from './medium-stack-inline.mjs';
+import { scalarMediumStack } from './medium-stack-scalar.mjs';
 
 export async function buildRendererShader(
   name,
@@ -162,5 +163,7 @@ export async function buildRendererShader(
   text = cameraPass ? cameraMediumShader(text) : text;
   if (parameters.get('mediumStack') === 'inline' && text.includes('struct MediumStack'))
     text = inlineMediumStack(text).code;
+  if (parameters.get('mediumStack') === 'scalar' && text.includes('struct MediumStack'))
+    text = scalarMediumStack(text).code;
   return text;
 }

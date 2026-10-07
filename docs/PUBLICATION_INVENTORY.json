@@ -29,7 +29,12 @@
       "sha256": "f583d523fb67f0d75ded8d1c11857baef8ef948fa16ffcc4c3f720064ec981f2",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Public runtime assets and source-only Site checkout require distinct exclusion lists.",
+      "published_sha256": [
+        "5297d440ee165505636f74b83e95d75c6fe90d05dfb13b0dbe9de1c8a81c35d8",
+        "83846e97807f50081c81c257d5058e41351aff8cd1ee11be56f668034f839d91"
+      ]
     },
     {
       "path": ".prettierignore",
@@ -128,7 +133,11 @@
       "sha256": "13316d0546e7fad802a51a74d7d74baf0fd492b43105e9d6cd06e25d37c6e4bf",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Approved GPU session recovery and automatic adapter selection added after the historical capture.",
+      "published_sha256": [
+        "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3"
+      ]
     },
     {
       "path": "browser/assets/example-geo-actuator-v2/instrument.bin.gz",
@@ -2839,7 +2848,11 @@
       "sha256": "68633f286a39ad402ae04479ad1a4c53770d54ac0749970f4f673fc0bf7b26b7",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Approved GPU session recovery added after the historical capture.",
+      "published_sha256": [
+        "d862a003eeb203135b71e396d7475a5b9f85c95518a693d33c41c7e38138f800"
+      ]
     },
     {
       "path": "browser/gpu-session.test.mjs",
@@ -2847,7 +2860,11 @@
       "sha256": "85e4fe9c03794e1a4671ee227af40e670ad94bd02fa9aab07161ada6312aaa64",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Recovery regression coverage added after the historical capture.",
+      "published_sha256": [
+        "4f3c700ef098e49dee9cb51106ff6d5fbc0521282045556dbf1a6e3687b8ebc5"
+      ]
     },
     {
       "path": "browser/hybrid-beauty-cache.wgsl",
@@ -3487,7 +3504,11 @@
       "sha256": "73b809386aaedf6b12e2e983f5fd828baf4ac2bbbda6dcc3521b70a5e6398bf2",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Approved equivalent inline/scalar medium representations added after the historical capture.",
+      "published_sha256": [
+        "27ecd55ca053370deb2cc1c0fdadccbf169ba465efb2be451f2bb06883a06ac6"
+      ]
     },
     {
       "path": "browser/renderer-shaders.test.mjs",
