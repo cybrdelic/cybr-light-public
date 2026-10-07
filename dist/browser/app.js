@@ -20,6 +20,7 @@ import {
   decodeStages,
 } from './diagnostics.mjs';
 import { probeGpuSession, gpuDeviceOptions, createGpuRuntime, validateGpuBuffer } from './gpu-session.mjs?revision=mobile-lifecycle-2';
+import { traceCompatibility } from './trace-compatibility.mjs';
 import { adaptiveAaResolve } from './adaptive-aa.mjs';
 import { selectPileDetail } from './pile-lod.mjs';
 import { signalSchedule } from './signal-schedule.mjs';
@@ -201,6 +202,8 @@ const {
   traversalProfiling,
   visibilityProfiling,
 } = options;
+const compatibilityMode = parameters.get('gpuCompatibility') === 'compact';
+const moduleWorkgroups = new WeakMap(), pipelineWorkgroups = new WeakMap();
 let motionReconstruction = options.motionReconstruction;
 const transportIntegrityEnabled = options.transportIntegrity;
 const metalCompensation = options.metalCompensation;
@@ -464,6 +467,22 @@ retryGpu.onclick = () => {
   location.replace(url.href);
 };
 status.after(retryGpu);
+const compatibilityRetry = document.createElement('button');
+compatibilityRetry.id = 'retry-compatible-gpu';
+compatibilityRetry.textContent = 'Try compatibility renderer';
+compatibilityRetry.style.cssText = 'position:absolute;bottom:100px;left:24px;padding:10px;z-index:2';
+compatibilityRetry.hidden = true;
+compatibilityRetry.onclick = () => { const url = new URL(location.href);
+  for (const id of ['scene', 'resolution', 'bounces', 'mode']) url.searchParams.set(id, $('#' + id).value);
+  url.searchParams.set('opticalSamples', opticalChoice.value);
+  url.searchParams.set('gpuCompatibility', 'compact');url.searchParams.set('gpuRecovery', '1');url.searchParams.set('gpuTimings', '0');
+  location.replace(url.href);
+};
+const compileCheck = document.createElement('a');
+compileCheck.id = 'gpu-compile-check';compileCheck.textContent = 'GPU startup comparison';
+compileCheck.href = './gpu-compile-check.html?case=tiny&run=1';compileCheck.hidden = true;
+compileCheck.style.cssText = 'position:absolute;bottom:150px;left:24px;padding:10px;background:#e8e8e4;z-index:2';
+status.after(compatibilityRetry, compileCheck);
 function fail(error) {
   if (sessionClosed) return;
   if (gpuRuntime) gpuRuntime.report(error);
@@ -474,6 +493,8 @@ function presentFailure(message) {
   if (!state.errors.includes(message)) state.errors.push(message);
   if (gpuRuntime?.snapshot().lost) { state.ready = false; sceneLoader.cancel(); }
   retryGpu.hidden = false;
+  compatibilityRetry.hidden = compatibilityMode || transportIntegrityEnabled || separateSignals;
+  compileCheck.hidden = false;
   status.setAttribute('role', 'alert');
   state.loading = null;
   status.textContent = message;
@@ -538,7 +559,7 @@ const sceneLoader = createSceneLoader(
   { reuse: true },
 );
 async function shader(name, stackCapacity = 64, filterOptions) {
-  const text = await buildRendererShader(name, {
+  let text = await buildRendererShader(name, {
     load: async (path) => {
       const response = await fetch(path, { cache: 'no-store' });
       if (!response.ok)
@@ -550,8 +571,13 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     stackCapacity,
     filterOptions,
   });
+  let workgroup = 8;
+  if (compatibilityMode && /^(optical-)?trace(-pile|-meshlets)?$/.test(name)) {
+    const variant = traceCompatibility(text);text = variant.code;workgroup = variant.workgroup;
+  }
   gpuRuntime.assertActive();
   const module = device.createShaderModule({ label: name, code: text });
+  moduleWorkgroups.set(module, workgroup);
   const info = await module.getCompilationInfo();
   gpuRuntime.assertActive();
   const errors = info.messages.filter((m) => m.type === 'error');
@@ -561,7 +587,15 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     );
   return module;
 }
+async function compileCompute(descriptor) {
+  const pipeline = await gpuRuntime.compile('createComputePipelineAsync', descriptor);
+  pipelineWorkgroups.set(pipeline, moduleWorkgroups.get(descriptor.compute.module) || 8);
+  return pipeline;
+}
 async function boot() {
+  if (compatibilityMode && (transportIntegrityEnabled || separateSignals))
+    throw Error('Compatibility startup currently supports the baseline RGB renderer. Keep corrected/separate-signal experiments on the current startup path.');
+  if (compatibilityMode) $('#gpu-warning').textContent = 'Compatibility startup / same transport and settings; smaller trace workgroups and medium storage matched to the ten-bounce UI. Physical Adreno success is not yet confirmed.';
   if(metalCompensation){
     const response=await fetch('./metal-energy-table.json');
     if(!response.ok)throw Error('Missing GGX energy table');
@@ -647,7 +681,7 @@ async function boot() {
   );
   pipelines = await Promise.all(
     mods.slice(0, 3).map((module) =>
-      gpuRuntime.compile('createComputePipelineAsync', {
+      compileCompute({
         layout: 'auto',
         compute: { module, entryPoint: 'main' },
       }),
@@ -657,7 +691,7 @@ async function boot() {
     Array.from({ length: signalCount }, (_, CHANNEL) =>
       CHANNEL === 0
         ? pipelines[1]
-        : gpuRuntime.compile('createComputePipelineAsync', {
+        : compileCompute({
             layout: 'auto',
             compute: {
               module: mods[1],
@@ -668,7 +702,7 @@ async function boot() {
     ),
   );
   if (adaptiveAA)
-    aaResolvePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+    aaResolvePipeline = await compileCompute({
       layout: 'auto',
       compute: {
         module: device.createShaderModule({ code: adaptiveAaResolve }),
@@ -676,12 +710,12 @@ async function boot() {
       },
     });
   if (coverageReconstruction)
-    coveragePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+    coveragePipeline = await compileCompute({
       layout: 'auto',
       compute: { module: await shader('coverage-resolve'), entryPoint: 'main' },
     });
   if (screenCacheEnabled)
-    screenCachePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+    screenCachePipeline = await compileCompute({
       layout: 'auto',
       compute: {
         module: await shader('screen-cache-publish'),
@@ -701,7 +735,7 @@ async function boot() {
       if (opticalGuides) abi = opticalGuideShader('abi', abi);
     }
     if (endpointCache)
-      endpointPipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+      endpointPipeline = await compileCompute({
         layout: 'auto',
         compute: {
           module: device.createShaderModule({
@@ -711,7 +745,7 @@ async function boot() {
         },
       });
     if (contributorCoverage)
-      contributorPipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+      contributorPipeline = await compileCompute({
         layout: 'auto',
         compute: {
           module: device.createShaderModule({
@@ -725,7 +759,7 @@ async function boot() {
     Array.from({ length: signalCount }, (_, CHANNEL) =>
       CHANNEL === 0
         ? pipelines[2]
-        : gpuRuntime.compile('createComputePipelineAsync', {
+        : compileCompute({
             layout: 'auto',
             compute: {
               module: mods[2],
@@ -738,7 +772,7 @@ async function boot() {
   filterPipelines = [sharedFilters, sharedFilters, sharedFilters];
   if(!separateSignals && !adaptiveAA && !contributorCoverage && parameters.get('tiled')!=='0'){
     for(const [index,step] of [1,2,4].entries())if(device.limits.maxComputeWorkgroupStorageSize>=baselineTileBytes(step)){
-      const tiled=await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('filter',64,{step}),entryPoint:'main'}});
+      const tiled=await compileCompute({layout:'auto',compute:{module:await shader('filter',64,{step}),entryPoint:'main'}});
       filterPipelines[index]=[tiled];
       filterTileSteps.push(step);
     }
@@ -752,7 +786,7 @@ async function boot() {
       [1, 2, 4].map((step) =>
         Promise.all(
           Array.from({ length: signalCount }, async (_, CHANNEL) =>
-            gpuRuntime.compile('createComputePipelineAsync', {
+            compileCompute({
               layout: 'auto',
               compute: {
                 module: await shader('filter', 64, { step, channel: CHANNEL }),
@@ -766,14 +800,14 @@ async function boot() {
     );
   }
   if (fusedCoverageFilter) {
-    const p = await gpuRuntime.compile('createComputePipelineAsync', {
+    const p = await compileCompute({
       layout: 'auto',
       compute: { module: await shader('coverage-filter'), entryPoint: 'main' },
     });
     filterPipelines = [[p], [p], [p]];
     if(opticalGuides && parameters.get('fusedTiled')!=='0'){
       for(const step of [1])if(device.limits.maxComputeWorkgroupStorageSize>=fusedTileBytes(step)){
-        const tiled=await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('coverage-filter',64,{step}),entryPoint:'main'}});
+        const tiled=await compileCompute({layout:'auto',compute:{module:await shader('coverage-filter',64,{step}),entryPoint:'main'}});
         filterPipelines[step-1]=[tiled];
         filterTileSteps.push(step);
       }
@@ -905,7 +939,7 @@ async function loadScene(options = {}) {
     if (!pileTracePipelines.has(capacity))
       pileTracePipelines.set(
         capacity,
-        await gpuRuntime.compile('createComputePipelineAsync', {
+        await compileCompute({
           layout: 'auto',
           compute: {
             module: await shader('trace-pile', capacity),
@@ -916,12 +950,12 @@ async function loadScene(options = {}) {
     pileTracePipeline = pileTracePipelines.get(capacity);
   }
   if (result.instanceRecordStart !== undefined)
-    instanceLodPipeline ||= await gpuRuntime.compile('createComputePipelineAsync', {
+    instanceLodPipeline ||= await compileCompute({
       layout: 'auto',
       compute: { module: await shader('instance-lod'), entryPoint: 'main' },
     });
   if (result.meshletInfo?.enabled && !meshletTracePipeline)
-    meshletTracePipeline = await gpuRuntime.compile('createComputePipelineAsync', {
+    meshletTracePipeline = await compileCompute({
       layout: 'auto',
       compute: { module: await shader('trace-meshlets'), entryPoint: 'main' },
     });
@@ -936,7 +970,7 @@ async function loadScene(options = {}) {
     const kind=result.instanceRecordStart!==undefined?'trace-pile':result.meshletInfo?.enabled?'trace-meshlets':'trace';
     const capacity=kind==='trace-pile'?(parameters.get('traversal')==='legacy'?64:Math.max(8,result.maxDepth+2)):64;
     const key=kind+':'+capacity;
-    if(!opticalSamplePipelines.has(key))opticalSamplePipelines.set(key,await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('optical-'+kind,capacity),entryPoint:'main'}}));
+    if(!opticalSamplePipelines.has(key))opticalSamplePipelines.set(key,await compileCompute({layout:'auto',compute:{module:await shader('optical-'+kind,capacity),entryPoint:'main'}}));
     opticalSamplePipeline=opticalSamplePipelines.get(key);
   }
   if (transportIntegrityEnabled) {
@@ -956,7 +990,7 @@ async function loadScene(options = {}) {
     if (!cameraMediumPipelines.has(key))
       cameraMediumPipelines.set(
         key,
-        await gpuRuntime.compile('createComputePipelineAsync', {
+        await compileCompute({
           layout: 'auto',
           compute: {
             module: await shader('camera-' + kind, capacity),
@@ -965,7 +999,7 @@ async function loadScene(options = {}) {
         }),
       );
     cameraMediumPipeline = cameraMediumPipelines.get(key);
-    if(!outsideTracePipelines.has(key))outsideTracePipelines.set(key,await gpuRuntime.compile('createComputePipelineAsync', {layout:'auto',compute:{module:await shader('outside-'+kind,capacity),entryPoint:'main'}}));
+    if(!outsideTracePipelines.has(key))outsideTracePipelines.set(key,await compileCompute({layout:'auto',compute:{module:await shader('outside-'+kind,capacity),entryPoint:'main'}}));
     outsideTracePipeline=outsideTracePipelines.get(key);
   }
   progress('Uploading scene buffers…');
@@ -1256,8 +1290,8 @@ function dispatch(encoder, pipeline, bindings, timestampWrites, depth = 1) {
   pass.setPipeline(pipeline);
   pass.setBindGroup(0, bindings);
   pass.dispatchWorkgroups(
-    Math.ceil(canvas.width / 8),
-    Math.ceil(canvas.height / 8),
+    Math.ceil(canvas.width / (pipelineWorkgroups.get(pipeline) || 8)),
+    Math.ceil(canvas.height / (pipelineWorkgroups.get(pipeline) || 8)),
     depth,
   );
   pass.end();
@@ -1584,6 +1618,7 @@ function snapshot() {
   return {
     adapter: $('#adapter').textContent,
     gpuSession: gpuRuntime?.snapshot() || null,
+    gpuCompatibility: compatibilityMode ? { mode: 'compact', traceWorkgroup: 4, mediumSlots: 10, maxBounces: 10, physicalAdrenoVerified: false } : null,
     backend: separateSignals ? 'separate-signals' : 'baseline',
     opticalSamples:extraOpticalSample&&$('#mode').value!=='reference'?2:1,
     activeSignals: [...activeSignals],

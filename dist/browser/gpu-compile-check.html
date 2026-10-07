@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CYBR LIGHT / GPU startup comparison</title>
+<style>body{max-width:760px;margin:28px auto;padding:0 18px;font:16px/1.5 system-ui;background:#e8e8e4;color:#17191a}button,select{font:inherit;padding:10px;margin:8px 6px 8px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 monospace;background:#f6f6f2;padding:16px}a{color:inherit}</style>
+<h1>GPU startup comparison</h1>
+<p>This check compiles one selected shader without loading a scene or drawing frames. Run a small control first, then a trace comparison. A pass here still needs a check in the actual renderer.</p>
+<label>Comparison <select id="case">
+<option value="tiny">Small compute control</option><option value="full-control">Full trace source, unused control entrypoint</option>
+<option value="current">Current trace, renderer limits</option><option value="default-limits">Current trace, default device limits</option>
+<option value="workgroup-4">Trace, 4×4 workgroup only</option><option value="compact-media">Trace, medium capacity matched to UI</option>
+<option value="compat">Compatibility trace, both changes</option><option value="host-prefix">Current trace with original startup prefix</option>
+</select></label><br><button id="run">Run selected check</button><button id="copy">Copy report</button>
+<p id="status" role="status">Ready.</p><pre id="report"></pre>
+<p><a id="compat" href="./?scene=proof-optics&resolution=540&bounces=6&gpuCompatibility=compact">Open the actual compatibility renderer</a> · <a href="./?scene=proof-optics&resolution=540&bounces=6">Current renderer</a></p>
+<p>Compatibility keeps glass/water transport, geometry, resolution, bounce count and reconstruction. It changes trace workgroup shape and medium-stack capacity to the existing ten-bounce UI limit. Physical Adreno compatibility is still under investigation.</p>
+<script type="module" src="./gpu-compile-check.mjs"></script></html>
