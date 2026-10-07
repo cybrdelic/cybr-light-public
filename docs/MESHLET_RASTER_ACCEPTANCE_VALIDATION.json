@@ -1,0 +1,48 @@
+{
+  "status": "Final CPU-only grouped evidence validation passed",
+  "productionFeatureCommit": "749736d371bdb9da60f3b019edb8a28b01b36c09",
+  "exactPublicBase": "8f82e06ccadbc77f017eb3d6baba269d3eef93db",
+  "browserCpuTests": {
+    "tests": 339,
+    "pass": 339,
+    "fail": 0,
+    "skipped": 0,
+    "command": "node -e one-process dynamic import of every browser/*.test.mjs"
+  },
+  "protectedHashes": 72,
+  "sourceBaselineSha256": "3f9abf9ddab91f2e5ad356e12b8218e6df33fbfe5fc55f182015cf73e81aa4f6",
+  "protectedExactPublicBase": true,
+  "productionMeshletFilesUnchangedDuringAcceptance": true,
+  "acceptancePolicyMatchesNativeV3Hashes": true,
+  "acceptanceShadersNaga30_0_1": {
+    "passed": 3,
+    "optionalCapabilities": false,
+    "flags": "all"
+  },
+  "pythonAndJavaScriptSyntax": "passed",
+  "cpuReconciliation": {
+    "uniquePairs": 79,
+    "decodedExactPairs": 79,
+    "stableHoldPairs": 15,
+    "nearBlackCases": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "ledgerSha256": "49480ca0e8be710c39a26416c63fae1c6ed4a3d633ad916240bf5de5d4465c58",
+    "fallbackProofSha256": "83c9590a04fee113e1db722c020aedfdab243fb6acd9ea26d06ee2b33a0c9f95",
+    "binary32ProofSha256": "845468bcc5d868ae856a4f3099de1d74b0d02d4cb973d99c89c36b413664c615"
+  },
+  "gpuUsedByFinalValidation": false,
+  "browserUsedByFinalValidation": false,
+  "limitations": [
+    "Sparse poses do not certify continuous no-popping",
+    "Near-black Under-crowns frames match reference; cause unconfirmed",
+    "Fine mode unsupported and equivalent sweep unverified",
+    "Whole-stand full detail exceeds budget",
+    "No demonstrated speedup; streaming absent"
+  ]
+}

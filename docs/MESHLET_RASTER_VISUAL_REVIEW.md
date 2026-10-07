@@ -1,0 +1,21 @@
+# Ordered grouped raster review
+
+The grouped meshlet route has no observed difference from its complete selected-LOD reference at the 79 recorded poses. This is a limited geometry-equivalence result, not a smooth-motion acceptance. Baseline remains default. Fine mode has no equivalent sweep and remains unsupported experimental research.
+
+CPU review inspected all five ordered contact sheets and the full-resolution six-frame threshold/hold sheet for each view. The original source images are 960x540; committed contact sheets resize them to 320x180 and retain case order, distance and target LOD captions. Every decoded normal/reference RGBA pair is identical. The CPU reconciliation also reproduces the captured temporal changed-pixel/max-channel metrics exactly. All 15 identical-camera/detail hold pairs have zero changed pixels and zero changed instance LODs.
+
+| View | Recorded cases | Ordered assessment |
+| --- | --- | --- |
+| [Trail](pr-assets/meshlet-ordered-trail.png) | 0..15 | Ground, trunks and crown silhouettes remain represented across sampled pans and zoom brackets. Nearby trunks and foliage change framing substantially as the eye moves. No additional cluster rejection artifact is visible relative to the identical reference. |
+| [Canopy](pr-assets/meshlet-ordered-canopy.png) | 16..31 | Crown coverage, branches and ground gaps vary with framing; no extra missing crown or cut silhouette is visible relative to the identical reference. The coarse/fine holds are stable. |
+| [Under crowns](pr-assets/meshlet-ordered-sky.png) | 32..47 | Cases 38..43 are nearly black across the whole frame, with every RGB channel at most 5/255. Cases 37 and 44 show foliage/sky again. All six dark cases have all 2,073,600 depth samples covered and exactly match the reference. These samples cannot demonstrate perceptually unobtrusive LOD transitions. |
+| [Clearing](pr-assets/meshlet-ordered-clearing.png) | 48..63 | Large foreground trunks/branches obscure much of some poses, especially 60/61; the reference shares the occlusion. The frames preserve distant forest coverage where visible. Repeated holds are stable. |
+| [Whole stand](pr-assets/meshlet-ordered-overview.png) | 64..78 | The stand silhouette and ground plate remain coherent in the sampled default-detail poses. The stand occupies different screen areas as the eye moves. Full-detail Whole stand is excluded by the triangle budget. |
+
+The dark Under-crowns frames occur at orbit distances 19.546..20.344; the adjacent visible fine frames use distance 18.910. Near-field occlusion is a plausible explanation, but the saved color images and aggregate depth counts do not identify an occluding primitive. The cause remains unconfirmed. Equality with the complete selected-LOD reference isolates these frames from cluster hierarchy rejection; it does not establish that the default baseline produces the same images or rule out behavior shared by the LOD selector, material shader or camera route. No renderer change was made to conceal them.
+
+The route samples discrete poses rather than every animation frame. Distance changes and many per-instance LOD changes happen together, so temporal pixel differences cannot isolate simplification popping. Both paired renders use the same selected LOD; they deliberately do not compare a changing instance with its previous complete level at an identical pose. Original model LODs still switch discretely without geomorphing or blending. No continuous no-popping, arbitrary-camera, mobile-adapter or temporal-dither guarantee is claimed.
+
+The [reconciled receipt ledger](MESHLET_RASTER_GROUPED_ACCEPTANCE.json) records the exact case sets, source receipt/image hashes, decoded RGBA hashes, RGB extrema, target promotion/demotion and contact-sheet hashes. It preserves the invalid discard-depth attempt and the failed v2 count receipt separately. Its 17 valid prefix captures plus 62 v3 continuation captures cover 79 unique cases, not 17 + 27 + 62 independent passing cases. The native depth results are recorded comparisons; raw depth buffers were not separately archived for CPU re-comparison.
+
+This final review and reconciliation used CPU only. Further camera/occlusion diagnosis or smooth-motion validation can be planned separately by the review owner; it is not represented as completed here.

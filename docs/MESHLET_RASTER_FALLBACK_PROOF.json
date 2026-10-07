@@ -1,0 +1,1033 @@
+{
+  "status": "CPU proves the fallback equality assumption was wrong; production implementation unchanged",
+  "gpuUsed": false,
+  "browserUsed": false,
+  "capturedPairSha256": "f1ac9a98320eac0fb7a111ac9db38e92cf4e25d3c5346517f78089f69b2cd1a1",
+  "source": {
+    "algorithm": {
+      "version": 1,
+      "algorithm": "morton-greedy-64v-64t",
+      "maxVertices": 64,
+      "maxTriangles": 64,
+      "fanout": 8
+    },
+    "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+    "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+    "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+  },
+  "appliedUniforms": [
+    -4,
+    7,
+    -8,
+    0,
+    0.9761870503425598,
+    0,
+    0.21693046391010284,
+    1.7777777910232544,
+    -0.056773293763399124,
+    0.965146005153656,
+    0.2554798424243927,
+    0,
+    0.20936957001686096,
+    0.2617119550704956,
+    -0.9421630501747131,
+    0.4815746247768402,
+    0.8247449398040771,
+    0,
+    0.5655049085617065,
+    230,
+    0.31607016921043396,
+    0.8292238116264343,
+    -0.46096372604370117,
+    230,
+    -0.46893012523651123,
+    0.5589167475700378,
+    0.6838980913162231,
+    600,
+    0,
+    0,
+    0.75,
+    1
+  ],
+  "stateSha256": "3c6b353bb5d3983b6cefd1063b35e1b9da02f1e4f422b0732e13296e88bbcc67",
+  "expectedNormalTriangles": 39060110,
+  "referenceTriangles": 39442613,
+  "fallbackMismatches": 18,
+  "excludedInstances": 20,
+  "testedTriangles": 611,
+  "visibleExcludedTriangles": 0,
+  "boundsErrors": 0,
+  "fallbackDrawsVerified": 1812,
+  "correctedAudit": {
+    "overflow": 0,
+    "referenceErrors": 0,
+    "fallbackErrors": 0,
+    "normalTriangles": 39060110,
+    "referenceTriangles": 39442613
+  },
+  "mismatches": [
+    {
+      "draw": 441,
+      "model": 4,
+      "id": "crown-0",
+      "level": 3,
+      "indexCount": 48,
+      "referenceRootCount": 55,
+      "expectedNormalCount": 54,
+      "selectedLodSphere": [
+        -0.05975784733891487,
+        0.028043832629919052,
+        -0.2617737054824829,
+        0.5757023692131042
+      ],
+      "maximumReferencedVertexDistance": 0.45156770649058464,
+      "localContainmentMargin": 0.1241346627225196,
+      "instances": [
+        {
+          "id": 1036,
+          "position": [
+            44.608856201171875,
+            13.384112358093262,
+            -43.41691589355469
+          ],
+          "scale": 1.3304548263549805,
+          "rotation": [
+            0,
+            0.9413946270942688,
+            0,
+            -0.3373071849346161
+          ],
+          "fullRootRadius": 1.2161049842834473,
+          "worldSelectedSphere": [
+            44.891453616783664,
+            13.421423410565229,
+            -43.19838126590501,
+            0.7659459956635715
+          ],
+          "maximumWorldVertexDistance": 0.6007904213260773,
+          "planeMaximumSignedDistances": [
+            45.55286979202523,
+            -0.8555307828096517,
+            79.19206294364474,
+            27.458479425327283,
+            16.615398456871674
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 460,
+      "model": 9,
+      "id": "crown-5",
+      "level": 2,
+      "indexCount": 84,
+      "referenceRootCount": 8,
+      "expectedNormalCount": 7,
+      "selectedLodSphere": [
+        -0.44349053502082825,
+        -0.16579151153564453,
+        -0.2335275411605835,
+        0.42745304107666016
+      ],
+      "maximumReferencedVertexDistance": 0.37533173105238143,
+      "localContainmentMargin": 0.05212131002427872,
+      "instances": [
+        {
+          "id": 2389,
+          "position": [
+            29.18937110900879,
+            12.804523468017578,
+            -30.905160903930664
+          ],
+          "scale": 1.1089757680892944,
+          "rotation": [
+            0,
+            0.12293685972690582,
+            0,
+            -0.9924144744873047
+          ],
+          "fullRootRadius": 1.3597581386566162,
+          "worldSelectedSphere": [
+            28.775609549974966,
+            12.620664699169652,
+            -31.27631761488457,
+            0.4740350645500939
+          ],
+          "maximumWorldVertexDistance": 0.4162337942582468,
+          "planeMaximumSignedDistances": [
+            30.565653335824752,
+            -0.8911394253597855,
+            53.317884071072086,
+            17.188192777111553,
+            12.323552258855841
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 532,
+      "model": 27,
+      "id": "crown-23",
+      "level": 2,
+      "indexCount": 54,
+      "referenceRootCount": 4,
+      "expectedNormalCount": 3,
+      "selectedLodSphere": [
+        -0.272017240524292,
+        -0.2179710566997528,
+        -0.05403754860162735,
+        0.6258236169815063
+      ],
+      "maximumReferencedVertexDistance": 0.5675038627975172,
+      "localContainmentMargin": 0.05831975418398916,
+      "instances": [
+        {
+          "id": 7042,
+          "position": [
+            -16.802845001220703,
+            12.308470726013184,
+            -27.93486785888672
+          ],
+          "scale": 1.5589529275894165,
+          "rotation": [
+            0,
+            0.8033462762832642,
+            0,
+            0.5955121517181396
+          ],
+          "fullRootRadius": 1.562515139579773,
+          "worldSelectedSphere": [
+            -16.760160387882664,
+            11.968664109041345,
+            -27.50463145703382,
+            0.975629559847917
+          ],
+          "maximumWorldVertexDistance": 0.8847117739343182,
+          "planeMaximumSignedDistances": [
+            17.638430462585934,
+            31.831032223401678,
+            -1.463565818306746,
+            8.553241761036231,
+            8.99779311814341
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 533,
+      "model": 27,
+      "id": "crown-23",
+      "level": 3,
+      "indexCount": 18,
+      "referenceRootCount": 57,
+      "expectedNormalCount": 56,
+      "selectedLodSphere": [
+        0.028709519654512405,
+        -0.4001285135746002,
+        0.1897764503955841,
+        0.19768787920475006
+      ],
+      "maximumReferencedVertexDistance": 0.14092768319220464,
+      "localContainmentMargin": 0.05676019601254542,
+      "instances": [
+        {
+          "id": 7033,
+          "position": [
+            -26.964929580688477,
+            11.98890209197998,
+            -50.697471618652344
+          ],
+          "scale": 1.4134870767593384,
+          "rotation": [
+            0,
+            0.9235276579856873,
+            0,
+            -0.3835318684577942
+          ],
+          "fullRootRadius": 1.4167169332504272,
+          "worldSelectedSphere": [
+            -27.183598683782037,
+            11.42332560899936,
+            -50.85805439329712,
+            0.27942926248787536
+          ],
+          "maximumWorldVertexDistance": 0.19919946640974673,
+          "planeMaximumSignedDistances": [
+            36.751850606668484,
+            63.40168951722372,
+            -0.304173115078477,
+            23.173478188915105,
+            12.355886415560114
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 720,
+      "model": 74,
+      "id": "crown-70",
+      "level": 2,
+      "indexCount": 231,
+      "referenceRootCount": 8,
+      "expectedNormalCount": 7,
+      "selectedLodSphere": [
+        0.30025872588157654,
+        0.3276844620704651,
+        0.23294398188591003,
+        1.16816246509552
+      ],
+      "maximumReferencedVertexDistance": 1.0280984349784932,
+      "localContainmentMargin": 0.14006403011702684,
+      "instances": [
+        {
+          "id": 19450,
+          "position": [
+            21.91145133972168,
+            13.630515098571777,
+            -24.527515411376953
+          ],
+          "scale": 1.3738822937011719,
+          "rotation": [
+            0,
+            0.6757503151893616,
+            0,
+            -0.7371305823326111
+          ],
+          "fullRootRadius": 1.7455947399139404,
+          "worldSelectedSphere": [
+            21.62839448056357,
+            14.080714978931383,
+            -24.088794826790693,
+            1.6049177269610482
+          ],
+          "maximumWorldVertexDistance": 1.4124862238999467,
+          "planeMaximumSignedDistances": [
+            23.076717291369558,
+            -2.063763669473804,
+            41.71706410287315,
+            11.017973219135186,
+            12.945899494567467
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 876,
+      "model": 113,
+      "id": "crown-109",
+      "level": 2,
+      "indexCount": 315,
+      "referenceRootCount": 5,
+      "expectedNormalCount": 4,
+      "selectedLodSphere": [
+        0.08366645872592926,
+        -0.21404244005680084,
+        -0.3795914053916931,
+        1.5523403882980347
+      ],
+      "maximumReferencedVertexDistance": 0.7401841879411319,
+      "localContainmentMargin": 0.8121562003569027,
+      "instances": [
+        {
+          "id": 29668,
+          "position": [
+            -23.83954620361328,
+            13.362044334411621,
+            -40.8374137878418
+          ],
+          "scale": 1.2437987327575684,
+          "rotation": [
+            0,
+            0.9706429243087769,
+            0,
+            0.24052506685256958
+          ],
+          "fullRootRadius": 1.6432018280029297,
+          "worldSelectedSphere": [
+            -24.152022877784738,
+            13.095818618712634,
+            -40.46849721441807,
+            1.9307990077734871
+          ],
+          "maximumWorldVertexDistance": 0.9206401464048969,
+          "planeMaximumSignedDistances": [
+            28.45195545319175,
+            51.05558376893849,
+            -1.593595857551378,
+            15.148846486268049,
+            12.679436529250975
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1013,
+      "model": 147,
+      "id": "crown-143",
+      "level": 3,
+      "indexCount": 60,
+      "referenceRootCount": 49,
+      "expectedNormalCount": 47,
+      "selectedLodSphere": [
+        0.15750807523727417,
+        0.25094085931777954,
+        -0.11829167604446411,
+        0.5427469611167908
+      ],
+      "maximumReferencedVertexDistance": 0.46777042300783345,
+      "localContainmentMargin": 0.07497653810895732,
+      "instances": [
+        {
+          "id": 37891,
+          "position": [
+            -34.723995208740234,
+            17.97023582458496,
+            -61.69599151611328
+          ],
+          "scale": 1.3468953371047974,
+          "rotation": [
+            0,
+            0.9671158790588379,
+            0,
+            0.2543362081050873
+          ],
+          "fullRootRadius": 1.0620404481887817,
+          "worldSelectedSphere": [
+            -34.98707576689423,
+            18.30822689788915,
+            -61.66164231646833,
+            0.7310233511560043
+          ],
+          "maximumWorldVertexDistance": 0.6300378328534503,
+          "planeMaximumSignedDistances": [
+            47.54559375117333,
+            82.39192810670276,
+            -0.8356248322425159,
+            23.903922301313983,
+            21.950969452453442
+          ],
+          "clippedVisibleTriangles": 0
+        },
+        {
+          "id": 37915,
+          "position": [
+            63.430397033691406,
+            11.162899017333984,
+            -59.1172981262207
+          ],
+          "scale": 0.717877209186554,
+          "rotation": [
+            0,
+            0.8091295957565308,
+            0,
+            -0.5876302123069763
+          ],
+          "fullRootRadius": 0.5660533308982849,
+          "worldSelectedSphere": [
+            63.47616743388644,
+            11.343043741091908,
+            -58.98350185336863,
+            0.3896256737410049
+          ],
+          "maximumWorldVertexDistance": 0.33580171392224956,
+          "planeMaximumSignedDistances": [
+            63.40829189753827,
+            -0.19689058888212685,
+            109.23706988435399,
+            43.229076290242446,
+            17.974203359996118
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1209,
+      "model": 196,
+      "id": "crown-192",
+      "level": 3,
+      "indexCount": 33,
+      "referenceRootCount": 47,
+      "expectedNormalCount": 46,
+      "selectedLodSphere": [
+        0.007601246237754822,
+        -0.35993409156799316,
+        0.06747207045555115,
+        0.9644955396652222
+      ],
+      "maximumReferencedVertexDistance": 0.8868823319546447,
+      "localContainmentMargin": 0.07761320771057745,
+      "instances": [
+        {
+          "id": 49822,
+          "position": [
+            61.72369384765625,
+            9.496953964233398,
+            -57.65966796875
+          ],
+          "scale": 0.717877209186554,
+          "rotation": [
+            0,
+            0.8091295957565308,
+            0,
+            -0.5876302123069763
+          ],
+          "fullRootRadius": 0.8294373750686646,
+          "worldSelectedSphere": [
+            61.67594536536473,
+            9.23856548308747,
+            -57.66946432943905,
+            0.6923893662877489
+          ],
+          "maximumWorldVertexDistance": 0.6366725898071162,
+          "planeMaximumSignedDistances": [
+            61.677244421225566,
+            -0.46094977191600606,
+            106.3325368443904,
+            44.02971807539676,
+            15.55079668415294
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1344,
+      "model": 230,
+      "id": "crown-226",
+      "level": 2,
+      "indexCount": 399,
+      "referenceRootCount": 10,
+      "expectedNormalCount": 9,
+      "selectedLodSphere": [
+        0.09976500272750854,
+        0.20656700432300568,
+        -0.46177077293395996,
+        1.3489705324172974
+      ],
+      "maximumReferencedVertexDistance": 0.8694921783428966,
+      "localContainmentMargin": 0.47947835407440076,
+      "instances": [
+        {
+          "id": 58075,
+          "position": [
+            -28.34785270690918,
+            11.014223098754883,
+            -50.1753044128418
+          ],
+          "scale": 1.328037142753601,
+          "rotation": [
+            0,
+            0.9978561997413635,
+            0,
+            -0.06544432044029236
+          ],
+          "fullRootRadius": 2.024614095687866,
+          "worldSelectedSphere": [
+            -28.39911419477438,
+            11.288551752963178,
+            -49.550004297086616,
+            1.7914829715302716
+          ],
+          "maximumWorldVertexDistance": 1.1547178036223449,
+          "planeMaximumSignedDistances": [
+            35.62263975871814,
+            64.03595862096145,
+            -1.4387157013178822,
+            23.09339976748513,
+            12.433545631924869
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1345,
+      "model": 230,
+      "id": "crown-226",
+      "level": 3,
+      "indexCount": 114,
+      "referenceRootCount": 41,
+      "expectedNormalCount": 39,
+      "selectedLodSphere": [
+        0.1539410501718521,
+        0.26528000831604004,
+        -0.4575669765472412,
+        1.3839739561080933
+      ],
+      "maximumReferencedVertexDistance": 0.9227176907257488,
+      "localContainmentMargin": 0.46125626538234443,
+      "instances": [
+        {
+          "id": 58091,
+          "position": [
+            -44.67806625366211,
+            10.725748062133789,
+            -82.8230972290039
+          ],
+          "scale": 1.134143590927124,
+          "rotation": [
+            0,
+            0.9670392870903015,
+            0,
+            0.25462716817855835
+          ],
+          "fullRootRadius": 1.7290202379226685,
+          "worldSelectedSphere": [
+            -45.08558336892306,
+            11.02661368336652,
+            -82.45742317792529,
+            1.5696251923300508
+          ],
+          "maximumWorldVertexDistance": 1.0464943112510685,
+          "planeMaximumSignedDistances": [
+            63.197819899802546,
+            110.76354172530719,
+            -2.156488472615493,
+            43.949368467026694,
+            17.76662861962111
+          ],
+          "clippedVisibleTriangles": 0
+        },
+        {
+          "id": 58112,
+          "position": [
+            -31.136449813842773,
+            8.504351615905762,
+            -57.91265869140625
+          ],
+          "scale": 0.8095370531082153,
+          "rotation": [
+            0,
+            0.9074091911315918,
+            0,
+            -0.42024827003479004
+          ],
+          "fullRootRadius": 1.2341523170471191,
+          "worldSelectedSphere": [
+            -30.934544690359857,
+            8.719105612086452,
+            -57.578033824402745,
+            1.1203781980062644
+          ],
+          "maximumWorldVertexDistance": 0.7469742199793614,
+          "planeMaximumSignedDistances": [
+            42.02656533488348,
+            73.0730236760767,
+            -0.5540836324203511,
+            30.063915241185093,
+            10.831091546232148
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1449,
+      "model": 256,
+      "id": "crown-252",
+      "level": 3,
+      "indexCount": 66,
+      "referenceRootCount": 47,
+      "expectedNormalCount": 46,
+      "selectedLodSphere": [
+        0.08238877356052399,
+        -0.07398954033851624,
+        -0.010596543550491333,
+        0.617799699306488
+      ],
+      "maximumReferencedVertexDistance": 0.5334184960161872,
+      "localContainmentMargin": 0.08438120329030085,
+      "instances": [
+        {
+          "id": 64724,
+          "position": [
+            35.63693618774414,
+            8.464778900146484,
+            -37.58469009399414
+          ],
+          "scale": 1.2523311376571655,
+          "rotation": [
+            0,
+            0.02441231906414032,
+            0,
+            0.999701976776123
+          ],
+          "fullRootRadius": 1.2865173816680908,
+          "worldSelectedSphere": [
+            35.73934350556523,
+            8.37211949491962,
+            -37.60298078664294,
+            0.7736898002767489
+          ],
+          "maximumWorldVertexDistance": 0.6680165919643468,
+          "planeMaximumSignedDistances": [
+            36.917378655688076,
+            -0.47607064453604764,
+            63.85769531197884,
+            26.411309761772998,
+            9.729742959689617
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1469,
+      "model": 261,
+      "id": "crown-257",
+      "level": 3,
+      "indexCount": 30,
+      "referenceRootCount": 50,
+      "expectedNormalCount": 49,
+      "selectedLodSphere": [
+        0.0050676967948675156,
+        0.26622486114501953,
+        0.21834111213684082,
+        0.1944946050643921
+      ],
+      "maximumReferencedVertexDistance": 0.12025049918758321,
+      "localContainmentMargin": 0.07424410587680888,
+      "instances": [
+        {
+          "id": 65969,
+          "position": [
+            -59.44218444824219,
+            20.99884033203125,
+            -110.13688659667969
+          ],
+          "scale": 1.6012994050979614,
+          "rotation": [
+            0,
+            0.9263597130775452,
+            0,
+            -0.3766399621963501
+          ],
+          "fullRootRadius": 1.0313081741333008,
+          "worldSelectedSphere": [
+            -59.69197134462436,
+            21.425146043805057,
+            -110.38165818733742,
+            0.311444095384374
+          ],
+          "maximumWorldVertexDistance": 0.19255704806140614,
+          "planeMaximumSignedDistances": [
+            88.69259439941939,
+            152.62178124107348,
+            -0.567837966836791,
+            51.82795656183001,
+            33.726741054227034
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1794,
+      "model": 308,
+      "id": "crown-304",
+      "level": 3,
+      "indexCount": 63,
+      "referenceRootCount": 48,
+      "expectedNormalCount": 47,
+      "selectedLodSphere": [
+        -0.42108601331710815,
+        -0.05455827713012695,
+        -0.3468836545944214,
+        1.018875002861023
+      ],
+      "maximumReferencedVertexDistance": 0.7256648591052605,
+      "localContainmentMargin": 0.2932101437557625,
+      "instances": [
+        {
+          "id": 77807,
+          "position": [
+            95.7706298828125,
+            10.359088897705078,
+            -84.35807037353516
+          ],
+          "scale": 0.5739710330963135,
+          "rotation": [
+            0,
+            0.9677466154098511,
+            0,
+            0.251925528049469
+          ],
+          "fullRootRadius": 0.6968083381652832,
+          "worldSelectedSphere": [
+            95.88456071572706,
+            10.327774027016744,
+            -84.06639305431355,
+            0.5848047379881507
+          ],
+          "maximumWorldVertexDistance": 0.4165106001291903,
+          "planeMaximumSignedDistances": [
+            93.78800019818837,
+            -0.6449069227105042,
+            161.4052323661873,
+            67.08666206085209,
+            23.451775654302423
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1922,
+      "model": 340,
+      "id": "crown-336",
+      "level": 3,
+      "indexCount": 36,
+      "referenceRootCount": 52,
+      "expectedNormalCount": 51,
+      "selectedLodSphere": [
+        0.49328526854515076,
+        0.13161145150661469,
+        -0.05769606679677963,
+        0.320156455039978
+      ],
+      "maximumReferencedVertexDistance": 0.26997945099389126,
+      "localContainmentMargin": 0.05017700404608677,
+      "instances": [
+        {
+          "id": 85786,
+          "position": [
+            87.84795379638672,
+            12.489285469055176,
+            -78.00066375732422
+          ],
+          "scale": 1.0299535989761353,
+          "rotation": [
+            0,
+            0.33529847860336304,
+            0,
+            -0.9421119689941406
+          ],
+          "fullRootRadius": 0.932035505771637,
+          "worldSelectedSphere": [
+            88.27932007434573,
+            12.624839157200887,
+            -77.72574504492563,
+            0.3297462931038666
+          ],
+          "maximumWorldVertexDistance": 0.2780663089662072,
+          "planeMaximumSignedDistances": [
+            86.66230623589605,
+            -0.74537488011741,
+            149.21985185864457,
+            59.541002229942976,
+            24.126316294100157
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 1926,
+      "model": 341,
+      "id": "crown-337",
+      "level": 3,
+      "indexCount": 9,
+      "referenceRootCount": 52,
+      "expectedNormalCount": 51,
+      "selectedLodSphere": [
+        0.391396164894104,
+        0.19990874826908112,
+        -0.015042487531900406,
+        0.18064621090888977
+      ],
+      "maximumReferencedVertexDistance": 0.14288533300930803,
+      "localContainmentMargin": 0.03776087789958174,
+      "instances": [
+        {
+          "id": 86038,
+          "position": [
+            88.4777603149414,
+            12.596556663513184,
+            -78.34822845458984
+          ],
+          "scale": 1.0299535989761353,
+          "rotation": [
+            0,
+            0.33529847860336304,
+            0,
+            -0.9421119689941406
+          ],
+          "fullRootRadius": 0.8702596426010132,
+          "worldSelectedSphere": [
+            88.80002680850261,
+            12.802453398259738,
+            -78.10555585801205,
+            0.186057215067013
+          ],
+          "maximumWorldVertexDistance": 0.1471652637480681,
+          "planeMaximumSignedDistances": [
+            86.9937386722058,
+            -0.7821633756656468,
+            150.00660142834477,
+            59.578859314755405,
+            24.3677074143138
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 2287,
+      "model": 420,
+      "id": "crown-416",
+      "level": 3,
+      "indexCount": 27,
+      "referenceRootCount": 54,
+      "expectedNormalCount": 53,
+      "selectedLodSphere": [
+        -0.5185896158218384,
+        0.12249943614006042,
+        0.17108681797981262,
+        0.4417055547237396
+      ],
+      "maximumReferencedVertexDistance": 0.3625199469699211,
+      "localContainmentMargin": 0.0791856077538185,
+      "instances": [
+        {
+          "id": 105477,
+          "position": [
+            -20.265697479248047,
+            15.238847732543945,
+            -34.99625778198242
+          ],
+          "scale": 1.0827187299728394,
+          "rotation": [
+            0,
+            0.051622454077005386,
+            0,
+            -0.9986666440963745
+          ],
+          "fullRootRadius": 0.9648216962814331,
+          "worldSelectedSphere": [
+            -20.84329105573163,
+            15.3714801664639,
+            -34.86989950403199,
+            0.47824287723243586
+          ],
+          "maximumWorldVertexDistance": 0.3925071364943269,
+          "planeMaximumSignedDistances": [
+            24.228134940460226,
+            43.084778469107896,
+            -1.4587913933421284,
+            9.764870240539848,
+            13.900370523666446
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 2359,
+      "model": 438,
+      "id": "crown-434",
+      "level": 3,
+      "indexCount": 30,
+      "referenceRootCount": 52,
+      "expectedNormalCount": 51,
+      "selectedLodSphere": [
+        0.5845912098884583,
+        0.03558557108044624,
+        0.18528832495212555,
+        0.2853084206581116
+      ],
+      "maximumReferencedVertexDistance": 0.18022124801091993,
+      "localContainmentMargin": 0.10508717264719164,
+      "instances": [
+        {
+          "id": 109865,
+          "position": [
+            61.29768753051758,
+            15.308241844177246,
+            -57.325199127197266
+          ],
+          "scale": 1.2554481029510498,
+          "rotation": [
+            0,
+            0.03812985494732857,
+            0,
+            -0.9992727637290955
+          ],
+          "fullRootRadius": 1.4167437553405762,
+          "worldSelectedSphere": [
+            62.01175074933207,
+            15.352917681882623,
+            -57.037327533544165,
+            0.3581899154711863
+          ],
+          "maximumWorldVertexDistance": 0.22625842389706474,
+          "planeMaximumSignedDistances": [
+            62.31622752755709,
+            -0.3159869454550872,
+            107.31544745760831,
+            38.37713829065876,
+            21.905973433291887
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    },
+    {
+      "draw": 2367,
+      "model": 440,
+      "id": "crown-436",
+      "level": 3,
+      "indexCount": 42,
+      "referenceRootCount": 52,
+      "expectedNormalCount": 51,
+      "selectedLodSphere": [
+        0.23142659664154053,
+        -0.07318592071533203,
+        -0.05484293773770332,
+        0.3538745045661926
+      ],
+      "maximumReferencedVertexDistance": 0.2672398758993861,
+      "localContainmentMargin": 0.08663462866680655,
+      "instances": [
+        {
+          "id": 110286,
+          "position": [
+            -34.564697265625,
+            8.811187744140625,
+            -65.919189453125
+          ],
+          "scale": 1.2072713375091553,
+          "rotation": [
+            0,
+            0.9994994401931763,
+            0,
+            -0.03163613751530647
+          ],
+          "fullRootRadius": 0.66265469789505,
+          "worldSelectedSphere": [
+            -34.839345507718136,
+            8.722832479751787,
+            -65.83544259278696,
+            0.42722254643801705
+          ],
+          "maximumWorldVertexDistance": 0.3226310350549471,
+          "planeMaximumSignedDistances": [
+            48.593711767097105,
+            84.38740305367263,
+            -0.9899186956949109,
+            35.01222751313687,
+            12.213769813418356
+          ],
+          "clippedVisibleTriangles": 0
+        }
+      ]
+    }
+  ],
+  "proof": "all selected/root state words and aggregate draw/rejection counts match GPU; all referenced selected-LOD vertices are enclosed, every excluded instance lies beyond a common clipping plane, and exhaustive independent triangle clipping finds no intersection; corrected oracle equals traversal for every fallback draw"
+}
