@@ -21,6 +21,7 @@ import {
 } from './diagnostics.mjs';
 import { probeGpuSession, gpuDeviceOptions, createGpuRuntime, validateGpuBuffer } from './gpu-session.mjs?revision=mobile-lifecycle-2';
 import { traceCompatibility } from './trace-compatibility.mjs';
+import { selectMediumStackMode } from './medium-stack-policy.mjs';
 import { adaptiveAaResolve } from './adaptive-aa.mjs';
 import { selectPileDetail } from './pile-lod.mjs';
 import { signalSchedule } from './signal-schedule.mjs';
@@ -336,7 +337,7 @@ const state = {
   loading: null,
   interactionEpoch: 0,
 };
-let gpuSession, gpuRuntime, sessionClosed = false;
+let gpuSession, gpuRuntime, mediumStackMode, sessionClosed = false;
 let device,
   context,
   format,
@@ -605,6 +606,8 @@ async function boot() {
   gpuSession = await probeGpuSession(canvas);
   if (sessionClosed) return;
   const { adapter } = gpuSession;
+  mediumStackMode = selectMediumStackMode(adapter, parameters.get('mediumStack'));
+  parameters.set('mediumStack', mediumStackMode.mode);
   const mobile = navigator.userAgentData?.mobile === true || /Android|iPhone|iPad/i.test(navigator.userAgent) ||
     /qualcomm|adreno/i.test([adapter.info?.vendor, adapter.info?.architecture].join(' '));
   const recovery = parameters.get('gpuRecovery') === '1';
@@ -1618,6 +1621,7 @@ function snapshot() {
   return {
     adapter: $('#adapter').textContent,
     gpuSession: gpuRuntime?.snapshot() || null,
+    mediumStack: mediumStackMode ? { ...mediumStackMode } : null,
     gpuCompatibility: compatibilityMode ? { mode: 'compact', traceWorkgroup: 4, mediumSlots: 10, maxBounces: 10, physicalAdrenoVerified: false } : null,
     backend: separateSignals ? 'separate-signals' : 'baseline',
     opticalSamples:extraOpticalSample&&$('#mode').value!=='reference'?2:1,

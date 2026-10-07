@@ -94,6 +94,8 @@ The full imported gallery, instrument modules and both forest entrypoints requir
 
 For the four native-authored material/knot browser studies, run `python tools/prepare_browser_examples.py` after installing the package. This regenerates geometry with verified hashes and retains the included original material manifests.
 
+Qualcomm/Adreno adapters automatically use an equivalent medium-helper form with the original sixteen-slot glass/water stacks. Add mediumStack=legacy for rollback. Automated NVIDIA checks preserve exact six-/ten-bounce output and retry behavior; physical Adreno success remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
+
 See [browser modes and controls](browser/README.md), [diagnostics](browser/DIAGNOSTICS.md), and [gallery rebuilding](browser/GALLERY.md).
 
 ## Validation

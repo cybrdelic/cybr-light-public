@@ -98,13 +98,14 @@
       ]
     }
   ],
-  "gpuUsed": false,
+  "gpuUsed": true,
   "validator": {
     "library": "naga",
     "version": "30.0.1",
     "validationFlags": "all",
     "optionalCapabilities": "none",
-    "parseAndTypeValidation": "passed"
+    "parseAndTypeValidation": "passed",
+    "gpuUsed": false
   },
   "physicalBeforeCandidate": {
     "build": "mobile-compile-probes-8",
@@ -119,7 +120,7 @@
     "sceneFrameGPUBytes": 0,
     "dispatch": false
   },
-  "physicalCandidateResult": "not yet run",
+  "physicalCandidateResult": "Unverified on physical Adreno; no connected authorized device or testing-service session",
   "cpuEquivalence": {
     "source": "actual original WGSL operation bodies and actual expanded snippets",
     "adversarialOperations": 8192,
@@ -140,8 +141,99 @@
     "tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-medium-candidate"
   ],
   "limits": [
-    "CPU fixtures do not establish physical Adreno compilation or rendered output parity.",
-    "A passing full-trace compilation must be followed by actual rendering on the phone.",
-    "The candidate is explicitly selected with mediumStack=inline; remove that parameter to roll back."
+    "NVIDIA desktop execution does not establish physical Adreno driver compatibility.",
+    "The metadata fixture tests application selection only; it does not emulate an Adreno device/driver.",
+    "The GPU evidence covers the described six- and ten-bounce proof-optics configurations and exact stack-operation fixtures."
+  ],
+  "physicalAdrenoVerified": false,
+  "automaticSelection": {
+    "adapterMatch": "qualcomm or adreno vendor/architecture, case insensitive",
+    "mode": "inline",
+    "otherAdapters": "legacy",
+    "explicitRollback": "mediumStack=legacy",
+    "manualDiagnosticRequired": false
+  },
+  "gpuValidation": {
+    "actualHardware": {
+      "vendor": "nvidia",
+      "architecture": "lovelace"
+    },
+    "physicalAdrenoVerified": false,
+    "mediumOperations": {
+      "operations": 1024,
+      "wordsCompared": 103424,
+      "differentWords": 0,
+      "validationErrors": []
+    },
+    "sixBounce": {
+      "frames": 8,
+      "resolution": [
+        960,
+        540
+      ],
+      "candidateReadyMs": 2606,
+      "tracePipelineMs": 1488,
+      "baselineReadyMs": 1545,
+      "stageHashes": {
+        "raw": "802db38de56573b6a8000aaa00d286228a0f962a4ff6248b3dd532d931aeacfd",
+        "temporal": "e83aa0eb55d2513cb0332052dfc4e03d00eb415be9246a72ac7d122e225288fe",
+        "output": "2f57c8578a5604d0fecff7c3be7819fa6d43b52733c003a656f23ddb839c6c95"
+      },
+      "allThreeStagesExactlyMatch": true
+    },
+    "tenBounce": {
+      "frames": 8,
+      "resolution": [
+        960,
+        540
+      ],
+      "candidateReadyMs": 1999,
+      "baselineReadyMs": 1718,
+      "stageHashes": {
+        "raw": "1584d91650fccf94a67f150acab9dfb8bf41a7eb249571312570468e1f31ff77",
+        "temporal": "64bfdcb52b1130d5a2d1cab80a2f6bad076f369956b7ed6e3eeacf66c746e7cf",
+        "output": "24f81f6be68b4853235d42d91707f685ebeebc94db51715d78c992693dc350f4"
+      },
+      "allThreeStagesExactlyMatch": true,
+      "adapterIdentificationStub": true,
+      "automaticSelectionPassed": true,
+      "explicitRollbackPassed": true
+    },
+    "lossRetry": {
+      "intentionalRealDeviceDestroy": true,
+      "lossVisible": true,
+      "retryPassed": true,
+      "automaticSelectionRetained": true,
+      "settingsAndThreeStageHashesPreserved": true
+    },
+    "priorTimeout": {
+      "original17SecondEvidencePreserved": true,
+      "reproducedInInstrumentedRun": false,
+      "preciseCause": "unresolved; original requests stopped during module graph loading, without establishing a pipeline/runtime defect"
+    },
+    "gpuReleased": true,
+    "latestReleaseUtc": "2026-10-07T13:05:17.0812751Z"
+  },
+  "testedImplementationFiles": [
+    {
+      "path": "browser/app.js",
+      "sha256": "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3"
+    },
+    {
+      "path": "browser/medium-stack-policy.mjs",
+      "sha256": "908ccf5e4a67a662f0be982858622f809614f8b02b0f05fcacc63fc33bf1ae92"
+    },
+    {
+      "path": "browser/renderer-shaders.mjs",
+      "sha256": "4b73b2981e3c88cb37f8f74dc5f4b645b5802fae5bd676fd42b2c3268b7b5ac5"
+    },
+    {
+      "path": "browser/medium-stack-inline.mjs",
+      "sha256": "883c928a5b30a077d87e797642ef252bfd06d986e337106cc57ce28931311cdc"
+    },
+    {
+      "path": "browser/trace.wgsl",
+      "sha256": "95d144fecac0c70c5c4b7e7bc555040ce431a8392ee5a6afddf592e5d5d00a05"
+    }
   ]
 }
