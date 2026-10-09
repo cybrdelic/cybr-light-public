@@ -1,0 +1,410 @@
+{
+  "status": "CPU investigation; native count receipt remains failed",
+  "gpuUsed": false,
+  "browserUsed": false,
+  "capturedPairSha256": "fd9e88dbf30dfe28a9f0113489c447a870134dc5cdb6e87277265ea84f44aff0",
+  "rootPopulation": 8246,
+  "rootPopulationF32": 8246,
+  "selectedPopulation64": 8245,
+  "selectedPopulationF32": 8246,
+  "selectedIndependentOfHistory": true,
+  "stateChecks": [
+    {
+      "index": 0,
+      "stateSha256": "cff1ad523d57324e3ffb00d1909e7c78296cd6f7eb742bcacfef1beaf8f0fd4c",
+      "gpuStateSha256": "cff1ad523d57324e3ffb00d1909e7c78296cd6f7eb742bcacfef1beaf8f0fd4c",
+      "exact": true,
+      "visible": 245686,
+      "gpuVisible": 245686,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 1,
+      "stateSha256": "3c6b353bb5d3983b6cefd1063b35e1b9da02f1e4f422b0732e13296e88bbcc67",
+      "gpuStateSha256": "3c6b353bb5d3983b6cefd1063b35e1b9da02f1e4f422b0732e13296e88bbcc67",
+      "exact": true,
+      "visible": 245686,
+      "gpuVisible": 245686,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 2,
+      "stateSha256": "3c38e7391ec0829857333e3649180dd16f34c1463a7df4594faa06ded7d513bd",
+      "gpuStateSha256": "3c38e7391ec0829857333e3649180dd16f34c1463a7df4594faa06ded7d513bd",
+      "exact": true,
+      "visible": 248087,
+      "gpuVisible": 248087,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 3,
+      "stateSha256": "4d462c3fec19aa4b0265aa9468bbc7615cb1f19133dd441a89248544eb101243",
+      "gpuStateSha256": "4d462c3fec19aa4b0265aa9468bbc7615cb1f19133dd441a89248544eb101243",
+      "exact": true,
+      "visible": 245686,
+      "gpuVisible": 245686,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 4,
+      "stateSha256": "90ecbf8ded8bfd51ba4047f628ed9f2a70f447f19d7b0c399e3620df3e88dd41",
+      "gpuStateSha256": "90ecbf8ded8bfd51ba4047f628ed9f2a70f447f19d7b0c399e3620df3e88dd41",
+      "exact": true,
+      "visible": 243774,
+      "gpuVisible": 243774,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 5,
+      "stateSha256": "7c79ba725be446555ca4c677a6cf6300e3367766c7270a9168971d972d645ad1",
+      "gpuStateSha256": "7c79ba725be446555ca4c677a6cf6300e3367766c7270a9168971d972d645ad1",
+      "exact": true,
+      "visible": 243907,
+      "gpuVisible": 243907,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 6,
+      "stateSha256": "4194a8395802718afe8e2cc925c84ea310d285294de2f634effa24a7753007e9",
+      "gpuStateSha256": "4194a8395802718afe8e2cc925c84ea310d285294de2f634effa24a7753007e9",
+      "exact": true,
+      "visible": 247611,
+      "gpuVisible": 247611,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 7,
+      "stateSha256": "5a37b30d7dede35f98d55a615d817164b829c2ac6e9cfae5514f75f2d40ef71b",
+      "gpuStateSha256": "5a37b30d7dede35f98d55a615d817164b829c2ac6e9cfae5514f75f2d40ef71b",
+      "exact": true,
+      "visible": 267742,
+      "gpuVisible": 267742,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 8,
+      "stateSha256": "c5c77951f345bfe331ac19edc3b348d852867078ec883c61c944b65c0119e088",
+      "gpuStateSha256": "c5c77951f345bfe331ac19edc3b348d852867078ec883c61c944b65c0119e088",
+      "exact": true,
+      "visible": 294331,
+      "gpuVisible": 294331,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 9,
+      "stateSha256": "6994229cd55530e375ac9a8abd655586de1da1a2abcd8665c4efca68143cfe7c",
+      "gpuStateSha256": "6994229cd55530e375ac9a8abd655586de1da1a2abcd8665c4efca68143cfe7c",
+      "exact": true,
+      "visible": 294331,
+      "gpuVisible": 294331,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 10,
+      "stateSha256": "f6a37874a966ef820b3dd0c698c2aeca02d7ae1ff34f3918ff1a9974b2b78d6c",
+      "gpuStateSha256": "f6a37874a966ef820b3dd0c698c2aeca02d7ae1ff34f3918ff1a9974b2b78d6c",
+      "exact": true,
+      "visible": 288481,
+      "gpuVisible": 288481,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 11,
+      "stateSha256": "907726b260ab23bc3a4b668fc6146f8619facbba69ab4468cb3cadb29b1dadd7",
+      "gpuStateSha256": "907726b260ab23bc3a4b668fc6146f8619facbba69ab4468cb3cadb29b1dadd7",
+      "exact": true,
+      "visible": 267742,
+      "gpuVisible": 267742,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 12,
+      "stateSha256": "63250047866f60559a843ca8d765bcced5a06a48049cdf0f9efe980c98a37897",
+      "gpuStateSha256": "63250047866f60559a843ca8d765bcced5a06a48049cdf0f9efe980c98a37897",
+      "exact": true,
+      "visible": 243907,
+      "gpuVisible": 243907,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 13,
+      "stateSha256": "034a4f09c1d67351f933b6b604ca05705cb8a5d657ffd5d53964f682cfd7eaf0",
+      "gpuStateSha256": "034a4f09c1d67351f933b6b604ca05705cb8a5d657ffd5d53964f682cfd7eaf0",
+      "exact": true,
+      "visible": 243907,
+      "gpuVisible": 243907,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 14,
+      "stateSha256": "d71ba98b61ce3a2ee03c4144d3a5cd6e84dd16c6c69a9427b89f2a0c6922a34f",
+      "gpuStateSha256": "d71ba98b61ce3a2ee03c4144d3a5cd6e84dd16c6c69a9427b89f2a0c6922a34f",
+      "exact": true,
+      "visible": 245686,
+      "gpuVisible": 245686,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 15,
+      "stateSha256": "b5993b830767f2c2cdb874d49ab638fc20f45af71752df1e1c849ec6ff829bb4",
+      "gpuStateSha256": "b5993b830767f2c2cdb874d49ab638fc20f45af71752df1e1c849ec6ff829bb4",
+      "exact": true,
+      "visible": 245686,
+      "gpuVisible": 245686,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 16,
+      "stateSha256": "9cdec177fe0e6ba3538456f132389ea5a65e87ecac92c7da0fc4773df21ec4e8",
+      "gpuStateSha256": "9cdec177fe0e6ba3538456f132389ea5a65e87ecac92c7da0fc4773df21ec4e8",
+      "exact": true,
+      "visible": 65840,
+      "gpuVisible": 65840,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 17,
+      "stateSha256": "6ab8b91b584a8b1826329bd42af2c3f9b8cffdc7496f81c9f95e1a9b004333e5",
+      "gpuStateSha256": "6ab8b91b584a8b1826329bd42af2c3f9b8cffdc7496f81c9f95e1a9b004333e5",
+      "exact": true,
+      "visible": 65840,
+      "gpuVisible": 65840,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 18,
+      "stateSha256": "c5663bf88069309bf895796b83dead4a88cdcdbb95139fd654b683944b176908",
+      "gpuStateSha256": "c5663bf88069309bf895796b83dead4a88cdcdbb95139fd654b683944b176908",
+      "exact": true,
+      "visible": 65796,
+      "gpuVisible": 65796,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 19,
+      "stateSha256": "ae59d623318a374b8dff057c1e36fd271071f89b524db60458a8e97380ffe651",
+      "gpuStateSha256": "ae59d623318a374b8dff057c1e36fd271071f89b524db60458a8e97380ffe651",
+      "exact": true,
+      "visible": 65840,
+      "gpuVisible": 65840,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 20,
+      "stateSha256": "15ab63e68747b8b17b35c9cf405b126f38162ecaef1383c67901e04c1063de3a",
+      "gpuStateSha256": "15ab63e68747b8b17b35c9cf405b126f38162ecaef1383c67901e04c1063de3a",
+      "exact": true,
+      "visible": 65914,
+      "gpuVisible": 65914,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 21,
+      "stateSha256": "08533a7a79d27802a92de4c8a3243b08eded1098c31f744dadbfff00ceae7b13",
+      "gpuStateSha256": "08533a7a79d27802a92de4c8a3243b08eded1098c31f744dadbfff00ceae7b13",
+      "exact": true,
+      "visible": 63547,
+      "gpuVisible": 63547,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 22,
+      "stateSha256": "a83ad8704715d81ae2b6a7d4d1390c221ff23e43bfe701fdddddbd3d8fff51fa",
+      "gpuStateSha256": "a83ad8704715d81ae2b6a7d4d1390c221ff23e43bfe701fdddddbd3d8fff51fa",
+      "exact": true,
+      "visible": 67642,
+      "gpuVisible": 67642,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 23,
+      "stateSha256": "11f33f3b59352bc728b523cd1d1396ab3e7381cb9174b091031a6164c754d0d6",
+      "gpuStateSha256": "11f33f3b59352bc728b523cd1d1396ab3e7381cb9174b091031a6164c754d0d6",
+      "exact": true,
+      "visible": 70164,
+      "gpuVisible": 70164,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 24,
+      "stateSha256": "e83d4bdcf4c3d1bba2e417b0cc94672330c9189616979e0621fda7587329c24b",
+      "gpuStateSha256": "e83d4bdcf4c3d1bba2e417b0cc94672330c9189616979e0621fda7587329c24b",
+      "exact": true,
+      "visible": 77293,
+      "gpuVisible": 77293,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 25,
+      "stateSha256": "de999f903c5233f2731a0e5e2fbd4cdfb8cacde7f73d8195793cb3976386bd30",
+      "gpuStateSha256": "de999f903c5233f2731a0e5e2fbd4cdfb8cacde7f73d8195793cb3976386bd30",
+      "exact": true,
+      "visible": 77293,
+      "gpuVisible": 77293,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    },
+    {
+      "index": 26,
+      "stateSha256": "022d66cfd7085446eec8f2656b6ac5f3183eb02e4d1e07628934db163688b9f9",
+      "gpuStateSha256": "022d66cfd7085446eec8f2656b6ac5f3183eb02e4d1e07628934db163688b9f9",
+      "exact": true,
+      "visible": 72493,
+      "gpuVisible": 72493,
+      "fallbackDrawsCompared": 1812,
+      "fallbackFloat32Mismatches": []
+    }
+  ],
+  "candidates": [
+    {
+      "id": 368645,
+      "model": 457,
+      "modelId": "litter-1",
+      "level": 3,
+      "draw": 2605,
+      "position": [
+        -4.562016487121582,
+        4.065891742706299,
+        -38.81321716308594
+      ],
+      "scale": 0.5241690874099731,
+      "rotation": [
+        0,
+        0.9211434125900269,
+        0,
+        -0.3892233669757843
+      ],
+      "fullRootRadius": 0.048114512115716934,
+      "localSphere": [
+        0,
+        0.00030625000363215804,
+        0,
+        0.0917915627360344
+      ],
+      "sphere64": [
+        -4.562016487121582,
+        4.066052269491222,
+        -38.81321716308594,
+        0.048114299671282446
+      ],
+      "sphere32": [
+        -4.562016487121582,
+        4.066052436828613,
+        -38.81321716308594,
+        0.04811429977416992
+      ],
+      "root64": true,
+      "root32": true,
+      "visible64": false,
+      "visibleF32": true,
+      "traceF32": {
+        "visible": true,
+        "center": [
+          -4.562016487121582,
+          4.066052436828613,
+          -38.81321716308594
+        ],
+        "d": [
+          -34.562015533447266,
+          -39.85561752319336,
+          -13.877273559570312
+        ],
+        "z": 40.29581069946289,
+        "x": -34.562015533447266,
+        "y": 12.541787147521973,
+        "tx": 0.8561326861381531,
+        "ty": 0.4815746247768402,
+        "inflatedRadius": 0.048202142119407654,
+        "near": 40.34401321411133,
+        "horizontal": 34.562015533447266,
+        "vertical": 19.458940505981445,
+        "margins": {
+          "near": 40.29401397705078,
+          "horizontal": 0,
+          "vertical": 6.917153358459473
+        }
+      },
+      "traceFloat64": {
+        "d": [
+          -34.56201648712158,
+          -39.85561673685643,
+          -13.877273559570312
+        ],
+        "z": 40.29581199253172,
+        "x": -34.56201648712158,
+        "tx": 0.8561326726486236,
+        "inflatedRadius": 0.048202143009295144,
+        "horizontal": 34.56201551094829,
+        "horizontalMargin": -9.761732897572983e-7
+      },
+      "triangles": 6,
+      "clippedTriangles": 0,
+      "clippedTrianglesF32": 0,
+      "maximumVertexDistance": 0.04193458690528129,
+      "maximumVertexDistanceF32": 0.04193464669668096,
+      "planeMaximumSignedDistances": [
+        40.247083677526895,
+        69.09173533543273,
+        -0.03396492177422772,
+        6.892549761102053,
+        31.97704205180777
+      ],
+      "planeMaximumSignedDistancesF32": [
+        40.24708389255922,
+        69.09173549436323,
+        -0.03396476899347789,
+        6.89254997599231,
+        31.977042256061207
+      ],
+      "reconstructedState": 31,
+      "classification": "conservative GPU false positive: extra wholly off-frustum geometry; no omitted instance"
+    }
+  ],
+  "source": {
+    "algorithm": {
+      "version": 1,
+      "algorithm": "morton-greedy-64v-64t",
+      "maxVertices": 64,
+      "maxTriangles": 64,
+      "fanout": 8
+    },
+    "sourceGeometrySha256": "f13a065b28303a44d0a6b394e5b614121055d799e04194f1ad3f2ee9a37cd745",
+    "sourceInstancesSha256": "492f37c992f1e90e0768832a271586047ce753e77d75caebbe3f93aa60116b5b",
+    "stateSha256": "6954c02f7b7fd70a6ee148e43abe1bd59fc9f5e2928638aa0bc54d73c867ff70"
+  },
+  "capturedDifference": {
+    "draw": 2605,
+    "model": 457,
+    "level": 3,
+    "rootCount": 8246,
+    "selectedLodExpectedCount": 8245,
+    "actualCount": 8246
+  },
+  "instanceIdentification": "GPU count equals exact root/model/LOD population, and an unclustered fallback emits once per eligible instance; all root-visible model-457 LOD-3 instances were retained. Instance 368645 is the sole float64-rejected member.",
+  "countEvidence": "Every fallback row where normal differs from root population or from the v2 CPU oracle was recorded; absent rows therefore equal the SHA-verified root/model/LOD population. Full native visible-list buffers were not separately saved."
+}

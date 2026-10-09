@@ -1,0 +1,56 @@
+"""Record scoped raster changes against the parent's confirmed clean public base."""
+from pathlib import Path
+import hashlib
+import json
+import sys
+
+root = Path(__file__).resolve().parents[1]
+original = Path(sys.argv[1]).resolve()
+digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
+baseline = json.loads((root / 'docs/SOURCE_BASELINE.json').read_text())
+assert digest(root / 'docs/SOURCE_BASELINE.json') == digest(original / 'docs/SOURCE_BASELINE.json')
+protected = {item['path']: item['sha256'] for item in baseline['preserved_implementation']}
+for name in ('browser/app.js', 'browser/renderer-shaders.mjs', 'browser/forest-loader.mjs',
+             'browser/forest-detail.mjs', 'browser/instanced-bvh.mjs', 'browser/compact-bvh.mjs',
+             'browser/meshlet-attributes.mjs', 'browser/pile-lod.mjs'):
+    protected[name] = digest(original / name)
+for name, expected in protected.items():
+    assert digest(root / name) == expected, name
+changed = ('browser/forest-game.mjs', 'browser/forest-raster-worker.mjs',
+           'browser/meshlet-hierarchy.mjs', 'browser/forest-meshlet-cull.wgsl',
+           'browser/meshlet-hierarchy.test.mjs', 'tools/measure_forest_meshlets.mjs',
+           'browser/meshlet-gpu-proof.html', 'browser/meshlet-gpu-proof.mjs',
+           'browser/forest-diagnostics.mjs', 'browser/forest-diagnostics.test.mjs',
+           'tools/record_meshlet_provenance.py', 'docs/MESHLET_RASTER_STAGE1.md',
+           'tools/meshlet_validation_server.py', 'tools/meshlet-benchmark.browser.js',
+           'docs/MESHLET_RASTER_GPU_MATCHED.json',
+           'docs/pr-assets/meshlet-trail-lod.png',
+           'docs/pr-assets/meshlet-under-crowns-lod.png')
+record = {
+    'base_public_commit': '8f82e06ccadbc77f017eb3d6baba269d3eef93db',
+    'branch': 'feat/raster-meshlet-hierarchy',
+    'base_public_branch': 'fix/mobile-gpu-session-recovery',
+    'base_pull_request': 1,
+    'scope': 'Experimental resident forest raster clusters; baseline default; matched fine/grouped GPU benchmark demonstrates no speedup',
+    'source_baseline_sha256': digest(root / 'docs/SOURCE_BASELINE.json'),
+    'original_source_baseline_sha256': digest(original / 'docs/SOURCE_BASELINE.json'),
+    'original_digests_retained': True,
+    'preserved_implementation': [{'path': name, 'sha256': sha} for name, sha in sorted(protected.items())],
+    'raster_diff': [{'path': name,
+                    'original_sha256': digest(original / name) if (original / name).exists() else None,
+                    'current_sha256': digest(root / name)} for name in changed],
+    'validation': {'browser_cpu_tests': 331, 'naga_optional_capabilities': 'none',
+                   'gpu_used_for_current_cpu_followup': False,
+                   'browser_used_for_current_cpu_followup': False,
+                   'fine_mode_gpu_checkpoint': '4eb8197e7dcc88196c82b8c10e6f21728a62ce0d',
+                   'fine_mode_gpu_performance': 'slower; default rejected',
+                   'matched_gpu_checkpoint': '6eebab0cc88c25e907645b979684b4549643abdf',
+                   'coarse_group_and_counter_gpu_acceptance': 'four equivalence cases pass; current-cull counters nonzero; zero overflow; no performance promotion',
+                   'visual_holes_popping_acceptance': 'two matched static views pixel-identical; earlier full-detail pairs reviewed; continuous transitions and three other views not certified'},
+    'publication_owner': 'parent', 'worker_deployed': False,
+    'scope_excludes_dist_packaging': True,
+}
+output = root / 'docs/MESHLET_RASTER_PROVENANCE.json'
+output.write_text(json.dumps(record, indent=2) + '\n')
+print(json.dumps({'provenance': str(output), 'preserved_digests': len(protected),
+                  'source_baseline_unchanged': True, 'scoped_raster_files': len(changed)}))
