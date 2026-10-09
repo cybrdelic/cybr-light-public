@@ -38,3 +38,11 @@ Historical Oct 6 measurements on the same NVIDIA/Lovelace GPU at 960x540 reporte
 ## Cleanup validation
 
 Matched current-source baselines and consolidation evidence are stored outside the working repository. Keep original scene/settings/cameras/seeds for comparisons; inspect actual pixels and user-visible behavior. Document an unavailable runtime check as unverified. Optional GPU backends require their own coordinated checks. The public live package retains the captured runtime; its publication adds CPU source/asset/delivery checks without a new GPU benchmark. Large assets depend on the immutable public GitHub asset commit, as recorded in the release scope.
+
+## Phone failure after version 11
+
+On October 9 the user reported the same “A valid external Instance reference no longer exists” startup error after version 11 was published. Fresh public HTTP checks matched the saved candidate, including its session URL, exact compiler imports, medium policy and source ZIP. The phone document, selected medium mode and precise failing stage were not independently retrieved. Version 11 is not a verified phone fix.
+
+The ordinary failure panel now names the startup/compilation stage and actual selected medium mode, including a scalar device-limit fallback. Concurrent shader-information checks list all active shaders; a rejected request retains its own label. The loss reason survives later failures, and further GPU requests stop after loss. This is an observability correction. It preserves scene/resolution/bounce settings and records context locally without automatic upload or a separate diagnostic sequence.
+
+Chrome/NVIDIA acceptance exercised normal and explicit workgroup startup, an injected trace-pipeline rejection with scalar fallback, and injected device loss with automatic workgroup selection. All passed; no post-loss GPU request occurred. Qualcomm metadata overrides were policy fixtures on the NVIDIA host. Physical Adreno success remains unverified. See [the pinned acceptance receipt](MOBILE_FAILURE_CONTEXT_VALIDATION.json).

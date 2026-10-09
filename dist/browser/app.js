@@ -19,7 +19,7 @@ import {
   createDiagnostics,
   decodeStages,
 } from './diagnostics.mjs';
-import { probeGpuSession, gpuDeviceOptions, createGpuRuntime, validateGpuBuffer } from './gpu-session.mjs?revision=mobile-lifecycle-2';
+import { probeGpuSession, gpuDeviceOptions, createGpuRuntime, validateGpuBuffer, formatGpuFailure } from './gpu-session.mjs?revision=mobile-failure-context-1';
 import { traceCompatibility } from './trace-compatibility.mjs';
 import { selectMediumStackMode } from './medium-stack-policy.mjs';
 import { adaptiveAaResolve } from './adaptive-aa.mjs';
@@ -338,6 +338,7 @@ const state = {
   interactionEpoch: 0,
 };
 let gpuSession, gpuRuntime, mediumStackMode, sessionClosed = false;
+let startupStage = 'Preparing renderer';
 let device,
   context,
   format,
@@ -487,16 +488,18 @@ status.after(compatibilityRetry, compileCheck);
 function fail(error) {
   if (sessionClosed) return;
   if (gpuRuntime) gpuRuntime.report(error);
-  else presentFailure(error.message || String(error));
+  else presentFailure('Renderer failed during '+startupStage+': '+(error.message || String(error)));
 }
 function presentFailure(message) {
   if (sessionClosed) return;
+  message = formatGpuFailure(message, mediumStackMode, { compatibilityMode });
   if (!state.errors.includes(message)) state.errors.push(message);
   if (gpuRuntime?.snapshot().lost) { state.ready = false; sceneLoader.cancel(); }
   retryGpu.hidden = false;
   compatibilityRetry.hidden = compatibilityMode || transportIntegrityEnabled || separateSignals;
   compileCheck.hidden = false;
   status.setAttribute('role', 'alert');
+  status.style.whiteSpace = 'pre-line';
   state.loading = null;
   status.textContent = message;
   state.paused = true;
@@ -572,7 +575,7 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     stackCapacity,
     filterOptions,
     maxWorkgroupBytes: device.limits.maxComputeWorkgroupStorageSize,
-  });
+  }).catch(error => { gpuRuntime.report(error, 'Building WGSL shader: '+name); throw error; });
   let workgroup = 8;
   if (text.includes('cybrMediumArena')) {
     if (compatibilityMode) throw Error('Workgroup medium mode cannot be combined with compact compatibility mode');
@@ -584,15 +587,17 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     const variant = traceCompatibility(text);text = variant.code;workgroup = variant.workgroup;
   }
   gpuRuntime.assertActive();
+  gpuRuntime.setPhase('Creating shader module: '+name);
   const module = device.createShaderModule({ label: name, code: text });
   moduleWorkgroups.set(module, workgroup);
-  const info = await module.getCompilationInfo();
+  const info = await gpuRuntime.checkShaderInfo(module);
   gpuRuntime.assertActive();
   const errors = info.messages.filter((m) => m.type === 'error');
-  if (errors.length)
-    throw Error(
-      name + ': ' + errors.map((m) => `${m.lineNum}: ${m.message}`).join('\n'),
-    );
+  if (errors.length) {
+    const error = Error(name + ': ' + errors.map((m) => `${m.lineNum}: ${m.message}`).join('\n'));
+    gpuRuntime.report(error, 'Validating WGSL information: '+name);
+    throw error;
+  }
   return module;
 }
 async function compileCompute(descriptor) {
@@ -601,15 +606,18 @@ async function compileCompute(descriptor) {
   return pipeline;
 }
 async function boot() {
+  startupStage = 'Checking renderer settings';
   if (compatibilityMode && (transportIntegrityEnabled || separateSignals))
     throw Error('Compatibility startup currently supports the baseline RGB renderer. Keep corrected/separate-signal experiments on the current startup path.');
   if (compatibilityMode) $('#gpu-warning').textContent = 'Compatibility startup / same transport and settings; smaller trace workgroups and medium storage matched to the ten-bounce UI. Physical Adreno success is not yet confirmed.';
   if(metalCompensation){
+    startupStage = 'Loading metal energy table';
     const response=await fetch('./metal-energy-table.json');
     if(!response.ok)throw Error('Missing GGX energy table');
     metalEnergyTable=await response.json();
     packMetalEnergy([],metalEnergyTable); // Validate before allocating renderer resources.
   }
+  startupStage = 'Finding GPU adapter and canvas context';
   gpuSession = await probeGpuSession(canvas);
   if (sessionClosed) return;
   const { adapter } = gpuSession;
@@ -621,9 +629,11 @@ async function boot() {
     timings: parameters.has('gpuTimings') ? parameters.get('gpuTimings') === '1' : null,
   });
   const features = deviceOptions.requiredFeatures;
+  startupStage = 'Requesting GPU device';
   device = await adapter.requestDevice(deviceOptions);
   if (sessionClosed) { device.destroy(); return; }
   try {
+    startupStage = 'Selecting medium mode from device limits';
     mediumStackMode = selectMediumStackMode(adapter, parameters.get('mediumStack'), { limits: device.limits, compatibilityMode });
   } catch (error) { device.destroy(); throw error; }
   parameters.set('mediumStack', mediumStackMode.mode);
@@ -638,6 +648,7 @@ async function boot() {
   context = gpuSession.context;
   format = gpuSession.format;
   context.configure({ device, format, alphaMode: 'opaque' });
+  gpuRuntime.setPhase('Creating diagnostic display shader module');
   const debugModule = device.createShaderModule({
     label: 'diagnostic display',
     code: diagnosticShader(pixelBytes, separateSignals, opticalGuides),

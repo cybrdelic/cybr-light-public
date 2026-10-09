@@ -16,7 +16,7 @@ function fixture(query,{memory=32768,compatibilityMode=false}={}){
  const device={limits:{maxComputeWorkgroupStorageSize:memory},createShaderModule({label,code}){
   const module={label,code,async getCompilationInfo(){return {messages:[]};}};modules.push(module);return module;
  }};
- const gpuRuntime={assertActive(){},async compile(method,descriptor){assert.equal(method,'createComputePipelineAsync');return {descriptor};}};
+ const gpuRuntime={assertActive(){},setPhase(){},report(){},checkShaderInfo(module){return module.getCompilationInfo();},async compile(method,descriptor){assert.equal(method,'createComputePipelineAsync');return {descriptor};}};
  const fakeFetch=async path=>({ok:true,text:()=>readFile(new URL('./'+path,import.meta.url),'utf8')});
  const encoder={beginComputePass(){return {setPipeline(){},setBindGroup(){},dispatchWorkgroups(...args){calls.push(args);},end(){}};}};
  const bindings={buildRendererShader,parameters,options,motionReconstruction:options.motionReconstruction,compatibilityMode,

@@ -71,3 +71,11 @@ Actual native Chrome/NVIDIA-Lovelace validation compiled the scalar baseline, cu
 CPU tests execute the original WGSL helper bodies and compare 8,192 interleaved operations, every slot, declaration re-entry, helper-local isolation, duplicate/non-top/unmatched/full-capacity exits and both camera-key forms at counts 0..16. Integrated host tests pin the GPU-validated module bytes and 240x135x1 dispatch at 960x540; scalar/legacy rollback dispatch remains 120x68x1. The source exporter `tools/export_workgroup_medium.mjs` emits the original/scalar/workgroup module matrix for independent CPU WGSL validation.
 
 Physical Adreno compatibility is **unverified**. No phone, emulator or testing-service session was used. No denied device enumeration was retried and no paid service was enrolled. The current Site candidate is saved for review without deployment; version 10 remains the deployed scalar rollback until the parent chooses to publish.
+
+## Phone failure after version 11
+
+On October 9 the user reported the same “A valid external Instance reference no longer exists” startup error after version 11 was published. Fresh public HTTP checks matched the saved candidate, including its session URL, exact compiler imports, medium policy and source ZIP. The phone document, selected medium mode and precise failing stage were not independently retrieved. Version 11 is not a verified phone fix.
+
+The ordinary failure panel now names the startup/compilation stage and actual selected medium mode, including a scalar device-limit fallback. Concurrent shader-information checks list all active shaders; a rejected request retains its own label. The loss reason survives later failures, and further GPU requests stop after loss. This is an observability correction. It preserves scene/resolution/bounce settings and records context locally without automatic upload or a separate diagnostic sequence.
+
+Chrome/NVIDIA acceptance exercised normal and explicit workgroup startup, an injected trace-pipeline rejection with scalar fallback, and injected device loss with automatic workgroup selection. All passed; no post-loss GPU request occurred. Qualcomm metadata overrides were policy fixtures on the NVIDIA host. Physical Adreno success remains unverified. See [the pinned acceptance receipt](MOBILE_FAILURE_CONTEXT_VALIDATION.json).
