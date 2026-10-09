@@ -91,7 +91,7 @@ test('public builder exports exactly the thirteen CPU-validated scalar matrix mo
   assert.equal(createHash('sha256').update(module.code).digest('hex'),expected.sha256,module.name);
  }
 });
-test('normal Adreno selection builds the exact desktop-validated scalar trace and retains legacy rollback',async()=>{
+test('Adreno selection without reported limits builds the exact desktop-validated scalar rollback and retains legacy rollback',async()=>{
  const {selectMediumStackMode}=await import('./medium-stack-policy.mjs');
  const {createHash}=await import('node:crypto');
  const receipt=JSON.parse(await readFile(new URL('../docs/SCALAR_MEDIUM_VALIDATION.json',import.meta.url),'utf8'));

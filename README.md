@@ -94,7 +94,7 @@ The public repository retains the cleared gallery, six-module instrument, cached
 
 For the four native-authored material/knot browser studies, run `python tools/prepare_browser_examples.py` after installing the package. This regenerates geometry with verified hashes and retains the included original material manifests.
 
-Qualcomm/Adreno adapters automatically use separately named scalar medium slots, retaining all sixteen glass/water slots and the original transport. Add `mediumStack=legacy` for rollback. Actual NVIDIA pipeline, operation-state and six-/ten-bounce pixel comparisons pass; the earlier inline version 9 still failed the user's phone retest. Physical Adreno success for the scalar candidate remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
+Qualcomm/Adreno adapters select the workgroup-memory medium candidate only after device storage and workgroup limits pass. It retains all sixteen glass/water slots and exact boundary keys. `mediumStack=scalar` restores the version-10 scalar form; `mediumStack=legacy` restores the original form. Other adapters keep the original form unless explicitly selected. NVIDIA compilation, two-stack state comparisons and six-/ten-bounce pixel parity pass; physical Adreno success remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
 
 See [browser modes and controls](browser/README.md), [diagnostics](browser/DIAGNOSTICS.md), and [gallery rebuilding](browser/GALLERY.md).
 

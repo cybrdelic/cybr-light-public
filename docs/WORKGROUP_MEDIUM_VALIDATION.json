@@ -1,0 +1,1965 @@
+{
+  "sourceSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+  "modules": [
+    {
+      "name": "current-workgroup",
+      "bytes": 24572,
+      "sha256": "9ff8fba4cecc7b6add647624e3d7507b0deb1a9e0a943fa8e56d251ef1fef30a",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 2,
+      "stackBytes": 336,
+      "workgroupBytes": 10752,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+      "unchangedFunctions": [
+        {
+          "name": "coverageJitter",
+          "sha256": "e3bb73fbf4513e29bc316a28e2c65ba238b2439e8ea5b51b49d35902a55249ec"
+        },
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        }
+      ],
+      "renderer": "trace",
+      "query": "scene=proof-optics&glass=split&motion=bilinear",
+      "probe": false
+    },
+    {
+      "name": "medium-workgroup",
+      "bytes": 25562,
+      "sha256": "fda045c00b872c06e6c1576d6fbae8b0d64fd67326e2cc512aeffd0e8f78e738",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 3,
+      "stackBytes": 336,
+      "workgroupBytes": 16128,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        },
+        {
+          "name": "probeMedium",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        },
+        {
+          "function": "probeMedium",
+          "firstSlot": 2,
+          "stackNames": [
+            "stack"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "c6f4ca6173d0e178da29e096cdc1427a324ff218be7bae4eb3686048d80ca48d",
+      "unchangedFunctions": [
+        {
+          "name": "coverageJitter",
+          "sha256": "e3bb73fbf4513e29bc316a28e2c65ba238b2439e8ea5b51b49d35902a55249ec"
+        },
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        }
+      ],
+      "renderer": "trace",
+      "query": "scene=proof-optics&glass=split&motion=bilinear",
+      "probe": true
+    },
+    {
+      "name": "signals-workgroup",
+      "bytes": 26739,
+      "sha256": "c8ce72aba9806109b7eac80bde2b6cbc4a439535f1cc581fdbdbab05f8efa3a8",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 2,
+      "stackBytes": 336,
+      "workgroupBytes": 10752,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "transmittedGuide",
+          "firstSlot": 0,
+          "stackNames": [
+            "stack"
+          ]
+        },
+        {
+          "function": "main",
+          "firstSlot": 1,
+          "stackNames": [
+            "media"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "1e049b5acb8fe1a3f5899aa37cc51b7a00849a0deff4c0319c2b7a87de6767d6",
+      "unchangedFunctions": [
+        {
+          "name": "readSignal",
+          "sha256": "460e241f4208fbd90efdc9d9b50f1a7b9a37ff493051b7d37334883cfa0c2b3e"
+        },
+        {
+          "name": "accumulate",
+          "sha256": "73f1b775c367e97445c4e1ca88d74127e87d0aee45404e7066662f68444f6755"
+        },
+        {
+          "name": "accumulateEmitter",
+          "sha256": "9d627fd1c5ad1320578a8aa07fdbf280720b4be23cde555a5a9a8c31e74d8c50"
+        },
+        {
+          "name": "accumulateSurface",
+          "sha256": "efa42e5edbe7f5b6d169b15ee118d031a591a60919301ac4a40f699743b968f7"
+        },
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "354815b1338ce241ad5fd4c24aa5525f0be697a5edcb60c8dee46b777c045c5e"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "70a20ca4cc82f6391a5ae491157d988f7e7db7714da2d9ee6418a1422478b0bb"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "6a2fbc64adb1bbddcfedf1ba1d914d931037b108051eac47193c5b65ebe12ca0"
+        },
+        {
+          "name": "diffuseFraction",
+          "sha256": "2321e648be34bbc6631bd2ffef0cd7eb1f754d7283c8b53146760c815028429f"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        }
+      ],
+      "renderer": "trace",
+      "query": "backend=signals",
+      "probe": false
+    },
+    {
+      "name": "instanced-workgroup",
+      "bytes": 27099,
+      "sha256": "6c408ed578c4e59b806b6d37f44de85642bfd84491d8554fa55d8c6d4a977baa",
+      "mediumSlots": 16,
+      "vectorKey": true,
+      "stacksPerInvocation": 2,
+      "stackBytes": 400,
+      "workgroupBytes": 12800,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "3078ff95d89cb07c1807a1f6b3870903da097191a2a41c8ffe4b47bdbb75d710",
+      "unchangedFunctions": [
+        {
+          "name": "coverageJitter",
+          "sha256": "e3bb73fbf4513e29bc316a28e2c65ba238b2439e8ea5b51b49d35902a55249ec"
+        },
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "5b5d59fa587034caaf43320a121e9ef938b34ecc2326fdc670f23b8d8fec81ea"
+        },
+        {
+          "name": "rotateInstance",
+          "sha256": "58b4c9d72903f7fb0f7e192f9a2713922d209d902668cfc27e2b30cbe90b86f5"
+        },
+        {
+          "name": "instanceNormal",
+          "sha256": "534b050cfccf6e009f50797605bd18e34f7de6fd6f47d5a8df9804d0213875cd"
+        },
+        {
+          "name": "instanceIdentity",
+          "sha256": "aaed57f06921ed8ce7e1b82f61b904e2518fa35eb4f95703090de2b6122390dd"
+        },
+        {
+          "name": "localTrace",
+          "sha256": "7c769ab8249c466b354141ff9565bb04b7aeb0f35289c2fb67f93e975c1dccf5"
+        },
+        {
+          "name": "trace",
+          "sha256": "ed55976da858e531518d1fb2ce1c1f8bb56400480f99dec758f23695396d2bf4"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "6c6a62139dcfd2233c149c3a7fc2350a6345aca71b3e4de6794d54a3b08f3f72"
+        },
+        {
+          "name": "normal",
+          "sha256": "977b8b2bb570b7814442dd7c1963fad0149dcb24ce13f6550b90061489130687"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        }
+      ],
+      "renderer": "trace-pile",
+      "query": "",
+      "probe": false
+    },
+    {
+      "name": "packed-workgroup",
+      "bytes": 25033,
+      "sha256": "ceba0847221a9053f48894ac81d407addd49acfc414462405e44801742f26cf2",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 2,
+      "stackBytes": 336,
+      "workgroupBytes": 10752,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "d3e836317e0d0dda2ea1d1d823a3310ac0e04475328527508eea79564491784b",
+      "unchangedFunctions": [
+        {
+          "name": "coverageJitter",
+          "sha256": "e3bb73fbf4513e29bc316a28e2c65ba238b2439e8ea5b51b49d35902a55249ec"
+        },
+        {
+          "name": "loadAttributes",
+          "sha256": "b77346137e489f092e42c9c8d04def5db51a182f29f563e03bba85373d8ce112"
+        },
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "eb1d00be9b3ec1b4470e2c68c799e78b587c570b6ff79dcb7de2a0c9e30bbbf0"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "d85c26ece2adbfbeb4047d1ed185a62c18fb0759a26f3eb7b53e1f5bcc557cbe"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        }
+      ],
+      "renderer": "trace-meshlets",
+      "query": "",
+      "probe": false
+    },
+    {
+      "name": "corrected-workgroup",
+      "bytes": 26277,
+      "sha256": "b84450ecbfa193c08d547839ff4b88e9f47fa2938dc89cd0b148bc3e4a1ab7d1",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 2,
+      "stackBytes": 336,
+      "workgroupBytes": 10752,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "0409255395c5fadd2fa49313cb26a8e49b793951aca60cb0df2d50bbe8b01490",
+      "unchangedFunctions": [
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        },
+        {
+          "name": "opticalKey",
+          "sha256": "9647bd3537673ba4fe510836857f4fb25a5354719ddf20fd0a711de2a7589f81"
+        },
+        {
+          "name": "opticalMedium",
+          "sha256": "a767b98744a477c5240c4f41c0affbc1d52b9246e5b06ab961f2c2d16547fbe8"
+        }
+      ],
+      "renderer": "trace",
+      "query": "transport=corrected",
+      "probe": false
+    },
+    {
+      "name": "corrected-instanced-workgroup",
+      "bytes": 28790,
+      "sha256": "c05e7f4572c8b64d8eb908ad11634561444f7f87388b4ef8e2c546f1061f0376",
+      "mediumSlots": 16,
+      "vectorKey": true,
+      "stacksPerInvocation": 2,
+      "stackBytes": 400,
+      "workgroupBytes": 12800,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "a40b5418fc836f148d52ce15fc34bd74ebf438db3ca2649dc144d322fefa2a03",
+      "unchangedFunctions": [
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "5b5d59fa587034caaf43320a121e9ef938b34ecc2326fdc670f23b8d8fec81ea"
+        },
+        {
+          "name": "rotateInstance",
+          "sha256": "58b4c9d72903f7fb0f7e192f9a2713922d209d902668cfc27e2b30cbe90b86f5"
+        },
+        {
+          "name": "instanceNormal",
+          "sha256": "534b050cfccf6e009f50797605bd18e34f7de6fd6f47d5a8df9804d0213875cd"
+        },
+        {
+          "name": "instanceIdentity",
+          "sha256": "aaed57f06921ed8ce7e1b82f61b904e2518fa35eb4f95703090de2b6122390dd"
+        },
+        {
+          "name": "localTrace",
+          "sha256": "ed8571c48fbb4e7ec6c2b09da4ac13411d08d24bb02ba13509a9f097e41e3d83"
+        },
+        {
+          "name": "trace",
+          "sha256": "16b806bd3fd77a14ea4c52288a780de50f4f69afd7b0e11582328e24a1aac20e"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "6c6a62139dcfd2233c149c3a7fc2350a6345aca71b3e4de6794d54a3b08f3f72"
+        },
+        {
+          "name": "normal",
+          "sha256": "977b8b2bb570b7814442dd7c1963fad0149dcb24ce13f6550b90061489130687"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        },
+        {
+          "name": "opticalKey",
+          "sha256": "65dc17928087cb4ed5ca85859c50dc1b8a6b2238bb5276a461aeec78ae12e5ad"
+        },
+        {
+          "name": "opticalMedium",
+          "sha256": "a767b98744a477c5240c4f41c0affbc1d52b9246e5b06ab961f2c2d16547fbe8"
+        }
+      ],
+      "renderer": "trace-pile",
+      "query": "transport=corrected",
+      "probe": false
+    },
+    {
+      "name": "outside-corrected-workgroup",
+      "bytes": 26046,
+      "sha256": "2051011f7fe6291f7823e650dd0517188a18c4c193691bd5cb3de1293fc6000d",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 2,
+      "stackBytes": 336,
+      "workgroupBytes": 10752,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "barriersAdded": 0,
+      "extraStorageBindings": 0,
+      "entries": [
+        {
+          "name": "main",
+          "originalDimensions": [
+            8,
+            8
+          ],
+          "dimensions": [
+            4,
+            4,
+            1
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "function": "main",
+          "firstSlot": 0,
+          "stackNames": [
+            "media",
+            "guideMedia"
+          ]
+        }
+      ],
+      "privateLaneScalars": 1,
+      "unchanged": false,
+      "originalSha256": "5e4f2c3a4da79db31f8b0331c3badc980e91e4fc493bbe831783e9d72df52107",
+      "unchangedFunctions": [
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        },
+        {
+          "name": "opticalKey",
+          "sha256": "9647bd3537673ba4fe510836857f4fb25a5354719ddf20fd0a711de2a7589f81"
+        },
+        {
+          "name": "opticalMedium",
+          "sha256": "a767b98744a477c5240c4f41c0affbc1d52b9246e5b06ab961f2c2d16547fbe8"
+        }
+      ],
+      "renderer": "outside-trace",
+      "query": "transport=corrected",
+      "probe": false
+    },
+    {
+      "name": "camera-corrected-workgroup",
+      "bytes": 13410,
+      "sha256": "692dc0fafe2040f62cf66220a9362768325dd8f20bbc76745275030179ec3afe",
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "stacksPerInvocation": 0,
+      "workgroupBytes": 0,
+      "privateMediumArrays": 0,
+      "mediumPointerParameters": 0,
+      "entries": [],
+      "unchanged": true,
+      "originalSha256": "692dc0fafe2040f62cf66220a9362768325dd8f20bbc76745275030179ec3afe",
+      "unchangedFunctions": [
+        {
+          "name": "random",
+          "sha256": "24548ff324ea5d07aa6ef54b7aa8da5e151f8d1e1acd336d07739f372e0df265"
+        },
+        {
+          "name": "boxDistance",
+          "sha256": "7cccd194f0601b0fc06101ed123ab91658fc7854f6b1de6e4528369701cef7df"
+        },
+        {
+          "name": "trace",
+          "sha256": "2c781bb2507483f034b93ee97330b5fa31e00458a90150a62776a114d1e92935"
+        },
+        {
+          "name": "lightHit",
+          "sha256": "e11f32705357f70f792972310af3f3e52c719b6eee95550d85d50f467a06ff17"
+        },
+        {
+          "name": "environment",
+          "sha256": "c6f5bc9e0f1a977c2c395a6afaf9bb4051f50d0c4c58f4438745e8c0c41d7e9b"
+        },
+        {
+          "name": "basis",
+          "sha256": "08663538fd8142ca427b9f616071d97692c730c8c84983948ec34c2a108aa18d"
+        },
+        {
+          "name": "environmentPDF",
+          "sha256": "fd75835ba71529d4b61b6898ef1ea3b16e0ef5add0d06617b06427b556fdb22d"
+        },
+        {
+          "name": "sampleEnvironment",
+          "sha256": "f1dd4f0fe6b42ca8bbe38dd1f3d34dc4a8412071ce00afb03fd4dbb9514c3004"
+        },
+        {
+          "name": "areaSelection",
+          "sha256": "7847d0213a5f038d41f966e846330353329d64b5ecdef80180f62a7cc4d3c7d1"
+        },
+        {
+          "name": "sourceLightPDF",
+          "sha256": "be433aecbc32bd8e9cbe8c1fc277976f558172db7e7b1e8034ae3ede33aa4779"
+        },
+        {
+          "name": "sampleSourceLight",
+          "sha256": "41cc31b3df9fc41385dcddd018b310c949d7015b66390c1253c2c00bdc506c96"
+        },
+        {
+          "name": "visibleGGX",
+          "sha256": "8e4c0c4a71405a358a4a8baa3f09686b0b9f0099662f650aae0efb125091e8a5"
+        },
+        {
+          "name": "fresnel",
+          "sha256": "359e2333d853cfd87e13877c6faf52836f825f7a9f35c22ccd44643432522e67"
+        },
+        {
+          "name": "distribution",
+          "sha256": "21caddca6e93c56e099fa704074d6c3d6b21f546402963b76182e800203c5d87"
+        },
+        {
+          "name": "dielectricFresnel",
+          "sha256": "d78b65944aad8f7b19ba99d42bb8482ae2e1b0965ff5e372a1082963e0eec3bc"
+        },
+        {
+          "name": "masking",
+          "sha256": "14e71d33b29d50012ed9b38069eaa24c83ab993d4018cd2bf72db16719cfd9ae"
+        },
+        {
+          "name": "metalEnergy",
+          "sha256": "f17d4cf94f24560a1db2575f590cb9f5eed622f432ba9f3d16b7bd6d263a31a7"
+        },
+        {
+          "name": "metalMultipleTint",
+          "sha256": "64236ee9a2560fe10abfe1cd5eaea7cb642ab9b4d71f114aa13dabdb5653c4d2"
+        },
+        {
+          "name": "metalSampleProbability",
+          "sha256": "6c0a935ba57e0be2573586f8488e6bbfe9731fbadf15d4ea89aba8c1eda6bcd3"
+        },
+        {
+          "name": "specularProbability",
+          "sha256": "67881a2f4e38972ba319f57b8e46d1d62b785171b4af7df34ecf83df02e52216"
+        },
+        {
+          "name": "bsdf",
+          "sha256": "072b725525a5d02b7a5e69a0857bcfffc61c7145a2122b2e3bf6cb5c70b596dd"
+        },
+        {
+          "name": "mis",
+          "sha256": "aba2bdba898232037626c124ca9df8d64f24e0feac2b15b51206ed7a91824d56"
+        },
+        {
+          "name": "portalWeight",
+          "sha256": "24a9bb5805b7f077d7519bc497ca04a368ad35ce76947ba31450a48f5309dc71"
+        },
+        {
+          "name": "portalPDF",
+          "sha256": "984d9805885fc1e056acf2ff34ff0907bd17d6d0b81a4fef10a0d7682a29fa4b"
+        },
+        {
+          "name": "material",
+          "sha256": "b59ba20b5e525ea0da1b9ec4b2fcbcfffb2131974e4bd5cf63d1d626272e8c0f"
+        },
+        {
+          "name": "geometric",
+          "sha256": "edb3c9ea36e80c021bcedd7ad35dec9e3170e59532d720a072761530e0967dfe"
+        },
+        {
+          "name": "normal",
+          "sha256": "67749b4525aecdf35a29b0bffa298c275860187b502788c9e4e2792a53218f7c"
+        },
+        {
+          "name": "vertexColor",
+          "sha256": "2889c06be854dd9f5c5c5c6b980cfa45650dbfaa19a279bd8a822b8ccec83799"
+        },
+        {
+          "name": "camera",
+          "sha256": "3c007579e8727a2e66bc359f28a13916d2692521ced75df909cd18d0119a51cc"
+        },
+        {
+          "name": "opticalKey",
+          "sha256": "9647bd3537673ba4fe510836857f4fb25a5354719ddf20fd0a711de2a7589f81"
+        },
+        {
+          "name": "opticalMedium",
+          "sha256": "a767b98744a477c5240c4f41c0affbc1d52b9246e5b06ab961f2c2d16547fbe8"
+        },
+        {
+          "name": "main",
+          "sha256": "979fb74b9996835a6c49f0a21d58456563b41d2676899571157cb129c6381b67"
+        }
+      ],
+      "renderer": "camera-trace",
+      "query": "transport=corrected",
+      "probe": false
+    }
+  ],
+  "gpuUsed": false,
+  "physicalAdrenoVerified": false,
+  "nativeGate": {
+    "frozenIdentity": "f44ef3d18528f085e8c7ebff0b596160635b5a1a38ad63e4db12681f50bebde1",
+    "currentCandidateSha256": "9ff8fba4cecc7b6add647624e3d7507b0deb1a9e0a943fa8e56d251ef1fef30a",
+    "actualBrowser": "145.0.7632.160",
+    "adapter": {
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": ""
+    },
+    "mediumSlots": 16,
+    "workgroupDimensions": [
+      4,
+      4,
+      1
+    ],
+    "workgroupBytes": 10752,
+    "nativeHarnessElapsedMs": 19731,
+    "physicalAdrenoVerified": false,
+    "interleavedState": {
+      "stacksPerInvocation": 2,
+      "invocationsPerWorkgroup": 16,
+      "all16SlotsComparedAfterEachOperation": true,
+      "inactiveStackAlsoCompared": true,
+      "operations": 2048,
+      "wordsCompared": 413696,
+      "differingWords": 0,
+      "comparisons": [
+        {
+          "keyType": "scalar",
+          "operations": 1024,
+          "wordsCompared": 206848,
+          "differingWords": 0,
+          "originalHash": "156e836b895ed2a9335239f5025353da13e6e5f19d18d3bb4d9149aa53212e24",
+          "candidateHash": "156e836b895ed2a9335239f5025353da13e6e5f19d18d3bb4d9149aa53212e24",
+          "shaderHashes": {
+            "original": "3f4671e7aebbd8a463f17e990185f71ec20af50de0f7deae774fd072ef85f550",
+            "candidate": "f678bdcd843290e7cfc6cb5c2243c532e653a717de972b01bb6f92305e3bac51"
+          }
+        },
+        {
+          "keyType": "vector",
+          "operations": 1024,
+          "wordsCompared": 206848,
+          "differingWords": 0,
+          "originalHash": "e627590e782bd77d054bcce2b4ae4d5fa7fcb59ddcaba1773b93d72019d85a5c",
+          "candidateHash": "e627590e782bd77d054bcce2b4ae4d5fa7fcb59ddcaba1773b93d72019d85a5c",
+          "shaderHashes": {
+            "original": "baae3b75116718c0b096bf09ccbfc299a169d789bbafc8a8757556c0366281c7",
+            "candidate": "861d85d7b2379df53895dec3625ad72fcd695cf8291843dfab162bdf3422a767"
+          }
+        }
+      ]
+    },
+    "renderer": {
+      "scene": "proof-optics",
+      "glass": "split",
+      "motion": "bilinear",
+      "resolution": [
+        960,
+        540
+      ],
+      "bounces": [
+        6,
+        10
+      ],
+      "framesPerCapture": 8,
+      "samples": 1,
+      "rawTemporalOutputHashesExactlyMatch": true,
+      "captures": {
+        "candidate-6": {
+          "hashes": {
+            "raw": "802db38de56573b6a8000aaa00d286228a0f962a4ff6248b3dd532d931aeacfd",
+            "temporal": "e83aa0eb55d2513cb0332052dfc4e03d00eb415be9246a72ac7d122e225288fe",
+            "output": "2f57c8578a5604d0fecff7c3be7819fa6d43b52733c003a656f23ddb839c6c95"
+          },
+          "statistics": {
+            "raw": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 49.263885498046875
+            },
+            "temporal": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.797551155090332
+            },
+            "output": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.000004768371582
+            }
+          },
+          "shaderModules": [
+            {
+              "label": "diagnostic display",
+              "bytes": 1447,
+              "scalar": false,
+              "sha256": "4b85ec509c4dae466562d2e976636eb625cb127d424e77b67ffcfbaea3fd602e"
+            },
+            {
+              "label": "filter",
+              "bytes": 2215,
+              "scalar": false,
+              "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+            },
+            {
+              "label": "reconstruct",
+              "bytes": 9587,
+              "scalar": false,
+              "sha256": "2dcabf844e643f6efd3a0eda56dd5eda619bf0ab222c59159f0ff8ad1a7a3441"
+            },
+            {
+              "label": "display",
+              "bytes": 858,
+              "scalar": false,
+              "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+            },
+            {
+              "label": "trace",
+              "bytes": 24572,
+              "scalar": true,
+              "sha256": "9ff8fba4cecc7b6add647624e3d7507b0deb1a9e0a943fa8e56d251ef1fef30a"
+            },
+            {
+              "label": "coverage-resolve",
+              "bytes": 6900,
+              "scalar": false,
+              "sha256": "b94ea04c8ec7c66e1cf7369e3d03c3ebc8e3708d8de0cc0071c6895d4ab161c8"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "5cd990905e1ef56d6218d94ab37c5a62179efb7fd549ce1f926b984e4c7ae94a"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "31e0173e99857dcdf18ba87960d3922c346c31c4ca9e3a179d06bd70a8ac03b5"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "f25e283793584186e90903bee7e874dd4e954f9cb2a339442b14a77b83552b62"
+            }
+          ],
+          "frames": 8,
+          "bounces": 6,
+          "errors": []
+        },
+        "baseline-6": {
+          "hashes": {
+            "raw": "802db38de56573b6a8000aaa00d286228a0f962a4ff6248b3dd532d931aeacfd",
+            "temporal": "e83aa0eb55d2513cb0332052dfc4e03d00eb415be9246a72ac7d122e225288fe",
+            "output": "2f57c8578a5604d0fecff7c3be7819fa6d43b52733c003a656f23ddb839c6c95"
+          },
+          "statistics": {
+            "raw": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 49.263885498046875
+            },
+            "temporal": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.797551155090332
+            },
+            "output": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.000004768371582
+            }
+          },
+          "shaderModules": [
+            {
+              "label": "diagnostic display",
+              "bytes": 1447,
+              "scalar": false,
+              "sha256": "4b85ec509c4dae466562d2e976636eb625cb127d424e77b67ffcfbaea3fd602e"
+            },
+            {
+              "label": "trace",
+              "bytes": 50682,
+              "scalar": false,
+              "sha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867"
+            },
+            {
+              "label": "filter",
+              "bytes": 2215,
+              "scalar": false,
+              "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+            },
+            {
+              "label": "reconstruct",
+              "bytes": 9587,
+              "scalar": false,
+              "sha256": "2dcabf844e643f6efd3a0eda56dd5eda619bf0ab222c59159f0ff8ad1a7a3441"
+            },
+            {
+              "label": "display",
+              "bytes": 858,
+              "scalar": false,
+              "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+            },
+            {
+              "label": "coverage-resolve",
+              "bytes": 6900,
+              "scalar": false,
+              "sha256": "b94ea04c8ec7c66e1cf7369e3d03c3ebc8e3708d8de0cc0071c6895d4ab161c8"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "5cd990905e1ef56d6218d94ab37c5a62179efb7fd549ce1f926b984e4c7ae94a"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "31e0173e99857dcdf18ba87960d3922c346c31c4ca9e3a179d06bd70a8ac03b5"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "f25e283793584186e90903bee7e874dd4e954f9cb2a339442b14a77b83552b62"
+            }
+          ],
+          "frames": 8,
+          "bounces": 6,
+          "errors": []
+        },
+        "candidate-10": {
+          "hashes": {
+            "raw": "1584d91650fccf94a67f150acab9dfb8bf41a7eb249571312570468e1f31ff77",
+            "temporal": "64bfdcb52b1130d5a2d1cab80a2f6bad076f369956b7ed6e3eeacf66c746e7cf",
+            "output": "24f81f6be68b4853235d42d91707f685ebeebc94db51715d78c992693dc350f4"
+          },
+          "statistics": {
+            "raw": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 71.06388092041016
+            },
+            "temporal": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 46.2602424621582
+            },
+            "output": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.000004768371582
+            }
+          },
+          "shaderModules": [
+            {
+              "label": "diagnostic display",
+              "bytes": 1447,
+              "scalar": false,
+              "sha256": "4b85ec509c4dae466562d2e976636eb625cb127d424e77b67ffcfbaea3fd602e"
+            },
+            {
+              "label": "trace",
+              "bytes": 24572,
+              "scalar": true,
+              "sha256": "9ff8fba4cecc7b6add647624e3d7507b0deb1a9e0a943fa8e56d251ef1fef30a"
+            },
+            {
+              "label": "filter",
+              "bytes": 2215,
+              "scalar": false,
+              "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+            },
+            {
+              "label": "reconstruct",
+              "bytes": 9587,
+              "scalar": false,
+              "sha256": "2dcabf844e643f6efd3a0eda56dd5eda619bf0ab222c59159f0ff8ad1a7a3441"
+            },
+            {
+              "label": "display",
+              "bytes": 858,
+              "scalar": false,
+              "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+            },
+            {
+              "label": "coverage-resolve",
+              "bytes": 6900,
+              "scalar": false,
+              "sha256": "b94ea04c8ec7c66e1cf7369e3d03c3ebc8e3708d8de0cc0071c6895d4ab161c8"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "5cd990905e1ef56d6218d94ab37c5a62179efb7fd549ce1f926b984e4c7ae94a"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "31e0173e99857dcdf18ba87960d3922c346c31c4ca9e3a179d06bd70a8ac03b5"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "f25e283793584186e90903bee7e874dd4e954f9cb2a339442b14a77b83552b62"
+            }
+          ],
+          "frames": 8,
+          "bounces": 10,
+          "errors": []
+        },
+        "baseline-10": {
+          "hashes": {
+            "raw": "1584d91650fccf94a67f150acab9dfb8bf41a7eb249571312570468e1f31ff77",
+            "temporal": "64bfdcb52b1130d5a2d1cab80a2f6bad076f369956b7ed6e3eeacf66c746e7cf",
+            "output": "24f81f6be68b4853235d42d91707f685ebeebc94db51715d78c992693dc350f4"
+          },
+          "statistics": {
+            "raw": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 71.06388092041016
+            },
+            "temporal": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 46.2602424621582
+            },
+            "output": {
+              "nonfinite": 0,
+              "minimum": 0,
+              "maximum": 12.000004768371582
+            }
+          },
+          "shaderModules": [
+            {
+              "label": "diagnostic display",
+              "bytes": 1447,
+              "scalar": false,
+              "sha256": "4b85ec509c4dae466562d2e976636eb625cb127d424e77b67ffcfbaea3fd602e"
+            },
+            {
+              "label": "trace",
+              "bytes": 50682,
+              "scalar": false,
+              "sha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867"
+            },
+            {
+              "label": "filter",
+              "bytes": 2215,
+              "scalar": false,
+              "sha256": "c0afceef4296243ba709fe5c2ec0e6ba67a45452f58793c1b8f2ae91c4e2d741"
+            },
+            {
+              "label": "reconstruct",
+              "bytes": 9587,
+              "scalar": false,
+              "sha256": "2dcabf844e643f6efd3a0eda56dd5eda619bf0ab222c59159f0ff8ad1a7a3441"
+            },
+            {
+              "label": "display",
+              "bytes": 858,
+              "scalar": false,
+              "sha256": "274c1864f219d3328afbe70b1f8360dad94ccbd4419bda523974fc0d5b1491b1"
+            },
+            {
+              "label": "coverage-resolve",
+              "bytes": 6900,
+              "scalar": false,
+              "sha256": "b94ea04c8ec7c66e1cf7369e3d03c3ebc8e3708d8de0cc0071c6895d4ab161c8"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "5cd990905e1ef56d6218d94ab37c5a62179efb7fd549ce1f926b984e4c7ae94a"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "31e0173e99857dcdf18ba87960d3922c346c31c4ca9e3a179d06bd70a8ac03b5"
+            },
+            {
+              "label": "filter",
+              "bytes": 2863,
+              "scalar": false,
+              "sha256": "f25e283793584186e90903bee7e874dd4e954f9cb2a339442b14a77b83552b62"
+            }
+          ],
+          "frames": 8,
+          "bounces": 10,
+          "errors": []
+        }
+      }
+    },
+    "gpuReleased": true
+  }
+}

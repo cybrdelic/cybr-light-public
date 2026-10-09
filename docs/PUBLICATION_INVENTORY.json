@@ -75,7 +75,11 @@
       "disposition": "included",
       "reason": "Included; source-publication documentation clarified after the runtime capture",
       "preserved_bytes": false,
-      "publication_sha256": "21e56a9ea2440900c483071f162799bfb0bed4eff2a28331e91ac1b55da9e1c0"
+      "publication_sha256": "21e56a9ea2440900c483071f162799bfb0bed4eff2a28331e91ac1b55da9e1c0",
+      "published_sha256": [
+        "e9ff3749cec2a532fed81f15ac4403e82ed4ddf2dc0f4ddd494d954af38e40c7"
+      ],
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained."
     },
     {
       "path": "browser/.gitignore",
@@ -134,9 +138,10 @@
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
       "preserved_bytes": false,
-      "post_capture_change": "Approved GPU session recovery and automatic adapter selection added after the historical capture.",
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained.",
       "published_sha256": [
-        "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3"
+        "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3",
+        "609c05f55ea75c1b2dadcf07081d20487cccfc8849d537db7727afa1f03315c3"
       ]
     },
     {
@@ -3505,9 +3510,10 @@
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
       "preserved_bytes": false,
-      "post_capture_change": "Approved equivalent inline/scalar medium representations added after the historical capture.",
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained.",
       "published_sha256": [
-        "27ecd55ca053370deb2cc1c0fdadccbf169ba465efb2be451f2bb06883a06ac6"
+        "27ecd55ca053370deb2cc1c0fdadccbf169ba465efb2be451f2bb06883a06ac6",
+        "fea453625a0b2c1a33c7007ac6a25d88be3491a5d3c824e46c0f910954134842"
       ]
     },
     {
@@ -4073,7 +4079,11 @@
       "disposition": "included",
       "reason": "Included; source-publication documentation clarified after the runtime capture",
       "preserved_bytes": false,
-      "publication_sha256": "e82ba9283bc98c1319e3fc7fc704467dee27e4601875075798d8720bde128e70"
+      "publication_sha256": "e82ba9283bc98c1319e3fc7fc704467dee27e4601875075798d8720bde128e70",
+      "published_sha256": [
+        "14387cfefb3e07fc3a600c2331273b165994815119f6ac1e803f9cb0aee30c5d"
+      ],
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained."
     },
     {
       "path": "docs/NATIVE_PROVENANCE.json",

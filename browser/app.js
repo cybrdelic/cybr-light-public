@@ -571,8 +571,15 @@ async function shader(name, stackCapacity = 64, filterOptions) {
     options: { ...options, motionReconstruction },
     stackCapacity,
     filterOptions,
+    maxWorkgroupBytes: device.limits.maxComputeWorkgroupStorageSize,
   });
   let workgroup = 8;
+  if (text.includes('cybrMediumArena')) {
+    if (compatibilityMode) throw Error('Workgroup medium mode cannot be combined with compact compatibility mode');
+    if (!/@compute\s+@workgroup_size\(4,4,1\)\s+fn main\(/.test(text))
+      throw Error('Workgroup medium dispatch contract changed');
+    workgroup = 4;
+  }
   if (compatibilityMode && /^(optical-)?trace(-pile|-meshlets)?$/.test(name)) {
     const variant = traceCompatibility(text);text = variant.code;workgroup = variant.workgroup;
   }
@@ -606,8 +613,6 @@ async function boot() {
   gpuSession = await probeGpuSession(canvas);
   if (sessionClosed) return;
   const { adapter } = gpuSession;
-  mediumStackMode = selectMediumStackMode(adapter, parameters.get('mediumStack'));
-  parameters.set('mediumStack', mediumStackMode.mode);
   const mobile = navigator.userAgentData?.mobile === true || /Android|iPhone|iPad/i.test(navigator.userAgent) ||
     /qualcomm|adreno/i.test([adapter.info?.vendor, adapter.info?.architecture].join(' '));
   const recovery = parameters.get('gpuRecovery') === '1';
@@ -618,6 +623,10 @@ async function boot() {
   const features = deviceOptions.requiredFeatures;
   device = await adapter.requestDevice(deviceOptions);
   if (sessionClosed) { device.destroy(); return; }
+  try {
+    mediumStackMode = selectMediumStackMode(adapter, parameters.get('mediumStack'), { limits: device.limits, compatibilityMode });
+  } catch (error) { device.destroy(); throw error; }
+  parameters.set('mediumStack', mediumStackMode.mode);
   gpuRuntime = createGpuRuntime(device, { serial: mobile || recovery, onFailure: presentFailure });
   $('#adapter').textContent =
     [adapter.info?.vendor, adapter.info?.architecture, adapter.info?.device]

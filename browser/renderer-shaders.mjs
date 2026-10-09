@@ -36,10 +36,11 @@ import { tiledFilter } from './tiled-filter.mjs?revision=baseline-tiles-1';
 import { motionHistoryShader } from './motion-history.mjs?revision=rollback-1';
 import { inlineMediumStack } from './medium-stack-inline.mjs';
 import { scalarMediumStack } from './medium-stack-scalar.mjs';
+import { workgroupMediumStack } from './medium-stack-workgroup.mjs';
 
 export async function buildRendererShader(
   name,
-  { load, parameters, options, stackCapacity = 64, filterOptions },
+  { load, parameters, options, stackCapacity = 64, filterOptions, maxWorkgroupBytes = 16384 },
 ) {
   const opticalPass=name.startsWith('optical-');
   if(opticalPass)name=name.slice(8);
@@ -165,5 +166,7 @@ export async function buildRendererShader(
     text = inlineMediumStack(text).code;
   if (parameters.get('mediumStack') === 'scalar' && text.includes('struct MediumStack'))
     text = scalarMediumStack(text).code;
+  if (parameters.get('mediumStack') === 'workgroup' && text.includes('struct MediumStack'))
+    text = workgroupMediumStack(text, { maxWorkgroupBytes }).code;
   return text;
 }
