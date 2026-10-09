@@ -29,7 +29,12 @@
       "sha256": "f583d523fb67f0d75ded8d1c11857baef8ef948fa16ffcc4c3f720064ec981f2",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Public runtime assets and source-only Site checkout require distinct exclusion lists.",
+      "published_sha256": [
+        "5297d440ee165505636f74b83e95d75c6fe90d05dfb13b0dbe9de1c8a81c35d8",
+        "83846e97807f50081c81c257d5058e41351aff8cd1ee11be56f668034f839d91"
+      ]
     },
     {
       "path": ".prettierignore",
@@ -70,7 +75,12 @@
       "disposition": "included",
       "reason": "Included; source-publication documentation clarified after the runtime capture",
       "preserved_bytes": false,
-      "publication_sha256": "21e56a9ea2440900c483071f162799bfb0bed4eff2a28331e91ac1b55da9e1c0"
+      "publication_sha256": "21e56a9ea2440900c483071f162799bfb0bed4eff2a28331e91ac1b55da9e1c0",
+      "published_sha256": [
+        "e9ff3749cec2a532fed81f15ac4403e82ed4ddf2dc0f4ddd494d954af38e40c7",
+        "8baf06cf76b7c4ec78ac343195d276b0fa440a2192fb845ce56c9ca5775e3728"
+      ],
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained."
     },
     {
       "path": "browser/.gitignore",
@@ -128,7 +138,13 @@
       "sha256": "13316d0546e7fad802a51a74d7d74baf0fd492b43105e9d6cd06e25d37c6e4bf",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained.",
+      "published_sha256": [
+        "18a16f93464596ae48b41322bd4a6c7a99de9b6d83ec4fd243ee5ab9a111d3f3",
+        "609c05f55ea75c1b2dadcf07081d20487cccfc8849d537db7727afa1f03315c3",
+        "804e9663e223a47a64f6f7c597d930ee2c4a2e266e57c2d4c80fc38bf1d8f3cb"
+      ]
     },
     {
       "path": "browser/assets/example-geo-actuator-v2/instrument.bin.gz",
@@ -2839,7 +2855,12 @@
       "sha256": "68633f286a39ad402ae04479ad1a4c53770d54ac0749970f4f673fc0bf7b26b7",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Approved GPU session recovery added after the historical capture.",
+      "published_sha256": [
+        "d862a003eeb203135b71e396d7475a5b9f85c95518a693d33c41c7e38138f800",
+        "6ec138464487b11e006a0a109a0b38f6f7e7a99287bcce37481c62f5fb4a6965"
+      ]
     },
     {
       "path": "browser/gpu-session.test.mjs",
@@ -2847,7 +2868,11 @@
       "sha256": "85e4fe9c03794e1a4671ee227af40e670ad94bd02fa9aab07161ada6312aaa64",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Recovery regression coverage added after the historical capture.",
+      "published_sha256": [
+        "4f3c700ef098e49dee9cb51106ff6d5fbc0521282045556dbf1a6e3687b8ebc5"
+      ]
     },
     {
       "path": "browser/hybrid-beauty-cache.wgsl",
@@ -3487,7 +3512,12 @@
       "sha256": "73b809386aaedf6b12e2e983f5fd828baf4ac2bbbda6dcc3521b70a5e6398bf2",
       "disposition": "included",
       "reason": "Current source, notice, source fixture or existing native preview",
-      "preserved_bytes": true
+      "preserved_bytes": false,
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained.",
+      "published_sha256": [
+        "27ecd55ca053370deb2cc1c0fdadccbf169ba465efb2be451f2bb06883a06ac6",
+        "fea453625a0b2c1a33c7007ac6a25d88be3491a5d3c824e46c0f910954134842"
+      ]
     },
     {
       "path": "browser/renderer-shaders.test.mjs",
@@ -4052,7 +4082,12 @@
       "disposition": "included",
       "reason": "Included; source-publication documentation clarified after the runtime capture",
       "preserved_bytes": false,
-      "publication_sha256": "e82ba9283bc98c1319e3fc7fc704467dee27e4601875075798d8720bde128e70"
+      "publication_sha256": "e82ba9283bc98c1319e3fc7fc704467dee27e4601875075798d8720bde128e70",
+      "published_sha256": [
+        "14387cfefb3e07fc3a600c2331273b165994815119f6ac1e803f9cb0aee30c5d",
+        "ab9005bd129a97bae2e66d47e467a75d94c2fd1544d95f4154cbbc8dfb3e4856"
+      ],
+      "post_capture_change": "Reviewed workgroup medium integration; checked device storage, exact 4x4 dispatch, sixteen-slot scalar/legacy rollback. Historical capture retained."
     },
     {
       "path": "docs/NATIVE_PROVENANCE.json",
@@ -4909,7 +4944,11 @@
     "docs/pr-assets/main-stationary.png",
     "tools/check_proof_scenes.mjs",
     "tools/check_publication.py",
-    "tools/prepare_browser_examples.py"
+    "tools/prepare_browser_examples.py",
+    "browser/medium-stack-workgroup-host.test.mjs",
+    "browser/gpu-failure-context.test.mjs",
+    "docs/MOBILE_GPU_RECOVERY.md",
+    "docs/MOBILE_FAILURE_CONTEXT_VALIDATION.json"
   ],
   "scope": "Historical 311-file cleanup branch before public runtime restoration. Current delivery inputs are documented in LIVE_ASSET_INPUTS.json and PUBLIC_RELEASE.md."
 }

@@ -1,6 +1,7 @@
 # Build and language caches
 build*/
 __pycache__/
+**/target/
 *.pyc
 *.nbc
 *.nbi

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CYBR LIGHT / GPU startup comparison</title>
+<style>body{max-width:760px;margin:28px auto;padding:0 18px;font:16px/1.5 system-ui;background:#e8e8e4;color:#17191a}button,select{font:inherit;padding:10px;margin:8px 6px 8px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 monospace;background:#f6f6f2;padding:16px}a{color:inherit}</style>
+<h1>GPU startup comparison</h1>
+<p>These checks compile shaders without loading a scene or drawing frames. Run the comparison sequence once to start with a small control and continue through the trace comparisons. The sequence stops at the first failure or device loss. A compilation pass still needs a check in the actual renderer.</p>
+<p>Diagnostic build: <strong id="build">Loading.</strong></p>
+<p>The phone passed the empty 8x8 control, buffer bindings and original 64-entry traversal, then lost its device compiling the medium helpers. The next candidate keeps both 16-slot medium stacks and expands their lookup and enter/exit operations at each call site. Run it first on the same medium probe, then on the full trace. Neither check draws a frame; a pass still needs testing in the candidate renderer.</p>
+<label>Comparison <select id="case">
+<option value="tiny">Small compute control</option><option value="full-control">Full trace source, unused control entrypoint</option>
+<option value="current">Current trace, renderer limits</option><option value="default-limits">Current trace, default device limits</option>
+<option value="workgroup-4">Trace, 4×4 workgroup only</option><option value="compact-media">Trace, medium capacity matched to UI</option>
+<option value="compat">Compatibility trace, both changes</option><option value="host-prefix">Current trace with original startup prefix</option>
+<option value="probe-control-8">Probe / empty full-source 8x8 control</option><option value="binding-abi">Probe / original buffer bindings</option>
+<option value="traversal">Probe / original 64-entry BVH traversal</option><option value="medium">Probe / original 16-slot medium helpers</option>
+<option value="medium-inline">Candidate / equivalent medium operations</option><option value="current-inline">Candidate / full renderer trace</option>
+</select></label><br><button id="candidate">Run medium candidate sequence</button><button id="probes">Run original probe sequence</button><button id="sequence">Run selected comparison sequence</button><button id="run">Run selected check</button><button id="stop" disabled>Stop</button><button id="copy">Copy report</button><button id="clear">Clear saved report</button>
+<p id="status" role="status">Ready.</p><pre id="stages" aria-label="Compile stage timeline"></pre><pre id="report"></pre>
+<p>A sequence starts at the selected comparison. Each case gets a fresh device, closes it when finished and has a 40-second deadline. After a failure, choose a later comparison only when you want to run another check.</p>
+<p>The last report and each stage are saved only in this browser when storage is available. After a reload, an unfinished check stays visible until you tap Run. Use Clear to remove it. Reports are not uploaded; Copy includes the browser, adapter, diagnostic build and exact shader hashes.</p>
+<p><a href="./?scene=proof-optics&resolution=540&bounces=6&glass=split&motion=bilinear&mediumStack=inline&gpuTimings=0">Open the actual medium candidate renderer</a>. Use this after both candidate compilation checks pass. Glass/water transport, stack capacity, traversal, geometry, reconstruction and random streams are retained. Remove <code>mediumStack=inline</code> to return to the default implementation.</p>
+<p><a id="compat" href="./?scene=proof-optics&resolution=540&bounces=6&gpuCompatibility=compact">Open the actual compatibility renderer</a> · <a href="./?scene=proof-optics&resolution=540&bounces=6">Current renderer</a></p>
+<p>Compatibility keeps glass/water transport, geometry, resolution, bounce count and reconstruction. It changes trace workgroup shape and medium-stack capacity to the existing ten-bounce UI limit. The physical Qualcomm / Adreno-8xx retest still failed during trace compilation with compatibility selected. This comparison is not a confirmed phone fix.</p>
+<script type="module" src="./gpu-compile-check.mjs?revision=medium-inline-9"></script></html>

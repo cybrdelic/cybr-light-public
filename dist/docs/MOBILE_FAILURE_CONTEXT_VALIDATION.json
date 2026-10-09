@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "status": "ordinary failure context native acceptance passed; phone failure unresolved",
+  "acceptedUtc": "2026-10-09T00:37:50.797Z",
+  "baselinePublicCommit": "6f2f8354fdc08494d0dc2bc2d0b1fc469dc6f5b9",
+  "baselineSiteSource": "c9107281ba98a0b484a6f50ea2c3a055343daeac",
+  "browser": "145.0.7632.160",
+  "actualAdapter": {
+    "vendor": "nvidia",
+    "architecture": "lovelace"
+  },
+  "cases": {
+    "context-startup": {
+      "passed": true,
+      "elapsedMs": 1965,
+      "selectedMedium": {
+        "mode": "legacy",
+        "selection": "default",
+        "mediumSlots": 16,
+        "physicalAdrenoVerified": false,
+        "rollbackParameter": "mediumStack=scalar",
+        "legacyRollbackParameter": "mediumStack=legacy",
+        "workgroupCapability": {
+          "supported": true,
+          "requirements": {
+            "maxComputeWorkgroupStorageSize": 16384,
+            "maxComputeInvocationsPerWorkgroup": 16,
+            "maxComputeWorkgroupSizeX": 4,
+            "maxComputeWorkgroupSizeY": 4,
+            "maxComputeWorkgroupSizeZ": 1
+          },
+          "missing": []
+        },
+        "workgroupDimensions": null
+      },
+      "controls": {
+        "scene": "proof-optics",
+        "resolution": "540",
+        "mode": "interactive",
+        "bounces": "6"
+      },
+      "actualAdapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace"
+      },
+      "injection": null,
+      "adapterMetadataOverriddenForPolicyFixture": false,
+      "panel": "Verification capture complete. Drag or zoom to continue rendering.",
+      "postLossGpuRequests": 0,
+      "renderedFrames": 2
+    },
+    "context-workgroup-startup": {
+      "passed": true,
+      "elapsedMs": 2002,
+      "selectedMedium": {
+        "mode": "workgroup",
+        "selection": "explicit",
+        "mediumSlots": 16,
+        "physicalAdrenoVerified": false,
+        "rollbackParameter": "mediumStack=scalar",
+        "legacyRollbackParameter": "mediumStack=legacy",
+        "workgroupCapability": {
+          "supported": true,
+          "requirements": {
+            "maxComputeWorkgroupStorageSize": 16384,
+            "maxComputeInvocationsPerWorkgroup": 16,
+            "maxComputeWorkgroupSizeX": 4,
+            "maxComputeWorkgroupSizeY": 4,
+            "maxComputeWorkgroupSizeZ": 1
+          },
+          "missing": []
+        },
+        "workgroupDimensions": [
+          4,
+          4,
+          1
+        ]
+      },
+      "controls": {
+        "scene": "proof-optics",
+        "resolution": "540",
+        "mode": "interactive",
+        "bounces": "6"
+      },
+      "actualAdapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace"
+      },
+      "injection": null,
+      "adapterMetadataOverriddenForPolicyFixture": false,
+      "panel": "Verification capture complete. Drag or zoom to continue rendering.",
+      "postLossGpuRequests": 0,
+      "renderedFrames": 2
+    },
+    "context-pipeline-reject": {
+      "passed": true,
+      "elapsedMs": 1068,
+      "selectedMedium": {
+        "mode": "scalar",
+        "selection": "adapter",
+        "mediumSlots": 16,
+        "physicalAdrenoVerified": false,
+        "rollbackParameter": "mediumStack=scalar",
+        "legacyRollbackParameter": "mediumStack=legacy",
+        "workgroupCapability": {
+          "supported": false,
+          "requirements": {
+            "maxComputeWorkgroupStorageSize": 16384,
+            "maxComputeInvocationsPerWorkgroup": 16,
+            "maxComputeWorkgroupSizeX": 4,
+            "maxComputeWorkgroupSizeY": 4,
+            "maxComputeWorkgroupSizeZ": 1
+          },
+          "missing": [
+            "maxComputeWorkgroupStorageSize"
+          ]
+        },
+        "workgroupDimensions": null
+      },
+      "controls": {
+        "scene": "proof-optics",
+        "resolution": "540",
+        "mode": "interactive",
+        "bounces": "6"
+      },
+      "actualAdapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace"
+      },
+      "injection": "reject",
+      "adapterMetadataOverriddenForPolicyFixture": true,
+      "panel": "Renderer failed during Compiling trace: Injected pipeline rejection: A valid external Instance reference no longer exists\nMedium mode: scalar (automatic adapter selection; workgroup limits unavailable or insufficient: maxComputeWorkgroupStorageSize); 16 slots\nRenderer context: mobile-failure-context-1",
+      "postLossGpuRequests": 0,
+      "renderedFrames": 0
+    },
+    "context-device-loss": {
+      "passed": true,
+      "elapsedMs": 878,
+      "selectedMedium": {
+        "mode": "workgroup",
+        "selection": "adapter",
+        "mediumSlots": 16,
+        "physicalAdrenoVerified": false,
+        "rollbackParameter": "mediumStack=scalar",
+        "legacyRollbackParameter": "mediumStack=legacy",
+        "workgroupCapability": {
+          "supported": true,
+          "requirements": {
+            "maxComputeWorkgroupStorageSize": 16384,
+            "maxComputeInvocationsPerWorkgroup": 16,
+            "maxComputeWorkgroupSizeX": 4,
+            "maxComputeWorkgroupSizeY": 4,
+            "maxComputeWorkgroupSizeZ": 1
+          },
+          "missing": []
+        },
+        "workgroupDimensions": [
+          4,
+          4,
+          1
+        ]
+      },
+      "controls": {
+        "scene": "proof-optics",
+        "resolution": "540",
+        "mode": "interactive",
+        "bounces": "6"
+      },
+      "actualAdapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace"
+      },
+      "injection": "loss",
+      "adapterMetadataOverriddenForPolicyFixture": true,
+      "panel": "GPU device lost (destroyed) during Compiling trace: Device was destroyed.\nMedium mode: workgroup (automatic adapter selection); 16 slots; 4x4x1 workgroup\nRenderer context: mobile-failure-context-1",
+      "postLossGpuRequests": 0,
+      "renderedFrames": 0
+    }
+  },
+  "nativeHarnessElapsedMs": 6261,
+  "ownedResourceCleanupElapsedMs": 9760,
+  "gpuReleasedUtc": "2026-10-09T00:37:52.0666013Z",
+  "gpuReleaseConfirmed": true,
+  "chromiumSandboxEnabled": true,
+  "preSpawnArgumentAllowlistPassed": true,
+  "temporaryProfilesRemaining": 0,
+  "unsafeWebGpuFlags": false,
+  "securitySettingsChanged": false,
+  "cpuContextSessionHostTestsPassed": 21,
+  "newContextTests": 9,
+  "exactTraceShaderSha256": {
+    "workgroup": "9ff8fba4cecc7b6add647624e3d7507b0deb1a9e0a943fa8e56d251ef1fef30a",
+    "scalar": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867",
+    "legacy": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f"
+  },
+  "workgroupDispatch": [
+    4,
+    4,
+    1
+  ],
+  "rollbackDispatch": [
+    8,
+    8,
+    1
+  ],
+  "settingsPreserved": true,
+  "automaticTelemetryUpload": false,
+  "flatCandidateIntegrated": false,
+  "physicalAdrenoVerified": false,
+  "performanceBenchmark": false,
+  "limitations": [
+    "Native execution used NVIDIA/Lovelace. Qualcomm selection/fallback inputs in two failure fixtures were explicit metadata overrides, not physical Adreno execution.",
+    "Device loss was deliberately injected by destroying the owned device. The actual phone driver cause and failing stage are not established.",
+    "Two native startups each rendered two frames; earlier transport parity evidence is retained separately. This acceptance verifies observability and startup, not a phone rendering fix."
+  ],
+  "reproduceCpu": [
+    "node --test browser/gpu-session.test.mjs browser/gpu-failure-context.test.mjs browser/medium-stack-workgroup-host.test.mjs"
+  ]
+}

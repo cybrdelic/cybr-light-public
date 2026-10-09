@@ -2,6 +2,12 @@
 
 Experimental light transport and scene tools, with a native spectral renderer and browser rendering labs.
 
+This public snapshot includes the complete current renderer source and a separately packaged live browser demo under `dist/`. Private development history is preserved in the original repository. See [public release scope](docs/PUBLIC_RELEASE.md) for the exact restored assets, licensing, delivery adapter and remaining exclusions.
+
+To run the packaged demo, serve `dist/` with `python -m http.server 4181 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4181/`. The native build commands below still apply at the repository root.
+
+A source ZIP or source-only hosting checkout can first run `python tools/restore_live_assets.py` to retrieve the exact cleared runtime files from the pinned public asset commit. Full GitHub clones already include those files.
+
 | Backend | What it renders | Entry point |
 | --- | --- | --- |
 | Native C++17 + Python | Offline wavelength-dependent light transport, materials, media and diagnostic films | `python tools/examples.py anisotropy --preset smoke` |
@@ -74,19 +80,21 @@ Native output includes linear PFM, PNG display previews and optional float32 EXR
 
 ## Browser quick start
 
-Serve this repository directly:
+Serve the packaged browser runtime:
 
 ```bash
-python -m http.server 4181 --bind 127.0.0.1
+python -m http.server 4181 --bind 127.0.0.1 --directory dist
 ```
 
 Open `http://127.0.0.1:4181/browser/?scene=proof-optics&resolution=540&bounces=6` in a browser with WebGPU support. On Windows, `./tools/Start-BrowserPreview.ps1` starts a dedicated Chrome/Edge profile; its footer must confirm the selected adapter.
 
-The URL above runs a built-in procedural scene without an asset pack. `proof-metals` and `proof-indirect` also run from source. Use an explicit `scene=proof-*` URL: the existing unparameterized page defaults to a companion scene whose assets are omitted.
+The URL above runs a built-in procedural scene without external assets. `proof-metals` and `proof-indirect` also run from source. The packaged runtime defaults to the optics proof. Original source entrypoints remain under `browser/` for inspection.
 
-The full imported gallery, instrument modules and both forest entrypoints require companion files that are **not in this source branch**. Their hashes and reproduction limits are recorded in [asset preparation](docs/ASSETS.md) and the [publication inventory](docs/PUBLICATION_INVENTORY.json). No verified public download is available for those files. Full current-scene distribution remains blocked by incomplete upstream inputs and redistribution provenance. Cached FLIP frames are recorded geometry, not a live fluid simulation.
+The public repository retains the cleared gallery, six-module instrument, cached FLIP and complete forest runtime under `dist/`. Source-only ZIPs and Site checkouts can run `python tools/restore_live_assets.py` to retrieve all 336 verified files from the pinned public commit. Availability, licenses and the remaining excluded Observatory/Geode scene families are documented in [asset preparation](docs/ASSETS.md) and [public release scope](docs/PUBLIC_RELEASE.md). The [publication inventory](docs/PUBLICATION_INVENTORY.json) records the earlier source-only capture separately. Cached FLIP frames are recorded geometry, not a live fluid simulation.
 
 For the four native-authored material/knot browser studies, run `python tools/prepare_browser_examples.py` after installing the package. This regenerates geometry with verified hashes and retains the included original material manifests.
+
+Qualcomm/Adreno adapters select the workgroup-memory medium candidate only after device storage and workgroup limits pass. It retains all sixteen glass/water slots and exact boundary keys. `mediumStack=scalar` restores the version-10 scalar form; `mediumStack=legacy` restores the original form. Other adapters keep the original form unless explicitly selected. NVIDIA compilation, two-stack state comparisons and six-/ten-bounce pixel parity pass; phone startup failure was reported after version 11 publication. The ordinary error panel now records the failing stage and selected medium mode locally; physical Adreno success remains unverified. See [mobile GPU recovery](docs/MOBILE_GPU_RECOVERY.md).
 
 See [browser modes and controls](browser/README.md), [diagnostics](browser/DIAGNOSTICS.md), and [gallery rebuilding](browser/GALLERY.md).
 

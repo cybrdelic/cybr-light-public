@@ -1,0 +1,364 @@
+{
+  "status": "desktop_parity_passed_physical_adreno_unverified",
+  "sourceSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+  "modules": [
+    {
+      "name": "current-original",
+      "entryPoint": "main",
+      "bytes": 24033,
+      "sha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f"
+    },
+    {
+      "name": "current-inline",
+      "entryPoint": "main",
+      "bytes": 26176,
+      "sha256": "b304a0c331ccb14f4919c31d04944597419490b1e0b815859fba551a58e2c038"
+    },
+    {
+      "name": "current-scalar",
+      "entryPoint": "main",
+      "bytes": 50682,
+      "sha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "medium-original",
+      "entryPoint": "probeMedium",
+      "bytes": 24870,
+      "sha256": "c6f4ca6173d0e178da29e096cdc1427a324ff218be7bae4eb3686048d80ca48d"
+    },
+    {
+      "name": "medium-inline",
+      "entryPoint": "probeMedium",
+      "bytes": 29977,
+      "sha256": "dab73e56454402364dd80bb895c21a585fba8363bf0442ac37981c669a057985"
+    },
+    {
+      "name": "medium-scalar",
+      "entryPoint": "probeMedium",
+      "bytes": 76691,
+      "sha256": "726687d6592286ce9d419b8e7c2cc6bfb469260328b5d2a81c5487bca96708cb",
+      "targets": 4,
+      "commits": 4,
+      "stacks": 3,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "signals-scalar",
+      "entryPoint": "main",
+      "bytes": 51545,
+      "sha256": "b275c23146bffafb241535963f9982bc74dfa4ec661b0d0088b09a41053d01b1",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "instanced-scalar",
+      "entryPoint": "main",
+      "bytes": 53580,
+      "sha256": "97cab802bc5661356d9c67ac8b578f4b39a618e52ee2a6e3f2130b2659ee2a74",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": true,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "packed-scalar",
+      "entryPoint": "main",
+      "bytes": 51143,
+      "sha256": "355a050324488ebea9196d6b7d84966a923146adf2f8e03bb9d752478cf6aa10",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "corrected-scalar",
+      "entryPoint": "main",
+      "bytes": 62412,
+      "sha256": "a1fab911d73480b9dd0f73046a19e26f01307798eb32211ae2344e8037505536",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "corrected-instanced-scalar",
+      "entryPoint": "main",
+      "bytes": 65202,
+      "sha256": "3e6327367375ad39acbf1f40ad61e12784836028fdaf797acadcbcff188563ee",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": true,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "outside-corrected-scalar",
+      "entryPoint": "main",
+      "bytes": 55575,
+      "sha256": "9bd4b70aaaffd9af7ab5288f47350023e847af85d173a522a4db20936dde33ed",
+      "targets": 2,
+      "commits": 2,
+      "stacks": 2,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    },
+    {
+      "name": "camera-corrected-scalar",
+      "entryPoint": "main",
+      "bytes": 12216,
+      "sha256": "005d32fb8c73414a3abc13b29fc7f34ba720676d72bedc9710661fce132c7e05",
+      "targets": 0,
+      "commits": 0,
+      "stacks": 0,
+      "mediumSlots": 16,
+      "vectorKey": false,
+      "privateMediumArrays": 0,
+      "dynamicMediumAccesses": 0
+    }
+  ],
+  "normalAdapterSelection": {
+    "qualcommOrAdreno": "scalar",
+    "otherAdapters": "legacy",
+    "rollback": "mediumStack=legacy",
+    "explicitHistoricalForm": "mediumStack=inline",
+    "mediumSlots": 16,
+    "physicalAdrenoVerified": false
+  },
+  "changedConstruct": "Replace each function-local MediumStack aggregate with one count, sixteen separately named exact boundary-key locals, and sixteen separately named vec4f absorption/IOR locals. Unroll last-match lookup, push, ascending exit compaction and camera storage loads. No private medium arrays, dynamically indexed medium arrays, or medium pointer helpers remain. CameraMedium storage ABI and transport arithmetic remain unchanged.",
+  "cpu": {
+    "semanticTestsPassed": 7,
+    "adversarialOperations": 8192,
+    "keys": [
+      "u32",
+      "unpacked vec2u"
+    ],
+    "cameraInitialCounts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "insideOutsideAndTrailingSlotsPreserved": true
+  },
+  "naga": {
+    "version": "30.0.1",
+    "modulesPassed": 13,
+    "runtimeFixtureModulesPassed": 4,
+    "flags": "all",
+    "optionalCapabilities": "none"
+  },
+  "desktop": {
+    "recordedUtc": "2026-10-07T14:33:07.713172+00:00",
+    "actualAdapter": {
+      "vendor": "nvidia",
+      "architecture": "lovelace",
+      "device": "",
+      "description": ""
+    },
+    "browserVersion": "145.0.7632.160",
+    "nativePipelineCompilation": {
+      "passed": true,
+      "adapter": {
+        "vendor": "nvidia",
+        "architecture": "lovelace",
+        "device": "",
+        "description": ""
+      },
+      "results": [
+        {
+          "name": "current-original",
+          "pipelineCompleted": true,
+          "pipelineMs": 614,
+          "shaderSha256": "563e314d2f974482c1b24c890067316eab892b7adeb8806ad688b15527a60b3f",
+          "validationMessages": []
+        },
+        {
+          "name": "current-inline",
+          "pipelineCompleted": true,
+          "pipelineMs": 618,
+          "shaderSha256": "b304a0c331ccb14f4919c31d04944597419490b1e0b815859fba551a58e2c038",
+          "validationMessages": []
+        },
+        {
+          "name": "current-scalar",
+          "pipelineCompleted": true,
+          "pipelineMs": 928,
+          "shaderSha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867",
+          "validationMessages": []
+        },
+        {
+          "name": "medium-scalar",
+          "pipelineCompleted": true,
+          "pipelineMs": 115,
+          "shaderSha256": "726687d6592286ce9d419b8e7c2cc6bfb469260328b5d2a81c5487bca96708cb",
+          "validationMessages": []
+        }
+      ],
+      "validationErrors": [],
+      "dispatch": false,
+      "elapsedMs": 3932,
+      "physicalAdreno": false,
+      "recordedUtc": "2026-10-07T14:31:32.229Z"
+    },
+    "mediumGPUDispatchComparison": {
+      "passed": true,
+      "comparisons": [
+        {
+          "keyType": "scalar",
+          "operations": 512,
+          "wordsCompared": 51712,
+          "differingWords": 0,
+          "originalHash": "988290f61278c9eedb1e18136e3197358ae439f6acedd8fddd53c6f92acaae5a",
+          "candidateHash": "988290f61278c9eedb1e18136e3197358ae439f6acedd8fddd53c6f92acaae5a",
+          "shaderHashes": {
+            "original": "f279e48d9df15fd84b7bc012f3def4cac81273ff292ac4435de7334cd0725890",
+            "candidate": "99217a898298fd814ddb9cd733a6554fc9e6dc40661c5410b8a1eeaf4fb5940b"
+          }
+        },
+        {
+          "keyType": "vector",
+          "operations": 512,
+          "wordsCompared": 51712,
+          "differingWords": 0,
+          "originalHash": "6a193cd5f99f634990311730422733b04a6fe5b9aecc5c73da05853a73d83cab",
+          "candidateHash": "6a193cd5f99f634990311730422733b04a6fe5b9aecc5c73da05853a73d83cab",
+          "shaderHashes": {
+            "original": "2c662e452d666b6f6572641a0b0fc5daff1b3812d5a7b42aaaa71f367392e315",
+            "candidate": "049f822378e7d0de35965dd3144016770b43fb23d0542c7010bae699c1593a87"
+          }
+        }
+      ],
+      "validationErrors": [],
+      "actualDispatch": true,
+      "elapsedMs": 316,
+      "physicalAdreno": false,
+      "recordedUtc": "2026-10-07T14:31:32.551Z"
+    },
+    "fullRendererParity": [
+      {
+        "bounces": 6,
+        "frames": 8,
+        "resolution": [
+          960,
+          540
+        ],
+        "candidateReadyAndCaptureMs": 3253,
+        "baselineReadyAndCaptureMs": 4279,
+        "allThreeStagesExactlyMatch": true,
+        "stageHashes": {
+          "raw": "802db38de56573b6a8000aaa00d286228a0f962a4ff6248b3dd532d931aeacfd",
+          "temporal": "e83aa0eb55d2513cb0332052dfc4e03d00eb415be9246a72ac7d122e225288fe",
+          "output": "2f57c8578a5604d0fecff7c3be7819fa6d43b52733c003a656f23ddb839c6c95"
+        },
+        "actualScalarTrace": {
+          "label": "trace",
+          "bytes": 50682,
+          "scalar": true,
+          "sha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867"
+        }
+      },
+      {
+        "bounces": 10,
+        "frames": 8,
+        "resolution": [
+          960,
+          540
+        ],
+        "candidateReadyAndCaptureMs": 4879,
+        "baselineReadyAndCaptureMs": 3064,
+        "allThreeStagesExactlyMatch": true,
+        "stageHashes": {
+          "raw": "1584d91650fccf94a67f150acab9dfb8bf41a7eb249571312570468e1f31ff77",
+          "temporal": "64bfdcb52b1130d5a2d1cab80a2f6bad076f369956b7ed6e3eeacf66c746e7cf",
+          "output": "24f81f6be68b4853235d42d91707f685ebeebc94db51715d78c992693dc350f4"
+        },
+        "actualScalarTrace": {
+          "label": "trace",
+          "bytes": 50682,
+          "scalar": true,
+          "sha256": "49cc7c138f6ea80a3e049429636b2956a329d8ea9dbf8963921a519d0bd22867"
+        }
+      }
+    ],
+    "fullRendererParityPassed": true
+  },
+  "desktopBackend": {
+    "independentlyReported": false,
+    "inference": "Windows default Dawn D3D12 inferred from Chromium implementation and ordinary launch; adapter NVIDIA/Lovelace was independently reported."
+  },
+  "compliantLaunch": {
+    "preSpawnAllowlistPassed": true,
+    "actualArgsMatchedBeforeAndAfterSpawn": true,
+    "chromiumSandbox": true,
+    "unsafeOrSecurityDisablingSwitches": [],
+    "elapsedMs": 30637,
+    "maximumMs": 120000,
+    "releasedUtc": "2026-10-07T14:31:49.2221435Z",
+    "allOwnedResourcesClosed": true
+  },
+  "softwareVulkan": {
+    "supportedSelector": "--use-webgpu-adapter=swiftshader",
+    "adapterAvailable": false,
+    "pipelineCompilationRun": false,
+    "unsafeFallbackAttempted": false
+  },
+  "physicalAdreno": {
+    "compatible": false,
+    "verified": false,
+    "previousVersion9Retest": "User reported the same mobile startup error after deployment. Exact phone shader selection/cache state was not independently retrieved. The inline form is not presented as a verified mobile fix.",
+    "scalarCandidateRetestedOnPhone": false
+  },
+  "backendWriterComparison": {
+    "executed": false,
+    "blocker": "Local Rust compiler execution denied (OS error 5). No alternate compiler route attempted; no GLES/SPIR-V/IR generation claimed."
+  },
+  "reproduceCPU": [
+    "node browser/medium-stack-scalar.test.mjs",
+    "node browser/medium-stack-policy.test.mjs",
+    "node tools/export_scalar_medium.mjs",
+    "cargo build --release --locked --jobs 2 --manifest-path tools/wgsl-validator/Cargo.toml",
+    "tools/wgsl-validator/target/release/cybr-wgsl-validate build/wgsl-scalar-medium"
+  ],
+  "previousInlineReceipt": "MEDIUM_STACK_VALIDATION.json"
+}

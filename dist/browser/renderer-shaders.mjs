@@ -34,10 +34,13 @@ import { instancedShader } from './instanced-shader.mjs?revision=optical-medium-
 import { gameShader } from './game-shader.mjs';
 import { tiledFilter } from './tiled-filter.mjs?revision=baseline-tiles-1';
 import { motionHistoryShader } from './motion-history.mjs?revision=rollback-1';
+import { inlineMediumStack } from './medium-stack-inline.mjs';
+import { scalarMediumStack } from './medium-stack-scalar.mjs';
+import { workgroupMediumStack } from './medium-stack-workgroup.mjs';
 
 export async function buildRendererShader(
   name,
-  { load, parameters, options, stackCapacity = 64, filterOptions },
+  { load, parameters, options, stackCapacity = 64, filterOptions, maxWorkgroupBytes = 16384 },
 ) {
   const opticalPass=name.startsWith('optical-');
   if(opticalPass)name=name.slice(8);
@@ -158,5 +161,12 @@ export async function buildRendererShader(
   }
   if(trace&&!options.transportIntegrity&&parameters.get('terminalEmission')!=='0')text=terminalEmission(text);
   if(opticalPass)text=opticalSampling(text);
-  return cameraPass ? cameraMediumShader(text) : text;
+  text = cameraPass ? cameraMediumShader(text) : text;
+  if (parameters.get('mediumStack') === 'inline' && text.includes('struct MediumStack'))
+    text = inlineMediumStack(text).code;
+  if (parameters.get('mediumStack') === 'scalar' && text.includes('struct MediumStack'))
+    text = scalarMediumStack(text).code;
+  if (parameters.get('mediumStack') === 'workgroup' && text.includes('struct MediumStack'))
+    text = workgroupMediumStack(text, { maxWorkgroupBytes }).code;
+  return text;
 }
