@@ -109,3 +109,58 @@ def read_ply(path):
     indices = np.asarray(faces, dtype=np.int64)
     if not np.isfinite(p).all() or (indices < 0).any() or (indices >= len(p)).any(): raise ValueError("Invalid PLY coordinates or indices")
     return p, indices, n, uv
+
+def append_assembly(scene, assembly, material_map, *, metres_from_source):
+    """Append a static GEO Assembly through the existing Scene.mesh consumer.
+
+    Materials and unit/basis conversion are explicit caller policy. No opacity,
+    absorption, camera, finish or motion inference is performed. Returns the
+    source-part -> native-object mapping; never repairs or drops triangles.
+    """
+    matrix = np.asarray(metres_from_source, dtype=np.float64)
+    if (matrix.shape != (4, 4) or not np.isfinite(matrix).all() or
+            not np.array_equal(matrix[3], [0, 0, 0, 1]) or np.linalg.det(matrix[:3, :3]) <= 0):
+        raise ValueError("Expected a finite orientation-preserving unit/basis transform")
+    if assembly.motion_function is not None:
+        raise ValueError("Use an explicit static Assembly snapshot, not implicit motion freezing")
+    prepared = []
+    for part_id, part in enumerate(assembly.parts):
+        if not np.array_equal(assembly.pose(part, 0.0, 0.0), np.eye(4)):
+            raise ValueError(f"Nonidentity source pose is unsupported: {part.name}")
+        if part.material not in material_map:
+            raise ValueError(f"Missing explicit material mapping: {part.material}")
+        target = material_map[part.material]
+        if not isinstance(target, int) or not 0 <= target < len(scene.materials):
+            raise ValueError("Material mapping must identify an existing LIGHT material")
+        vertices, faces, normals = np.asarray(part.vertices), np.asarray(part.faces), np.asarray(part.normals)
+        if (vertices.ndim != 2 or vertices.shape[1] != 3 or normals.shape != vertices.shape or
+                faces.ndim != 2 or faces.shape[1] != 3 or not np.issubdtype(faces.dtype, np.integer) or
+                not np.isfinite(vertices).all() or not np.isfinite(normals).all() or
+                (faces < 0).any() or (faces >= len(vertices)).any() or
+                (np.linalg.norm(normals, axis=1) == 0).any()):
+            raise ValueError(f"Invalid source mesh: {part.name}")
+        world = vertices @ matrix[:3, :3].T + matrix[:3, 3]
+        if not np.isfinite(world).all():
+            raise ValueError(f"Nonfinite transformed coordinates: {part.name}")
+        triangles = world[faces]
+        areas = np.linalg.norm(np.cross(triangles[:, 1]-triangles[:, 0],
+                                       triangles[:, 2]-triangles[:, 0]), axis=1)
+        if not len(faces) or (areas < 1e-12).any():
+            raise ValueError(f"Mesh would lose triangles in Scene.mesh: {part.name}")
+        prepared.append((part_id, part, target, world.min(axis=0), world.max(axis=0)))
+    start, object_start = len(scene.primitives), scene._object
+    rows = []
+    try:
+        for part_id, part, target, lower, upper in prepared:
+            oid = scene.object_id(); before = len(scene.primitives)
+            scene.mesh(part.vertices, part.faces, target, normals=part.normals,
+                       transform=matrix, object_id=oid)
+            if len(scene.primitives)-before != len(part.faces):
+                raise ValueError(f"Consumer changed triangle count: {part.name}")
+            rows.append(dict(part_id=part_id, name=part.name, object_id=oid,
+                             source_material=part.material, material_id=target,
+                             triangles=len(part.faces), bounds_m=[lower.tolist(), upper.tolist()]))
+    except Exception:
+        del scene.primitives[start:]; scene._object = object_start
+        raise
+    return rows

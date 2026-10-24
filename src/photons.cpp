@@ -27,7 +27,7 @@ int main(int argc,char**argv){
 #endif
    RNG rng(mix64(sample)^9238423);double nm=360+470*rng.uniform();
    Ray ray{{(rng.uniform()-.5)*.015,(rng.uniform()-.5)*1.5,-3},{0,0,1}};
-   double power=blackbody_normalized(nm,6500);std::vector<MediumEntry> stack;bool done=false;
+   double power=blackbody_normalized(nm,6500);MediumStack stack;bool done=false;int nulls=0;
    for(int bounce=0;bounce<48;bounce++){
     Hit hit;s.bvh.hit(ray,hit);double detector_t=ray.d.z>0?(detector_z-ray.o.z)/ray.d.z:inf;
     if(detector_t>0&&detector_t<hit.t){Vec3 point=ray.at(detector_t);int x=int(std::floor((point.x-xmin)/(xmax-xmin)*width)),y=int(std::floor((ymax-point.y)/(ymax-ymin)*height));
@@ -35,13 +35,13 @@ int main(int argc,char**argv){
     if(hit.primitive<0){escaped++;done=true;break;}
     if(!stack.empty())power*=std::exp(-s.materials[stack.back().material].absorption.eval(nm)*hit.t);
     const auto&m=s.materials[hit.material];if(!m.dielectric()){absorbed++;done=true;break;}
-    double ni=stack.empty()?1:s.materials[stack.back().material].ior(nm),nt=m.ior(nm);
-    if(!hit.front){nt=1;for(int j=int(stack.size())-1;j>=0;j--)if(stack[j].object==hit.object){nt=j>0?s.materials[stack[j-1].material].ior(nm):1;break;}}
+    double ni,nt;dielectric_indices(s,m,hit,stack,nm,ni,nt);
     auto b=sample_bsdf(m,hit,-ray.d,nm,ni,nt,rng,false,false);if(b.pdf<=0){absorbed++;done=true;break;}
     // Convert radiance-mode eta scaling to the importance/flux convention.
-    power*=b.weight.v*(b.transmission?sqr(nt/ni):1);
-    if(b.transmission){if(hit.front)stack.push_back({hit.object,hit.material});else for(int j=int(stack.size())-1;j>=0;j--)if(stack[j].object==hit.object){stack.erase(stack.begin()+j);break;}}
+    power*=b.weight.v*(b.medium_transition?sqr(nt/ni):1);
+    if(b.medium_transition)transition_medium(stack,hit);
     ray={offset(hit.p,hit.gn,b.wi),b.wi};
+    if(b.null_event()){if(++nulls>1024)break;bounce--;}
    }
    if(!done)truncated++;
   }

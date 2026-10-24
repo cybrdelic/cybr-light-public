@@ -26,7 +26,7 @@ inline void dielectric_indices(const Scene&s,const Material&m,const Hit&h,Medium
  if(!m.dielectric())return;
  if(h.front)nt=m.ior(nm);
  else{auto it=std::find_if(stack.rbegin(),stack.rend(),[&](auto e){return e.object==h.object;});
-  if(it!=stack.rend()){int i=int(stack.size())-1-int(it-stack.rbegin());nt=i>0?s.materials[stack[i-1].material].ior(nm):1.;}
+  if(it!=stack.rend()){int i=int(stack.size())-1-int(it-stack.rbegin());nt=i+1<int(stack.size())?ni:(i>0?s.materials[stack[i-1].material].ior(nm):1.);}
   else{ni=m.ior(nm);nt=stack.empty()?1:s.materials[stack.back().material].ior(nm);}
  }
 }
@@ -88,7 +88,10 @@ inline PathResult trace_path(const Scene&s,Ray ray,double nm,RNG&r){
    double ni,nt;dielectric_indices(s,m,hit,stack,nm,ni,nt);
    // Permit null/optical sheets even at the scattering limit; they are not bounces.
    bool terminal=limit>=0&&depth>=limit;
-   if(!m.delta()&&s.settings.nee&&!terminal){
+   // Resolve possible index matching before NEE: a null has no angular lobe.
+   BSDFSample bounce;bool sampled_match=m.dielectric()&&ni==nt;
+   if(sampled_match)bounce=sample_bsdf(m,hit,wo,nm,ni,nt,r,s.settings.ad,s.settings.polarized);
+   if(!m.delta()&&s.settings.nee&&!terminal&&!(sampled_match&&bounce.null_event())){
     auto light=s.sample_light(hit.p,ray.time,nm,r);
     if(light.pdf>0){
      auto ev=evaluate_bsdf(m,hit,wo,light.wi,nm,ni,nt,s.settings.ad);
@@ -102,9 +105,10 @@ inline PathResult trace_path(const Scene&s,Ray ray,double nm,RNG&r){
      }
     }
    }
-   BSDFSample bounce=sample_bsdf(m,hit,wo,nm,ni,nt,r,s.settings.ad,s.settings.polarized);
+   if(!sampled_match)bounce=sample_bsdf(m,hit,wo,nm,ni,nt,r,s.settings.ad,s.settings.polarized);
    if(bounce.pdf<=0||bounce.weight.v<=0||!std::isfinite(bounce.weight.v))break;
-   bool null=bounce.delta&&bounce.transmission&&!bounce.medium_transition;
+   // Index-matched ownership changes preserve depth, terminal transport and MIS.
+   bool null=bounce.null_event();
    if(terminal&&!null)break;
    throughput=throughput*bounce.weight;if(s.settings.polarized)polarization=polarization*bounce.pol;
    if(bounce.medium_transition)transition_medium(stack,hit);
