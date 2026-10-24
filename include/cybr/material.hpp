@@ -85,7 +85,9 @@ inline NullEval null_component(const Material&m,const Hit&hit,Vec3 wo,double nm,
  return {};
 }
 struct BSDFEval {Dual f;double pdf=0;Mueller pol;};
-struct BSDFSample {Vec3 wi;Dual weight;double pdf=0;bool delta=false,transmission=false,medium_transition=false;Mueller pol;};
+struct BSDFSample {Vec3 wi;Dual weight;double pdf=0;bool delta=false,transmission=false,medium_transition=false,index_matched=false;Mueller pol;
+ bool null_event()const{return delta&&transmission&&(!medium_transition||index_matched);}
+};
 inline BSDFEval evaluate_bsdf(const Material&m,const Hit&hit,Vec3 wo,Vec3 wi,double nm,double ni,double nt,bool ad){
  BSDFEval result;
  if(!m.two_sided&&!hit.front&&!m.dielectric())return result;
@@ -103,6 +105,8 @@ inline BSDFEval evaluate_bsdf(const Material&m,const Hit&hit,Vec3 wo,Vec3 wi,dou
   auto a=evaluate_bsdf(*m.child1,hit,wo,wi,nm,ni,nt,ad),b=evaluate_bsdf(*m.child2,hit,wo,wi,nm,ni,nt,ad);
   return {a.f*Dual(1-m.weight)+b.f*Dual(m.weight),a.pdf*(1-m.weight)+b.pdf*m.weight,a.pol*(1-m.weight)+b.pol*m.weight};
  }
+ // Index matching is a delta, with no continuous solid-angle BSDF density.
+ if(m.type==MaterialType::RoughGlass&&ni==nt)return result;
  double co=dot(hit.n,wo),ci=dot(hit.n,wi);if(co<=0||std::abs(ci)<1e-12||m.delta())return result;
  if(m.type==MaterialType::Landscape){
   if(ci<=0)return result;double rough=m.roughness_at(hit),alpha=std::max(.018,rough*rough),sigma=rough*.52,s2=sigma*sigma;
@@ -168,6 +172,11 @@ inline BSDFSample sample_bsdf(const Material&m,const Hit&hit,Vec3 wo,double nm,d
    return s;
   }
   auto e=evaluate_bsdf(m,hit,wo,s.wi,nm,ni,nt,ad);s.pdf=e.pdf;if(s.pdf>0){double factor=std::abs(dot(hit.n,s.wi))/s.pdf;s.weight=e.f*Dual(factor);s.pol=e.pol*factor;}return s;
+ }
+ // No physical interface remains at equal indices, regardless of roughness.
+ // Keep ownership bookkeeping, but mark this as a non-scattering path event.
+ if(m.type==MaterialType::RoughGlass&&ni==nt){
+  s.wi=-wo;s.weight=1;s.pdf=1;s.delta=true;s.transmission=true;s.medium_transition=true;s.index_matched=true;s.pol=Mueller::identity();return s;
  }
  Frame frame(hit.n,hit.tangent);
  if(m.type==MaterialType::Null){s.wi=-wo;s.weight=m.albedo(nm,hit,ad);s.pdf=1;s.delta=true;s.transmission=true;s.pol=Mueller::identity()*s.weight.v;return s;}

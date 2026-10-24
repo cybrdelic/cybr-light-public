@@ -45,12 +45,12 @@ public:
     for(int depth=0;(s.settings.max_depth<0||depth<s.settings.max_depth)&&flux>0;depth++){
      Hit h;if(!s.bvh.hit(ray,h))break;const auto&m=s.materials[h.material];if(m.type==MaterialType::Emitter)break;
      if(!stack.empty())flux*=std::exp(-s.materials[stack.back().material].absorption_value(nm)*h.t);
-     if(!m.delta()&&depth>0){Photon p{h.p,-ray.d,h.front?h.gn:-h.gn,flux,h.object};grids[band][cell(h.p)].push_back(p);stored++;}
      double ni,nt;dielectric_indices(s,m,h,stack,nm,ni,nt);auto b=sample_bsdf(m,h,-ray.d,nm,ni,nt,rng,false,false);
+     if(!m.delta()&&depth>0&&!b.index_matched){Photon p{h.p,-ray.d,h.front?h.gn:-h.gn,flux,h.object};grids[band][cell(h.p)].push_back(p);stored++;}
      if(b.pdf<=0||b.weight.v<=0)break;flux*=b.weight.v;
      // Light subpaths use importance transport, cancelling the camera-mode eta^2 factor.
      if(b.medium_transition){flux*=sqr(nt/ni);transition_medium(stack,h);}
-     bool pass=b.delta&&b.transmission&&!b.medium_transition;ray={offset(h.p,h.gn,b.wi),b.wi,ray.time};
+     bool pass=b.null_event();ray={offset(h.p,h.gn,b.wi),b.wi,ray.time};
      if(pass){if(++nulls>1024)break;depth--;continue;}
      if(depth>=s.settings.rr_depth){if(rng.uniform()>.85)break;flux/=.85;}
     }
@@ -74,14 +74,16 @@ public:
    if(!stack.empty())beta*=std::exp(-s.materials[stack.back().material].absorption_value(nm)*h.t);
    const auto&m=s.materials[h.material];if(h.front)L+=beta*m.radiance(nm);if(m.type==MaterialType::Emitter)break;
    double ni,nt;dielectric_indices(s,m,h,stack,nm,ni,nt);
-   if(!m.delta()){
+   BSDFSample b;bool sampled_match=m.dielectric()&&ni==nt;
+   if(sampled_match)b=sample_bsdf(m,h,-ray.d,nm,ni,nt,rng,false,false);
+   if(!m.delta()&&!(sampled_match&&b.null_event())){
     auto l=s.sample_light(h.p,ray.time,nm,rng);
     if(l.pdf>0){auto e=evaluate_bsdf(m,h,-ray.d,l.wi,nm,ni,nt,false);auto sh=s.shadow({offset(h.p,h.gn,l.wi),l.wi,ray.time},l.distance,nm,rng);L+=beta*e.f.v*std::abs(dot(h.n,l.wi))*l.radiance*sh.value/l.pdf;}
     L+=beta*gather(s,h,-ray.d,nm,band,ni,nt);
    }
-   auto b=sample_bsdf(m,h,-ray.d,nm,ni,nt,rng,false,false);if(b.pdf<=0||b.weight.v<=0||!b.delta)break;beta*=b.weight.v;
+   if(!sampled_match)b=sample_bsdf(m,h,-ray.d,nm,ni,nt,rng,false,false);if(b.pdf<=0||b.weight.v<=0||!b.delta)break;beta*=b.weight.v;
    if(b.medium_transition)transition_medium(stack,h);ray={offset(h.p,h.gn,b.wi),b.wi,ray.time};
-   if(b.delta&&b.transmission&&!b.medium_transition){if(++nulls>1024)break;depth--;}
+   if(b.null_event()){if(++nulls>1024)break;depth--;continue;}
    if(depth>=s.settings.rr_depth){if(rng.uniform()>.85)break;beta/=.85;}
    result.bounces=depth;
   }

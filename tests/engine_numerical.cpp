@@ -50,6 +50,67 @@ int main() {
     Material glass;glass.type=MaterialType::RoughGlass;glass.alpha_u=.18;glass.alpha_v=.32;
     bool roughglass_ok=true;for(int i=0;i<15000;i++){auto s=sample_bsdf(glass,h,wo,550,1,1.5,rng,false,true);if(s.pdf<=0)continue;auto e=evaluate_bsdf(glass,h,wo,s.wi,550,1,1.5,false);roughglass_ok=roughglass_ok&&std::abs(e.f.v-e.pol.at(0,0))<1e-9&&std::abs(e.pdf-s.pdf)<1e-10;}
     check("rough dielectric scalar/Mueller and PDF agreement",roughglass_ok);
+    // Index matching is straight transport, not a rough angular scattering lobe.
+    RNG medium_rng(81503);Material matched=glass;matched.ior_a=1.57;matched.ior_b=.003;
+    bool matched_ok=true,matched_identity=true,matched_continuous_zero=true;
+    for(double nm:{430.,550.,680.})for(Vec3 view:{Vec3(0,0,1),normalize(Vec3(.6,0,.8))})for(bool polarized:{false,true}){
+        RNG local(19);auto state=local.state;double index=matched.ior(nm);
+        auto s=sample_bsdf(matched,h,view,nm,index,index,local,false,polarized);
+        matched_ok=matched_ok&&s.pdf==1&&s.weight.v==1&&s.delta&&s.transmission&&s.medium_transition&&s.index_matched&&s.null_event()&&norm2(s.wi+view)==0&&local.state==state&&local.dimension==0;
+        for(int i=0;i<4;i++)for(int j=0;j<4;j++)matched_identity=matched_identity&&s.pol.at(i,j)==(i==j?1:0);
+        auto e=evaluate_bsdf(matched,h,view,-view,nm,index,index,false);
+        matched_continuous_zero=matched_continuous_zero&&e.f.v==0&&e.pdf==0;
+    }
+    check("index-matched rough glass is spectral unit delta without RNG",matched_ok);
+    check("index-matched rough glass preserves the identity Mueller matrix",matched_identity);
+    check("index-matched delta has no continuous BSDF density",matched_continuous_zero);
+    Material wrapped;wrapped.type=MaterialType::NormalMap;wrapped.child1=std::make_shared<Material>(matched);
+    auto wrapped_match=sample_bsdf(wrapped,h,wo,550,1.57,1.57,medium_rng,false,true);
+    check("dielectric wrapper preserves index-matched ownership/null flags",wrapped_match.medium_transition&&wrapped_match.null_event()&&wrapped_match.index_matched);
+    auto distinct=sample_bsdf(matched,h,wo,550,1.57,1.57000001,medium_rng,false,false);
+    check("nearby unequal IORs are not merged into a null",!distinct.index_matched);
+    Material coated=matched;coated.type=MaterialType::Glass;coated.film_nm=400;coated.film_ior=1.3;
+    auto coated_sample=sample_bsdf(coated,h,wo,550,1.57,1.57,medium_rng,false,false);
+    check("index matching does not erase a coated Glass interface",!coated_sample.index_matched&&!coated_sample.null_event());
+    Material flux_glass=matched;flux_glass.type=MaterialType::Glass;bool flux_ok=true;int transmitted_flux=0;
+    for(int i=0;i<32;i++){auto s=sample_bsdf(flux_glass,h,wo,550,1,1.57,medium_rng,false,false);double importance=s.weight.v*(s.medium_transition?sqr(1.57):1);flux_ok=flux_ok&&std::abs(importance-1)<1e-12;transmitted_flux+=s.medium_transition;}
+    check("importance consumer cancels only the radiance eta-squared factor",flux_ok&&transmitted_flux>0);
+    Material hole;hole.type=MaterialType::Mask;hole.opacity=0;hole.child1=std::make_shared<Material>(matched);
+    auto hole_sample=sample_bsdf(hole,h,wo,550,1,1.57,medium_rng,false,false);
+    check("masked null hole does not invent ownership or importance eta",hole_sample.null_event()&&!hole_sample.medium_transition&&hole_sample.weight.v==1);
+    Scene media_scene;media_scene.materials={matched,matched};media_scene.materials[0].ior_b=media_scene.materials[1].ior_b=0;
+    Hit a_entry;a_entry.front=true;a_entry.object=31;a_entry.material=0;Hit b_entry=a_entry;b_entry.object=32;b_entry.material=1;
+    MediumStack overlap;transition_medium(overlap,a_entry);transition_medium(overlap,b_entry);Hit a_exit=a_entry;a_exit.front=false;
+    double ni,nt;dielectric_indices(media_scene,media_scene.materials[0],a_exit,overlap,550,ni,nt);transition_medium(overlap,a_exit);
+    check("lower same-IOR overlap exit keeps surviving top medium",ni==1.57&&nt==1.57&&overlap.size()==1&&overlap.back().object==32);
+    media_scene.materials[1].ior_a=1.33;overlap=MediumStack();transition_medium(overlap,a_entry);transition_medium(overlap,b_entry);
+    dielectric_indices(media_scene,media_scene.materials[0],a_exit,overlap,550,ni,nt);transition_medium(overlap,a_exit);
+    check("lower different-IOR overlap exit also keeps surviving top",ni==1.33&&nt==1.33&&overlap.back().object==32);
+    overlap=MediumStack();transition_medium(overlap,a_entry);transition_medium(overlap,b_entry);Hit b_exit=b_entry;b_exit.front=false;
+    dielectric_indices(media_scene,media_scene.materials[1],b_exit,overlap,550,ni,nt);transition_medium(overlap,b_exit);
+    bool nested_ok=ni==1.33&&nt==1.57&&overlap.size()==1;
+    dielectric_indices(media_scene,media_scene.materials[0],a_exit,overlap,550,ni,nt);transition_medium(overlap,a_exit);
+    check("top nested exit and final exterior exit retain original semantics",nested_ok&&ni==1.57&&nt==1&&overlap.empty());
+    MediumStack spilled;for(int object=0;object<17;object++)spilled.push_back({object,0});Hit spilled_exit=a_exit;spilled_exit.object=0;
+    dielectric_indices(media_scene,media_scene.materials[0],spilled_exit,spilled,550,ni,nt);transition_medium(spilled,spilled_exit);
+    check("lower overlap exit works across inline/spilled stack boundary",ni==1.57&&nt==1.57&&spilled.size()==16&&spilled.back().object==16);
+    Scene matched_layers;Material unit_index=matched;unit_index.ior_a=1;unit_index.ior_b=0;matched_layers.materials={unit_index};
+    for(int object=0;object<4;object++){
+        Primitive q;q.shape=Shape::Quad;q.a={-2,-2,object*.2};q.b={0,4,0};q.c={4,0,0};q.object=object;q.material=0;matched_layers.primitives.push_back(q);
+        q.a.z+=.1;std::swap(q.b,q.c);matched_layers.primitives.push_back(q);
+    }
+    matched_layers.environment.strength=.5;matched_layers.environment.base=Spectrum(1.);matched_layers.environment.flat=true;
+    matched_layers.settings.rr_depth=0;matched_layers.settings.nee=true;matched_layers.build();
+    bool null_path_ok=true;
+    for(int depth:{0,1})for(bool polarized:{false,true}){
+        matched_layers.settings.max_depth=depth;matched_layers.settings.polarized=polarized;RNG local(73);auto state=local.state;
+        auto result=trace_path(matched_layers,{{0,0,-1},{0,0,1}},550,local);
+        null_path_ok=null_path_ok&&std::abs(result.radiance.v-.5)<1e-12&&result.bounces==0&&local.state==state&&local.dimension==0;
+    }
+    check("matched layers preserve terminal depth MIS continuation and skip RR",null_path_ok);
+    matched_layers.settings.polarized=false;matched_layers.settings.max_depth=1;matched_layers.settings.bands=1;matched_layers.settings.photon_count=0;PhotonMap null_photons;null_photons.build(matched_layers);RNG photon_rng(73);auto photon_state=photon_rng.state;
+    auto photon_result=null_photons.trace(matched_layers,{{0,0,-1},{0,0,1}},0,photon_rng);
+    check("photon camera consumer shares null depth and RR semantics",std::abs(photon_result.radiance.v-.5)<1e-12&&photon_rng.state==photon_state&&photon_rng.dimension==0);
     Volume volume;volume.phase=1;double phase_norm=0,phase_mean=0,phase_second=0;
     for(int i=0;i<N;i++){double c=2*(i+.5)/N-1;phase_norm+=rayleigh_phase(c)*4*pi/N;auto d=phase_sample(volume,{0,0,1},rng);phase_mean+=d.z;phase_second+=d.z*d.z;}
     check("Rayleigh phase normalization",std::abs(phase_norm-1)<1e-9);

@@ -1,6 +1,6 @@
 {
   "source_head": "09e72f3f7e77826d7254a5641ebd76440deeecff",
-  "baseline": "Current canonical C source preserved from the verified 2026-10-06 checkpoint",
+  "baseline": "Source-byte contract from the verified 2026-10-06 checkpoint, with bounded native CPU updates recorded per file.",
   "preserved_implementation": [
     {
       "path": "browser/coverage-filter.wgsl",
@@ -136,7 +136,10 @@
     },
     {
       "path": "include/cybr/integrator.hpp",
-      "sha256": "96c217c98c9892c4cbc851a3f2bb073dfc679c232eb11b4babfd7efeb0313326"
+      "sha256": "dddbc7fd2b5ec092e14d0d9a5e65bd48f9f39108dc022e2aae70c39f4f8bbf55",
+      "previous_sha256": "96c217c98c9892c4cbc851a3f2bb073dfc679c232eb11b4babfd7efeb0313326",
+      "change_base": "dce2427660adaa6a6de2bb8626d66ffabcd868ce",
+      "change": "Retain surviving top-medium indices on lower overlap exits and use shared null-event classification."
     },
     {
       "path": "include/cybr/io.hpp",
@@ -144,7 +147,10 @@
     },
     {
       "path": "include/cybr/material.hpp",
-      "sha256": "997bce7de6ec6ab5a85aef15d231bdf10233ad2c290b0dc81391e32b87d3fad6"
+      "sha256": "f5f49030b4e1a8bbe022f8d806952c71f4acd6598b4b64c6122d055f37932d2e",
+      "previous_sha256": "997bce7de6ec6ab5a85aef15d231bdf10233ad2c290b0dc81391e32b87d3fad6",
+      "change_base": "dce2427660adaa6a6de2bb8626d66ffabcd868ce",
+      "change": "Classify exact index-matched RoughGlass as a unit null delta with retained medium ownership."
     },
     {
       "path": "include/cybr/math.hpp",
@@ -152,7 +158,10 @@
     },
     {
       "path": "include/cybr/photonmap.hpp",
-      "sha256": "43af9b4d447afeec7e7e41e94575303e4f648c2cd0c06313299656c99cdf4520"
+      "sha256": "d45daefea6f1dd7ecc494419d163e1a335428989840708a5f158071939141af3",
+      "previous_sha256": "43af9b4d447afeec7e7e41e94575303e4f648c2cd0c06313299656c99cdf4520",
+      "change_base": "dce2427660adaa6a6de2bb8626d66ffabcd868ce",
+      "change": "Consume shared index-matched null semantics in photon launch and camera paths."
     },
     {
       "path": "include/cybr/polarization.hpp",
@@ -196,7 +205,10 @@
     },
     {
       "path": "python/cybrlight/mesh_io.py",
-      "sha256": "686e1faab862daf60b1a638182176db54b2be8e4d996d65860ee822e06a50b85"
+      "sha256": "6c2db251cb6342bdd56d6b7c1e1b88a2db4018dac8b30ced0d8e084af7757fbf",
+      "previous_sha256": "686e1faab862daf60b1a638182176db54b2be8e4d996d65860ee822e06a50b85",
+      "change_base": "dce2427660adaa6a6de2bb8626d66ffabcd868ce",
+      "change": "Add an explicit static Assembly bridge through the existing Scene.mesh consumer."
     },
     {
       "path": "python/cybrlight/optix.py",
@@ -232,7 +244,10 @@
     },
     {
       "path": "src/photons.cpp",
-      "sha256": "86f4b34e4773d4b248432c557c77a63684024d1a503efa6fe592639814deba31"
+      "sha256": "6f506960450516c4e0ebf0be822492f9a6089bf77c802a334b261c8f914cc985",
+      "previous_sha256": "86f4b34e4773d4b248432c557c77a63684024d1a503efa6fe592639814deba31",
+      "change_base": "dce2427660adaa6a6de2bb8626d66ffabcd868ce",
+      "change": "Replace duplicate medium-stack/index/transition logic with the existing shared owner."
     },
     {
       "path": "src/optix/CMakeLists.txt",
@@ -263,7 +278,8 @@
     "Portable asset lookup paths with original bytes",
     "Compiler flag selection and native executable discovery",
     "Current documentation/source contracts/ignore scope",
-    "Excluded obsolete diagnostics and rejected prototypes"
+    "Excluded obsolete diagnostics and rejected prototypes",
+    "Bounded canonical CPU Assembly import and medium ownership/null-event changes; see CANONICAL_CPU_VALIDATION.md."
   ],
   "old_provenance": "NATIVE_PROVENANCE.json describes the earlier native archive import; it is historical evidence, not the current digest contract."
 }
